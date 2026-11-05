@@ -17,14 +17,13 @@ Docs + Excel mapping + payload mocks only. No running UI or API. **Phase 3 AI/ch
 | **API contract** | [`specs/api/openapi.md`](specs/api/openapi.md) — grouped Templates / Trades / Documents / Affirm / MIS / Agent stubs |
 | **Reference PDFs** | [`docs/reference/isda/`](docs/reference/isda/) |
 
-### PRD highlights (v1.1)
+### PRD highlights (v1.2)
 
-- Ontology **diagram** + MASTER/PRODUCT/SUPPLEMENT/MATRIX/MCA **composition visual**
-- Use Case 2.0 (Cockburn + Jacobson) for Deliverable FX Option + **Edge cases**
-- Sequences **split**: Template Admin lifecycle vs Trade lifecycle vs recovery
-- Exhibit I **confirmation letter** modeled and mocked
+- Ops/intern plain language + explainers (affirm vs confirm, MCA, matrices vs III, why FX often has no CSA)
+- Ontology + composition visuals; Use Case 2.0 + edge cases
+- Sequences **split** (Template Admin vs Trade); **state diagrams** for trade / FXO / template versioning
+- Exhibit I letter modeled + mocked; LDM aligned to Excel (`Attribute type`, `Domain`, `LDM entity`)
 - Archetypes / JTBD / Impact Map / User Story Map
-- FXO worked ontology + process flow
 
 ### Regenerate
 
