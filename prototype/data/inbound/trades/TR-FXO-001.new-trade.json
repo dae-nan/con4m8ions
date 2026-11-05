@@ -3,48 +3,41 @@
   "eventId": "evt_1001",
   "tradeId": "TR-FXO-001",
   "occurredAt": "2027-12-01T10:00:00Z",
-  "mcaPath": "With_MCA",
-  "mcaProfileId": "MCA-SCB-ACME-2026-001",
-  "legal": {
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
-    "isdaMasterDate": "2026-01-15",
-    "longFormFallback": false,
-    "governingLaw": null,
-    "terminationCurrency": null,
-    "matrixBindings": {
-      "SRO": null
-    }
-  },
   "template": {
+    "masterExhibitId": "I",
     "productExhibitId": "II-B",
-    "supplementExhibitIds": [],
-    "masterExhibitId": "I"
+    "supplementExhibitIds": []
   },
   "trade": {
-    "product": {
-      "transactionType": "Deliverable FX Option Transaction"
-    },
-    "parties": {
-      "partyA": {
-        "name": "Standard Chartered Bank Sample Desk",
+    "parties": [
+      {
+        "id": "partyA",
+        "partyName": "Standard Chartered Bank Sample Desk",
         "lei": "5493001KJTIIGC8Y1R12",
-        "office": "Singapore"
+        "office": "Singapore",
+        "noticeContact": "ops-fx@scb.example"
       },
-      "partyB": {
-        "name": "ACME Corp Treasury",
+      {
+        "id": "partyB",
+        "partyName": "ACME Corp Treasury",
         "lei": "549300ABCDEFGH123456",
         "address": "1 Example Street, London EC2N 1HQ",
-        "office": "London"
+        "office": "London",
+        "noticeContact": "fxconfirm@acme.example"
+      }
+    ],
+    "product": {
+      "productType": "Deliverable_FX_Option",
+      "transactionType": "Deliverable FX Option Transaction",
+      "buyerPartyReference": {
+        "href": "partyA"
       },
-      "buyer": "Party A",
-      "seller": "Party B"
+      "sellerPartyReference": {
+        "href": "partyB"
+      }
     },
     "economics": {
       "tradeDate": "2027-12-01",
-      "transactionType": "Deliverable FX Option Transaction",
-      "buyer": "Party A",
-      "seller": "Party B",
       "optionStyle": "European",
       "optionType": "EUR Call / USD Put",
       "callCurrency": "EUR",
@@ -59,6 +52,29 @@
       "premiumCurrency": "USD",
       "premiumPaymentDate": "2027-12-03",
       "settlementMethod": "Deliverable"
+    },
+    "documentation": {
+      "masterAgreement": {
+        "masterAgreementType": "ISDA2002",
+        "masterAgreementDate": "2026-01-15",
+        "longFormFallback": false,
+        "governingLaw": null,
+        "terminationCurrency": null
+      },
+      "masterConfirmation": {
+        "masterConfirmationId": "MCA-SCB-ACME-2026-001",
+        "masterConfirmationType": "Bilateral FX MCA (Assumed)",
+        "masterConfirmationDate": "2026-01-15"
+      },
+      "contractualDefinitions": [
+        {
+          "definitions": "2026 FX Definitions",
+          "publisher": "ISDA/EMTA",
+          "book": "Main Book",
+          "version": "1.0"
+        }
+      ],
+      "contractualMatrix": []
     }
   }
 }

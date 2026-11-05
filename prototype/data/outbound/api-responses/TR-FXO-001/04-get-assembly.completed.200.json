@@ -31,14 +31,9 @@
   },
   "legal": {
     "frameworkId": "LF-2026-1.0",
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
     "mcaPath": "With_MCA",
-    "mcaProfileId": "MCA-SCB-ACME-2026-001",
-    "longFormFallback": false,
-    "matrixBindings": {
-      "SRO": null
-    }
+    "masterConfirmationId": "MCA-SCB-ACME-2026-001",
+    "longFormFallback": false
   },
   "package": {
     "ruleId": "PSR-FXO-DEL-2026-001",
@@ -51,7 +46,7 @@
   "exhibitILetter": {
     "path": "With_MCA",
     "longFormFallback": false,
-    "mcaProfileId": "MCA-SCB-ACME-2026-001",
+    "masterConfirmationId": "MCA-SCB-ACME-2026-001",
     "blocks": {
       "heading": {
         "partyALetterhead": "Standard Chartered Bank Sample Desk",
@@ -61,7 +56,11 @@
       },
       "definitionsVersion": "2026 FX Definitions Main Book Version 1.0",
       "agreementClause": "This Confirmation constitutes a \"Confirmation\" as referred to in, and supplements, forms a part of, and is subject to, the ISDA Master Agreement dated as of 15 January 2026 (Assumed MCA profile MCA-SCB-ACME-2026-001), as amended from time to time (the \"Agreement\"), between Standard Chartered Bank Sample Desk (\"Party A\") and ACME Corp Treasury (\"Party B\").",
-      "productInsert": "[INSERT Exhibit II-B Confirmation of a Deliverable FX Option Transaction]",
+      "productInsert": {
+        "exhibitId": "II-B",
+        "title": "Confirmation of a Deliverable FX Option Transaction",
+        "additionalProvisionExhibitIds": []
+      },
       "elections": {
         "partyALei": "5493001KJTIIGC8Y1R12",
         "partyBLei": "549300ABCDEFGH123456",

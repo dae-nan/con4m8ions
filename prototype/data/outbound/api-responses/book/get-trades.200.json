@@ -30,7 +30,8 @@
       "documentId": null,
       "affirmationStatus": null,
       "sentAt": null,
-      "affirmedAt": null
+      "affirmedAt": null,
+      "timelineAvailable": false
     },
     {
       "tradeId": "TR-FXO-003",
@@ -51,7 +52,8 @@
       "documentId": null,
       "affirmationStatus": null,
       "sentAt": null,
-      "affirmedAt": null
+      "affirmedAt": null,
+      "timelineAvailable": false
     },
     {
       "tradeId": "TR-FXO-005",
@@ -72,7 +74,8 @@
       "documentId": null,
       "affirmationStatus": null,
       "sentAt": null,
-      "affirmedAt": null
+      "affirmedAt": null,
+      "timelineAvailable": true
     },
     {
       "tradeId": "TR-FXO-002",
@@ -93,7 +96,8 @@
       "documentId": "DOC-102",
       "affirmationStatus": null,
       "sentAt": "2027-12-01T13:15:04Z",
-      "affirmedAt": null
+      "affirmedAt": null,
+      "timelineAvailable": false
     },
     {
       "tradeId": "TR-FXO-001",
@@ -114,7 +118,8 @@
       "documentId": "DOC-001",
       "affirmationStatus": "Affirmed",
       "sentAt": "2027-12-01T10:00:04Z",
-      "affirmedAt": "2027-12-01T15:04:05Z"
+      "affirmedAt": "2027-12-01T15:04:05Z",
+      "timelineAvailable": true
     },
     {
       "tradeId": "TR-FXO-006",
@@ -135,7 +140,8 @@
       "documentId": "DOC-106",
       "affirmationStatus": "Affirmed",
       "sentAt": "2027-12-01T09:00:04Z",
-      "affirmedAt": "2027-12-01T11:30:00Z"
+      "affirmedAt": "2027-12-01T11:30:00Z",
+      "timelineAvailable": false
     }
   ]
 }

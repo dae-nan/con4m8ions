@@ -30,14 +30,9 @@
   },
   "legal": {
     "frameworkId": "LF-2026-1.0",
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
     "mcaPath": "Without_MCA",
-    "mcaProfileId": null,
-    "longFormFallback": true,
-    "matrixBindings": {
-      "SRO": null
-    }
+    "masterConfirmationId": null,
+    "longFormFallback": true
   },
   "package": {
     "ruleId": "PSR-FXO-DEL-2026-001",

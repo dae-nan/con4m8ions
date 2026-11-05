@@ -9,7 +9,7 @@
     {
       "block": "elections",
       "attribute": "Contact details for notice Party A",
-      "tpsJsonPath": "trade.notices.partyA",
+      "tpsJsonPath": "trade.parties[id=partyA].noticeContact",
       "before": "ops-fx@scb.example",
       "after": "ops-fx@scb.example; SmartDX Docbox SCB-SG"
     }

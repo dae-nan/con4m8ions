@@ -31,14 +31,9 @@
   },
   "legal": {
     "frameworkId": "LF-2026-1.0",
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
     "mcaPath": "With_MCA",
-    "mcaProfileId": "MCA-SCB-ACME-2026-001",
-    "longFormFallback": false,
-    "matrixBindings": {
-      "SRO": null
-    }
+    "masterConfirmationId": "MCA-SCB-ACME-2026-001",
+    "longFormFallback": false
   },
   "package": {
     "ruleId": "PSR-FXO-DEL-2026-001",

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import copy
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from statistics import median
@@ -22,6 +23,7 @@ MAPPING_XLSX = REPO / "docs/mappings/cdu-ps-isda-2026-mapping.xlsx"
 MOCKS_XLSX = REPO / "docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx"
 OPENAPI_MD = REPO / "specs/api/openapi.md"
 DATA_DIR = REPO / "prototype/data"
+ROUTES_JSON = REPO / "prototype/routes.json"
 
 SIM_SHEET = "Prototype_Sim"
 BOOK_SHEET = "Prototype_Trade_Book"
@@ -57,6 +59,7 @@ BOOK_HEADERS = [
     "affirmationStatus",
     "sentAt",
     "affirmedAt",
+    "timelineAvailable",
 ]
 
 
@@ -90,6 +93,20 @@ def pointer_get(doc, pointer: str):
     for part in pointer.lstrip("/").split("/"):
         part = part.replace("~1", "/").replace("~0", "~")
         node = node[int(part)] if isinstance(node, list) else node[part]
+    return node
+
+
+def jpath_get(doc, path: str):
+    """Dotted path with list selectors: `a.b[0].c`, `trade.parties[id=partyA].lei`."""
+    node = doc
+    for name, sel in re.findall(r"([^.\[\]]+)|\[([^\]]+)\]", path):
+        if name:
+            node = node[name]
+        elif "=" in sel:
+            key, _, want = sel.partition("=")
+            node = next(item for item in node if item.get(key) == want)
+        else:
+            node = node[int(sel)]
     return node
 
 

@@ -23,7 +23,7 @@
     {
       "block": "elections",
       "attribute": "Contact details for notice Party A",
-      "tpsJsonPath": "trade.notices.partyA",
+      "tpsJsonPath": "trade.parties[id=partyA].noticeContact",
       "before": "ops-fx@scb.example",
       "after": "ops-fx@scb.example; SmartDX Docbox SCB-SG"
     }
@@ -46,9 +46,18 @@
       }
     ]
   },
+  "approval": {
+    "status": "APPROVED",
+    "requestedBy": "u.admin.lee",
+    "requestedAt": "2027-11-28T09:15:00Z",
+    "approvedBy": "u.ctrl.ng",
+    "approvedAt": "2027-12-01T15:30:00Z",
+    "comment": "Notice channel change reviewed against Exhibit I; no economic impact",
+    "auditId": "AUD-0007"
+  },
   "audit": {
-    "lastChangedBy": "u.admin.lee",
-    "lastChangedAt": "2027-11-28T09:10:00Z"
+    "lastChangedBy": "u.ctrl.ng",
+    "lastChangedAt": "2027-12-01T15:30:00Z"
   },
   "status": "DRAFT",
   "activatedAt": null,

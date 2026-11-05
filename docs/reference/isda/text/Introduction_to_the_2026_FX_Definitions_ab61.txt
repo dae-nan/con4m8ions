@@ -1,0 +1,252 @@
+===== PAGE 1 =====
+Introduction to the
+2026 FX Definitions
+The 2026 FX Definitions will take effect from November 22, 2027, introducing an
+integrated framework for FX derivatives transactions and reflecting almost three
+decades of market developments.
+
+isda.org
+===== PAGE 2 =====
+INTRODUCTION TO THE 2026 FX DEFINITIONS
+
+Implementation
+The 2026 FX Definitions were published by ISDA and EMTA, the
+trade association for emerging markets, on March 3, 2026, and are
+available on ISDA’s MyLibrary platform1. They will replace the 1998
+FX and Currency Option Definitions as the standard definitional
+booklet for all cleared FX derivatives and new non-cleared FX
+derivatives transactions from November 22, 2027.
+Swift is no longer expected to support the 1998 definitions after
+this date, which means all FX transactions confirmed via Swift
+messages will incorporate the 2026 FX Definitions. Legacy noncleared FX derivatives transactions will continue to reference the
+1998 definitions until they roll over, unless counterparties agree
+bilaterally to incorporate the 2026 FX Definitions. However, it is
+expected that almost 80% of legacy FX derivatives transactions will
+be terminated or rolled into new positions referencing the 2026 FX
+Definitions by the end of 20282.
+More information is available on the FX Definitions Update
+InfoHub3 on the ISDA website.
+
+Rationale for Update
+The FX market has evolved significantly since 1998. Up until
+now, the terms for a particular transaction have typically been
+split across a fragmented documentation framework, including the
+1998 definitions, additional provisions and supplements, EMTA
+template terms for non-deliverable transactions and bilateral master
+confirmation agreements (MCAs).
+The 2026 FX Definitions reflect current market practices and
+consolidate relevant product templates and provisions published over
+the past 28 years without disrupting terms in the 1998 definitions
+that continue to serve the FX market. The 2026 FX Definitions
+
+have been developed so new versions can be published from time to
+time in response to future developments in the FX market. Market
+participants will be able to adopt and incorporate these new versions
+efficiently, avoiding the fragmentation that exists today.
+
+Consolidation and
+Harmonization Updates
+Integration of Emerging Market (EM) Provisions
+The 2026 FX Definitions include the EM currency matrix, which
+consolidates the existing EMTA and EMTA/Singapore Foreign
+Exchange Market Committee (SFEMC) template terms, including
+the settlement rate options, other currency-specific terms and
+applicable disruption events and disruption fallbacks within those
+template terms. The 2026 FX Definitions main book also contains
+provisions for cross-currency transactions and joint calculation
+agent dispute resolution language, both of which have historically
+been contained in MCAs for EM FX transactions, eliminating the
+need for these MCAs. In addition, the 2026 FX Definitions contain
+the substance of key EMTA market practice notes, making them
+part of the contractual framework for EM FX transactions.
+
+Other Consolidation and Harmonization Updates
+Incorporation of Supplements and Additional Provisions: The
+2026 FX Definitions main book contains FX product supplements
+for barrier and binary option transactions, averaging transactions,
+variance/volatility/correlation swaps, forward volatility agreement
+transactions, optional early termination provisions, additional
+disruption events for offshore deliverable CNY transactions and
+provisions for developed market currencies.
+MCA Provisions: The new definitions contain standard MCA
+provisions, eliminating the need for MCAs unless counterparties use
+
+Other Product Definitions
+2021 ISDA Interest Rate Derivatives Definitions
+ISDA Digital Asset Derivatives Definitions
+
+2026 FX Definitions Main Book
+
+Currencies/Financial
+Centers Matrix
+
+Exhibits
+
+Settlement Rate
+Options Matrix
+
+Confirmation Templates
+
+Additional
+Resources
+
+Matrices
+
+Definitions
+
+Architecture of the 2026 FX Definitions
+
+FX Novation and Cancellation Provisions
+
+Emerging Markets
+Currency Matrix
+
+Developed Markets
+Currency Matrix
+
+Offshore CNY Disruption
+Fallback Matrix
+
+Currency Pair Quoting
+Conventions
+
+1 www.isda.org/isda-solutions-infohub/mylibrary/
+2 Semiannual data from the Bank for International Settlements (BIS) showed that 78.9% of outstanding FX derivatives notional had a remaining maturity of one year or
+less at the end of June 2025, 15.4% had a remaining maturity of between one and five years and 5.7% had a remaining maturity over five years. BIS OTC Derivatives
+Statistics, data.bis.org/topics/OTC_DER/tables-and-dashboards/BIS,DER_D9,1.0
+3 www.isda.org/2024/02/22/fx-definitions-update-infohub/
+
+isda.org
+===== PAGE 3 =====
+BENCHMARK REFORM AT A GLANCE
+INTRODUCTION TO THE 2026 FX DEFINITIONS
+
+them to negotiate bespoke provisions unique to their relationship
+or FX transactions.
+
+For any other non-deliverable transactions, the first fallback is to
+calculation agent determination of the settlement rate.
+
+Matrices: The 2026 FX Definitions include modular matrices with
+key reference data to simplify drafting and future updates.
+
+Offshore CNY FX Transactions
+
+Substantive Updates
+Disruption Events and Fallbacks
+Deliverable FX Transactions: Under the 2026 FX Definitions,
+three disruption events and corresponding disruption fallbacks
+apply automatically to deliverable FX transactions, whereas there
+were no automatically applicable disruption events under the 1998
+definitions. These disruption events are:
+• General settlement or conversion disruption, which applies
+if payment or conversion is impossible across FX market
+participants generally after a waiting period.
+• Material change in circumstance, which applies if a force majeure
+event would prevent payment or delivery after a waiting period.
+• Settlement system disruption, which applies if payment via the
+applicable settlement system (eg, Continuous Linked Settlement,
+known as CLS) is not possible on the relevant settlement date.
+The 2026 FX Definitions also contain a fourth disruption event that
+counterparties can elect to apply – specific settlement or conversion
+disruption, which applies if payment or conversion is impossible
+for the relevant transaction(s), irrespective of whether market
+participants generally are affected.
+The disruption fallbacks for deliverable FX transactions follow a
+flexible approach that allows for consideration of the facts and
+circumstances at the time of the disruption event. Other than for
+settlement system disruption, the disruption fallbacks first include a
+calculation agent determination of the settlement method, followed
+by no fault termination. Counterparties could alternatively elect
+to specify cash settlement as the applicable disruption fallback.
+For settlement system disruption, the calculation agent takes the
+rules of the applicable settlement system into account and either
+postpones settlement or the counterparties settle outside of the
+settlement system.
+Non-deliverable FX transactions: Under the 2026 FX Definitions,
+price source disruption continues to apply automatically to nondeliverable FX transactions, other than non-deliverable FX
+transactions on developed market currency pairs. The definition of
+this event has been updated to ensure it is only triggered when the
+relevant rate is not available to market participants. The disruption
+fallbacks for non-deliverable FX transactions on EM currency
+pairs provide for valuation postponement and then, generally,
+a calculation agent determination of the settlement rate, with
+variations for certain currency pairs. These provisions are consistent
+with the disruption events and disruption fallbacks currently in the
+EMTA and EMTA/SFEMC template terms.
+
+The 2026 FX Definitions incorporate specific provisions that
+apply if one of the currencies in an FX transaction is ‘offshore
+CNY (CNH)’ – ie, CNY traded and settled in offshore centers,
+such as Hong Kong and Singapore. These provisions are based
+on the additional disruption event provisions for an offshore
+deliverable CNY transaction that market participants currently
+use. The relevant disruption events and disruption fallbacks reflect
+the unique characteristics of offshore CNY (CNH) transactions,
+as distinct from CNY transactions traded onshore or on a crossborder basis.
+
+Other Substantive Updates
+Calculation Agent Standard: The calculation agent standards in the
+2026 FX Definitions align with those in the 2021 ISDA Interest
+Rate Derivatives Definitions and bridge a gap between English and
+New York law in the existing standards. The calculation agent’s duty
+is to act in “good faith using commercially reasonable procedures
+to produce a commercially reasonable result”. The calculation agent
+will be responsible for all determinations that are not otherwise
+allocated to a party, with the exception that the calculation agent
+will not determine the occurrence of a disruption event.
+Calendar Adjustment Event: A calendar adjustment event is a
+market event, unscheduled as of the trade date, that results in an
+additional non-business day and causes the term of an FX forward to
+increase by virtue of postponing the settlement date. The 2026 FX
+Definitions include optional methods the parties can elect to address
+economic discrepancies caused by such an event. Options include
+entering into an offsetting transaction or payment of an offsetting fee.
+Business Day Terms: The 2026 FX Definitions consolidate
+business day definitions and conventions from various FX product
+supplements published since 1998. Business day for payment
+remains unchanged from the 1998 definitions, so it will continue
+to point to the holiday calendar in the principal financial center
+for the payment currency (or currencies). Business days for
+valuation and exercise in respect of deliverable transactions and
+non-deliverable transactions on developed market currencies now
+incorporate concepts of spot market business day and publication
+calendar day.
+Full Automated Exercise: The 2026 FX Definitions introduce
+an alternative exercise mechanism for deliverable, Europeanstyle options called full automated exercise. When counterparties
+specify this term, it overrides automatic exercise, which remains the
+default exercise method in the 2026 FX Definitions. Full automated
+exercise relies on published rates (as opposed to the spot market)
+and removes manual intervention in the exercise/expiry process,
+including exercise notifications from buyers to sellers.
+
+isda.org
+===== PAGE 4 =====
+BENCHMARK REFORM AT A GLANCE
+INTRODUCTION TO THE 2026 FX DEFINITIONS
+
+Disclaimer
+This document is intended as an information resource only. It does
+not contain legal advice and should not be considered a guide to or
+explanation of all relevant issues or considerations in connection with the
+
+matters discussed. You should consult your legal advisors and any other
+advisor you deem appropriate in considering such issues. ISDA assumes
+no responsibility for any use to which any of these materials may be put.
+
+About ISDA
+Since 1985, ISDA has worked to make the global derivatives markets
+safer and more efficient. Today, ISDA has over 1,000 member
+institutions from 78 countries. These members comprise a broad range
+of derivatives market participants, including corporations, investment
+managers, government and supranational entities, insurance
+companies, energy and commodities firms, and international and
+
+isda.org
+
+regional banks. In addition to market participants, members also
+include key components of the derivatives market infrastructure, such
+as exchanges, intermediaries, clearing houses and repositories, as well
+as law firms, accounting firms and other service providers.
+Information about ISDA and its activities is available on the Association’s
+website: www.isda.org. Follow us on LinkedIn and YouTube.

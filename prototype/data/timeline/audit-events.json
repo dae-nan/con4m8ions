@@ -1,6 +1,6 @@
 {
   "asOf": "2027-12-01T16:55:02Z",
-  "count": 27,
+  "count": 28,
   "items": [
     {
       "auditId": "AUD-0001",
@@ -256,6 +256,18 @@
     },
     {
       "auditId": "AUD-0007",
+      "at": "2027-12-01T15:30:00Z",
+      "actorId": "u.ctrl.ng",
+      "action": "template.approved",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.2.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_approve_120"
+    },
+    {
+      "auditId": "AUD-0008",
       "at": "2027-12-01T16:00:00Z",
       "actorId": "u.admin.lee",
       "action": "template.activated",

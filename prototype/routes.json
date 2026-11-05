@@ -1,0 +1,430 @@
+{
+  "basePath": "/v1",
+  "dataRoot": "data/",
+  "count": 47,
+  "items": [
+    {
+      "step": "A01",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates",
+      "url": "/templates",
+      "contract": "response-200",
+      "file": "templates/index.json"
+    },
+    {
+      "step": "A02",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}",
+      "url": "/templates/TB-FXO-DEL-2026-001",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/package.json"
+    },
+    {
+      "step": "A03a",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/versions/{version}",
+      "url": "/templates/TB-FXO-DEL-2026-001/versions/1.0.0",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/versions/1.0.0.json"
+    },
+    {
+      "step": "A03b",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/versions/{version}",
+      "url": "/templates/TB-FXO-DEL-2026-001/versions/1.1.0",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/versions/1.1.0.json"
+    },
+    {
+      "step": "A03c",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/versions/{version}",
+      "url": "/templates/TB-FXO-DEL-2026-001/versions/1.2.0",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/versions/1.2.0.json"
+    },
+    {
+      "step": "A04a",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/layers/{templateVersionId}",
+      "url": "/templates/{id}/layers/{templateVersionId}",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/exhibit-i-master.json"
+    },
+    {
+      "step": "A04b",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/layers/{templateVersionId}",
+      "url": "/templates/{id}/layers/{templateVersionId}",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/exhibit-ii-b-product.json"
+    },
+    {
+      "step": "A05",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/selection-rules",
+      "url": "/templates/selection-rules",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/selection-rules.json"
+    },
+    {
+      "step": "A06",
+      "at": "2027-12-01T15:59:00Z",
+      "method": "GET",
+      "path": "/templates/{id}/audit",
+      "url": "/templates/TB-FXO-DEL-2026-001/audit",
+      "contract": "response-200",
+      "file": "templates/fxo-deliverable-2026/audit.json"
+    },
+    {
+      "step": "A07",
+      "at": "2027-11-28T09:00:00Z",
+      "method": "PUT",
+      "path": "/templates/{id}/versions",
+      "url": "/templates/TB-FXO-DEL-2026-001/versions",
+      "contract": "request",
+      "file": "inbound/ui/TB-FXO-DEL-2026-001.put-version-1.2.0.json"
+    },
+    {
+      "step": "A08",
+      "at": "2027-11-28T09:00:00Z",
+      "method": "PUT",
+      "path": "/templates/{id}/versions",
+      "url": "/templates/TB-FXO-DEL-2026-001/versions",
+      "contract": "response-201",
+      "file": "outbound/api-responses/TB-FXO-DEL-2026-001/01-put-versions.201.json"
+    },
+    {
+      "step": "A09",
+      "at": "2027-12-01T16:00:00Z",
+      "method": "POST",
+      "path": "/templates/{id}/activate",
+      "url": "/templates/TB-FXO-DEL-2026-001/activate",
+      "contract": "request",
+      "file": "inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json"
+    },
+    {
+      "step": "A10",
+      "at": "2027-12-01T16:00:00Z",
+      "method": "POST",
+      "path": "/templates/{id}/activate",
+      "url": "/templates/TB-FXO-DEL-2026-001/activate",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json"
+    },
+    {
+      "step": "A11",
+      "at": "2027-12-01T16:00:01Z",
+      "method": "GET",
+      "path": "/templates/{id}",
+      "url": "/templates/TB-FXO-DEL-2026-001",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json"
+    },
+    {
+      "step": "A12",
+      "at": "2027-12-01T16:00:01Z",
+      "method": "GET",
+      "path": "/templates/{id}/audit",
+      "url": "/templates/TB-FXO-DEL-2026-001/audit",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json"
+    },
+    {
+      "step": "B01",
+      "at": "2027-12-01T10:00:00Z",
+      "method": "POST",
+      "path": "/events",
+      "url": "/events",
+      "contract": "request",
+      "file": "inbound/trades/TR-FXO-001.new-trade.json"
+    },
+    {
+      "step": "B02",
+      "at": "2027-12-01T10:00:00Z",
+      "method": "POST",
+      "path": "/events",
+      "url": "/events",
+      "contract": "response-202",
+      "file": "outbound/api-responses/TR-FXO-001/01-post-events.202.json"
+    },
+    {
+      "step": "B03",
+      "at": "2027-12-01T10:00:02Z",
+      "method": "GET",
+      "path": "/assemblies/{id}",
+      "url": "/assemblies/AR-FXO-001-01",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json"
+    },
+    {
+      "step": "B04",
+      "at": "2027-12-01T10:00:02Z",
+      "method": "GET",
+      "path": "/assemblies/{id}",
+      "url": "/assemblies/AR-FXO-001-01",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/03-get-assembly.package-located.200.json"
+    },
+    {
+      "step": "B05",
+      "at": "2027-12-01T10:00:03Z",
+      "method": "GET",
+      "path": "/assemblies/{id}",
+      "url": "/assemblies/AR-FXO-001-01",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/04-get-assembly.completed.200.json"
+    },
+    {
+      "step": "B06",
+      "at": "2027-12-01T10:00:04Z",
+      "method": "POST",
+      "path": "/mock/smartdx/documents",
+      "url": "/mock/smartdx/documents",
+      "contract": "request",
+      "file": "outbound/smartdx/DOC-001.send.json"
+    },
+    {
+      "step": "B07",
+      "at": "2027-12-01T10:00:04Z",
+      "method": "POST",
+      "path": "/mock/smartdx/documents",
+      "url": "/mock/smartdx/documents",
+      "contract": "response-201",
+      "file": "outbound/smartdx/DOC-001.generated.json"
+    },
+    {
+      "step": "B08",
+      "at": "2027-12-01T10:00:05Z",
+      "method": "POST",
+      "path": "/callbacks/tps",
+      "url": "/callbacks/tps",
+      "contract": "request-generated",
+      "file": "outbound/tps-callbacks/TR-FXO-001.01-generated.json"
+    },
+    {
+      "step": "B09",
+      "at": "2027-12-01T15:04:05Z",
+      "method": "POST",
+      "path": "/webhooks/affirmation",
+      "url": "/webhooks/affirmation",
+      "contract": "request",
+      "file": "inbound/webhooks/DOC-001.affirmed.json"
+    },
+    {
+      "step": "B10",
+      "at": "2027-12-01T15:04:05Z",
+      "method": "POST",
+      "path": "/webhooks/affirmation",
+      "url": "/webhooks/affirmation",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/05-post-webhooks-affirmation.200.json"
+    },
+    {
+      "step": "B11",
+      "at": "2027-12-01T15:04:05Z",
+      "method": "POST",
+      "path": "/mock/smartdx/documents/{id}/status",
+      "url": "/mock/smartdx/documents/DOC-001/status",
+      "contract": "request",
+      "file": "outbound/smartdx/DOC-001.status-affirmed.json"
+    },
+    {
+      "step": "B12",
+      "at": "2027-12-01T15:04:06Z",
+      "method": "POST",
+      "path": "/callbacks/tps",
+      "url": "/callbacks/tps",
+      "contract": "request-affirm",
+      "file": "outbound/tps-callbacks/TR-FXO-001.02-affirmed.json"
+    },
+    {
+      "step": "B13",
+      "at": "2027-12-01T15:04:06Z",
+      "method": "GET",
+      "path": "/trades/{id}",
+      "url": "/trades/TR-FXO-001",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/06-get-trade.200.json"
+    },
+    {
+      "step": "B14",
+      "at": "2027-12-01T15:04:06Z",
+      "method": "GET",
+      "path": "/documents/{id}",
+      "url": "/documents/DOC-001",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-001/07-get-document.200.json"
+    },
+    {
+      "step": "B15",
+      "at": "2027-12-01T15:04:06Z",
+      "method": "GET",
+      "path": "/trades/{id}/timeline",
+      "url": "/trades/TR-FXO-001/timeline",
+      "contract": "response-200",
+      "file": "timeline/TR-FXO-001.json"
+    },
+    {
+      "step": "C01",
+      "at": "2027-12-01T14:20:00Z",
+      "method": "POST",
+      "path": "/events",
+      "url": "/events",
+      "contract": "request",
+      "file": "inbound/trades/TR-FXO-005.new-trade.json"
+    },
+    {
+      "step": "C02",
+      "at": "2027-12-01T14:20:00Z",
+      "method": "POST",
+      "path": "/events",
+      "url": "/events",
+      "contract": "response-202",
+      "file": "outbound/api-responses/TR-FXO-005/01-post-events.202.json"
+    },
+    {
+      "step": "C03",
+      "at": "2027-12-01T14:20:03Z",
+      "method": "GET",
+      "path": "/assemblies/{id}",
+      "url": "/assemblies/AR-FXO-005-01",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-005/02-get-assembly.pending-manual-draft.200.json"
+    },
+    {
+      "step": "C04",
+      "at": "2027-12-01T16:40:00Z",
+      "method": "GET",
+      "path": "/assemblies/{id}/shell",
+      "url": "/assemblies/AR-FXO-005-01/shell",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json"
+    },
+    {
+      "step": "C05",
+      "at": "2027-12-01T16:52:00Z",
+      "method": "PUT",
+      "path": "/assemblies/{id}/manual-draft",
+      "url": "/assemblies/AR-FXO-005-01/manual-draft",
+      "contract": "request",
+      "file": "inbound/ui/AR-FXO-005-01.put-manual-draft.json"
+    },
+    {
+      "step": "C06",
+      "at": "2027-12-01T16:52:00Z",
+      "method": "PUT",
+      "path": "/assemblies/{id}/manual-draft",
+      "url": "/assemblies/AR-FXO-005-01/manual-draft",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-005/04-put-manual-draft.200.json"
+    },
+    {
+      "step": "C07",
+      "at": "2027-12-01T16:55:00Z",
+      "method": "POST",
+      "path": "/assemblies/{id}/submit",
+      "url": "/assemblies/AR-FXO-005-01/submit",
+      "contract": "request",
+      "file": "inbound/ui/AR-FXO-005-01.post-submit.json"
+    },
+    {
+      "step": "C08",
+      "at": "2027-12-01T16:55:00Z",
+      "method": "POST",
+      "path": "/assemblies/{id}/submit",
+      "url": "/assemblies/AR-FXO-005-01/submit",
+      "contract": "response-200",
+      "file": "outbound/api-responses/TR-FXO-005/05-post-submit.200.json"
+    },
+    {
+      "step": "C09",
+      "at": "2027-12-01T16:55:01Z",
+      "method": "POST",
+      "path": "/mock/smartdx/documents",
+      "url": "/mock/smartdx/documents",
+      "contract": "request",
+      "file": "outbound/smartdx/DOC-105.send.json"
+    },
+    {
+      "step": "C10",
+      "at": "2027-12-01T16:55:02Z",
+      "method": "POST",
+      "path": "/callbacks/tps",
+      "url": "/callbacks/tps",
+      "contract": "request-generated",
+      "file": "outbound/tps-callbacks/TR-FXO-005.01-generated.json"
+    },
+    {
+      "step": "C11",
+      "at": "2027-12-01T16:55:02Z",
+      "method": "GET",
+      "path": "/trades/{id}/timeline",
+      "url": "/trades/TR-FXO-005/timeline",
+      "contract": "response-200",
+      "file": "timeline/TR-FXO-005.json"
+    },
+    {
+      "step": "D01",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/trades",
+      "url": "/trades",
+      "contract": "response-200",
+      "file": "outbound/api-responses/book/get-trades.200.json"
+    },
+    {
+      "step": "D02",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/analytics/summary",
+      "url": "/analytics/summary",
+      "contract": "response-200",
+      "file": "outbound/api-responses/analytics/get-summary.200.json"
+    },
+    {
+      "step": "D03",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/analytics/aging",
+      "url": "/analytics/aging",
+      "contract": "response-200",
+      "file": "outbound/api-responses/analytics/get-aging.200.json"
+    },
+    {
+      "step": "D04",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/analytics/queues/errors",
+      "url": "/analytics/queues/errors",
+      "contract": "response-200",
+      "file": "outbound/api-responses/analytics/get-errors.200.json"
+    },
+    {
+      "step": "D05",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/analytics/contagion",
+      "url": "/analytics/contagion",
+      "contract": "response-200",
+      "file": "outbound/api-responses/analytics/get-contagion.200.json"
+    },
+    {
+      "step": "D06",
+      "at": "2027-12-01T16:30:00Z",
+      "method": "GET",
+      "path": "/audit",
+      "url": "/audit",
+      "contract": "response-200",
+      "file": "timeline/audit-events.json"
+    }
+  ]
+}

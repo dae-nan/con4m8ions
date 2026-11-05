@@ -32,6 +32,7 @@
     {
       "version": "1.0.0",
       "status": "RETIRED",
+      "approvalStatus": null,
       "activatedAt": "2027-10-15T09:00:00Z",
       "retiredAt": "2027-11-22T00:00:00Z",
       "masterTemplateVersionId": "TV-I-2026-1.0.0",
@@ -40,6 +41,7 @@
     {
       "version": "1.1.0",
       "status": "LIVE",
+      "approvalStatus": null,
       "activatedAt": "2027-11-22T00:00:00Z",
       "retiredAt": null,
       "masterTemplateVersionId": "TV-I-2026-1.1.0",
@@ -48,6 +50,7 @@
     {
       "version": "1.2.0",
       "status": "DRAFT",
+      "approvalStatus": "APPROVED",
       "activatedAt": null,
       "retiredAt": null,
       "masterTemplateVersionId": "TV-I-2026-1.2.0",
@@ -56,7 +59,13 @@
   ],
   "audit": {
     "lastChangedBy": "u.admin.lee",
-    "lastChangedAt": "2027-11-28T09:10:00Z"
+    "lastChangedAt": "2027-12-01T15:30:00Z"
+  },
+  "activationPolicy": {
+    "fourEyes": true,
+    "approverMustDifferFromActivator": true,
+    "effectiveFrom": "2027-11-28T00:00:00Z",
+    "approvalWorkflow": "COMING_SOON"
   },
   "notes": "One LIVE package serves With_MCA and Without_MCA trades; Legal Resolver picks the agreement clause variant."
 }

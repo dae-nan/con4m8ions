@@ -1,0 +1,5725 @@
+===== PAGE 1 =====
+This document has been created under license from ISDA and EMTA and should not be used,
+copied or disseminated other than in accordance with the terms of that license.
+
+Annotated Confirmation Templates
+2026 FX Definitions
+
+Version 1
+8 JULY 2026
+TH
+
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 2 =====
+This document is provided for information purposes only. No representation or warranty is made as to its
+accuracy, completeness or suitability for any purpose. None of ISDA or its affiliates, their directors,
+employees or agents accept any liability for any direct or indirect losses that might be incurred as a result of
+relying upon it. Readers should consult the source documents, in conjunction with their external advisors as
+appropriate, for a definitive view of the subject matter it contains.
+
+Introduction to this document
+Version 1 of the 2026 FX Definitions was published on March 3, 2026, following a detailed
+review of the 1998 FX and Currency Option Definitions (1998 FX Definitions). While much of
+the 1998 FX Definitions was retained in the 2026 FX Definitions, and changes to confirmation
+fields were kept to a minimum, there are areas of change which will require market participants to
+make changes to confirmation templates and systems.
+Exhibits I and II to the 1998 FX Definitions (providing forms of confirmations) have not been
+updated since their original publication, however, over time, other Exhibits (providing forms of
+confirmations for FX derivatives products not contemplated in the original publication of the 1998
+FX Definitions) have been published by ISDA via various product ‘Supplements’. Other
+recommended forms of confirmation for certain emerging markets FX derivatives transaction
+types have been published by EMTA via various ‘EMTA Template Terms’.
+This document highlights and provides commentary on changes made in connection with the
+publication of the 2026 FX Definitions, including changes resulting from the consolidation of the
+various Supplements and EMTA Template Terms, to the extent they are considered helpful to
+market participants for their implementation of the 2026 FX Definitions. This annotated document
+does not purport to be a full blackline of all changes between the confirmation templates in the
+Exhibits to the 2026 FX Definitions and the confirmation templates in the Exhibits to the 1998 FX
+Definitions.
+New confirmation fields and elections that have been introduced due to new terms in the 2026 FX
+Definitions (and relevant footnotes) are coloured in BLUE.
+Changes to or removal of an existing field from the 1998 FX Definitions (and relevant footnotes)
+are coloured in RED.
+Notable changes not due to new terms/changes in the 2026 FX Definitions but due to the
+streamlining of provisions and tidy ups (and relevant footnotes) are coloured in ORANGE.
+Notable changes due to the consolidation of EMTA Template Terms with the 2026 FX Definitions
+(and relevant footnotes) are coloured in GREEN.
+Notable changes due to the consolidation of Supplements to the 1998 FX and Currency Option
+Definitions (and relevant footnotes) are coloured in PURPLE.
+Please note that commentary has only been provided to new fields/changes the first time they
+appear in this document.
+===== PAGE 3 =====
+Exhibits to the 2026 FX
+Definitions
+Published March 3, 2026
+Version 1.0
+===== PAGE 4 =====
+Contents
+Exhibit I
+
+Introduction, Standard Paragraphs and Closing for a Confirmation of a Transaction ...............1
+
+Exhibit II-A
+
+Confirmation of a Deliverable FX Transaction ................................................................................5
+
+Exhibit II-B
+
+Confirmation of a Deliverable FX Option Transaction ...................................................................7
+
+Exhibit II-C
+
+Confirmation of a Non-Deliverable FX Transaction ..................................................................... 11
+
+Exhibit II-D
+
+Confirmation of a Non-Deliverable FX Option Transaction ........................................................14
+
+Exhibit II-E
+
+Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix) .............................19
+
+Exhibit II-F
+
+Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix) ................21
+
+Exhibit II-G
+
+Confirmation of a Non-Deliverable Cross-Currency FX Transaction (EM Currency
+Matrix) ...............................................................................................................................................23
+
+Exhibit II-H
+
+Confirmation of a Non-Deliverable Cross-Currency FX Option Transaction (EM
+Currency Matrix)..............................................................................................................................25
+
+Exhibit II-I
+
+Confirmation of a Variance Swap or a Volatility Swap .................................................................27
+
+Exhibit II-J
+
+Confirmation of a Correlation Swap...............................................................................................30
+
+Exhibit II-K
+
+Confirmation of a Deliverable Delta Neutral Forward .................................................................33
+
+Exhibit III-A
+
+Additional Provisions for Deliverable Disruption Events and Disruption Fallbacks .................36
+
+Exhibit III-B
+
+Additional Provisions for Non-Deliverable Disruption Events and Disruption Fallbacks .........38
+
+Exhibit III-C
+
+Additional Provisions for Mandatory Early Termination .............................................................41
+
+Exhibit III-D
+
+Additional Provisions for Optional Early Termination .................................................................43
+
+Exhibit III-E
+
+Additional Provisions for Averaging the Forward Rate ................................................................46
+
+Exhibit III-F
+
+Additional Provisions for Averaging the Settlement Rate .............................................................49
+
+Exhibit III-G
+
+Additional Provisions for Averaging the Strike Price ....................................................................52
+
+Exhibit III-H
+
+Additional Provisions for a Barrier Transaction ...........................................................................55
+===== PAGE 5 =====
+EXHIBIT I
+to the 2026 FX Definitions
+Introduction, Standard Paragraphs and Closing for a Confirmation of a Transaction
+
+Heading
+[Letterhead of Party A]
+[Date]
+Transaction
+[Name and Address of Party B]
+
+Dear [Sir/Madam]:
+The purpose of this letter (this “Confirmation”) is to confirm the terms and conditions of the
+Transaction entered into between us on the Trade Date specified below (the “Transaction”).
+The definitions and provisions contained in the 2026 FX Definitions (as published by the
+International Swaps and Derivatives Association, Inc. and EMTA, Inc.) are incorporated into
+this Confirmation. In the event of any inconsistency between those definitions and provisions
+and this Confirmation, this Confirmation will govern.1
+This Confirmation constitutes a “Confirmation” as referred to in, and supplements, forms a part
+of, and is subject to, the ISDA Master Agreement dated as of [date], as amended and
+supplemented from time to time (the “Agreement”), between [Name of Party A] (“Party A”)
+and [Name of Party B] (“Party B”). All provisions contained in the Agreement govern this
+
+1
+
+Using this language will incorporate the latest version of the 2026 FX Definitions (the “FX Definitions”) as at the Trade Date of
+the relevant Transaction. To incorporate an earlier version, specify the relevant version number of the FX Definitions, for example
+“Version 1.0 of the Main Book of the 2026 FX Definitions”. Note that the Main Book and each Matrix are versioned separately.
+The version of the Matrices that apply is each version as at the Trade Date. To incorporate an earlier version of any one of the
+Matrices, specify the relevant Matrix and version being incorporated. For earlier versions of the SRO Matrix and EM Currency
+Matrix, fields are included in the relevant form of Confirmation in Exhibit II for this purpose.
+
+1
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A1]: References to the "1998 FX and
+Currency Option Definitions" (1998 FX Definitions) have
+been updated to refer to the "2026 FX Definitions".
+Commented [A2]: ISDA & EMTA are the two copublishers, FXC has been removed
+Commented [A3]: Footnote updated to explain versioning
+of the Main Book and Matrices.
+===== PAGE 6 =====
+Confirmation except as expressly modified below.2 The terms of the Transaction to which this
+Confirmation relates are as follows:
+[Insert the relevant form of Confirmation from one of the templates in Exhibit II and, if
+applicable, the relevant Additional Provisions from one or more of the templates in Exhibit III.]
+[2.]3
+
+Additional Elections, Account Details, Notices:
+[Party A Legal Entity Identifier (LEI):
+
+[Party A LEI]]4
+
+[Party B Legal Entity Identifier (LEI):
+
+[Party B LEI]]5
+
+[Fallback Benchmark
+
+[
+
+]]
+
+6
+
+7
+
+[Acknowledgments and
+Representations:
+
+Disapplied]
+
+[Calculation Agent:8
+
+[Party A] / [Party B] / [
+]/
+[[Joint]9 – [Joint Calculation Agent
+Dispute Resolution Provisions
+applicable]10] / [As per the Agreement]]
+
+Commented [A4]: Optional fields to add LEIs. Not defined
+in the 1998 FX Definitions or the 2026 FX Definitions.
+Commented [A5]: This is a new confirmation field,
+allowing firms to specify an index, benchmark or exchange
+rate to apply as the applicable fallback following an event
+described in Section 13.1 (Consequences of an Administrator
+or Benchmark Event). However the concept of an
+Administrator/Benchmark Event was introduced via the
+ISDA Benchmarks Supplement (implemented by firms via
+the ISDA 2018 Benchmarks Supplement Protocol) that gave
+firms the ability to nominate a Fallback Reference Price
+(defined in the 1998 FX Definitions) for such an event at the
+trade inception.
+Commented [A6]: Acknowledgements and Representations
+(Section 20) were not included in the 1998 FX Definitions but
+parties generally included similar provisions in their
+Confirmations and MCAs.
+
+[Account Details:
+
+2
+
+If the parties have not yet executed, but intend to execute, an ISDA Master Agreement include, instead of this paragraph, the
+following: “This Confirmation evidences a complete and binding agreement between you and us as to the terms of the Transaction
+to which this Confirmation relates. In addition, you and we agree to use all reasonable efforts promptly to negotiate, execute and
+deliver an agreement in the form of an ISDA Master Agreement, with such modifications as you and we will in good faith agree.
+Upon the execution by you and us of such an agreement, this Confirmation will supplement, form part of, and be subject to that
+agreement. All provisions contained in or incorporated by reference in that agreement upon its execution will govern this
+Confirmation except as expressly modified below. Until we execute and deliver that agreement, this Confirmation, together with
+all other documents referring to an ISDA Master Agreement (each a “Confirmation”) confirming transactions (each a
+“Transaction”) entered into between us, shall supplement, form a part of, and be subject to an agreement in the form of the ISDA
+2002 Master Agreement as if we had executed an agreement in such form [(but without any Schedule except for the election of
+[English law] / [the laws of the State of New York] as the governing law[ and [specify currency] as the Termination Currency)]]
+on the Trade Date of the first such Transaction between us. In the event of any inconsistency between the provisions of that
+agreement and this Confirmation, this Confirmation will prevail for the purposes of this Transaction.”
+3
+Continue numbering from numbering in inserted Exhibits from Exhibit II and Exhibit III.
+4
+Optional field.
+5
+Optional field.
+6
+Include this field if any amounts under the Transaction will be determined using an index, benchmark, or currency exchange rate
+which may become subject to an Administrator or Benchmark Event in order to specify the Fallback Benchmark that will be used
+in place of that index, benchmark or currency exchange rate following an Administrator or Benchmark Event. If more than one
+index, benchmark or currency exchange rate is used, replicate this field to specify different Fallback Benchmarks.
+7
+Include this field to modify the presumption in Section 20.1 (Application of Acknowledgments and Representations) that Section
+20.2 (Quoting Dealer Disclaimer) and Section 20.3 (Additional Representations) apply to the Transaction.
+8
+Include to modify the presumption in Section 1.2.1 (Calculation Agent) that the Calculation Agent is (i) the party or parties
+specified as such in the Relevant Master Agreement or, otherwise, (ii) the party to the Transaction which is a dealer or market
+maker that trades foreign exchange transactions on both sides of the market, and if both parties satisfy this requirement, both
+parties acting jointly.
+9
+Specify “Joint” if both parties to the Transaction are to act jointly as the Calculation Agent pursuant to Section 1.2.1(i)(a)
+(Calculation Agent).
+10
+If both parties to the Transaction are acting jointly as the Calculation Agent, include “Joint Calculation Agent Dispute Resolution
+Provisions applicable” to apply the dispute resolution provisions in Section 1.2.2 (Joint Calculation Agent).
+
+2
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A7]: There are new elections, but note that a
+form of Joint Calculation Agent provisions with dispute rights
+was included in the endnotes to the recommended EMTA
+Template Terms.
+Commented [A8]: Free format field in the 1998 FX
+Definitions.
+===== PAGE 7 =====
+Account for payments to Party A:
+
+[
+
+]
+
+Account for payments to Party B:
+
+[
+
+]]
+
+The Office[s] of Party A for the
+Transaction [is] / [are]:
+
+[
+
+]
+
+The Office[s] of Party B for the
+Transaction [is] / [are]:
+
+[
+
+]]
+
+[Broker/Arranger:
+
+[
+
+]]
+
+[Governing law:
+
+[English law] / [the laws of the State of
+New York (without reference to choice
+of law doctrine)]]11
+
+[Offices:
+
+[Contact details for notice:
+
+Commented [A9]: New optional field to add contact
+details.
+
+Party A:
+
+[
+
+]
+
+Party B:
+
+[
+
+]]
+
+Closing
+This Confirmation supersedes and replaces any other confirmation (including an electronic
+confirmation), if any, sent in connection with this Transaction on or prior to the date hereof.
+Please confirm that the foregoing correctly sets forth the terms of our agreement by executing
+the copy of this Confirmation enclosed for that purpose and returning it to us or by sending to
+us a confirmation substantially similar to this Confirmation, which confirmation sets forth the
+material terms of the Transaction to which this Confirmation relates and indicates your
+agreement to those terms.
+Yours faithfully,
+[PARTY A]
+
+By:
+Name:
+Title:
+
+11
+
+Delete this field if this Confirmation is subject to an executed ISDA Master Agreement.
+
+3
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 8 =====
+Confirmed as of the date
+first above written:
+[PARTY B]
+
+By:
+Name:
+Title:
+
+4
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 9 =====
+EXHIBIT II-A
+to the 2026 FX Definitions
+Confirmation of a Deliverable FX Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+General Terms:
+[Transaction Type:
+
+Deliverable FX Transaction]2
+
+Trade Date:
+
+[
+
+]
+
+Amount and currency payable by Party [
+] / [The Amount and currency
+A:
+payable by Party B multiplied by, or divided by,
+as applicable, the Forward Rate]3
+
+Commented [A10]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions,
+however “Deliverable FX Transaction” was a defined term
+under the 1998 FX Definitions.
+
+Commented [A11]: As per the Averaging Supplement.
+
+Amount and currency payable by Party [
+] / [The Amount and currency
+B:
+payable by Party A multiplied by, or divided by,
+as applicable, the Forward Rate]4
+
+1
+
+2
+3
+
+4
+
+5
+
+6
+
+7
+
+] / [The Averaging Rate]]5
+
+[Forward Rate:
+
+[
+
+Settlement Date:
+
+[
+
+]
+
+[Settlement:
+
+Deliverable]
+
+6
+
+[Rounding:
+
+[
+
+]]7
+
+This is the form of Confirmation for a Deliverable FX Transaction. For additional fields for Disruption Events and Disruption
+Fallbacks, Mandatory Early Termination, Optional Early Termination and Averaging provisions, refer to Exhibit III-A (Additional
+Provisions for Deliverable Disruption Events and Disruption Fallbacks), Exhibit III-C (Additional Provisions for Mandatory
+Early Termination), Exhibit III-D (Additional Provisions for Optional Early Termination), and Exhibit III-E (Additional
+Provisions for Averaging the Forward Rate).
+Optional field.
+Parties must include sufficient information to allow a determination of the respective amounts of currency to be exchanged by the
+parties to the relevant FX Transaction. If the Forward Rate is to be averaged, only one of the amounts payable by the relevant
+party should be specified as a numerical amount and the amount payable by the other party will be determined by reference to the
+Forward Rate determined over Averaging Dates
+Parties must include sufficient information to allow a determination of the respective amounts of currency to be exchanged by the
+parties to the relevant FX Transaction. If the Forward Rate is to be averaged, only one of the amounts payable by the relevant
+party should be specified as a numerical amount and the amount payable by the other party will be determined by reference to the
+Forward Rate determined over Averaging Dates.
+If the Forward Rate is to be averaged, insert “The Averaging Rate” in this field and include the Averaging provisions from Exhibit
+III-E (Additional Provisions for Averaging the Forward Rate). The Forward Rate for a Transaction for which Averaging applies
+for the determination of the Forward Rate will be the Averaging Rate for the relevant Averaging Rate Calculation Date pursuant
+to Section 5.1.1(iii) (Forward Rate).
+Optional field. Pursuant to Section 3.2.3 (Presumed Settlement Method for FX Transactions and FX Option Transactions)
+Deliverable applies to an FX Transaction unless otherwise specified.
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages
+or currency amounts. Parties should describe how they wish the relevant percentages or currency amounts to be rounded.
+
+5
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A12]: As per Averaging Supplement.
+
+Commented [A13]: Rounding provisions were included in
+the 1998 FX Definition but amending them via a
+Confirmation field was not expressly contemplated.
+===== PAGE 10 =====
+Calendar Adjustment Event:
+
+[2.]
+
+[Applicable - Price Adjustment] / [Applicable Portfolio Correction Transaction] / [Not
+applicable]8
+
+Business Days:
+[Business Day for Payment:
+
+8
+
+9
+
+[
+
+]]9
+
+Include this field and specify Applicable if applying the provisions of Section 19 (Calendar Adjustment Event). When applying
+Calendar Adjustment Event, specify one of Price Adjustment or Portfolio Correction Transaction as the applicable Calendar
+Adjustment Event Consequence.
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for Payment”
+will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts payable.
+
+6
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A14]: New provisions and confirmation field
+in the 2026 FX Definitions to allow for an economic
+adjustment due to a change in the Settlement Date (e.g. due to
+a new public holiday that is announced after the Trade Date).
+
+Commented [A15]: The 1998 FX Definitions Exhibits did
+not include separate fields for the different types of “Business
+Days”, although Exhibit I contained a general “Business
+Day” field for amending the presumptions in the 1998 FX
+Definitions.
+===== PAGE 11 =====
+EXHIBIT II-B
+to the 2026 FX Definitions
+Confirmation of a Deliverable FX Option Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+
+Commented [A16]: ‘Currency Option’ under the 1998 FX
+Definitions.
+
+The terms of the Transaction to which this Confirmation relates are as follows:1
+1.
+
+1
+
+2
+3
+
+4
+
+5
+6
+7
+
+8
+
+General Terms:
+[Transaction Type:
+
+Deliverable FX Option Transaction]2
+
+Trade Date:
+
+[
+
+]
+
+[SRO Matrix version:
+
+[
+
+]]3
+
+Buyer:
+
+[Party A] / [Party B]
+
+Seller:
+
+[Party A] / [Party B]
+
+[Option Style:
+
+[American] / [Bermuda] / [European]]4
+
+Option Type:
+
+[[
+[Binary]7
+
+5
+
+[Call Currency [and Call Currency
+Amount]:
+
+[
+] / [The Put Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]8
+
+] Put [
+
+Commented [A17]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions.
+However, “Deliverable Currency Option Transaction” was a
+defined term under the 1998 FX Definitions.
+Commented [A18]: Included to allow parties to specify a
+version of the SRO Matrix other than the most recent.
+
+6
+
+] Call ] /
+
+This is the form of Confirmation for a Deliverable FX Option Transaction. For additional fields for Disruption Events and
+Disruption Fallbacks, Mandatory Early Termination, Optional Early Termination, Averaging provisions and Barrier Events, refer
+to Exhibit III-A (Additional Provisions for Deliverable Disruption Events and Disruption Fallbacks), Exhibit III-C (Additional
+Provisions for Mandatory Early Termination), Exhibit III-D (Additional Provisions for Optional Early Termination), Exhibit IIIF (Additional Provisions for Averaging the Settlement Rate), Exhibit III-G (Additional Provisions for Averaging the Strike Price)
+and Exhibit III-H (Additional Provisions for a Barrier Transaction).
+Optional field.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date. A Settlement Rate Option
+may be specified in a Deliverable FX Option Transaction for the purposes of Full Automated Exercise or determining the In-theMoney Amount for Automatic Exercise.
+Delete this field for a Barrier Transaction that is a Binary Transaction as if “Exercise Rights” apply following the occurrence of a
+Barrier Event, the sole consequences are the payment of the Binary Amount rather than the ability of the Buyer to exercise option
+rights during an Exercise Period.
+Insert the appropriate currency, which will be the same as the Put Currency.
+Insert the appropriate currency, which will be the same as the Call Currency.
+Include Binary for a Binary Transaction with Barrier Events together with the additional fields for Barrier Events from Exhibit
+III-H (Additional Provisions for a Barrier Transaction). The use of the Option Type “Binary” has been designed primarily for a
+Binary Transaction that is a Barrier Transaction (i.e. that has one or more Barrier Events). For a “Binary” FX Option Transaction
+without Barrier Events, additional fields will be required for the payment amount and parties should consider what amendments
+to the FX Definitions are required in order to provide for the relevant payment obligations for that FX Option Transaction.
+If the Option Type is other than “Binary”, specify either (a) a Call Currency Amount and a Put Currency Amount or (b) a Strike
+Price and either a Call Currency Amount or a Put Currency Amount. If the Strike Price is to be averaged, only the Call Currency
+Amount or the Put Currency Amount should be specified as a numerical amount and the amount payable by the other party will
+be determined by reference to the Strike Price determined over Averaging Dates. Delete this field if the Option Type is “Binary”.
+
+7
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A19]: “Currency Option Style” in the 1998
+FX Definitions
+Commented [A20]: “Currency Option Type” in the 1998
+FX Definitions
+Commented [A21]: Binary was defined as an Option Style
+in the 2022 Barrier Event Supplement and it has been
+included in the 2026 FX Definitions as an Option Type.
+===== PAGE 12 =====
+[Put Currency [and Put Currency
+Amount]:
+
+[
+] / [The Call Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]9
+
+Settlement:
+
+Deliverable10
+
+[Strike Price:
+
+[
+
+] / [The Averaging Rate]]11
+
+[Commencement Date:
+
+[
+
+]]12
+
+Expiration Date:
+
+[
+
+]
+
+Expiration Time:
+
+[
+
+] [a.m./p.m.] in [
+
+]
+
+13
+
+[Earliest Exercise Time:
+
+[
+
+]]
+
+[Latest Exercise Time:
+
+[
+
+] [a.m./p.m.] in [
+
+[Automatic Exercise:
+
+Not applicable]15
+
+[Settlement Date:
+
+[The [
+] Business Day following the
+[Exercise Date] / [Barrier Event Reference
+Date]] / [
+]]16
+
+[Exercise Period:
+
+[
+
+]]14
+
+]]17
+
+9
+
+If the Option Type is other than “Binary”, specify either (a) a Call Currency Amount and a Put Currency Amount or (b) a Strike
+Price and either a Call Currency Amount or a Put Currency Amount. If the Strike Price is to be averaged, only the Call Currency
+Amount or the Put Currency Amount should be specified as a numerical amount and the amount payable by the other party will
+be determined by reference to the Strike Price determined over Averaging Dates. Delete this field if the Option Type is “Binary”.
+10
+Include this field for a Binary Transaction to facilitate the application of certain presumptions in the FX Definitions.
+11
+If the Option Type is other than “Binary”, specify either (a) a Call Currency Amount and a Put Currency Amount or (b) a Strike
+Price and either a Call Currency Amount or a Put Currency Amount. If the Strike Price is to be averaged, insert “The Averaging
+Rate” in this field and include the Averaging provisions from Exhibit III-G (Additional Provisions for Averaging the Strike Price).
+The Strike Price for a Transaction for which Averaging applies for the determination of the Strike Price will be the Averaging
+Rate for the relevant Averaging Rate Calculation Date pursuant to Section 6.2.5(iii) (Strike Price). Delete this field if the Option
+Type is “Binary”.
+12 Include this date for an American style FX Option Transaction to modify the presumption in Section 6.6.1 (Commencement Date)
+that the Commencement Date will be the Trade Date. Delete this field for a Barrier Transaction that is a Binary Transaction.
+13
+Include this field to modify the presumption in Section 6.6.6(ii) (Earliest Exercise Time) that the Earliest Exercise Time will be
+9:00 a.m. local time in the relevant financial center specified for the Expiration Time. Delete this field for a Barrier Transaction
+that is a Binary Transaction.
+14
+Include this field to modify the presumption in Section 6.6.7 (Latest Exercise Time) that the Latest Exercise Time will be the
+Expiration Time. Delete this field for a Barrier Transaction that is a Binary Transaction.
+15
+Include this field to modify the presumption in Section 6.12.1 (Presumed application of Automatic Exercise) that Automatic
+Exercise applies to an FX Option Transaction. If parties are applying Full Automated Exercise (to do so, see the Full Automated
+Exercise field below) it is not necessary to include this field. Delete this field for a Barrier Transaction that is a Binary Transaction.
+16
+Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the Settlement
+Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in accordance with
+market practice for the Currency Pair) following the Valuation Date (which, for an FX Option Transaction, is presumed to be the
+Exercise Date per Section 4.5.4(ii)(b) (Valuation Date)). Delete this field for a Barrier Transaction that is a Binary Transaction.
+17
+Include this field to modify the presumption in Section 6.6.3 (Exercise Period) that the Exercise Period for an American style FX
+Option Transaction is all Business Days from the Commencement Date to the Expiration Date. Changes to the presumed definition
+of Exercise Period may be necessary if there are multiple Exercise Periods. Delete this field for a Barrier Transaction that is a
+Binary Transaction.
+
+8
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 13 =====
+]]18
+
+[Potential Exercise Date(s):
+
+[
+
+[Premium:
+
+[
+
+]
+
+Price
+
+[
+
+]
+
+[
+
+]]
+
+Premium Payment Date:
+
+Commented [A22]: ‘Specified’ under the 1998 FX
+Definitions.
+Commented [A23]: Price (premium expressed as a
+percentage) has been removed. However, the parties are not
+prevented from expressing the Premium as a percentage,
+should they wish.
+
+Applicable19
+
+[Partial Exercise:
+[Minimum Exercise Amount:
+
+[
+
+Commented [A24]: The 1998 FX Definitions did not
+contemplate Partial Exercise.
+
+]]20]
+
+Applicable21
+
+[Multiple Exercise:
+
+Commented [A25]: The 1998 FX Definitions did not
+contemplate Multiple Exercise.
+
+22
+
+[Minimum Exercise Amount:
+
+[
+
+]]
+
+[Maximum Exercise Amount:
+
+[
+
+]]23]
+
+Applicable24
+
+[Full Automated Exercise:
+Settlement Rate equal to Strike Price
+at expiry:
+
+[Expiry at Strike] / [Exercise at Strike]
+
+Settlement Rate Option:
+
+[
+
+]26
+
+[Specified Time:
+
+[
+
+]]27
+
+[Spot Rate Fixing Day:
+
+[
+
+]]28]
+
+[
+
+]]29
+
+[Valuation Date:
+
+18
+
+25
+
+Include this field for a Bermuda style FX Option Transaction. Delete this field for a Barrier Transaction that is a Binary
+Transaction.
+19 Partial Exercise can only be applied to a European style option. Delete this field for an American or Bermuda style option or a
+Barrier Transaction that is a Binary Transaction.
+20
+Include this field to provide that partial exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.8.2 (Minimum Exercise Amount for Partial Exercise).
+21
+Multiple Exercise can only be applied to an American or Bermuda style option. Delete this field for a European style option or a
+Barrier Transaction that is a Binary Transaction.
+22
+Include this field to provide that multiple exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+23
+Include this field to provide that multiple exercise must occur in respect of an amount no greater than the specified Maximum
+Exercise Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+24
+Include these fields for a European style option if Full Automated Exercise is to apply. Delete these fields for an American or
+Bermuda style option or a Barrier Transaction that is a Binary Transaction.
+25 Include this field to apply Exercise at Strike or Expiry at Strike as the outcome in the case that the Settlement Rate is equal to the
+Strike Price in place of the presumed position that would apply pursuant to Section 6.13.2 (Procedure for Full Automated
+Exercise).
+26
+Specify the Settlement Rate Option for Full Automated Exercise.
+27
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+28
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+29
+Include this field to modify the presumption in Section 4.5.4(ii)(b) (Valuation Date) that the Valuation Date for an FX Option
+Transaction will be the Exercise Date. Delete this field and the following related fields for a Barrier Transaction that is a Binary
+Transaction.
+
+9
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A26]: New provisions in the 2026 FX
+Definitions to fully automate exercise.
+===== PAGE 14 =====
+[Settlement Rate:
+
+[
+
+] / [The Averaging Rate]]30
+
+[Settlement Rate Option:
+
+[
+
+]]31
+
+[Specified Time:
+
+[
+
+]]32
+
+[Spot Rate Fixing Day:
+
+[
+
+]]33
+
+[
+
+]]34
+
+Commented [A28]: New defined term in the 2026 FX
+Definitions.
+
+Commented [A29]: Only a field for “Business Day” was
+included in Exhibit I of the 1998 FX Definitions confirmation
+exhibits. However, it was contemplated in the 1998 FX
+Definitions main book that the Business Day for Settlement,
+Exercise and Valuation could be specified in the
+confirmation.
+
+[Rounding:
+[2.]
+
+Business Days:
+[Business Day for Payment:
+
+[
+
+]]35
+
+[Business Day for Exercise:
+
+[
+
+]]36
+
+[Business Day for Valuation:
+
+[
+
+]]37
+
+30
+
+A Settlement Rate may be specified in a Deliverable FX Option Transaction for the purposes of determining the In-the-Money
+Amount for Automatic Exercise. Include this field to modify the presumption in Section 4.1.3(i) (Settlement Rate) that the
+Settlement Rate will be the Spot Rate for the Valuation Date. Delete this field if a Settlement Rate Option is specified and
+Averaging does not apply. If the Settlement Rate is to be averaged, insert “The Averaging Rate” in this field and include the
+Averaging provisions from Exhibit III-F (Additional Provisions for Averaging the Settlement Rate). The Settlement Rate for a
+Transaction for which Averaging applies for the determination of the Settlement Rate will be the Averaging Rate for the relevant
+Averaging Rate Calculation Date pursuant to Section 4.1.3(ii) (Settlement Rate). Delete this field and the following related fields
+(i) for a Barrier Transaction that is a Binary Transaction or (ii) if Full Automated Exercise applies.
+31 Include this field to specify a Settlement Rate Option for the purposes of determining the Settlement Rate for Automatic Exercise.
+Delete this field if Full Automated Exercise applies. If the Settlement Rate is to be averaged, delete the Settlement Rate Option
+and Specified Time fields (as those fields for the purposes of Averaging are set out in the ‘Determination of the Settlement Rate’
+provisions in Exhibit III-F (Additional Provisions for Averaging the Settlement Rate)).
+32
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+33
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+34
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages
+or currency amounts. Parties should describe how they wish the relevant percentages or currency amounts to be rounded.
+35
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for Payment”
+will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts payable.
+36
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise) that
+a “Business Day for Exercise” will be (1) if a Settlement Rate Option applies for the purposes of the valuation or for determining
+the occurrence of an “Automatic Exercise” or “Full Automated Exercise”, a Publication Calendar Day, or (2) otherwise a Spot
+Market Business Day. Parties may, inter alia, specify one or more financial centers, or a Spot Market Business Day or a Currency
+Business Day. Specialist Business Day definitions also apply for certain jurisdiction. Please refer to Section 2.2 (Days). Delete
+this field for a Barrier Transaction that is a Binary Transaction. Note that Business Day for Exercise and Business Day for
+Valuation are generally expected to be the same, so parties should carefully consider the consequences of specifying different
+days.
+37
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise) that
+a “Business Day for Valuation” will be (1) if a Settlement Rate Option applies for the purposes of the valuation, a Publication
+Calendar Day, or (2) otherwise a Spot Market Business Day. Parties may, inter alia, specify one or more financial centers, or a
+Spot Market Business Day or a Currency Business Day. Specialist Business Day definitions also apply for certain jurisdiction.
+Please refer to Section 2.2 (Days). Delete this field for a Barrier Transaction that is a Binary Transaction. Note that Business Day
+for Exercise and Business Day for Valuation are generally expected to be the same, so parties should carefully consider the
+consequences of specifying different days.
+
+10
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A27]: Specified Time was defined in Annex
+A to the 1998 FX Definitions but not included in the
+confirmation exhibits
+===== PAGE 15 =====
+EXHIBIT II-C
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable FX Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+
+4
+
+5
+
+6
+7
+
+General Terms:
+[Transaction Type:
+
+Non-Deliverable FX Transaction]2
+
+Trade Date:
+
+[
+
+[Additional Provisions for NonDeliverable Transactions (EM):
+
+Applicable3
+
+]
+
+[Deferral Period Maximum Number
+of Days (EM):
+
+[
+
+]]4
+
+[Adjusted Settlement Period:
+
+[
+
+]]5]
+
+[SRO Matrix version:
+
+[
+
+]]6
+
+[Developed Markets Currency
+Provisions:
+
+Applicable/Not applicable]7
+
+This is the form of Confirmation for a Non-Deliverable FX Transaction. For additional fields for Disruption Events and Disruption
+Fallbacks, Mandatory Early Termination, Optional Early Termination and Averaging provisions, refer to Exhibit III-B (Additional
+Provisions for Non-Deliverable Disruption Events and Disruption Fallbacks), Exhibit III-C (Additional Provisions for Mandatory
+Early Termination), Exhibit III-D (Additional Provisions for Optional Early Termination), Exhibit III-E (Additional Provisions
+for Averaging the Forward Rate) and Exhibit III-F (Additional Provisions for Averaging the Settlement Rate).
+Optional field.
+Optional fields. Include the applicable fields to apply the Additional Provisions for Non-Deliverable Transactions (EM) to a
+Currency Pair that is not included in the EM Currency Matrix. For the Confirmation of a Non-Deliverable FX Transaction whose
+Currency Pair is included in the EM Currency Matrix, use Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM
+Currency Matrix)). Note that different Disruption Fallbacks will be presumed to apply, depending on whether the Currency Pair
+is or is not included in the EM Currency Matrix. Note that if parties specify ‘Applicable’ here but the Currency Pair is not in the
+EM Currency Matrix, Calculation Agent Determination of Settlement Rate (rather than Valuation Postponement) will apply as the
+first Disruption Fallback. If parties wish to change this and apply Valuation Postponement as the first Disruption Fallback, they
+can amend the presumed Disruption Fallbacks using the relevant Disruption Fallback field from Exhibit III-B (Additional
+Provisions for Non-Deliverable Disruption Events and Disruption Fallbacks). If Additional Provisions for Non-Deliverable
+Transactions (EM) apply, delete the Developed Markets Currency Provisions field below.
+Include this field to modify the presumption in Section 9.4.3(ii) (Deferral Period (EM)) that the Deferral Period Maximum Number
+of Days (EM) for a Transaction that applies the Additional Provisions for Non-Deliverable Transactions (EM) and whose Currency
+Pair is not included in the EM Currency Matrix is fourteen calendar days.
+Include this field to modify the presumption in Section 9.5.2(ii) (Adjusted Settlement Period) that the Adjusted Settlement Period
+for a Transaction that applies the Additional Provisions for Non-Deliverable Transactions (EM) and whose Currency Pair is not
+included in the EM Currency Matrix is two Business Days.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+A Non-Deliverable Transaction will be a Developed Markets Non-Deliverable Transaction, and so apply certain presumptions in
+the FX Definitions, if the Currency Pair is included in the DM Currency Matrix. Include this field and specify “Applicable” if the
+Currency Pair is not included in the DM Currency Matrix but the Transaction is to be treated as a Developed Markets NonDeliverable Transaction. If Developed Markets Currency Provisions apply, delete the Additional Provisions for Non-Deliverable
+Transactions (EM) field above.
+
+11
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A30]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions,
+however “Non-Deliverable FX Transaction” was a defined
+term under the 1998 FX Definitions.
+Commented [A31]: New field to apply the Additional
+Provisions for Non-Deliverable Transactions (EM) (based on
+the EMTA template terms) to currencies not in the EM
+Currency Matrix (e.g. the provisions in Section 9 such as
+Unscheduled Holiday (EM) Provisions).
+
+Commented [A32]: New confirmation field to
+apply/disapply the provisions for Developed Markets NonDeliverable Transactions.
+===== PAGE 16 =====
+Reference Currency:
+
+[
+
+]
+
+[Reference Currency Notional
+Amount:
+
+[
+] / [The Notional Amount
+multiplied by or divided by, as applicable, the
+Forward Rate]]8
+
+[Notional Amount:
+
+[
+] / [The Reference Currency
+Notional Amount multiplied by or divided by,
+as applicable, the Forward Rate]]9
+
+[Forward Rate:
+
+[
+
+] / [The Averaging Rate]]10
+
+Reference Currency Buyer:
+
+[
+
+]
+
+Reference Currency Seller:
+
+[
+
+]
+
+Settlement Currency:
+
+[
+
+]
+
+[Settlement Date:
+
+[
+
+]]11
+
+Settlement:
+
+Non-Deliverable
+
+[Settlement Rate:
+
+[
+
+] / [The Averaging Rate]]12
+
+[Settlement Rate Option:
+
+[
+
+]13
+
+[Specified Time:
+
+[
+
+]]14
+
+[Spot Rate Fixing Day:
+
+[
+
+]]15]
+
+8
+
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+9 Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+10
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount. If the Forward Rate is to be averaged, only one of Notional Amount and
+Reference Currency Notional Amount should be specified as a numerical amount and the other amount will be determined by
+reference to the Forward Rate determined over Averaging Dates. In this case, insert “The Averaging Rate” in this field and include
+the Averaging provisions from Exhibit III-E (Additional Provisions for Averaging the Forward Rate). The Forward Rate for a
+Transaction for which Averaging applies for the determination of the Forward Rate will be the Averaging Rate for the relevant
+Averaging Rate Calculation Date pursuant to Section 5.1.1(iii) (Forward Rate).
+11 Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the Settlement
+Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in accordance with
+market practice for the Currency Pair) following the Valuation Date. If a Valuation Date is not specified, the Settlement Date must
+be specified.
+12
+Include this field to modify the presumption in Section 4.1.3(i) (Settlement Rate) that the Settlement Rate will be the Spot Rate
+for the relevant Valuation Date. Delete this field if a Settlement Rate Option is specified and Averaging does not apply. If the
+Settlement Rate is to be averaged, insert “The Averaging Rate” in this field and include the Averaging provisions from Exhibit
+III-F (Additional Provisions for Averaging the Settlement Rate). The Settlement Rate for a Transaction for which Averaging
+applies for the determination of the Settlement Rate will be the Averaging Rate for the relevant Averaging Rate Calculation Date
+pursuant to Section 4.1.3(ii) (Settlement Rate).
+13
+Include this field to specify a Settlement Rate Option for the determination of the Settlement Rate. If the Settlement Rate is to be
+averaged, delete the Settlement Rate Option and Specified Time fields (as those fields for the purposes of Averaging are set out
+in the ‘Determination of the Settlement Rate’ provisions in Exhibit III-F (Additional Provisions for Averaging the Settlement
+Rate)).
+14
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+15
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+
+12
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A33]: This text is derived from the footnote
+for this field in the 1998 FX Definitions Exhibit and built into
+the default definition of Reference Currency Notional
+Amount in the 2026 FX Definitions but has been included
+here in case the parties want to rely on it and make the default
+transparent.
+===== PAGE 17 =====
+[2.]
+
+Valuation Date:
+
+[
+
+]16
+
+[Rounding:
+
+[
+
+]]17
+
+Calendar Adjustment Event:
+
+[Applicable - Price Adjustment] / [Applicable Portfolio Correction Transaction] / [Not
+applicable]18
+
+Business Days:
+[Business Day for Payment:
+
+[
+
+]]19
+
+[Business Day for Valuation:
+
+[
+
+]]20
+
+16
+
+Include this field to modify the presumption in Section 4.5.4(ii)(a) (Valuation Date) that the Valuation Date for an FX Transaction
+will be two Business Days prior to the Settlement Date. If a Settlement Date is not specified, the Valuation Date must be specified.
+If Averaging applies and the Settlement Rate is to be averaged, parties may specify the Valuation Date as “The final Averaging
+Date”.
+17
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+18
+Include this field and specify Applicable to apply the provisions of Section 19 (Calendar Adjustment Event). When applying
+Calendar Adjustment Event, specify one of Price Adjustment or Portfolio Correction Transaction as the applicable Calendar
+Adjustment Event Consequence. Exclude if the Additional Provisions for Non-Deliverable Transactions (EM) are specified to
+apply.
+19
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for Payment”
+will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts payable.
+20
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise) that
+a “Business Day for Valuation” of a Non-Deliverable FX Transaction will be (i) if the Transaction is a Developed Markets NonDeliverable Transaction, either (1) if a Settlement Rate Option applies for the purposes of the valuation, a Publication Calendar
+Day, or (2) otherwise a Spot Market Business Day, or (ii) in respect of any other Non-Deliverable FX Transaction either (a) a
+Currency Business Day for the Reference Currency (if a Reference Currency is specified), or (b) a Currency Business Day for
+each of the currencies that comprise the Currency Pair (if a Reference Currency is not specified). Parties may, inter alia, specify
+one or more financial centers, or a Spot Market Business Day or a Currency Business Day. Specialist Business Day definitions
+also apply for certain jurisdiction. Refer to Section 2.2 (Days).
+
+13
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 18 =====
+EXHIBIT II-D
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable FX Option Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+
+Commented [A34]: “Non-Deliverable Currency Option
+Transaction” under 1998 FX Definitions.
+
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+
+4
+
+5
+
+6
+7
+
+General Terms:
+[Transaction Type:
+
+Non-Deliverable FX Option Transaction]2
+
+Trade Date:
+
+[
+
+[Additional Provisions for NonDeliverable Transactions (EM):
+
+Applicable3
+
+]
+
+[Deferral Period Maximum Number
+of Days (EM):
+
+[
+
+]]4
+
+[Adjusted Settlement Period:
+
+[
+
+]]5
+
+[SRO Matrix version:
+
+[
+
+]]6
+
+[Developed Markets Currency
+Provisions:
+
+Applicable/Not applicable]7
+
+This is the form of Confirmation for a Non-Deliverable FX Option Transaction. For additional fields for Disruption Events and
+Disruption Fallbacks, Mandatory Early Termination, Optional Early Termination, Averaging provisions and Barrier Events, refer
+to Exhibit III-B (Additional Provisions for Non-Deliverable Disruption Events and Disruption Fallbacks), Exhibit III-C
+(Additional Provisions for Mandatory Early Termination), Exhibit III-D (Additional Provisions for Optional Early Termination),
+Exhibit III-F (Additional Provisions for Averaging the Settlement Rate), Exhibit III-G (Additional Provisions for Averaging the
+Strike Price) and Exhibit III-H (Additional Provisions for a Barrier Transaction).
+Optional field.
+Optional fields. Include the applicable fields to apply the Additional Provisions for Non-Deliverable Transactions (EM) to a
+Currency Pair that is not included in the EM Currency Matrix. For the Confirmation of a Non-Deliverable FX Transaction whose
+Currency Pair is included in the EM Currency Matrix, use Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM
+Currency Matrix)). Note that different Disruption Fallbacks will be presumed to apply, depending on whether the Currency Pair
+is or is not included in the EM Currency Matrix. If parties specify ‘Applicable’ in this field and wish to apply Valuation
+Postponement as the first Disruption Fallback, they must amend the presumed Disruption Fallbacks using the relevant Disruption
+Fallback field from Exhibit III-B (Additional Provisions for Non-Deliverable Disruption Events and Disruption Fallbacks). If the
+Additional Provisions for Non-Deliverable Transactions (EM) apply, delete the Developed Markets Currency Provisions field
+below.
+Include this field to modify the presumption in Section 9.4.3(ii) (Deferral Period (EM)) that the Deferral Period Maximum Number
+of Days (EM) for a Transaction that applies the Additional Provisions for Non-Deliverable Transactions (EM) and whose Currency
+Pair is not included in the EM Currency Matrix is fourteen calendar days.
+Include this field to modify the presumption in Section 9.5.2(ii) (Adjusted Settlement Period) that the Adjusted Settlement Period
+for a Transaction that applies the Additional Provisions for Non-Deliverable Transactions (EM) and whose Currency Pair is not
+included in the EM Currency Matrix is two Business Days.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+A Non-Deliverable Transaction will be a Developed Markets Non-Deliverable Transaction, and so apply certain presumptions in
+the FX Definitions, if the Currency Pair is included in the DM Currency Matrix. Include this field and specify “Applicable” if the
+Currency Pair is not included in the DM Currency Matrix but the Transaction is to be treated as a Developed Markets NonDeliverable Transaction. If Developed Markets Currency Provisions apply, delete the Additional Provisions for Non-Deliverable
+Transactions (EM) field above.
+
+14
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A35]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions.
+However, “Non-Deliverable Currency Option Transaction”
+was a defined term under the 1998 FX Definitions.
+===== PAGE 19 =====
+Buyer:
+
+[Party A] / [Party B]
+
+Seller:
+
+[Party A] / [Party B]
+
+[Option Style:
+
+[American] / [Bermuda] / [European]]8
+
+Option Type:
+
+[[
+[Binary]11
+
+[Call Currency [and Call Currency
+Amount]:
+
+[
+] / [The Put Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]12
+
+[Put Currency [and Put Currency
+Amount]:
+
+[
+] / [The Call Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]13
+
+Settlement:
+
+Non-Deliverable
+
+[Strike Price:
+
+[
+
+] / [The Averaging Rate]]14
+
+[Reference Currency:
+
+[
+
+]]15
+
+[Settlement Currency:
+
+[
+
+]]16
+
+] Put9 / [
+
+8
+
+] Call10] /
+
+Delete this field for a Barrier Transaction that is a Binary Transaction as if “Exercise Rights” apply following the occurrence of a
+Barrier Event, the sole consequences are the payment of the Binary Amount rather than the ability of the Buyer to exercise option
+rights during an Exercise Period.
+9
+Insert the appropriate currency, which will be the same as the Put Currency.
+10
+Insert the appropriate currency, which will be the same as the Call Currency.
+11
+Include Binary for a Binary Transaction with Barrier Events together with the additional fields for Barrier Events from Exhibit
+III-H (Additional Provisions for a Barrier Transaction). The use of the Option Type “Binary” has been designed primarily for a
+Binary Transaction that is a Barrier Transaction (i.e. that has one or more Barrier Events). For a “Binary” FX Option Transaction
+without Barrier Events, additional fields will be required for the payment amount and parties should consider what amendments
+to the FX Definitions are required in order to provide for the relevant payment obligations for that FX Option Transaction.
+12 If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates. Delete this field if the Option Type is “Binary”.
+13
+If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates. Delete this field if the Option Type is “Binary”.
+14
+If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates. If Averaging applies, insert “The Averaging Rate” in this field and include the Averaging provisions from
+Exhibit III-G (Additional Provisions for Averaging the Strike Price). The Strike Price for a Transaction for which Averaging
+applies for the determination of the Strike Price will be the Averaging Rate for the relevant Averaging Rate Calculation Date
+pursuant to Section 6.2.5(iii) (Strike Price). Delete this field if the Option Type is “Binary”.
+15
+Include this information if the In-the-Money Amount is to be calculated in accordance with the provisions of Section 7.3.1
+(Settlement Currency specified). Delete this field for a Barrier Transaction that is a Binary Transaction.
+16
+Include this information if the In-the-Money Amount is to be calculated in accordance with the provisions of Section 7.3.1
+(Settlement Currency specified). Delete this field for a Barrier Transaction that is a Binary Transaction.
+
+15
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 20 =====
+[Settlement Rate:
+
+[
+
+] / [The Averaging Rate]]17
+
+[Settlement Rate Option:
+
+[
+
+]18
+
+[Specified Time:
+
+[
+
+]]19
+
+[Spot Rate Fixing Day:
+
+[
+
+]]20]
+
+[Commencement Date:
+
+[
+
+]]21
+
+Expiration Date:
+
+[
+
+]22
+
+Expiration Time:
+
+[
+
+] [a.m./p.m.] in [
+
+]
+
+23
+
+[Earliest Exercise Time:
+
+[
+
+]]
+
+[Latest Exercise Time:
+
+[
+
+] [a.m./p.m.] in [
+
+[Automatic Exercise:
+
+Not applicable]25
+
+[Settlement Date:
+
+[The [
+] Business Day following the
+[Exercise Date] / [Barrier Event Reference
+Date]] / [
+]]26
+
+[Valuation Date:
+
+[
+
+]]24
+
+]]27
+
+17
+
+Include this field to modify the presumption in Section 4.1.3(i) (Settlement Rate) that the Settlement Rate will be the Spot Rate
+for the relevant Valuation Date. Delete this field if a Settlement Rate Option is specified and Averaging does not apply. If the
+Settlement Rate is to be averaged, insert “The Averaging Rate” in this field and include the Averaging provisions from Exhibit
+III-F (Additional Provisions for Averaging the Settlement Rate). The Settlement Rate for a Transaction for which Averaging
+applies for the determination of the Settlement Rate will be the Averaging Rate for the relevant Averaging Rate Calculation Date
+pursuant to Section 4.1.3(ii) (Settlement Rate). Delete this field for a Barrier Transaction that is a Binary Transaction.
+18
+Include this field to include a Settlement Rate Option for the determination of the Settlement Rate. Delete this field for a Barrier
+Transaction that is a Binary Transaction.
+19
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+20
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+21
+Include this field and specify a Commencement Date for an American style FX Option Transaction to modify the presumption in
+Section 6.6.1 (Commencement Date) that the Commencement Date will be the Trade Date. Delete this field for a Barrier
+Transaction that is a Binary Transaction.
+22
+If the Additional Provisions for Non-Deliverable Transactions (EM) apply, specify “The Valuation Date” in this field, and include
+a date certain in the Valuation Date field below.
+23
+Include this field to modify the presumption in Section 6.6.6(ii) (Earliest Exercise Time) that the Earliest Exercise Time will be
+9:00 a.m. local time in the relevant financial center specified for the Expiration Time. Delete this field for a Barrier Transaction
+that is a Binary Transaction.
+24
+Include this field to modify the presumption in Section 6.6.7 (Latest Exercise Time) that the Latest Exercise Time will be the
+Expiration Time. Delete this field for a Barrier Transaction that is a Binary Transaction.
+25 Include this field to modify the presumption in Section 6.12.1 (Presumed Application of Automatic Exercise) that Automatic
+Exercise applies to an FX Option Transaction. Delete this field for a Barrier Transaction that is a Binary Transaction.
+26
+Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the Settlement
+Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in accordance with
+market practice for the Currency Pair) following the Valuation Date (which, for an FX Option Transaction, is presumed to be the
+Exercise Date per Section 4.5.4(ii)(b) (Valuation Date)). Delete this field for a Barrier Transaction that is a Binary Transaction.
+27
+Include this field to modify the presumption in Section 4.5.4(ii)(b) (Valuation Date) that the Valuation Date for an FX Option
+Transaction will be the Exercise Date. Delete this field for a Barrier Transaction that is a Binary Transaction, unless the Additional
+Provisions for Non-Deliverable Transactions (EM) apply. If the Additional Provisions for Non-Deliverable Transaction apply,
+insert a date certain for the Valuation Date.
+
+16
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 21 =====
+[Exercise Period:
+
+[
+
+]]28
+
+[Potential Exercise Date(s):
+
+[
+
+]]29
+
+[Premium:
+
+[
+
+]
+
+Premium Payment Date:
+
+[
+
+[Partial Exercise:
+
+Applicable
+
+[Minimum Exercise Amount:
+
+[
+
+]]31]
+
+Applicable32
+
+[Multiple Exercise:
+[Minimum Exercise Amount:
+
+[
+
+]]33
+
+[Maximum Exercise Amount:
+
+[
+
+]]34]
+
+[
+
+]]35
+
+[
+
+]]36
+
+[Rounding:
+[2.]
+
+]]
+30
+
+Business Days:
+[Business Day for Exercise:
+
+28
+
+Include this field to modify the presumption in Section 6.6.3 (Exercise Period) that the Exercise Period for an American style FX
+Option Transaction is all Business Days from the Commencement Date to the Expiration Date. Changes to the presumed definition
+of Exercise Period may be necessary if there are multiple Exercise Periods. Delete this field for a Barrier Transaction that is a
+Binary Transaction.
+29
+Include this field for a Bermuda style FX Option Transaction. Delete this field for a Barrier Transaction that is a Binary
+Transaction.
+30
+Partial Exercise can only be applied to a European style option. Delete this field for an American or Bermuda style option or a
+Barrier Transaction that is a Binary Transaction.
+31
+Include this field to provide that partial exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.8.2 (Minimum Exercise Amount for Partial Exercise).
+32
+Multiple Exercise can only be applied to an American or Bermuda style option. Delete this field for a European style option or a
+Barrier Transaction that is a Binary Transaction.
+33 Include this field to provide that multiple exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+34
+Include this field to provide that multiple exercise must occur in respect of an amount no greater than the specified Maximum
+Exercise Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+35
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+36
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise) that
+a “Business Day for Exercise” will be (i) if the Transaction is a Developed Markets Non-Deliverable Transaction, either (1) if a
+Settlement Rate Option applies for the purposes of the valuation or for determining the occurrence of an “Automatic Exercise”, a
+Publication Calendar Day, or (2) otherwise a Spot Market Business Day, or (ii) in respect of any Non-deliverable Transaction, (a)
+a Currency Business Day for the Reference Currency (if a Reference Currency is specified) or (b) a Currency Business Day for
+each of the currencies that comprise the Currency Pair (if a Reference Currency is not specified). Parties may, inter alia, specify
+one or more financial centers, a Publication Calendar Day (if a Settlement Rate Option applies), a Spot Market Business Day or a
+Currency Business Day. Specialist Business Day definitions also apply for certain jurisdiction. Refer to Section 2.2 (Days). Delete
+this field for a Barrier Transaction that is a Binary Transaction. Note that Business Day for Exercise and Business Day for
+Valuation are generally expected to be the same, so parties should carefully consider the consequences of specifying different
+days.
+
+17
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 22 =====
+[Business Day for Payment:
+
+[
+
+]]37
+
+[Business Day for Valuation:
+
+[
+
+]]38
+
+37
+
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for Payment”
+will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts payable.
+38
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise) that
+a “Business Day for Valuation” will be (i) if the Transaction is a Developed Markets Non-Deliverable Transaction, either (1) if a
+Settlement Rate Option applies for the purposes of the valuation or for determining the occurrence of an “Automatic Exercise”, a
+Publication Calendar Day, or (2) otherwise a Spot Market Business Day, or (ii) in respect of any Non-deliverable Transaction, (a)
+a Currency Business Day for the Reference Currency (if a Reference Currency is specified) or (b) a Currency Business Day for
+each of the currencies that comprise the Currency Pair (if a Reference Currency is not specified). Parties may, inter alia, specify
+one or more financial centers, or a Spot Market Business Day or a Currency Business Day. Specialist Business Day definitions
+also apply for certain jurisdiction. Refer to Section 2.2 (Days). Delete this field for a Barrier Transaction that is a Binary
+Transaction, unless the Additional Provisions for Non-Deliverable Transactions (EM) apply. Note that Business Day for Exercise
+and Business Day for Valuation are generally expected to be the same, so parties should carefully consider the consequences of
+specifying different days.
+
+18
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 23 =====
+EXHIBIT II-E
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+4
+
+5
+
+6
+
+7
+
+General Terms:
+Transaction Type:
+
+Non-Deliverable FX Transaction
+
+EM Currency Matrix:
+
+Applicable
+
+[EM Currency Matrix version:
+
+[
+
+]]2
+
+[SRO Matrix version:
+
+[
+
+]]3
+
+Trade Date:
+
+[
+
+]
+
+Currency Pair:
+
+[
+
+]
+
+[Reference Currency Notional
+Amount:
+
+[
+] / [The Notional Amount
+multiplied by or divided by, as applicable, the
+Forward Rate]]4
+
+[Notional Amount:
+
+[
+] / [The Reference Currency
+Notional Amount multiplied by or divided by,
+as applicable, the Forward Rate]]5
+
+[Forward Rate:
+
+[
+
+] / [The Averaging Rate]]6
+
+Reference Currency Buyer:
+
+[
+
+]
+
+Reference Currency Seller:
+
+[
+
+]
+
+Settlement Date:
+
+[
+
+]7
+
+This is the form of Confirmation for a Non-Deliverable FX Transaction when the EM Currency Matrix applies. For the inclusion
+of additional fields for Averaging, see Exhibit III-E (Additional Provisions for Averaging the Forward Rate) and Exhibit III-F
+(Additional Provisions for Averaging the Settlement Rate).
+Insert this field to apply a version of the EM Currency Matrix other than the latest version as of the Trade Date.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount. If the Forward Rate is to be averaged, only one of Notional Amount and
+Reference Currency Notional Amount should be specified as a numerical amount and the other amount will be determined by
+reference to the Forward Rate determined over Averaging Dates. In this case, insert “The Averaging Rate” in this field and include
+the Averaging provisions from Exhibit III-E (Additional Provisions for Averaging the Forward Rate).
+Insert a date certain for the Settlement Date.
+
+19
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A36]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions.
+However, “Non-Deliverable FX Transaction” was a defined
+term under the 1998 FX Definitions, and the term “NonDeliverable FX Forward Transaction” was used in EMTA
+Template Terms.
+Commented [A37]: The EM Currency Matrix represents
+elections transposed from the recommended EMTA Template
+Terms into a matrix format, without substantive changes. No
+such confirmation field existed in the EMTA Templates
+because those templates directly contained the elections now
+set out in the EM Currency Matrix.
+===== PAGE 24 =====
+[Settlement Rate:
+
+The Averaging Rate]8
+
+Valuation Date:
+
+[
+
+]9
+
+[Rounding:
+
+[
+
+]]10
+
+8
+
+Delete this field if Averaging does not apply to the Settlement Rate. If the Settlement Rate is to be averaged, insert “The Averaging
+rate” in this field and include the Averaging provisions from Exhibit III-F (Additional Provisions for Averaging the Settlement
+Rate). The Settlement Rate for a Transaction for which Averaging applies for the determination of the Settlement Rate will be the
+Averaging Rate for the relevant Averaging Rate Calculation Date pursuant to Section 4.1.3(ii) (Settlement Rate).
+9
+If Averaging does not apply to the Settlement Rate, insert a date certain for the Valuation Date. If Averaging applies to the
+determination of the Settlement Rate, parties may insert “The final Averaging Date” in this field and must also include the
+Averaging provisions from Exhibit III-F (Additional Provisions for Averaging the Settlement Rate).
+10
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+
+20
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 25 =====
+EXHIBIT II-F
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+4
+5
+6
+7
+
+8
+
+General Terms:
+Transaction Type:
+
+Non-Deliverable FX Option Transaction
+
+EM Currency Matrix:
+
+Applicable
+
+[EM Currency Matrix version:
+
+[
+
+]]2
+
+[SRO Matrix version:
+
+[
+
+]]3
+
+Trade Date:
+
+[
+
+]
+
+Currency Pair:
+
+[
+
+]
+
+Buyer:
+
+[Party A] / [Party B]
+
+Seller:
+
+[Party A] / [Party B]
+
+[Option Style:
+
+European]4
+
+Option Type:
+
+[[
+[Binary]7
+
+[Call Currency [and Call Currency
+Amount]:
+
+[
+] / [The Put Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]8
+
+] Put5 [
+
+] Call6] /
+
+This is the form of Confirmation for a Non-Deliverable FX Option Transaction when the EM Currency Matrix applies. For the
+inclusion of additional fields for Averaging or Barrier Events, see Exhibit III-F (Additional Provisions for Averaging the Settlement
+Rate), Exhibit III-G (Additional Provisions for Averaging the Strike Price) and Exhibit III-H (Additional Provisions for a Barrier
+Transaction).
+Insert this field to apply a version of the EM Currency Matrix other than the latest version as of the Trade Date.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+Delete this field for a Barrier Transaction that is a Binary Transaction.
+Insert the appropriate currency, which will be the same as the Put Currency.
+Insert the appropriate currency, which will be the same as the Call Currency.
+Include Binary for a Binary Transaction with Barrier Events together with the additional fields for Barrier Events from Exhibit
+III-H (Additional Provisions for a Barrier Transaction). The use of the Option Type “Binary” has been designed primarily for a
+Binary Transaction that is a Barrier Transaction (i.e. that has one or more Barrier Events). For a “Binary” FX Option Transaction
+without Barrier Events, additional fields will be required for the payment amount and parties should consider what amendments
+to the FX Definitions are required in order to provide for the relevant payment obligations for that FX Option Transaction.
+If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates.
+
+21
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A38]: “Transaction Type” is a new defined
+term and Confirmation field under the 2026 FX Definitions.
+However, “Non-Deliverable Currency Option Transaction”
+was a defined term under the 1998 FX Definitions, and a term
+used in the recommended EMTA Template Terms.
+===== PAGE 26 =====
+[Put Currency [and Put Currency
+Amount]:
+
+[
+] / [The Call Currency Amount
+multiplied by or divided by, as applicable, the
+Strike Price]]9
+
+[Strike Price:
+
+[
+
+[Settlement Rate:
+
+The Averaging Rate]11
+
+Expiration Date:
+
+The Valuation Date
+
+Expiration Time:
+
+The time at which the Spot Rate is determined
+
+[Settlement Date:
+
+[
+
+]]12
+
+Valuation Date:
+
+[
+
+]
+
+13
+
+Premium:
+
+[
+
+]
+
+Premium Payment Date:
+
+] / [The Averaging Rate]]10
+
+[
+
+[Partial Exercise:
+
+Applicable
+
+[Minimum Exercise Amount:
+[Rounding:
+
+]
+14
+
+[
+
+]]15]
+
+[
+
+]]16
+
+9
+
+If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates.
+10
+If the Option Type is other than “Binary”, specify either a Call Currency Amount or a Put Currency Amount and a Strike Price. If
+the Strike Price is to be averaged, only one of the Call Currency Amount and the Put Currency Amount should be specified as a
+numerical amount and the amount payable by the other party will be determined by reference to the Strike Price determined over
+Averaging Dates. In this case, insert “The Averaging Rate” in this field and include the Averaging provisions from Exhibit III-G
+(Additional Provisions for Averaging the Strike Price). Delete this field for a Barrier Transaction that is a Binary Transaction.
+11
+Delete this field if Averaging does not apply to the Settlement Rate. If the Settlement Rate is to be averaged, insert “The Averaging
+Rate” in this field and include the Averaging provisions from Exhibit III-F (Additional Provisions for Averaging the Settlement
+Rate). The Settlement Rate for a Transaction for which Averaging applies for the determination of the Settlement Rate will be the
+Averaging Rate for the relevant Averaging Rate Calculation Date pursuant to Section 4.1.3(ii) (Settlement Rate).
+12
+If the Option Type is other than “Binary”, insert a date certain for the Settlement Date. Delete this field for a Barrier Transaction
+that is a Binary Transaction.
+13
+Insert a date certain for the Valuation Date.
+14
+Delete this field and the related field below for a Barrier Transaction that is a Binary Transaction.
+15
+Include this field to provide that partial exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.8.2 (Minimum Exercise Amount for Partial Exercise).
+16
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+
+22
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A39]: The recommended EMTA Template
+Terms hardcoded the Expiration Date to be the Valuation
+Date.
+Commented [A40]: The recommended EMTA Template
+Terms hardcoded the Expiration Time to be the time at which
+the Spot Rate is determined.
+===== PAGE 27 =====
+EXHIBIT II-G
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable Cross-Currency FX Transaction (EM Currency
+Matrix)
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+4
+
+5
+
+6
+
+7
+
+8
+
+Commented [A41]: Note that the concept of a crosscurrency transaction comes from the EMTA cross-currency
+templates but the approach under the 2026 FX Definitions is
+different as it leverages the elections for the Reference
+Currency in the EM Currency Matrix.
+
+General Terms:
+Transaction Type:
+
+Non-Deliverable Cross-Currency FX
+Transaction
+
+EM Currency Matrix:
+
+Applicable
+
+[EM Currency Matrix version:
+
+[
+
+]]2
+
+[SRO Matrix version:
+
+[
+
+]]3
+
+Trade Date:
+
+[
+
+]
+
+Currency Pair:
+
+[
+
+]
+
+Settlement Currency:
+
+[
+
+]4
+
+[Common Currency:
+
+[
+
+]]5
+
+[Reference Currency Notional
+Amount:
+
+[
+
+]]
+
+6
+
+[Notional Amount:
+
+[
+
+]]7
+
+[Forward Rate:
+
+[
+
+]]8
+
+This is the form of Confirmation for a Non-Deliverable Cross-Currency FX Transaction when Section 8.7 (Cross-Currency
+Transactions applying the EM Currency Matrix) and the relevant row for the Reference Currency for Non-Deliverable FX
+Transactions in the EM Currency Matrix applies.
+Insert this field to apply a version of the EM Currency Matrix other than the latest version as of the Trade Date.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+This field must be populated. Insert the Settlement Currency for the Non-Deliverable Cross-Currency FX Transaction being
+documented to override the Settlement Currency set out in the EM Currency Matrix row for Non-Deliverable FX Transactions for
+the Reference Currency that applies to this Transaction.
+Insert the currency being used for the cross to override the presumption in Section 8.5 (Common Currency) that the Common
+Currency is USD. This is the currency that forms a pair with the Reference Currency for the purposes of the Reference Currency
+Spot Rate and also forms a pair with the Settlement Currency for the purposes of the Settlement Currency Spot Rate and will be
+the currency specified as the ‘Settlement Currency’ in the EM Currency Matrix row for Non-Deliverable FX Transactions for the
+Reference Currency that applies to this Transaction.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+Specify either (a) a Notional Amount and a Reference Currency Notional Amount or (b) a Forward Rate and either a Notional
+Amount or a Reference Currency Notional Amount.
+
+23
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A42]: “Transaction Type” is a new defined
+term and Confirmation field and “Non-Deliverable CrossCurrency FX Transaction” is a new term under the 2026 FX
+Definitions. However, “Non-Deliverable Cross-Currency FX
+Transaction” was a term used in recommended EMTA
+Template Terms.
+
+Commented [A43]: This is a new defined term and
+Confirmation field under the 2026 FX Definitions - it defaults
+to USD and can be overridden in the Confirmation. The
+concept was carried over from the recommended EMTA
+Template Terms for cross-currency transactions, which use
+USD as the currency to derive the cross rate.
+===== PAGE 28 =====
+Reference Currency Buyer:
+
+[
+
+]
+
+Reference Currency Seller:
+
+[
+
+]
+
+Settlement Date:
+
+[
+
+]9
+
+Settlement Rate:
+
+Cross-Currency Settlement Rate
+[
+
+]
+
+10
+
+Commented [A44]: “Cross-Currency Settlement Rate” is a
+new term in the 2026 FX Definitions, but a term used in the
+EMTA Template Terms, which was taken from the NonDeliverable Cross Currency FX Transactions Supplement.
+
+[
+
+]]11
+
+Valuation Date:
+
+[
+
+]12
+
+Commented [A45]: “Settlement Rate Option for the
+Settlement Currency” is used in the EMTA Template Terms
+to determine the Cross Currency Settlement Rate.
+
+[Business Day for Valuation:
+
+[
+
+]]13
+
+Business Day for Payment:
+
+[
+
+]14
+
+[Rounding:
+
+[
+
+]]15
+
+Settlement Currency Settlement Rate
+Option:
+[Specified Time:
+
+9
+
+Insert a date certain for the Settlement Date.
+Include the Settlement Currency Settlement Rate Option.
+11
+Include a Specified Time for the Settlement Currency Settlement Rate Option if the Settlement Rate Option is not included in the
+SRO Matrix or if a Specified Time is not set out in that Settlement Rate Option.
+12 Insert a date certain for the Valuation Date.
+13
+This field is only required if additional financial centers need to be applied in addition to those set out in the EM Currency Matrix
+row for the Reference Currency and the Common Currency.
+14
+This field must be populated. Specify the relevant financial center(s) for a “Business Day for Payment” for the Settlement Currency
+to override the “Business Days for Payment” set out in the EM Currency Matrix row for the Reference Currency and the Common
+Currency.
+15
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+10
+
+24
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 29 =====
+EXHIBIT II-H
+to the 2026 FX Definitions
+Confirmation of a Non-Deliverable Cross-Currency FX Option Transaction (EM
+Currency Matrix)
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows: 1
+1.
+
+1
+
+2
+3
+4
+
+5
+
+6
+7
+8
+
+General Terms:
+Transaction Type:
+
+Non-Deliverable Cross-Currency FX Option
+Transaction
+
+EM Currency Matrix:
+
+Applicable
+
+[EM Currency Matrix version:
+
+[
+
+]]2
+
+[SRO Matrix version:
+
+[
+
+]]3
+
+Trade Date:
+
+[
+
+]
+
+Currency Pair:
+
+[
+
+]
+
+Settlement Currency:
+
+[
+
+]4
+
+[Common Currency:
+
+[
+
+]]5
+
+Buyer:
+
+[Party A] / [Party B]
+
+Seller:
+
+[Party A] / [Party B]
+
+Option Style:
+
+European
+
+Option Type:
+
+[[
+
+] Put6 / [
+
+Call Currency [and Call Currency
+Amount]:
+
+[
+
+]8
+
+] Call7]
+
+This is the form of Confirmation for a Non-Deliverable Cross-Currency FX Option Transaction when Section 8.7 (Cross-Currency
+Transactions applying the EM Currency Matrix) and the relevant row for the Reference Currency for Non-Deliverable FX Option
+Transactions in the EM Currency Matrix applies.
+Insert this field to apply a version of the EM Currency Matrix other than the latest version as of the Trade Date.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+This field must be populated. Insert the Settlement Currency for the Non-Deliverable Cross-Currency FX Option Transaction
+being documented to override the Settlement Currency set out in the EM Currency Matrix row for Non-Deliverable FX Option
+Transactions for the Reference Currency that applies to this Transaction.
+Insert the currency being used for the cross to override the presumption in Section 8.5 (Common Currency) that the Common
+Currency is USD. This is the currency that forms a pair with the Reference Currency for the purposes of the Reference Currency
+Spot Rate and also forms a pair with the Settlement Currency for the purposes of the Settlement Currency Spot Rate and will be
+the currency specified as the ‘Settlement Currency’ in the EM Currency Matrix row for Non-Deliverable FX Option Transactions
+for the Reference Currency that applies to this Transaction.
+Insert the appropriate currency, which will be the same as the Put Currency.
+Insert the appropriate currency, which will be the same as the Call Currency.
+Specify either a Call Currency Amount or a Put Currency Amount and a Strike Price.
+
+25
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A46]: “Transaction Type” is a new defined
+term and Confirmation field and “Non-Deliverable CrossCurrency FX Transaction” is a new term under the 2026 FX
+Definitions. However, “Non-Deliverable Cross-Currency
+Currency Option Transaction” was a term used in
+recommended EMTA Template Terms.
+===== PAGE 30 =====
+Put Currency [and Put Currency
+Amount]:
+
+[
+
+]9
+
+Strike Price:
+
+[
+
+]10
+
+Settlement Rate:
+
+Cross-Currency Settlement Rate
+
+Expiration Date:
+
+The Valuation Date
+
+Expiration Time:
+
+The time at which the Spot Rate is determined
+
+Settlement Date:
+
+[
+
+]11
+
+Settlement Currency Settlement Rate
+Option:
+
+[
+
+]12
+
+[
+
+]]13
+
+Valuation Date:
+
+[
+
+]14
+
+Premium:
+
+[
+
+]
+
+Premium Payment Date:
+
+[
+
+]
+
+[Business Day for Valuation:
+
+[
+
+]]15
+
+Business Day for Payment:
+
+[
+
+]16
+
+[Partial Exercise:
+
+Applicable
+
+[Specified Time:
+
+[Minimum Exercise Amount:
+[Rounding:
+
+[
+
+]]17]
+
+[
+
+]]18
+
+9
+
+Specify either a Call Currency Amount or a Put Currency Amount and a Strike Price.
+Specify either a Call Currency Amount or a Put Currency Amount and a Strike Price.
+11
+Insert a date certain for the Settlement Date.
+12
+Include the Settlement Currency Settlement Rate Option.
+13
+Include a Specified Time for the Settlement Currency Settlement Rate Option if the Settlement Rate Option is not included in the
+SRO Matrix or if a Specified Time is not set out in that Settlement Rate Option.
+14
+Insert a date certain for the Valuation Date.
+15
+This field is only required if additional financial centers need to be applied in addition to those set out in the EM Currency Matrix
+row for the Reference Currency and the Common Currency.
+16
+This field must be populated. Specify the relevant financial center(s) for a “Business Day for Payment” for the Settlement Currency
+to override the “Business Days for Payment” set out in the EM Currency Matrix row for the Reference Currency and the Common
+Currency.
+17
+Include this field to provide that partial exercise must occur in respect of an amount no less than the specified Minimum Exercise
+Amount, as set out in Section 6.8.2 (Minimum Exercise Amount for Partial Exercise).
+18
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of percentages,
+currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency amounts to be
+rounded.
+10
+
+26
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 31 =====
+Exhibit II-I
+to the 2026 FX Definitions
+Confirmation of a Variance Swap or a Volatility Swap
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows:
+1.
+
+General Terms:
+Transaction Type:
+
+[Variance Swap] / [Volatility Swap]
+
+Incorporation of the 2018 Volatility
+Swap, Variance Swap and Correlation
+Swap Supplement to the FX
+Definitions:
+
+Applicable
+
+Trade Date:
+
+[
+
+]
+
+[SRO Matrix version:
+
+[
+
+]]1
+
+[Notional Amount:
+
+[
+
+]]2
+
+[Vega Notional Amount:
+
+[
+
+]]3
+
+Currency Pair:
+
+[
+
+]
+
+Fixed Rate Payer:
+
+4
+
+Floating Rate Payer:
+
+1
+2
+
+3
+
+4
+
+5
+
+6
+
+Commented [A48]: Field to incorporate the 2018
+Supplement is no longer required
+
+[Party A] / [Party B]
+
+Fixed Rate:
+
+[
+5
+
+Commented [A47]: The 2018 Variance Swap, Volatility
+Swap and Correlation Swap Supplement provided the
+confirmation exhibits for these products. As such only
+changes from those confirmation forms will be
+annotated/colour-coded. The 2018 Supplement provided for
+individual confirmation exhibits for each product. The 2026
+FX Definitions exhibits provide one template for Variance
+Swaps and Volatility Swaps.
+
+]
+
+[Party B] / [Party A]
+
+Settlement Currency:
+
+[
+
+]
+
+[Settlement Date:
+
+[
+
+]]6
+
+Valuation Date:
+
+[
+
+]
+
+Settlement Rate Option:
+
+[
+
+]
+
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+Specify at least one of the Vega Notional Amount or Notional Amount. If a Vega Notional Amount is specified and a Notional
+Amount is not specified, the Notional Amount will be determined in accordance with the presumption in Section 17.6.7
+(Notional Amount (Volatility Swaps, Variance Swaps and Correlation Swaps)).
+Specify at least one of Vega Notional Amount and Notional Amount must be specified. If the Notional Amount is specified,
+the Vega Notional Amount need not be specified.
+The Fixed Rate Payer field can be amended to use the term “Buyer” if preferred. In this case, the FX Definitions deem the
+Buyer to be the Fixed Rate Payer.
+The Floating Rate Payer field can be amended to use the term “Seller”. In this case the FX Definitions deem the Seller to be
+the Floating Rate Payer.
+Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the
+Settlement Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in
+accordance with market practice for the Currency Pair) following the Valuation Date.
+
+27
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 32 =====
+[Specified Time:
+
+[
+
+]]7
+
+[Spot Rate Fixing Day:
+
+[
+
+]]8
+
+Mean Adjustment:
+
+[Applicable] / [Not applicable]9
+
+[N:
+
+[
+
+]]10
+
+[Annualization Factor:
+
+[
+
+]]11
+
+[Initial Observation Date:
+
+[
+
+]]12
+
+[Initial Observation Rate:
+
+[
+
+]]13
+
+[Observation Dates:
+
+[
+] / [The dates specified in the
+Annex hereto]]14
+
+[Transaction Fee:
+
+[
+
+]
+
+Transaction Fee Payment Date:
+
+[
+
+]
+
+Transaction Fee Payer:
+
+[Party A] / [Party B]]15
+
+[Rounding:
+[2.]
+
+[
+
+]]16
+
+[
+
+]]17
+
+Business Days:
+[Business Day for Observation:
+
+7
+
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+8
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+9
+“Mean Adjustment” must be specified as ‘Applicable’ if it is to apply.
+10
+If not specified, N will be the number of Observation Dates in the Observation Period (excluding the Initial Observation Date).
+11
+Include this field to modify the presumption that the Annualization Factor is 252.
+12
+Insert this field to modify the presumption that the Initial Observation Date is the Trade Date.
+13
+Include this field to insert the Initial Observation Rate for the Currency Pair if this has been agreed at the time of trading.
+Otherwise, this will be determined as the Observation Rate for the Currency Pair on the Initial Observation Date or, if it cannot
+be determined on the Initial Observation Date, at the Specified Time on the first preceding Business Day on which that rate is
+available.
+14
+Include this field to modify the presumption that Observation Dates are each Scheduled Observation Business Day during the
+Observation Period, being the period from, but excluding the Initial Observation Date to, and including, the Valuation Date.
+15
+Include the Transaction Fee fields if a Transaction Fee is payable. If a Transaction Fee is payable, the Transaction Fee Payer
+and Transaction Fee Payment Date must be specified.
+16
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of
+percentages, currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency
+amounts to be rounded.
+17
+Include this field to modify the presumption in Section 2.1.1(ii)(c) (Business Day for Observation) that a “Business Day for
+Observation” will be (i) if Calculation Agent Spot Rate applies, a Spot Market Business Day, (ii) if a Settlement Rate Option
+applies, a Publication Calendar Day or if Business Days for observations are to be established as at any date earlier than the
+date on which the relevant observation will be made and Publication Calendar Days for the relevant Settlement Rate Option
+cannot be determined as of that date, a Currency Business Day for each currency in the Currency Pair or (iii) if neither (i) nor
+(ii) applies, a “Business Day for Valuation” determined in accordance with Section 2.1.1(ii)(a) (Business Day for Valuation;
+Business Day for Exercise).
+
+28
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A49]: Field renamed from “Observation
+Business Days”
+===== PAGE 33 =====
+[Business Day for Payment:
+
+[
+
+]]18
+
+[Annex]19
+Observation Dates
+Observation Date
+[date]
+[date]
+
+18
+
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for
+Payment” will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts
+payable.
+19
+Only include an Annex of Observation Dates if Observation Dates are not otherwise specified or otherwise determined in
+accordance with the FX Definitions or a method specified in the Confirmation.
+
+29
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A50]: Field renamed from “Payment
+Business Days”
+===== PAGE 34 =====
+EXHIBIT II-J
+to the 2026 FX Definitions
+Confirmation of a Correlation Swap
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+The terms of the Transaction to which this Confirmation relates are as follows:
+1.
+
+General Terms:
+Transaction Type:
+
+Correlation Swap
+
+Incorporation of the 2018 Volatility
+Swap, Variance Swap and Correlation
+Swap Supplement to the FX
+Definitions:
+
+Applicable
+
+Trade Date:
+
+[
+
+]
+
+[SRO Matrix version:
+
+[
+
+]]1
+
+Notional Amount:
+
+[
+
+]
+
+Currency Pair 1:
+
+[
+
+]
+
+[
+
+]
+
+Currency Pair 2:
+Fixed Rate Payer:
+
+2
+
+[Party A] / [Party B]
+
+Fixed Rate:
+Floating Rate Payer:
+
+[
+3
+
+[Party B] / [Party A]
+
+Settlement Currency:
+
+[
+
+]
+
+[Settlement Date:
+
+[
+
+]]4
+
+Settlement Rate Option for Currency
+Pair 1:
+
+[
+
+]
+
+[
+
+]]5
+
+[Specified Time:
+
+1
+2
+
+3
+
+4
+
+5
+
+]
+
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+The Fixed Rate Payer field can be amended to use the term “Buyer” if preferred. In this case, the FX Definitions deem the
+Buyer to be the Fixed Rate Payer.
+The Floating Rate Payer field can be amended to use the term “Seller”. In this case the FX Definitions deem the Seller to be
+the Floating Rate Payer.
+Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the
+Settlement Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in
+accordance with the market practice for the Currency Pairs or, if applicable, the larger of the numbers of days determined for
+each of the currencies forming part of the Currency Pair) following the Valuation Date.
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+
+30
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A51]: The 2018 Variance Swap, Volatility
+Swap and Correlation Swap Supplement provided the
+confirmation exhibits for these products, as such only
+changes from those confirmation forms will be
+annotated/colour-coded.
+===== PAGE 35 =====
+[
+
+]]6
+
+[
+
+]
+
+[Specified Time:
+
+[
+
+]]7
+
+[Spot Rate Fixing Day:
+
+[
+
+]]8
+
+Valuation Date:
+
+[
+
+]
+
+Mean Adjustment:
+
+[Applicable] / [Not applicable]9
+
+[N:
+
+[
+
+]]10
+
+[Initial Observation Date:
+
+[
+
+]]11
+
+[Initial Observation Rate for Currency
+Pair 1:
+
+[
+
+]]12
+
+[Initial Observation Rate for Currency
+Pair 2:
+
+[
+
+]]13
+
+[Observation Dates:
+
+[
+] / [The dates specified in the
+Annex hereto]]14
+
+[Transaction Fee:
+
+[
+
+]
+
+Transaction Fee Payment Date:
+
+[
+
+]
+
+Transaction Fee Payer:
+
+[Party A] / [Party B]]15
+
+[Spot Rate Fixing Day:
+Settlement Rate Option for Currency
+Pair 2:
+
+6
+
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+8
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+9
+“Mean Adjustment” must be specified as ‘Applicable’ if it is to apply.
+10
+If not specified, N will be the number of Observation Dates in the Observation Period (excluding the Initial Observation Date).
+11 Insert this field to modify the presumption that the Initial Observation Date is the Trade Date.
+12
+Include this field to insert the Initial Observation Rate for Currency Pair 1 if this has been agreed at the time of trading.
+Otherwise, this will be determined as the Observation Rate for Currency Pair 1 on the Initial Observation Date or, if the
+Observation Rate for Currency Pair 1 or the Initial Observation Rate for Currency Pair 2 cannot be determined on the Initial
+Observation Date, at the Specified Time on the first preceding Business Day on which that rate is available for both Currency
+Pairs.
+13
+Include this field to insert the Initial Observation Rate for Currency Pair 2 if this has been agreed at the time of trading.
+Otherwise, this will be determined as the Observation Rate for Currency Pair 2 on the Initial Observation Date or, if the
+Observation Rate for Currency Pair 2 or the Initial Observation Rate for Currency Pair 1 cannot be determined on the Initial
+Observation Date, at the Specified Time on the first preceding Business Day on which that rate is available for both Currency
+Pairs.
+14
+Include this field to modify the presumption that Observation Dates are each Scheduled Observation Business Day during the
+Observation Period, being the period from, but excluding the Initial Observation Date to, and including, the Valuation Date.
+15
+Include the Transaction Fee fields if a Transaction Fee is payable. If a Transaction Fee is payable, the Transaction Fee Payer
+and Transaction Fee Payment Date must be specified.
+7
+
+31
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 36 =====
+[
+
+]]16
+
+[Business Day for Observation:
+
+[
+
+]]17
+
+[Business Day for Payment:
+
+[
+
+]]18
+
+[Rounding:
+[2.]
+
+Business Days:
+
+[Annex]19
+Observation Dates
+Observation Date
+1
+
+[date]
+
+2
+
+[date]
+
+[
+
+]
+
+[
+
+]
+
+16
+
+Include this field to modify the presumptions in Section 10.6.1 (Rounding) regarding the conventions for rounding of
+percentages, currency amounts or the Spot Rate. Parties should describe how they wish the relevant percentages or currency
+amounts to be rounded.
+17
+Include this field to modify the presumption in Section 2.1.1(ii)(c) (Business Day for Observation) that a “Business Day for
+Observation” will be (i) if Calculation Agent Spot Rate applies, a Spot Market Business Day, (ii) if a Settlement Rate Option
+applies, a Publication Calendar Day or if Business Days for observations are to be established as at any date earlier than the
+date on which the relevant observation will be made and Publication Calendar Days for the relevant Settlement Rate Option
+cannot be determined as of that date, a Currency Business Day for each currency in the Currency Pair or (iii) if neither (i) nor
+(ii) applies, a “Business Day for Valuation” determined in accordance with Section 2.1.1(ii)(a) (Business Day for Valuation;
+Business Day for Exercise).
+18
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for
+Payment” will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts
+payable.
+19
+Only include an Annex of Observation Dates if Observation Dates are not otherwise specified or otherwise determined in
+accordance with the FX Definitions or a method specified in the Confirmation.
+
+32
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A52]: Field renamed from “Observation
+Business Days”
+Commented [A53]: Field renamed from “Payment
+Business Days”
+===== PAGE 37 =====
+EXHIBIT II-K
+to the 2026 FX Definitions
+Confirmation of a Deliverable Delta Neutral Forward Volatility Agreement
+Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the Confirmation.]
+
+Commented [A54]: The 2023 Forward Volatility
+Agreement Supplement provided the confirmation exhibit for
+this product, as such only changes from that confirmation
+form will be annotated/colour-coded.
+
+The terms of the Transaction to which this Confirmation relates are as follows:1
+1.
+
+1
+
+2
+3
+
+4
+5
+6
+7
+8
+
+9
+
+General Terms:
+Transaction Type:
+
+Forward Volatility Agreement Transaction
+
+Trade Date:
+
+[
+
+]
+
+[SRO Matrix version:
+
+[
+
+]]2
+
+Buyer:
+
+[Party A] / [Party B]
+
+Seller:
+
+[Party A] / [Party B]
+
+[Currency Pair:
+
+[CCY1] / [CCY2]]3
+
+Option Style:
+
+European
+
+Option Type:
+
+Straddle
+
+FX Option One:
+
+A [CCY1]4 Put / [CCY2]5 Call
+
+FX Option Two:
+
+A [CCY2]6 Put / [CCY1]7 Call
+
+[CCY1 Notional Amount:
+
+[CCY1] [
+
+]]8
+
+[CCY2 Notional Amount:
+
+[CCY2] [
+
+]]9
+
+This Exhibit is intended to be used for a European Deliverable FVA Transaction where the Strike Price of the FX Option
+Transactions is determined on a delta-neutral basis meaning the net delta of the FX Option Transactions is zero. To confirm
+the terms of an FVA Transaction where the Option Style is not European, the Strike Price is to be determined on an at-themoney or other non-delta neutral basis or where Settlement is Non-Deliverable, bespoke modifications to this Exhibit and the
+FX Definitions are required.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date.
+Insert the currencies that comprise the Currency Pair. If not specified, the Currency Pair will be the Put Currency and Call
+Currency of FX Option One.
+Specify a currency as CCY1.
+Specify a currency as CCY2.
+Specify a currency as CCY2.
+Specify a currency as CCY1.
+Specify either (i) any one or more of the CCY1 Notional Amount, the Put Currency and Put Currency Amount for FX Option
+One, the Call Currency and Call Currency Amount for FX Option Two, or (ii) any one or more of the CCY2 Notional Amount,
+the Put Currency and Put Currency Amount for FX Option Two, and the Call Currency and Call Currency Amount for FX
+Option One. Any other CCY1 Defined Amount or CCY2 Defined Amount may be specified or, if it is not specified, will be
+determined by the Calculation Agent by reference to the amount(s) specified and the Strike Price.
+See footnote 4 above.
+
+33
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A55]: “Transaction Type” is a new defined
+term and confirmation field and “Forward Volatility
+Agreement Transaction” is a term in the 2023 Forward
+Volatility Agreement Supplement but not present in the
+corresponding exhibit. The 2023 Supplement incorporated the
+terms via the Preamble, whereas the 2026 FX Definitions
+incorporate the relevant terms by specifying “Forward
+Volatility Agreement Transaction” as a “Transaction Type”
+(or by reference to the default in the definition of FVA
+Transaction).
+===== PAGE 38 =====
+[Put Currency and Put Currency
+Amount for FX Option One:
+
+[
+
+] / [CCY1 Notional Amount]]10
+
+[Call Currency and Call Currency
+Amount for FX Option One:
+
+[
+
+]]11
+
+[Call Currency and Call Currency
+Amount for FX Option Two:
+
+[
+
+] / [CCY1 Notional Amount]]12
+
+[Put Currency and Put Currency
+Amount for FX Option Two:
+
+[
+
+]]13
+
+FVA Date:
+
+[
+
+]
+
+[FVA Time:
+
+[[
+
+] [a.m./p.m.] in [
+
+FVA Premium Currency:
+
+[CCY1] / [CCY2]15
+
+Forward Volatility:
+[FVA Premium Payment Date:
+
+[
+17
+
+]%
+
+]]14
+
+16
+
+[
+] / [Settlement Cycle Number of
+Business Days after the FVA Date] / [The
+Settlement Date]18
+
+[Settlement Cycle Number:
+
+[
+
+]]19]
+
+[Applicable] / [Not applicable]]20
+
+[Premium Discount:
+
+10
+
+See footnote 4 above.
+See footnote 4 above.
+12 See footnote 4 above.
+13
+See footnote 4 above.
+14
+Include this field to modify the presumption that the FVA Time is the time that is at or approximately at the Expiration Time.
+15
+Specify the FVA Premium Currency as CCY1 or CCY2, being the currency in which the FVA Premium will be paid by Buyer.
+16 Specify the Forward Volatility as a percentage.
+17
+Include this field to modify the presumptions in Section 18.1.28 (FVA Premium Payment Date) that the FVA Premium
+Payment Date is (i) the Settlement Cycle Number of Business Days after the FVA Date if Premium Discount is specified as
+applicable in the Confirmation or (ii) the Settlement Date if Premium Discount is not specified as applicable in the
+Confirmation.
+18 If Premium Discount is specified as “Applicable”, the FVA Premium Payment Date should be specified as “Settlement Cycle
+Number Business Days after the FVA Date” or a date which is on or shortly after the FVA Date. If Premium Discount is not
+specified or is specified as “Not applicable”, the FVA Premium Payment Date should be specified as the Settlement Date or a
+date which is shortly before or shortly after the Settlement Date. If the FVA Premium Payment Date is not specified, it will be
+determined as per Section 18.1.28 (FVA Premium Payment Date) and the presumed FVA Premium Payment Date will depend
+on whether or not Premium Discount is specified as applicable.
+19
+Include this field to modify the presumption that the Settlement Cycle Number is the Settlement Cycle for the relevant Currency
+Pair.
+20
+Specify Premium Discount as Applicable if the FVA Premium Payment Date is specified as “Settlement Cycle Number of
+Business Days after the FVA Date” or a date which is on or shortly after the FVA Date. Specify Premium Discount as Not
+Applicable if the FVA Premium Payment Date is specified as the Settlement Date or a date which is shortly before the
+Settlement Date. If Premium Discount is not specified, discounting of the FVA Premium will be determined in accordance
+with Section 18.1.27 (Premium Discount) and the outcome will depend on the date that is specified as the FVA Premium
+Payment Date.
+11
+
+34
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A56]: This field was called “Premium
+Currency” and it has been renamed “FVA Premium
+Currency”.
+Commented [A57]: This field was called “Premium
+Payment Date” and it has been renamed “FVA Premium
+Payment Date”.
+===== PAGE 39 =====
+[
+
+]21
+
+[Specified Time:
+
+[
+
+]]22
+
+[Spot Rate Fixing Day:
+
+[
+
+]]23]
+
+Expiration Date:
+
+[
+
+]
+
+Expiration Time:
+
+[
+
+] [a.m./p.m.] in [
+
+[Automatic Exercise:
+
+Not applicable]24
+
+[Settlement Date:
+
+[
+] / [Settlement Cycle Number of
+Business Days after the Expiration Date]]25
+
+[FVA Settlement Rate Option:
+
+[2.]
+
+[3.]
+
+]
+
+Business Days:
+[Business Day for Observation:
+
+[
+
+]]26
+
+[Business Day for Payment:
+
+[
+
+]]27
+
+Party A:
+
+[
+
+]
+
+Party B:
+
+[
+
+]]28
+
+Additional Provisions:
+[Notice details for notification of the
+Strike Price and FVA Premium:
+
+21
+
+Include this field to specify an FVA Settlement Rate Option for determination of the Initial Spot Rate. If the FVA Settlement
+Rate Option is not specified, the Initial Spot Rate will be Calculation Agent Spot Rate.
+22
+Include this field if the FVA Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in
+that Settlement Rate Option.
+23
+Include this field if the FVA Settlement Rate Option is not included in the SRO Matrix.
+24
+Include this field to modify the presumption in Section 6.12.1 (Presumed Application of Automatic Exercise) that Automatic
+Exercise applies to an FX Option Transaction.
+25
+Include this field and specify a Settlement Date to modify the presumption in Section 4.5.1(i) (Settlement Date) that the
+Settlement Date will be the date that is the number of relevant Business Days equal to the Settlement Cycle (determined in
+accordance with market practice for the Currency Pair) following the Expiration Date.
+26
+Include this field to modify the presumption in Section 2.1.1(ii)(c) (Business Day for Observation) that a “Business Day for
+Observation” will be (i) if Calculation Agent Spot Rate applies, a Spot Market Business Day and (ii) if a Settlement Rate
+Option applies, a Publication Calendar Day.
+27
+Include this field to modify the presumption in Section 2.1.1(ii)(b) (Business Day for Payment) that a “Business Day for
+Payment” will be a Currency Business Day for the currency or currencies of denomination of the relevant amount or amounts
+payable.
+28 Optional field. Parties may specify notice details in the Confirmation or agree them separately.
+
+35
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A58]: This field was called “FVA Business
+Day” and it has been amended to “Business Day for
+Observation”
+===== PAGE 40 =====
+EXHIBIT III-A
+to the 2026 FX Definitions
+Additional Provisions for Deliverable Disruption Events and Disruption Fallbacks
+[Include provisions from Exhibit I and from the relevant form of Confirmation for a
+Deliverable Transaction.]
+[2.]
+
+Deliverable Disruption Events and Disruption Fallbacks:
+[Applicable] / [Not applicable]]1
+
+[Specific Settlement or Conversion
+Disruption:
+[Relevant Class:
+
+[
+
+]]
+
+[Maximum Days of Postponement:
+
+[
+
+]]2
+
+[Disruption Fallbacks for presumed
+Disruption Events:
+
+[
+
+]]3
+
+[Maximum Days of Postponement:
+
+[
+
+]]4
+
+[Additional Disruption Event(s):
+
+Each of the following additional events shall
+constitute a “Disruption Event” for the purpose
+of the FX Definitions and will apply to the
+Transaction: [
+]5
+
+Disruption Fallbacks for additional
+Disruption Events:
+
+1
+2
+
+3
+
+4
+
+5
+
+6
+
+[Settlement Postponement][Calculation Agent
+Determination of Settlement Method][CashSettled Substitute][No Fault
+Termination][Other specify]6
+
+Include this field to apply Specific Settlement or Conversion Disruption.
+Include this field to specify a number of Business Days as the Maximum Days of Postponement for Settlement Postponement
+when it applies as a Disruption Fallback to Specific Settlement or Conversion Disruption, otherwise the Maximum Days of
+Postponement is zero Business Days when Settlement Postponement applies. Delete this field if Settlement Postponement does
+not apply.
+Include this field to modify any of the presumptions in the FX Definitions relating to Disruption Fallbacks. This field can be
+used to (i) include alternative Disruption Fallbacks to the presumed Disruption Fallback waterfalls in Section 11.7.1
+(Deliverable Transaction - Presumed Disruption Fallbacks) or (ii) apply Cash-Settled Substitute as a Disruption Fallback and
+modify any of the presumptions relating to Cash-Settled Substitute in Section 11.6.4 (Cash-Settled Substitute).
+Include this field to specify a number and type of days as the Maximum Days of Postponement when it applies as a Disruption
+Fallback to modify the applicable presumption in Section 11.9.11 (Maximum Days of Postponement).
+Include these fields to include and define any bespoke Disruption Event(s) not contemplated in the FX Definitions and the
+applicable Disruption Fallback(s). If one or more bespoke Disruption Events are included, they will need to be clearly defined,
+the presumed hierarchy in Section 11.3.3 (Hierarchy of Deliverable Disruption Events) may need to be modified accordingly
+and applicable Disruption Fallbacks will need to be specified in respect of each additional Disruption Event.
+Consider including more than one Disruption Fallback and ordering the specified Disruption Fallbacks in a waterfall to ensure
+that an outcome can be determined, in case that the first Disruption Fallback does not yield a way to settle the Transaction.
+
+36
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A59]: The Additional Provisions for
+Disruption Events and Disruption Fallbacks were combined
+for Deliverable and Non-Deliverable Transactions under
+Exhibit II-E of the 1998 FX Definitions, and have been
+divided into two separate exhibits in these 2026 FX
+Definitions confirmation forms.
+
+Commented [A60]: This Disruption Event is a merger of
+(and so replaces) the "Specific Inconvertibility" and "Specific
+Non-Transferability" Disruption Events in the 1998 FX
+Definitions. It must be specified in the Confirmation as
+‘Applicable’ to apply to a Transaction.
+Commented [A61]: This field was included under
+“Specific Inconvertibility” and “Specific Non-transferability”
+Disruption Events and it has not been carried over to the 2026
+FX Definitions.
+Commented [A62]: The equivalent field in the 1998 FX
+Definitions was called “Maximum Days of Disruption”.
+Commented [A63]: This Confirmation field was not
+needed in the 1998 FX Definitions because there were no
+presumed Deliverable Disruption Events.
+
+Commented [A64]: This new field is added to give
+flexibility for parties to define their own Disruption Events
+outside of the 2026 FX Definitions. The 1998 FX Definitions
+Confirmation exhibits gave the ability to specify other
+Disruption Events defined in the book as separate
+Confirmation fields, but did not contemplate that parties
+would define their own Disruption Events in the
+Confirmation.
+Note that "Benchmark Obligation Default", "Dual Exchange
+Rate", "General Inconvertibility", "General NonTransferability", "Governmental Authority Default",
+"Illiquidity", "Inconvertibility/Non-Transferability", "Specific
+Inconvertibility" and Specific Non-Transferability" are no
+longer valid Disruption Event elections under the 2026 FX
+Definitions.
+Commented [A65]: New Disruption Fallback in the 2026
+FX Definitions.
+Commented [A66]: Updated name for “Non-Deliverable
+Substitute” Disruption Fallback in the 1998 FX Definitions.
+===== PAGE 41 =====
+[Maximum Days of Postponement:
+
+[
+
+]]7]
+
+[Offshore CNY Disruption Event Provisions:8
+Offshore CNY Transaction:
+
+Applicable
+
+Additional Disruption Event
+Provisions for an Offshore Deliverable
+CNY Transaction (2021 Definitions)
+and ISDA Offshore Deliverable CNY
+Transaction Disruption Fallback
+Matrix:
+
+Applicable
+
+[Offshore CNY Center:
+
+[
+
+[Alternative Settlement (Offshore
+CNY):
+
+Disapplied]10
+
+[Currency Pair:
+
+[
+
+[Financial Center(s) for Chinese
+Renminbi:]
+
+[[Beijing, Hong Kong] [, insert other CNY
+financial center(s)]]
+
+Commented [A67]: The equivalent Confirmation field as
+per the Additional Provisions for a Confirmation of an
+Offshore Deliverable CNY was “Additional Disruption Event
+Provisions for an Offshore Deliverable CNY Transaction and
+ISDA Offshore Deliverable CNY Transaction Disruption
+Fallback Matrix: Applicable”.
+Commented [A68]: Incorporation of the Offshore CNY
+Disruption Event provisions is no longer achieved via this
+election.
+
+]]9
+
+]]11]
+
+7
+
+Include this field to specify a number of Business Days as the Maximum Days of Postponement for Settlement Postponement
+when it applies as a Disruption Fallback to an additional Disruption Event, otherwise the Maximum Days of Postponement is
+zero Business Days.
+8
+Include these fields for an Offshore CNY Transaction.
+9
+Include this field to modify the presumption in Section 12.2.2 (Offshore CNY Center) that the Offshore CNY Center is Hong
+Kong.
+10
+Include this field to disapply Alternative Settlement (Offshore CNY) as a Disruption Fallback where the Offshore CNY Center
+is not Hong Kong. If the Offshore CNY Center is Hong Kong, delete this field.
+11
+Include this field to modify the presumption in Section 12.8.3 (Currency Pair (Offshore CNY)) that the Currency Pair is
+CNY/USD.
+
+37
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A69]: This is a new Confirmation field
+relating to new provisions in the 2026 FX Definitions - not in
+the 1998 FX Definitions or the Additional Disruption Event
+Provisions for an Offshore Deliverable CNY Transaction.
+===== PAGE 42 =====
+Draft Linklaters LLP/11/02/2026
+
+EXHIBIT III-B
+to the 2026 FX Definitions
+Additional Provisions for Non-Deliverable Disruption Events and Disruption
+Fallbacks
+[Include provisions from Exhibit I and from the relevant form of Confirmation for a NonDeliverable Transaction to which the EM Currency Matrix does not apply.]
+[2.]
+
+Non-Deliverable Disruption Events and Disruption Fallbacks:
+[Disruption Fallbacks for Price Source
+Disruption:1
+
+2
+
+3
+
+4
+
+5
+6
+
+7
+
+Commented [A71]: This Disruption Fallback was not
+included in the 1998 FX Definitions but was defined in the
+recommended EMTA Template Terms.
+Commented [A72]: This Disruption Fallback was not
+included in the 1998 FX Definitions but was defined in the
+recommended SFEMC/EMTA Template Terms.
+
+[Maximum Days of Postponement:
+
+[
+
+]]3
+
+[Fallback Reference Price:
+
+[
+
+]]4]
+
+Commented [A73]: Note that Maximum Days of
+Postponement on this exhibit is in relation to Valuation
+Postponement, whereas Maximum Days of Postponement in
+Exhibit III-A is in relation to certain presumed Deliverable
+Disruption Fallbacks.
+
+]]6
+
+Commented [A74]: This is an update of the “Illiquidity”
+Disruption Event in the 1998 FX Definitions.
+
+Applicable5
+
+[Settlement Rate Illiquidity:
+
+1
+
+[Valuation Postponement][Fallback Reference
+Price][Fallback Survey Valuation
+Postponement]2[Calculation Agent
+Determination of Settlement Rate] [No Fault
+Termination][Other - specify]]
+
+Commented [A70]: The Additional Provisions for
+Disruption Events and Disruption Fallbacks were combined
+for Deliverable and Non-Deliverable Transactions under
+Exhibit II-E of the 1998 FX Definitions, and have been
+divided into two separate exhibits in these 2026 FX
+Definitions confirmation forms.
+
+[Minimum Amount:
+
+[
+
+[Disruption Fallbacks for Settlement
+Rate Illiquidity:7
+
+[Valuation Postponement][Fallback Reference
+Price][Fallback Survey Valuation
+
+Include this field if the Additional Provisions for Non-Deliverable Transactions (EM) are specified to apply to a Currency Pair
+that is not included in the EM Currency Matrix and the parties wish to apply Valuation Postponement as the first Disruption
+Fallback, in line with the approach in the EM Currency Matrix. In that case, parties must specify Valuation Postponement and
+any other applicable Disruption Fallbacks, in a clear order, in this field.
+Fallback Survey Valuation Postponement is designed to work as an additional fallback in a waterfall containing Fallback
+Reference Price, where the Fallback Reference Price is an administrator-sponsored indicative survey rate. Fallback Survey
+Valuation Postponement should not be used if the Fallback Reference Price is not an administrator-sponsored indicative survey
+rate.
+Include this field to specify a number and type of days as the Maximum Days of Postponement for Valuation Postponement
+when it applies as a Disruption Fallback to Price Source Disruption, otherwise the presumed Maximum Days of Postponement
+is fourteen calendar days.
+Include this field to use Fallback Reference Price as a Disruption Fallback. There is no presumed Fallback Reference Price so
+at least one Settlement Rate Option or method for determining the Settlement Rate must be specified if Fallback Reference
+Price is to apply.
+Include this field to apply Settlement Rate Illiquidity.
+Include this field to modify the presumption in Section 11.9.12 (Minimum Amount) that the Minimum Amount is the Reference
+Currency Notional Amount.
+Include this field to modify the presumption in Section 11.7.2(ii) (Non-Deliverable Transaction - Presumed Disruption
+Fallbacks) that the Fallback Reference Price specified (if any) and Calculation Agent Determination of Settlement Rate are
+the Disruption Fallbacks for Settlement Rate Illiquidity. If one or more Disruption Fallbacks are specified in this field, the
+Disruption Fallbacks specified will apply, in the order specified, in addition to No Fault Termination as the final fallback in
+accordance with Section 11.7.4 (Application of No Fault Termination).
+
+38
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 43 =====
+Draft Linklaters LLP/11/02/2026
+
+Postponement]8[Calculation Agent
+Determination of Settlement Rate][No Fault
+Termination][Other - specify]]
+[Maximum Days of Postponement:
+
+[
+
+]]9
+
+[Fallback Reference Price:
+
+[
+
+]]10]
+
+Applicable11
+
+[Price Materiality:
+Primary Rate:
+
+[
+
+]12
+
+Secondary Rate:
+
+[
+
+]13
+
+Price Materiality Percentage:
+
+[
+
+]14
+
+[Disruption Fallbacks for Price
+Materiality:15
+
+[Valuation Postponement][Fallback Reference
+Price][Fallback Survey Valuation
+Postponement]16[Calculation Agent
+Determination of Settlement Rate][No Fault
+Termination][Other - specify]]
+
+[Maximum Days of Postponement:
+
+[
+
+]]17
+
+8
+
+Fallback Survey Valuation Postponement is designed to work as an additional fallback in a waterfall containing Fallback
+Reference Price, where the Fallback Reference Price is an administrator-sponsored indicative survey rate. Fallback Survey
+Valuation Postponement should not be used if the Fallback Reference Price is not an administrator-sponsored indicative survey
+rate.
+9
+Include this field to specify a number and type of days as the Maximum Days of Postponement for Valuation Postponement
+when it applies as a Disruption Fallback to Settlement Rate Illiquidity, otherwise the presumed Maximum Days of
+Postponement is fourteen calendar days.
+10
+Include this field to use Fallback Reference Price as a Disruption Fallback. There is no presumed Fallback Reference Price so
+at least one Settlement Rate Option or method for determining the Settlement Rate must be specified if Fallback Reference
+Price is to apply.
+11
+Include this field to apply Price Materiality.
+12
+Specify a Settlement Rate Option for the purpose of determining the Primary Rate.
+13
+Specify a Settlement Rate Option for the purpose of determining the Secondary Rate.
+14
+Specify a percentage.
+15
+Include this field to modify the presumption in Section 11.7.2(ii) (Non-Deliverable Transaction - Presumed Disruption
+Fallbacks) that the Fallback Reference Price specified (if any) and Calculation Agent Determination of Settlement Rate are
+the Disruption Fallbacks for Price Materiality. If one or more Disruption Fallbacks are specified in this field, the Disruption
+Fallbacks specified will apply, in the order specified, in addition to No Fault Termination as the final fallback in accordance
+with Section 11.7.4 (Application of No Fault Termination).
+16 Fallback Survey Valuation Postponement is designed to work as an additional fallback in a waterfall containing Fallback
+Reference Price, where the Fallback Reference Price is an administrator-sponsored indicative survey rate. Fallback Survey
+Valuation Postponement should not be used if the Fallback Reference Price is not an administrator-sponsored indicative survey
+rate.
+17
+Include this field to specify a number and type of days as the Maximum Days of Postponement for Valuation Postponement
+when it applies as a Disruption Fallback to Price Materiality, otherwise the presumed Maximum Days of Postponement is
+fourteen calendar days.
+
+39
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 44 =====
+Draft Linklaters LLP/11/02/2026
+
+[Fallback Reference Price:
+
+[
+
+[Additional Disruption Event(s):
+
+]]18]
+
+Each of the following additional events shall
+constitute a “Disruption Event” for the purpose
+of the FX Definitions and will apply to the
+Transaction: [
+]19
+
+Disruption Fallbacks for additional
+Disruption Events:
+
+[Valuation Postponement][Fallback Reference
+Price][Fallback Survey Valuation
+Postponement]20[Calculation Agent
+Determination of Settlement Rate][No Fault
+Termination][Other - specify]21
+
+[Maximum Days of Postponement:
+
+[
+
+]]22
+
+[Fallback Reference Price:
+
+[
+
+]]23]
+
+18
+
+Include this field to use Fallback Reference Price as a Disruption Fallback. There is no presumed Fallback Reference Price so
+at least one Settlement Rate Option or method for determining the Settlement Rate must be specified if Fallback Reference
+Price is to apply.
+19
+Include these fields to include and define any bespoke Disruption Event(s) not contemplated in the FX Definitions and the
+applicable Disruption Fallback(s). Applicable Disruption Fallbacks will need to be clearly defined and specified in respect of
+each additional Disruption Event.
+20
+Fallback Survey Valuation Postponement is designed to work as an additional fallback in a waterfall containing Fallback
+Reference Price, where the Fallback Reference Price is an administrator-sponsored indicative survey rate. Fallback Survey
+Valuation Postponement should not be used if the Fallback Reference Price is not an administrator-sponsored indicative survey
+rate.
+21
+Consider including more than one Disruption Fallback and ordering the specified Disruption Fallbacks in a waterfall to ensure
+that an outcome can be determined, in case that the first Disruption Fallback does not yield a way to determine the Settlement
+Rate.
+22
+Include this field to specify a number and type of Business Days as the Maximum Days of Postponement for Valuation
+Postponement when it applies as a Disruption Fallback to an additional Disruption Event, otherwise the Maximum Days of
+Postponement is fourteen calendar days.
+23
+Include this field to use Fallback Reference Price as a Disruption Fallback. There is no presumed Fallback Reference Price so
+at least one Settlement Rate Option or method for determining the Settlement Rate must be specified if Fallback Reference
+Price is to apply.
+
+40
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A75]: Note that "Benchmark Obligation
+Default", "Dual Exchange Rate", "General Inconvertibility",
+"General Non-Transferability", "Governmental Authority
+Default", "Illiquidity", "Inconvertibility/Non-Transferability",
+"Specific Inconvertibility" and Specific Non-Transferability"
+are no longer valid Disruption Event elections under the 2026
+FX Definitions.
+===== PAGE 45 =====
+EXHIBIT III-C
+to the 2026 FX Definitions
+Additional Provisions for Mandatory Early Termination
+[Include provisions from Exhibit I and from the relevant form of Confirmation from Exhibit
+II.]
+[2.]
+
+Early Termination:
+
+Note that only field changes from Exhibit II-A of the OET
+Additional Provisions are annotated/colour coded below.
+
+Mandatory Early Termination:
+[3.]
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Commented [A76]: ‘Mandatory Early Termination’ is a
+concept that has been introduced in the 2026 FX Definitions.
+The 2012 Additional Provisions to the 1998 FX and Currency
+Option Definitions only contemplated ‘Optional Early
+Termination’.
+
+Applicable
+
+Settlement Terms:
+Mandatory Early Termination Date:
+
+[
+
+]
+
+[OET/MET Cash Settlement Method:
+
+[
+
+]]1
+
+[Cash Settlement Reference Dealers:
+
+[
+
+]]2
+
+[Quotation Rate:
+
+[bid] / [offer] / [mid]]3
+
+[OET/MET Cash Settlement
+Currency:
+
+[
+
+]]4
+
+OET/MET Cash Settlement Valuation
+Time:
+
+[
+
+]5
+
+[OET/MET Cash Settlement Valuation
+Date:
+
+[
+
+]]6
+
+Include this field to modify the presumption in Section 14.3.2 (OET/MET Cash Settlement Method) that Cash Price - FX
+Method is the OET/MET Cash Settlement Method. If using this field, describe the applicable OET/MET Cash Settlement
+Method in enough detail to ensure that the Transaction can be settled using that method.
+Include if the OET/MET Cash Settlement Method is Cash Price – FX Method. Insert the names of up to five institutions. If
+not specified, the Cash Settlement Reference Dealers will be five institutions agreed between the parties by the OET/MET
+Cash Settlement Valuation Time on the OET/MET Cash Settlement Valuation Date or, failing agreement, five leading dealers
+selected by the Calculation Agent in accordance with Section 14.3.4 (Cash Settlement Reference Dealers).
+Include if the OET/MET Cash Settlement Method is Cash Price – FX Method to modify the presumption in Section 14.3.9
+(Quotation Rate) that the Quotation Rate is “mid”.
+Include this field to modify the presumption in Section 14.3.5 (OET/MET Cash Settlement Currency) that the OET/MET Cash
+Settlement Currency is (i) the currency or currencies agreed by the parties by the OET/MET Cash Settlement Valuation Time
+on the OET/MET Cash Settlement Valuation Date, or (ii) if not so agreed, either (a) the Settlement Currency (if one is
+specified), or (b) if (a) does not apply, the currency of the Premium (if a Premium is specified), or (c) if neither (a) nor (b)
+applies, the relevant Termination Currency under the Relevant Master Agreement.
+If the OET/MET Cash Settlement Valuation Time is not specified, but a Settlement Rate Option applies, the OET/MET Cash
+Settlement Valuation Time will be the Specified Time for the purpose of the applicable Settlement Rate Option in accordance
+with Section 14.3.8 (OET/MET Cash Settlement Valuation Time). If no Settlement Rate Option applies to the Transaction, the
+OET/MET Cash Settlement Valuation Time must be specified.
+If the OET/MET Cash Settlement Valuation Date is not specified, the OET/MET Cash Settlement Valuation Date will be the
+day in respect of which the currency exchange rate would be determined for foreign exchange transactions in the relevant
+Currency Pair or Currency Pairs for value on the Mandatory Early Termination Date pursuant to Section 14.3.6 (OET/MET
+Cash Settlement Valuation Date).
+
+41
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A77]: The equivalent field under the 2012
+Additional Provisions was “Cash Settlement Method”
+
+Commented [A78]: The equivalent field under the 2012
+Additional Provisions was “Cash Settlement Currency”.
+Commented [A79]: The equivalent field under the 2012
+Additional Provisions was “Cash Settlement Valuation
+Time”.
+Commented [A80]: The equivalent field under the 2012
+Additional Provisions was “Cash Settlement Valuation Date”.
+===== PAGE 46 =====
+[4.]
+
+7
+
+8
+
+9
+
+Business Days:
+[Business Day for Valuation:
+
+[
+
+]]7
+
+[Business Day Convention for
+Mandatory Early Termination Date:
+
+[
+
+]]8
+
+[Business Day Convention for
+OET/MET Cash Settlement Valuation
+Date:
+
+[
+
+]]9
+
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise)
+that a “Business Day for Valuation” will be (1) if a Settlement Rate Option applies for the purposes of the valuation or for
+determining the occurrence of an “Automatic Exercise” or “Full Automated Exercise”, a Publication Calendar Day, or (2)
+otherwise a Spot Market Business Day. Parties may, inter alia, specify one or more financial centers, or a Spot Market Business
+Day or a Currency Business Day. Specialist Business Day definitions also apply for certain jurisdictions. Please refer to Section
+2.2 (Days).
+Include this field to modify the presumption in Section 14.2.3 (Business Day Convention for the Mandatory Early Termination
+Date) that the Following Business Day Convention applies to the Mandatory Early Termination Date.
+Include this field to modify the presumption in Section 14.3.7 (Business Day Convention for OET/MET Cash Settlement
+Valuation Date) that the Preceding Business Day Convention applies to the OET/MET Cash Settlement Valuation Date.
+
+42
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A81]: The equivalent field under the 2012
+Additional Provisions was “Business Day Convention for
+Cash Settlement Payment Date”.
+===== PAGE 47 =====
+EXHIBIT III-D
+to the 2026 FX Definitions
+Additional Provisions for Optional Early Termination
+[Include provisions from Exhibit I and from the relevant form of Confirmation from Exhibit
+II.]
+[2.]
+
+Early Termination:
+Optional Early Termination:
+
+Applicable
+
+[Buyer:
+
+[
+
+]]1
+
+[Seller:
+
+[
+
+]]2
+
+Option Style:
+
+[American] / [Bermuda] / [European]
+
+[Optional Early Termination Date:
+
+[
+
+]]3
+
+Commented [A82]: Under the 2012 Additional Provisions
+for Optional Early Termination, rather than fields for “Buyer”
+and “Seller”, if only one party has the right to exercise the
+Optional Early Termination, an “Exercising Party” and “NonExercising Party” needed to be specified in the Confirmation.
+Commented [A83]: Named “Bermudan” in 2012
+Additional Provisions for Optional Early Termination.
+
+[3.]
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+[Procedure for Exercise:]
+[Commencement Date:
+
+[
+
+]]4
+
+[Exercise Period:
+
+[
+
+]]5
+
+[Potential Exercise Date(s):
+
+[
+
+]]6
+
+[Expiration Date:
+
+[
+
+]]
+
+7
+
+[Earliest Exercise Time:
+
+[
+
+]]8
+
+Specify a Buyer only or a Seller only to modify the presumption in Section 6.1 (Parties to an FX Option Transaction or a
+Transaction to which Optional Early Termination applies) that each party is the Buyer.
+Specify a Buyer only or a Seller only to modify the presumption in Section 6.1 (Parties to an FX Option Transaction or a
+Transaction to which Optional Early Termination applies) that each party is the Seller.
+Include this field if (1) OET Cash Settlement does not apply, unless relying on the presumption in Section 14.1.7 (Optional
+Early Termination Date) that the Optional Early Termination Date is the Exercise Date or, if a date for settlement is set out in
+the settlement provisions, that date, or (2) if OET Cash Settlement applies, unless relying on the presumption in Section 14.1.7
+(Optional Early Termination Date) that the Optional Early Termination Date is the OET Cash Settlement Payment Date in
+respect of the applicable Exercise Date.
+Include this date for an American style Optional Early Termination Right to modify the presumption in Section 6.6.1
+(Commencement Date) that the Commencement Date will be the Trade Date.
+Include this field to modify the presumption in Section 6.6.3 (Exercise Period) that the Exercise Period for an American style
+Optional Early Termination Right is all Business Days from the Commencement Date to the Expiration Date. Changes to the
+presumed definition of Exercise Period may be necessary if there are multiple Exercise Periods.
+Include this field to modify the presumption in Section 6.6.8 (Potential Exercise Date) that a Potential Exercise Date for a
+Bermuda style Optional Early Termination Right will occur on the day that is five Business Days prior to the OET Cash
+Settlement Payment Date.
+Include this field to modify the presumption in Section 6.6.4 (Expiration Date) that the Expiration Date for an Optional Early
+Termination Right is the day that is five Business Days prior to the OET Cash Settlement Payment Date.
+Include this field to modify the presumption in Section 6.6.6(ii) (Earliest Exercise Time) that the Earliest Exercise Time will
+be 9:00 a.m. local time in the relevant financial center specified for the Expiration Time.
+
+43
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A84]: The equivalent term was named
+“Bermudan Early Termination Exercise Dates” in 2012
+Additional Provisions for Optional Early Termination but
+there was no specific confirmation field for it.
+===== PAGE 48 =====
+[Latest Exercise Time:
+
+[
+
+]]9
+
+[Expiration Time:
+
+[
+
+] [a.m./p.m.] in [
+
+[Partial Exercise:
+
+Applicable11
+
+[Minimum Exercise Amount:
+
+[
+
+]]12]
+
+Commented [A85]: The 2012 Additional Provisions for
+Optional Early Termination did not contemplate ‘Partial
+Exercise’.
+Commented [A86]: The 2012 Additional Provisions for
+Optional Early Termination did not contemplate ‘Multiple
+Exercise’.
+
+Applicable13
+
+[Multiple Exercise:
+
+[4.]
+
+]]10
+
+[Minimum Exercise Amount:
+
+[
+
+]]14
+
+[Maximum Exercise Amount:
+
+[
+
+]]15]
+
+Settlement Terms:
+[Applicable] / [Not applicable]]16
+
+[OET Cash Settlement:
+
+17
+
+[OET/MET Cash Settlement Method:
+
+[
+
+]]
+
+[OET/MET Cash Settlement Valuation
+Time:
+
+[
+
+]]18
+
+[
+
+19
+
+[OET/MET Cash Settlement Valuation
+Date:
+
+]]
+
+9
+
+Include this field to modify the presumption in Section 6.6.7 (Latest Exercise Time) that the Latest Exercise Time will be the
+Expiration Time.
+10
+Specify the Expiration Time if the Transaction is not an FX Option Transaction. If the Transaction is an FX Option Transaction,
+include this field to modify the presumption in Section 6.6.5(i) (Expiration Time) that the Expiration Time is the Expiration
+Time of the FX Option Transaction.
+11
+Partial Exercise can only be applied to a European style Optional Early Termination Right. Delete this field for an American
+or Bermuda style Optional Early Termination Right.
+12
+Include this field to provide that partial exercise must occur in respect of an amount no less than the specified Minimum
+Exercise Amount, as set out in Section 6.8.2 (Minimum Exercise Amount for Partial Exercise).
+13
+Multiple Exercise can only be applied to an American or Bermuda style Optional Early Termination Right. Delete this field
+for a European style Optional Early Termination Right.
+14
+Include this field to provide that multiple exercise must occur in respect of an amount no less than the specified Minimum
+Exercise Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+15 Include this field to provide that multiple exercise must occur in respect of an amount no greater than the specified Maximum
+Exercise Amount, as set out in Section 6.9.3 (Maximum Exercise Amount and Minimum Exercise Amount).
+16
+Include this field to modify the presumption in Section 14.1.5 (Application of OET Cash Settlement) that OET Cash Settlement
+will apply. If Cash Settlement is not applicable, include details of the intended manner of settlement under ‘Alternative
+settlement provisions’ below otherwise the Transaction will terminate without payment pursuant to Section 14.1.6(ii)
+(Consequences of the Exercise of an Optional Early Termination Right).
+17
+Include this field to modify the presumption in Section 14.3.2 (OET/MET Cash Settlement Method) that Cash Price - FX
+Method is the OET/MET Cash Settlement Method. If using this field, describe the applicable OET/MET Cash Settlement
+Method in enough detail to ensure that the Transaction can be settled using that method.
+18
+If the OET/MET Cash Settlement Valuation Time is not specified, but a Settlement Rate Option applies, the OET/MET Cash
+Settlement Valuation Time will be the Specified Time for the purpose of the applicable Settlement Rate Option in accordance
+with Section 14.3.8 (OET/MET Cash Settlement Valuation Time). If no Settlement Rate Option applies to the Transaction, the
+OET/MET Cash Settlement Valuation Time must be specified.
+19
+If the OET/MET Cash Settlement Valuation Date is not specified, the OET/MET Cash Settlement Valuation Date will be the
+day in respect of which the currency exchange rate would be determined for foreign exchange transactions in the relevant
+Currency Pair or Currency Pairs for value on the OET Cash Settlement Payment Date pursuant to Section 14.3.6 (OET/MET
+Cash Settlement Valuation Date).
+
+44
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A87]: This equivalent term/field was named
+“Cash Settlement” under the 2012 Additional Provisions for
+Optional Early Termination.
+Commented [A88]: The equivalent term/field was named
+“Cash Settlement Method” under the 2012 Additional
+Provisions.
+Commented [A89]: This field was named “Cash
+Settlement Valuation Time” under the 2012 Additional
+Provisions.
+Commented [A90]: This field was named “Cash
+Settlement Valuation Date” under the 2012 Additional
+Provisions.
+===== PAGE 49 =====
+[OET Cash Settlement Payment Date:
+
+[5.]
+
+[
+
+]]
+
+[OET/MET Cash Settlement Currency: [
+
+]]
+
+20
+
+[Cash Settlement Reference Dealers:
+
+[
+
+]]21
+
+[Quotation Rate:
+
+[[bid] / [offer] / [mid]] / [Exercising Party
+Pays]]22
+
+[Alternative settlement provisions:
+
+[
+
+]]23
+
+Commented [A91]: This is a new optional field under the
+2026 FX Definitions. Under the 2012 Additional Provisions,
+the trade either ‘Cash Settled’ or terminated without
+settlement (unless bespoke provisions were drafted into the
+confirmation).
+
+[Business Day for Exercise:
+
+[
+
+]]24
+
+[Business Day for Valuation:
+
+[
+
+]]25
+
+Commented [A92]: Equivalent field was named “Exercise
+Business Day”
+
+[Business Day Convention for OET
+Cash Settlement Payment Date:
+
+[
+
+]]26
+
+Business Days:
+
+20
+
+Include this field to modify the presumption in Section 14.3.5 (OET/MET Cash Settlement Currency) that the OET/MET Cash
+Settlement Currency is (i) the currency or currencies agreed by the parties by the OET/MET Cash Settlement Valuation Time
+on the OET/MET Cash Settlement Valuation Date, or (ii) if not so agreed, either (a) the Settlement Currency (if one is
+specified), or (b) if (a) does not apply, the currency of the Premium (if a Premium is specified), or (c) if neither (a) nor (b)
+applies, the relevant Termination Currency under the Relevant Master Agreement.
+21
+Include if the OET/MET Cash Settlement Method is Cash Price – FX Method. Insert the names of up to five institutions. If
+not specified, the Cash Settlement Reference Dealers will be five institutions agreed between the parties by the OET/MET
+Cash Settlement Valuation Time on the OET/MET Cash Settlement Valuation Date or, failing agreement, five leading dealers
+selected by the Calculation Agent in accordance with Section 14.3.4 (Cash Settlement Reference Dealers).
+22 Include if the OET/MET Cash Settlement Method is Cash Price – FX Method to modify the presumption in Section 14.3.9
+(Quotation Rate) that the Quotation Rate is “mid”.
+23
+If OET Cash Settlement does not apply, include alternative settlement provisions, unless relying on the presumption that the
+Transaction will terminate without payment pursuant to Section 14.1.6(ii) (Consequences of the Exercise of an Optional Early
+Termination Right).
+24 Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise)
+that a “Business Day for Exercise” will be (i) if the Transaction is a Deliverable Transaction or a Developed Markets NonDeliverable Transaction, a Spot Market Business Day, or (ii) if paragraph (i) does not apply, a Currency Business Day for the
+Reference Currency (if a Reference Currency is specified) or (iii) a Currency Business Day for each of the currencies that
+comprise the Currency Pair (if a Reference Currency is not specified). Parties may, inter alia, specify one or more financial
+centers, a Spot Market Business Day or a Currency Business Day. Specialist Business Day definitions also apply for certain
+jurisdiction. Refer to Section 2.2 (Days). Note that Business Day for Exercise and Business Day for Valuation are generally
+expected to be the same, so parties should carefully consider the consequences of specifying different days.
+25
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise)
+that a “Business Day for Valuation” will be (i) if the Transaction is a Deliverable Transaction or a Developed Markets NonDeliverable Transaction, a Spot Market Business Day, or (ii) if paragraph (i) does not apply, a Currency Business Day for the
+Reference Currency (if a Reference Currency is specified) or (iii) a Currency Business Day for each of the currencies that
+comprise the Currency Pair (if a Reference Currency is not specified). Parties may, inter alia, specify one or more financial
+centers, a Spot Market Business Day or a Currency Business Day. Specialist Business Day definitions also apply for certain
+jurisdictions. Refer to Section 2.2 (Days). Note that Business Day for Exercise and Business Day for Valuation are generally
+expected to be the same, so parties should carefully consider the consequences of specifying different days.
+26
+Include this field to modify the presumption in Section 14.1.10 (Business Day Convention for OET Cash Settlement Payment
+Date) that the Following Business Day Convention applies to the OET Cash Settlement Payment Date.
+
+45
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A93]: Equivalent field was named
+“Valuation Business Day”
+Commented [A94]: Under the 2012 Additional Provisions,
+Following Business Day Convention applies unless otherwise
+specified in the Confirmation.
+===== PAGE 50 =====
+EXHIBIT III-E
+to the 2026 FX Definitions
+Additional Provisions for Averaging the Forward Rate
+[Include provisions from Exhibit I and from the relevant form of Confirmation for an FX
+Transaction as set forth in Exhibit II-A (Confirmation of a Deliverable FX Transaction),
+Exhibit II-C (Confirmation of a Non-Deliverable FX Transaction) or Exhibit II-E
+(Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)).]
+[2.]
+
+Determination of the Forward Rate:1
+Averaging:
+
+Applicable
+
+[SRO Matrix version:
+
+[
+
+]]2
+
+[Currency Pair:
+
+[
+
+]]3
+
+Averaging Rate Calculation Date:
+
+The Forward Rate Determination Date
+
+[Averaging Method:
+
+[Arithmetic] / [Harmonic]]4
+
+[Weighti:
+
+[1] / [specify relevant weights for each
+Averaging Date here] / [As specified in the
+Annex hereto]]5
+
+[Adjustment:
+
+Applicable6
+[Addition] / [Multiplication]7
+
+Adjustment Type:
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+7
+
+This Exhibit III-E (Additional Provisions for Averaging the Forward Rate) is intended to be used to document a Deliverable
+FX Transaction or a Non-Deliverable FX Transaction where the Forward Rate is to be determined as the average of Spot Rates
+over certain dates (known as “Averaging Dates”). The operative provisions for Averaging, set out in Section 15 (Averaging)
+of the Main Book, were drafted to be used with FX Transactions documented using this Exhibit and one of Exhibit II-A
+(Confirmation of a Deliverable FX Transaction), Exhibit II-C (Confirmation of a Non-Deliverable FX Transaction) or Exhibit
+II-E (Confirmation of a Non- Deliverable FX Transaction (EM Currency Matrix)). Although the Averaging provisions from
+the FX Definitions may be incorporated into Confirmations for other transactions and with other templates, the application of
+the FX Definitions should be carefully considered and bespoke modifications and/or additions to some of the terms of the
+Averaging provisions in the FX Definitions may be required in the related Confirmation.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date. This field can be deleted
+if the “General Terms” section of the Confirmation already includes it.
+A Currency Pair needs to be specified for the purpose of averaging the Forward Rate. This field can be deleted if the “General
+Terms” section of the Confirmation already includes it or specifies a Reference Currency and a Settlement Currency or these
+Additional Provisions for Averaging the Forward Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX
+Transaction (EM Currency Matrix)). This field must be included for a Deliverable FX Transaction where Averaging applies
+to the Forward Rate.
+Include this field to modify the presumption in Section 15.3.2 (Presumed Averaging Method) that the Averaging Method is
+Arithmetic.
+Include this field (and the Annex below, if applicable) to modify the presumption in Section 15.3.5(iv) (Definitions relating to
+Averaging Methods) that Weightᵢ is 1.
+Include these fields to modify the presumption in Section 15.3.6 (Adjustment) that “Adjustment” does not apply.
+An Adjustment Type must be specified if “Adjustment” applies.
+
+46
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A95]: The 2022 Averaging Supplement
+provided the confirmation exhibits for averaging products, as
+such only changes from those confirmation forms will be
+annotated/colour-coded.
+The 2022 Averaging Supplement contained four exhibits
+(Deliverable and Non-Deliverable Forward and Deliverable
+and Non-Deliverable Currency Option), each of which
+replicated relevant averaging provisions, whereas the 2026
+FX Definitions exhibits provide three standalone forms for
+averaging terms in respect of the Forward Rate, Settlement
+Rate and Strike Price.
+The 2022 Averaging Supplement incorporated the terms via
+the Preamble, whereas pursuant to the 2026 FX Definitions
+form, parties incorporate the averaging provisions by defining
+the Forward Rate, the Strike Price or the Settlement Rate as
+the Averaging Rate in the applicable template from these
+Exhibits for a forward or option transaction.
+===== PAGE 51 =====
+[
+
+]]8]
+
+[Averaging Period Start Date:
+
+[
+
+] / [The Trade Date]9
+
+Averaging Period End Date:
+
+[
+] / [The [
+] Business
+Day following the Averaging Period Start
+Date]]
+
+[Averaging Dates:
+
+[
+] / [The dates specified in the
+Annex hereto] / [other description of method
+used to determine Averaging Dates]]10
+
+[Settlement Rate Option:
+
+[
+
+] / [Calculation Agent Spot Rate]11
+
+[Specified Time:
+
+[
+
+]]12
+
+[Spot Rate Fixing Day:
+
+[
+
+]]13]
+
+[Adjustment Factor:
+
+[Maximum Days of Postponement
+(Averaging):
+
+[
+] / [The Maximum Days of
+Postponement as per the EM Currency
+Matrix]14]15
+
+[Averaging Date Disruption
+Consequence:
+
+[Postponement] / [Modified Postponement] /
+[Omission]]16
+
+[Averaging Date Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest]]17
+
+8
+
+Include this field to modify the presumption in Section 15.3.8 (Adjustment Factor) that the Adjustment Factor is (i) if the
+Adjustment Type is Addition, 0, or (ii) if the Adjustment Type is Multiplication, 1.
+If no Averaging Dates are specified, the Averaging Period Start Date and Averaging Period End Date must be specified.
+10
+If an Averaging Period Start Date and an Averaging Period End Date have been specified, and Averaging Dates will be each
+Business Day during the Averaging Period in accordance with the presumption in Section 15.1.2 (Averaging Date), this field
+can be deleted. Otherwise, Averaging Dates must be specified.
+11
+Include these fields to modify the presumption in Section 4.1.4(i)(b) (Spot Rate) that the Spot Rate for any Averaging Date is
+the Calculation Agent Spot Rate. If Averaging applies to the Forward Rate, delete the equivalent field to this one and the
+related fields in the “General Terms” section of the Confirmation as they are covered by these fields. Delete these fields if
+these Additional Provisions for Averaging the Forward Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable
+FX Transaction (EM Currency Matrix)).
+12
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+13 Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+14 Insert “The Maximum Days of Postponement as per the EM Currency Matrix” if these Additional Provisions for Averaging
+the Forward Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)).
+15 Include this field to modify the presumption in Section 15.2.9 (Maximum Days of Postponement (Averaging)) that the
+Maximum Days of Postponement (Averaging) is five Weekdays following the Scheduled Averaging Rate Calculation Date.
+16
+Include this field to modify the presumption in Section 15.2.4 (Presumed Averaging Date Disruption Consequence) that the
+Averaging Date Disruption Consequence is Postponement. Delete this field if the EM Currency Matrix applies.
+17
+Include this field to modify the presumption in Section 15.1.10 (Averaging Date Business Day Convention) that (i) the
+Modified Following Business Day Convention applies to an Averaging Date under a Deliverable Transaction or a Developed
+Markets Non-Deliverable Transaction and (ii) the Preceding Business Day Convention applies to an Averaging Date under
+any other Non-Deliverable Transaction, as applicable. The Averaging Date Business Day Convention should be the Preceding
+Business Day Convention if the EM Currency Matrix applies or if the Additional Provisions for Non-Deliverable Transactions
+(EM) apply.
+9
+
+47
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A96]: This field was called “Maximum Days
+of Postponement” in the 2022 Averaging Supplement
+Commented [A97]: This election was referencing the
+“Applicable EMTA Template Terms” in the 2022 Averaging
+Supplement Non-Deliverable Exhibits
+===== PAGE 52 =====
+[Annex]18
+Averaging Dates [and Weighti]19 for Determining the Forward Rate
+Averaging Date
+
+Weighti20
+
+1
+
+[date]
+
+[number]
+
+2
+
+[date]
+
+[number]
+
+[ ] [
+
+]
+
+[
+
+]
+
+18
+
+Include an Annex of Averaging Dates if Averaging Dates are not otherwise specified or otherwise determined in accordance
+with the FX Definitions or a method specified in the Confirmation.
+19
+Include if Weightᵢ is not 1 or if it is not otherwise specified elsewhere in the Confirmation. The table is included for illustrative
+purposes and should include the relevant number of rows so that a Weightᵢ is specified for each Averaging Date if the Averaging
+Dates are not equally weighted.
+20 Delete this column if Averaging Dates are equally weighted.
+
+48
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 53 =====
+EXHIBIT III-F
+to the 2026 FX Definitions
+Additional Provisions for Averaging the Settlement Rate
+[Include provisions from Exhibit I and from the relevant form of Confirmation for an FX
+Transaction or FX Option Transaction as set forth in Exhibit II-B (Confirmation of a
+Deliverable FX Option Transaction), Exhibit II-C (Confirmation of a Non-Deliverable FX
+Transaction), Exhibit II-D (Confirmation of a Non-Deliverable FX Option Transaction),
+Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)) or
+Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency
+Matrix)).]
+[2.]
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Determination of the Settlement Rate:1
+Averaging:
+
+Applicable
+
+[SRO Matrix version:
+
+[
+
+]]2
+
+[Currency Pair:
+
+[
+
+]]3
+
+[Averaging Rate Calculation Date:
+
+[The Valuation Date] / [The final Averaging
+Date] / [Averaging Period End Date]]4
+
+[Valuation Date:
+
+[The Exercise Date] / [The final Averaging
+Date]]5
+
+This Exhibit III-F (Additional Provisions for Averaging the Settlement Rate) is intended to be used to document a Deliverable
+FX Transaction, a Deliverable FX Option Transaction, a Non-Deliverable FX Transaction or a Non-Deliverable FX Option
+Transaction where the Settlement Rate is to be determined as the average of Spot Rates over certain dates (known as
+“Averaging Dates”). The operative provisions for Averaging, set out in Section 15 (Averaging) of the Main Book, were drafted
+to be used with FX Transactions or FX Option Transactions documented using this Exhibit and one of Exhibit II-B
+(Confirmation of a Deliverable FX Option Transaction), Exhibit II-C (Confirmation of a Non-Deliverable FX Transaction),
+Exhibit II-D (Confirmation of a Non-Deliverable FX Option Transaction), Exhibit II-E (Confirmation of a Non-Deliverable
+FX Transaction (EM Currency Matrix)) or Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM
+Currency Matrix)). Although the Averaging provisions from the FX Definitions may be incorporated into Confirmations for
+other transactions and with other templates, the application of the FX Definitions should be carefully considered and bespoke
+modifications and/or additions to some of the terms of the Averaging provisions in the FX Definitions may be required in the
+related Confirmation.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date. This field can be deleted
+if the “General Terms” section of the Confirmation already includes it.
+A Currency Pair needs to be specified for the purpose of averaging the Settlement Rate. This field can be deleted if the “General
+Terms” section of the Confirmation already includes it or specifies a Reference Currency and a Settlement Currency or these
+Additional Provisions for Averaging the Settlement Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX
+Transaction (EM Currency Matrix)) or Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency
+Matrix)).
+Include this field to modify the presumption in Section 15.1.5 (Averaging Rate Calculation Date) that the Averaging Rate
+Calculation Date for the purpose of determining a Settlement Rate is the Valuation Date. In respect of a Non-Deliverable FX
+Option Transaction, the Averaging Rate Calculation Date must be no later than the Valuation Date, and in respect of a
+Deliverable FX Option Transaction the Averaging Rate Calculation Date must be no later than the Expiration Date.
+This field can be deleted if the “General Terms” section of the Confirmation already includes it. “The Exercise Date” should
+only be specified for a Deliverable FX Option Transaction or a Non-Deliverable FX Option Transaction. “The final Averaging
+Date” may be specified for a Non-Deliverable FX Transaction, a Deliverable FX Option Transaction or a Non-Deliverable FX
+Option Transaction.
+
+49
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A98]: This form can be used to confirm both
+an averaging forward and an averaging option, for which the
+Settlement Rate is determined through averaging calculations.
+===== PAGE 54 =====
+[Averaging Method:
+
+[Arithmetic] / [Harmonic]]6
+
+[Weighti:
+
+[1] / [specify relevant weights for each
+Averaging Date here] / [As specified in the
+Annex hereto]]7
+
+[Adjustment:
+
+Applicable8
+
+Adjustment Type:
+
+[Addition] / [Multiplication]9
+
+[Adjustment Factor:
+
+[
+
+]]10]
+
+[Averaging Period Start Date:
+
+[
+
+]11
+
+Averaging Period End Date:
+
+[
+
+]]
+
+[Averaging Dates:
+
+[
+] / [The dates specified in the
+Annex hereto] / [other description of method
+used to determine Averaging Dates]]12
+
+[Settlement Rate Option:
+
+[
+
+] / [Calculation Agent Spot Rate]13
+
+[Specified Time:
+
+[
+
+]]14
+
+[Spot Rate Fixing Day:
+
+[
+
+]]15]
+
+[Maximum Days of Postponement
+(Averaging):
+
+[
+] / [The Maximum Days of
+Postponement as per the EM Currency
+Matrix]16]17
+
+6
+
+Include this field to modify the presumption in Section 15.3.2 (Presumed Averaging Method) that the Averaging Method is
+Arithmetic.
+7
+Include this field (and the Annex below, if applicable) to modify the presumption in Section 15.3.5(iv) (Definitions relating to
+Averaging Methods) that Weightᵢ is 1.
+8
+Include these fields to modify the presumption in Section 15.3.6 (Adjustment) that “Adjustment” does not apply.
+9 An Adjustment Type must be specified if “Adjustment” applies.
+10 Include this field to modify the presumption in Section 15.3.8 (Adjustment Factor) that the Adjustment Factor is (i) if the
+Adjustment Type is Addition, 0, or (ii) if the Adjustment Type is Multiplication, 1.
+11 If no Averaging Dates are specified, the Averaging Period Start Date and Averaging Period End Date must be specified.
+12
+If an Averaging Period Start Date and an Averaging Period End Date have been specified, and Averaging Dates will be each
+Business Day during the Averaging Period in accordance with the presumption in Section 15.1.2 (Averaging Date), this field
+can be deleted. Otherwise, Averaging Dates must be specified.
+13
+Include these fields to modify the presumption in Section 4.1.4(i)(b) (Spot Rate) that the Spot Rate for any Averaging Date is
+the Calculation Agent Spot Rate. If Averaging applies to the Settlement Rate, delete the equivalent field to this one and the
+related fields in the “General Terms” section of the Confirmation as they are covered here. Delete these fields if these
+Additional Provisions for Averaging the Settlement Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX
+Transaction (EM Currency Matrix)) or Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency
+Matrix)).
+14 Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+15
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+16
+Insert “The Maximum Days of Postponement as per the EM Currency Matrix” if these Additional Provisions for Averaging
+the Settlement Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)) or
+Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+17
+Include this field to modify the presumption in Section 15.2.9 (Maximum Days of Postponement (Averaging)) that the
+Maximum Days of Postponement (Averaging) is five Weekdays following the Scheduled Averaging Rate Calculation Date.
+
+50
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 55 =====
+[Averaging Date Disruption
+Consequence:
+
+[Postponement] / [Modified Postponement] /
+[Omission]]18
+
+[Business Day for Valuation:
+
+[
+
+[Averaging Date Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest]]20
+
+]]19
+
+[Annex]21
+Averaging Dates [and Weighti]22 for Determining the Settlement Rate
+Averaging Date
+
+Weighti23
+
+1
+
+[date]
+
+[number]
+
+2
+
+[date]
+
+[number]
+
+[ ] [
+
+]
+
+[
+
+]
+
+18
+
+Include this field to modify the presumption in Section 15.2.4 (Presumed Averaging Date Disruption Consequence) that the
+Averaging Date Disruption Consequence is Postponement. Delete this field if the EM Currency Matrix applies.
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise)
+that a “Business Day for Valuation” will be (1) if a Settlement Rate Option applies for the purposes of the valuation, a
+Publication Calendar Day, or (2) otherwise a Spot Market Business Day. Business Days may be specified by reference to, inter
+alia, one or more financial centers, a Publication Calendar Day, a Spot Market Business Day or a Currency Business Day.
+Specialist Business Day definitions also apply for certain jurisdictions. Refer to Section 2.2 (Days). This field can be deleted
+if the “General Terms” section of the Confirmation already includes it or these Additional Provisions for Averaging the
+Settlement Rate are used with Exhibit II-E (Confirmation of a Non-Deliverable FX Transaction (EM Currency Matrix)) or
+Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+20 Include this field to modify the presumption in Section 15.1.10 (Averaging Date Business Day Convention) that (i) the
+Modified Following Business Day Convention applies to an Averaging Date under a Deliverable Transaction or a Developed
+Markets Non-Deliverable Transaction and (ii) the Preceding Business Day Convention applies to an Averaging Date under
+any other Non-Deliverable Transaction, as applicable. The Averaging Date Business Day Convention should be the Preceding
+Business Day Convention if the EM Currency Matrix applies or if the Additional Provisions for Non-Deliverable Transactions
+(EM) apply.
+21
+Include an Annex of Averaging Dates if Averaging Dates are not otherwise specified or otherwise determined in accordance
+with the FX Definitions or a method specified in the Confirmation.
+22
+Include if Weightᵢ is not 1 or if it is not otherwise specified elsewhere in the Confirmation. The table is included for illustrative
+purposes and should include the relevant number of rows so that a Weightᵢ is specified for each Averaging Date if the Averaging
+Dates are not equally weighted.
+23 Delete this column if Averaging Dates are equally weighted.
+19
+
+51
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 56 =====
+EXHIBIT III-G
+to the 2026 FX Definitions
+Additional Provisions for Averaging the Strike Price
+[Include provisions from Exhibit I and from the relevant form of Confirmation for an FX
+Option Transaction as set forth in Exhibit II-B (Confirmation of a Deliverable FX Option
+Transaction), Exhibit II-D (Confirmation of a Non-Deliverable FX Option Transaction) or
+Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency
+Matrix)).]
+[2.]
+
+Determination of the Strike Price:1
+Averaging:
+
+Applicable
+
+[SRO Matrix version:
+
+[
+
+]]2
+
+[Currency Pair:
+
+[
+
+]]3
+
+Averaging Rate Calculation Date:
+
+The Strike Price Determination Date
+
+[Averaging Method:
+
+[Arithmetic] / [Harmonic]]4
+
+[Weighti:
+
+[1] / [specify relevant weights for each
+Averaging Date here] / [As specified in the
+Annex hereto]]5
+
+[Adjustment:
+
+Applicable6
+[Addition] / [Multiplication]7
+
+Adjustment Type:
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+7
+
+This Exhibit III-G (Additional Provisions for Averaging the Strike Price) is intended to be used to document a Deliverable FX
+Option Transaction or a Non-Deliverable FX Option Transaction where the Strike Price is to be determined as the average of
+Spot Rates over certain dates (known as “Averaging Dates”). The operative provisions for Averaging, set out in Section 15
+(Averaging) of the Main Book, were drafted to be used with FX Option Transactions documented using this Exhibit and one
+of Exhibit II-B (Confirmation of a Deliverable FX Option Transaction), Exhibit II-D (Confirmation of a Non-Deliverable FX
+Option Transaction) or Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+Although the Averaging provisions from the FX Definitions may be incorporated into Confirmations for other transactions
+and with other templates, the application of the FX Definitions should be carefully considered and bespoke modifications
+and/or additions to some of the terms of the Averaging provisions in the FX Definitions may be required in the related
+Confirmation.
+Insert this field to apply a version of the SRO Matrix other than the latest version as of the Trade Date. This field can be deleted
+if the “General Terms” section of the Confirmation already includes it.
+A Currency Pair needs to be specified for the purpose of averaging the Strike Price. This field can be deleted if the “General
+Terms” section of the Confirmation already includes it or specifies a Reference Currency and a Settlement Currency or these
+Additional Provisions for Averaging the Strike Price are used with Exhibit II-F (Confirmation of a Non-Deliverable FX Option
+Transaction (EM Currency Matrix)).
+Include this field to modify the presumption in Section 15.3.2 (Presumed Averaging Method) that the Averaging Method is
+Arithmetic.
+Include this field (and the Annex below, if applicable) to modify the presumption in Section 15.3.5(iv) (Definitions relating to
+Averaging Methods) that Weighti is 1.
+Include these fields to modify the presumption in Section 15.3.6 (Adjustment) that “Adjustment” does not apply.
+An Adjustment Type must be specified if “Adjustment” applies.
+
+52
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 57 =====
+[
+
+]]8]
+
+[Averaging Period Start Date:
+
+[
+
+] / [The Trade Date]9
+
+Averaging Period End Date:
+
+[
+] / [The [
+] Business Day
+following the Averaging Period Start Date]]
+
+[Averaging Dates:
+
+[
+] / [The dates specified in the
+Annex hereto] / [other description of method
+used to determine Averaging Dates]]10
+
+[Settlement Rate Option:
+
+[
+
+] / [Calculation Agent Spot Rate]11
+
+[Specified Time:
+
+[
+
+]]12
+
+[Spot Rate Fixing Day:
+
+[
+
+]]13]
+
+[Adjustment Factor:
+
+[Maximum Days of Postponement
+(Averaging):
+
+[
+] / [The Maximum Days of
+Postponement as per the EM Currency
+Matrix]14]15
+
+[Averaging Date Disruption
+Consequence:
+
+[Postponement] / [Modified Postponement] /
+[Omission]]16
+
+[Business Day for Valuation:
+
+[
+
+]]17
+
+8
+
+Include this field to modify the presumption in Section 15.3.8 (Adjustment Factor) that the Adjustment Factor is (i) if the
+Adjustment Type is Addition, 0, or (ii) if the Adjustment Type is Multiplication, 1.
+If no Averaging Dates are specified, the Averaging Period Start Date and Averaging Period End Date must be specified.
+10
+If an Averaging Period Start Date and an Averaging Period End Date have been specified, and Averaging Dates will be each
+Business Day during the Averaging Period in accordance with the presumption in Section 15.1.2 (Averaging Date), this field
+can be deleted. Otherwise, Averaging Dates must be specified.
+11
+Include these fields to modify the presumption in Section 4.1.4(i)(b) (Spot Rate) that the Spot Rate for any Averaging Date is
+the Calculation Agent Spot Rate. If Averaging applies to the Strike Price, delete this field and the related fields below in the
+“General Terms” section of the Confirmation and include them here. Delete these fields if these Additional Provisions for
+Averaging the Strike Price are used with Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM
+Currency Matrix)).
+12
+Include this field if the Settlement Rate Option is not included in the SRO Matrix or a Specified Time is not set out in that
+Settlement Rate Option.
+13
+Include this field if the Settlement Rate Option is not included in the SRO Matrix.
+14
+Insert “The Maximum Days of Postponement as per the EM Currency Matrix” if these Additional Provisions for Averaging
+the Strike Price are used with Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+15
+Include this field to modify the presumption in Section 15.2.9 (Maximum Days of Postponement (Averaging)) that the
+Maximum Days of Postponement (Averaging) is five Weekdays following the Scheduled Averaging Rate Calculation Date.
+16
+Include this field to modify the presumption in Section 15.2.4 (Presumed Averaging Date Disruption Consequence) that the
+Averaging Date Disruption Consequence is Postponement. Delete this field if the EM Currency Matrix applies.
+17
+Include this field to modify the presumption in Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise)
+that a “Business Day for Valuation” will be (1) if a Settlement Rate Option applies for the purposes of the valuation, a
+Publication Calendar Day, or (2) otherwise a Spot Market Business Day. Business Days may be specified by reference to, inter
+alia, one or more financial centers, a Publication Calendar Day, a Spot Market Business Day or a Currency Business Day.
+Specialist Business Day definitions also apply for certain jurisdictions. Refer to Section 2.2 (Days). This field can be deleted
+if the “General Terms” section of the Confirmation already includes it or these Additional Provisions for Averaging the Strike
+Price are used with Exhibit II-F (Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+9
+
+53
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 58 =====
+[Averaging Date Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest]]18
+[Annex]19
+
+Averaging Dates [and Weighti]20 for Determining the Strike Price
+Averaging Date
+
+Weighti21
+
+1
+
+[date]
+
+[number]
+
+2
+
+[date]
+
+[number]
+
+[ ] [
+
+]
+
+[
+
+]
+
+18
+
+Include this field to modify the presumption in Section 15.1.10 (Averaging Date Business Day Convention) that (i) the
+Modified Following Business Day Convention applies to an Averaging Date under a Deliverable Transaction or a Developed
+Markets Non-Deliverable Transaction and (ii) the Preceding Business Day Convention applies to an Averaging Date under
+any other Non-Deliverable Transaction, as applicable. The Averaging Date Business Day Convention should be the Preceding
+Business Day Convention if the EM Currency Matrix applies or if the Additional Provisions for Non-Deliverable Transactions
+(EM) apply.
+19
+Include an Annex of Averaging Dates if Averaging Dates are not otherwise specified or otherwise determined in accordance
+with the FX Definitions or a method specified in the Confirmation.
+20
+Include if Weighti is not 1 or if it is not otherwise specified elsewhere in the Confirmation. The table is included for illustrative
+purposes and should include the relevant number of rows so that a Weighti is specified for each Averaging Date if the Averaging
+Dates are not equally weighted.
+21 Delete this column if Averaging Dates are equally weighted.
+
+54
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 59 =====
+EXHIBIT III-H
+to the 2026 FX Definitions
+Additional Provisions for a Barrier Transaction
+[Include provisions from Exhibit I and from the relevant form of Confirmation for an FX Option
+Transaction as set forth in Exhibit II-B (Confirmation of a Deliverable FX Option Transaction),
+Exhibit II-D (Confirmation of a Non-Deliverable FX Option Transaction) or Exhibit II-F
+(Confirmation of a Non-Deliverable FX Option Transaction (EM Currency Matrix)).]
+[2.] Barrier Terms:1
+Barrier Transaction Type:
+
+[Barrier Transaction] / [Binary Transaction]
+
+Settlement:
+
+[Deliverable] / [Non-Deliverable]2
+
+Barrier Event:
+
+[Up and In Knock-in Event] / [Down and In
+Knock-in Event] / [Double Knock-in Event] /
+[Dual Knock-in Event] / [Up and Out Knock-out
+Event] / [Down and Out Knock-out Event] /
+[Double Knock-out Event] / [Dual Knock-out
+Event] / [Other - specify]
+Applicable]3
+
+[Barrier Event Equal Modifier:
+[Barrier Currency Pair:
+
+[
+
+]]
+
+4
+
+Commented [A99]: The 2022 Barrier Event Supplement
+provided the confirmation exhibits for barrier and binary
+transactions, as such only changes from those confirmation
+forms will be annotated/colour-coded.
+The 2022 Barrier Event Supplement included six
+confirmation exhibits covering Deliverable & NonDeliverable, Barrier & Binary and Single/Dual/Double &
+Multiple Event combinations.
+The 2026 FX Definitions exhibits caters for Deliverable &
+Non-Deliverable, Barrier & Binary and Single/Dual/Double
+events in one form.
+The 2022 Barrier Event Supplement incorporated the terms
+via the Preamble, whereas under the 2026 FX Definitions
+parties apply the terms by including these Additional
+Provisions into the relevant FX Option template from these
+Exhibits and specifying the “Barrier Transaction Type” as
+either a Barrier Transaction or a Binary Transaction.
+Commented [A100]: Barrier Transaction is a term that
+existed in the 2022 Barrier Event Supplement but it was not
+included in the Exhibits as a field. It is now used to indicate
+that Section 16 of the 2026 FX Definitions applies.
+Commented [A101]: Binary is a Transaction Type in the
+2026 FX Definitions instead of a Currency Option Style as
+per the 1998 FX Definitions
+Commented [A102]: This Exhibit combines the
+Deliverable and Non-Deliverable Exhibits from the 2022
+Barrier Event Supplement
+Commented [A103]: This is a placeholder election that
+expressly allows the parties to define a bespoke Barrier Event
+
+1
+
+2
+
+3
+
+4
+
+These Additional Provisions for a Barrier Transaction or a Binary Transaction are intended to be used in a Confirmation of a
+Deliverable FX Option Transaction or a Non-Deliverable FX Option Transaction where settlement depends on the occurrence or
+non-occurrence of a Barrier Event and which is documented pursuant to one of Exhibit II-B (Confirmation of a Deliverable FX
+Option Transaction), Exhibit II-D (Confirmation of a Non-Deliverable FX Option Transaction) or Exhibit II-F (Confirmation of
+a Non-Deliverable FX Option Transaction (EM Currency Matrix)).
+Delete this field if a Settlement type is specified in the ‘General Terms’ section of the Confirmation. If the Option Type is “Binary”,
+electing ‘Deliverable’ or ‘Non-Deliverable’ does not result in settlement of the FX Option Transaction by the delivery of currencies
+or the payment of an In-the-Money Amount, as is the case with other FX Option Transactions. Rather, such Transaction will be
+cash-settled by the payment of the Binary Amount if the relevant condition is met. The Binary Amount and the currency in which
+the Binary Amount is denominated are agreed at the inception of the Transaction. Electing ‘Deliverable’ or ‘Non-Deliverable’
+will, however, determine the application of certain terms from the FX Definitions (for example, the presumed Business Day for
+Observations), which depend on whether the Transaction is comprised of currencies that settle on a Deliverable or a NonDeliverable basis and consequently whether the Transaction is a Deliverable Transaction, a Non-Deliverable Transaction or a
+Developed Markets Non-Deliverable Transaction.
+Include this field to delete the words “equal to” in the definition of the Barrier Event (i.e. to prevent a Barrier Event from occurring
+when the Barrier Spot Rate is equal to the Barrier Level, Lower Barrier Level or Upper Barrier Level, as applicable, so that the
+Barrier Event is only triggered where the relevant level has been breached).
+Include the Barrier Currency Pair if not relying on one of the presumptions that the Barrier Currency Pair is: (i) the Currency Pair
+for the Transaction,(ii) the currency pair comprised of the Barrier Reference Currency and the Barrier Settlement Currency(if
+specified), or (iii) the currency pair which comprises either the Barrier Level or the Lower Barrier Level and Upper Barrier Level,
+as applicable.
+
+55
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 60 =====
+[Barrier Reference Currency:
+
+[
+
+]]5
+
+[Barrier Settlement Currency:
+
+[
+
+]]6
+
+Barrier Time Type:7
+
+[Continuous Time] / [Discrete Time]
+
+[Continuous Time Period:
+
+[
+
+]/
+
+[The time from and including [
+]
+[a.m./p.m.] in [
+] to and including
+[[
+] [a.m./p.m.] in [
+]] /
+[The Expiration Time]]8]
+[Spot Market:
+
+[Global Spot Market] [Local Spot Market]
+
+[Barrier Specified Time:
+
+[[
+] [a.m./p.m.] in [
+]] /
+[Expiration Time] / [The Specified Time for the
+Barrier Settlement Rate Option]]9
+
+[Barrier Date Type:
+
+[Consecutive Dates] / [Discrete Dates]]10
+
+[Barrier Level:
+
+[
+
+]]11
+
+[Lower Barrier Level:
+
+[
+
+]12
+
+Upper Barrier Level:
+
+[
+
+]]
+
+[Barrier Event Determination Dates:
+
+[
+] / [The dates specified in the
+Annex hereto] / [other description of method
+
+5
+
+Include this field if a Reference Currency is not specified elsewhere in the Confirmation (including by virtue of being specified
+for the Currency Pair in the EM Currency Matrix), unless relying on the presumption in Section 16.2.4 (Barrier Reference
+Currency) that the Barrier Reference Currency (in the absence of a specified Reference Currency) is the currency determined by
+the Barrier Determination Agent. Delete this field if a Reference Currency is specified in the ‘General Terms’ section of the
+Confirmation or in the EM Currency Matrix.
+6
+Include this field if a Settlement Currency is not specified elsewhere in the Confirmation (including by virtue of being specified
+for the Currency Pair in the EM Currency Matrix), unless relying on the presumption in Section 16.2.5 (Barrier Settlement
+Currency) that the Barrier Settlement Currency (in the absence of a specified Settlement Currency) is the currency determined by
+the Barrier Determination Agent. Delete this field if the Settlement Currency is specified in the ‘General Terms’ section of the
+Confirmation or in the EM Currency Matrix.
+7
+Specify a Barrier Time Type. If not specified, the Barrier Time Type is determined by the Barrier Determination Agent. The
+Barrier Time Type determines the Barrier Event Determination Time. If “Continuous Time” is specified, the Barrier Event
+Determination Time will be Spot Market Hours, unless another time period is specified as the “Continuous Time Period”. If
+“Discrete Time” is specified, the Barrier Event Determination Time will be the “Barrier Specified Time”.
+8
+Include this field if the Barrier Time Type is “Continuous Time” to modify the presumption in Section 16.1.18 (Continuous Time
+Period) that the Continuous Time Period is Spot Market Hours. Delete this field if the specified Barrier Time Type is Discrete
+Time.
+9
+Include this field if the Barrier Time Type is Discrete Time. The wording “The Specified Time for the Barrier Settlement Rate
+Option” should only be used where the Barrier Settlement Rate Option includes a Specified Time. Delete this field if the specified
+Barrier Time Type is Continuous Time.
+10
+If not specified, the Barrier Date Type is determined by the Barrier Determination Agent.
+11
+Include this field if there is a single Barrier Level, i.e. if the Barrier Event is one of (i) Up and Out Knock-out Event, (ii) Down
+and Out Knock-Out Event, (iii) Up and In Knock-in Event or (iv) Down and In Knock-in Event.
+12
+Include these fields if there are two barrier levels i.e. if the Barrier Event is one of (i) Double Knock-out Event, (ii) Double Knockin Event, (iii) Dual Knock-out Event or (iv) Dual Knock-in Event.
+
+56
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A104]: The 2026 FX Definitions default the
+Spot Market to the Global Spot Market for Deliverable
+Transactions and for Developed Markets Non-Deliverable
+Transactions, and the Local Spot Market for other NonDeliverable Transactions. Consequently, the optional field to
+specify the Spot Market is obsolete and has been removed.
+===== PAGE 61 =====
+used to determine Barrier Event Determination
+Dates]]13
+[Barrier Event Start Date:
+
+[
+
+]]14
+
+[Barrier Event End Date:
+
+[
+
+]]15
+
+[Barrier Settlement Rate Option:
+
+[
+
+]]16
+
+[Rebate Amount:
+
+[
+
+]17
+
+[
+
+]/
+
+[Rebate Amount Payment Date:
+
+[[
+] Business Days after the Barrier
+Event Reference Date] /
+[The Settlement Date]]18
+[Binary Amount:
+[Binary Amount Payment Date:
+
+[
+
+]19
+
+[
+
+]/
+
+[[
+] Business Days after the Barrier
+Event Reference Date]]20
+[Business Day for Observation:
+
+[
+
+]]21
+
+13
+
+Include this field to modify the presumption in Section 16.1.15 (Barrier Event Determination Date) that the Barrier Event
+Determination Dates are each Business Day during the Barrier Event Determination Period (being the period from, and including
+the Barrier Event Start Date or if the Barrier Event Start Date is the Trade Date, from the time at which the Transaction is entered
+into on the Trade Date, to and including the Barrier Event End Date). The last Barrier Event Determination Date for a Binary
+Transaction should be the Expiration Date, or the Expiration Date becomes obsolete.
+14
+Include this field to modify the presumption in Section 16.1.8 (Barrier Event Start Date) that the Barrier Event Start Date is the
+first Barrier Event Determination Date (if Barrier Event Determination Dates, or a method for determining such dates, are
+specified) or the Trade Date.
+15 Include this field to modify the presumption in Section 16.1.9 (Barrier Event End Date) that the Barrier Event End Date is the
+final Barrier Event Determination Date (if Barrier Event Determination Dates, or a method for determining such dates, are
+specified) or the Expiration Date. The Barrier Event End Date for a Binary Transaction should be the Expiration Date, or the
+Expiration Date becomes obsolete.
+16
+Include this field and specify a Settlement Rate Option to modify the presumption in Section 16.1.22 (Barrier Spot Rate) that,
+depending on the applicable Transaction Type and Barrier Time Type, the Barrier Spot Rate will be either Barrier Determination
+Agent Spot Rate or the Settlement Rate Option specified for the Valuation Date.
+17 Include this field if a Rebate Amount applies. Delete this field if the Option Type is “Binary”.
+18 Include this field if a Rebate Amount applies to modify the presumption in Section 16.2.25 (Rebate Amount Payment Date) that
+the Rebate Amount Payment Date is the second Business Day after the Barrier Event Reference Date.
+19
+Include this field if the Option Type is “Binary”.
+20
+Include this field if the Option Type is “Binary” to modify the presumption in Section 16.2.28 (Binary Amount Payment Date)
+that the Binary Amount Payment Date is the second Business Day after the Barrier Event Reference Date.
+21
+Include this field to modify the presumption in Section 2.1.1(ii)(c) (Business Day for Observation) that a “Business Day for
+Observation” will be (i) if Barrier Determination Agent Spot Rate applies, a Spot Market Business Day, (ii) if a Settlement Rate
+Option applies, a Publication Calendar Day or (iii) if neither (i) nor (ii) applies, a “Business Day for Valuation” determined in
+accordance with Section 2.1.1(ii)(a) (Business Day for Valuation; Business Day for Exercise).
+
+57
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A105]: This field was called “Barrier
+Determination Business Days” in the 2022 Barrier Event
+Supplement.
+===== PAGE 62 =====
+[3.]
+
+[All Barrier Dates Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest] /
+[Expiry]]22
+
+[Interim Barrier Dates Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest] /
+[Expiry]]23
+
+[Barrier Event End Date Business Day
+Convention:
+
+[Following] / [Modified Following] /
+[Preceding] / [Unadjusted] / [Closest] /
+[Expiry]]24
+
+Additional Provisions:
+[
+
+] / [The Calculation Agent]]25
+
+Party A:
+
+[
+
+]
+
+Party B:
+
+[
+
+]]26
+
+[Incorporation of
+
+If a term or provisions herein is defined as “As
+per the Applicable EMTA Template Terms”
+then such term or provisions shall be defined
+and set forth as per the Applicable EMTA
+Template Terms; and if a term herein is
+
+[Barrier Determination Agent:
+[Notice details for notification of
+Barrier Event:
+
+EMTA Template Terms:
+
+22
+
+Include this field to apply the same Business Day Convention to all Barrier Event Determination Dates. Delete this field if relying
+on the presumption in Section 16.1.11 (Business Day Conventions applicable to Barrier Event Determination Dates) that (i) the
+Barrier Event Start Date and each Interim Barrier Event Determination Date will be subject to adjustment in accordance with the
+Interim Barrier Dates Business Day Convention and (ii) the Barrier Event End Date will be subject to adjustment in accordance
+with the Barrier Event End Date Business Day Convention.
+23 Include this field to modify the presumption in Section 16.1.13 (Interim Barrier Dates Business Day Convention) that the Interim
+Barrier Dates Business Day Convention is (i) if the Interim Barrier Event Determination Dates are Consecutive Dates, Unadjusted
+or (ii) if the Interim Barrier Event Determination Dates are Discrete Dates, Closest. Delete this field if an “All Barrier
+Determination Dates Business Day Convention” has been specified. Expiry should be specified as the Interim Barrier Dates
+Business Day Convention if the Barrer Date Type is “Discrete Dates” and those dates are to be adjusted in the same manner as the
+Valuation Date or Expiration Date.
+24
+Include this field to modify the presumption in Section 16.1.14 (Barrier Event End Date Business Day Convention) that the Barrier
+Event End Date Business Day Convention is (i) if the Barrier Event End Date is the Valuation Date or the Expiration Date, Expiry
+or (ii) if the Barrier Event End Date is not the Valuation Date or the Expiration Date, Closest. Expiry should be specified as the
+Barrier Event End Date Business Day Convention if the Barrier Event End Date is the Valuation Date or Expiration Date and that
+date is to be adjusted in the same manner as the Valuation Date or Expiration Date. Delete this field if an “All Barrier Determination
+Dates Business Day Convention” has been specified.
+25
+Include this field to modify the presumption in Section 16.1.25 (Barrier Determination Agent) that the Barrier Determination
+Agent is the Calculation Agent.
+26
+Include this field for a Barrier Transaction if notices relating to Barrier Events are to be delivered using a different method than
+other notices or to modify the presumption in Section 16.2.30 (Notification of a Barrier Event) that any notice of a Barrier Event
+shall be provided by the Barrier Determination Agent by e-mail or electronic communication. Delete this field if the Transaction
+is not a Barrier Transaction.
+
+58
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+===== PAGE 63 =====
+specified as “subject to the Applicable EMTA
+Template Terms” then such term shall be
+subject to any language for such term set forth
+in the Applicable EMTA Template Terms.
+Applicable EMTA
+
+The EMTA Template Terms for NonDeliverable Currency Option Transactions for
+the Barrier Currency Pair for this Transaction
+as most recently published by EMTA on or
+prior to the Trade Date.]
+
+Template Terms:
+
+59
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.
+
+Commented [A106]: The fields for applying the applicable
+EMTA Template Terms are no longer required. If parties are
+using these Barrier Additional Provisions for a NonDeliverable FX option on an EM currency included in the EM
+Matrix, all of the ‘upstreamed’ terms from the EMTA
+Templates that are now set out in Section 9 of the 2026 FX
+Definitions will apply automatically. Parties should use the
+relevant confirmation template for a Non-Deliverable FX
+Option Transaction (EM Matrix) and then include these
+Additional Provisions for a Barrier Transaction.
+===== PAGE 64 =====
+[Annex]27
+Barrier Event Determination Dates
+Barrier Event Determination Date
+
+27
+
+1
+
+[date]
+
+2
+
+[date]
+
+[ ]
+
+[
+
+]
+
+Only include an Annex of Barrier Event Determination Dates if Barrier Event Determination Dates are not otherwise specified or
+otherwise determined in accordance with the FX Definitions or a method specified in the Confirmation.
+
+60
+Copyright © 2026 by International Swaps and Derivatives Association, Inc. and EMTA, Inc.

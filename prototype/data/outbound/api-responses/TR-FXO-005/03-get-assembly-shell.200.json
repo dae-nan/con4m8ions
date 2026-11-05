@@ -16,7 +16,7 @@
   "exhibitILetter": {
     "path": "Without_MCA",
     "longFormFallback": true,
-    "mcaProfileId": null,
+    "masterConfirmationId": null,
     "blocks": {
       "heading": {
         "partyALetterhead": "Standard Chartered Bank Sample Desk",
@@ -26,7 +26,11 @@
       },
       "definitionsVersion": "2026 FX Definitions Main Book Version 1.0",
       "agreementClause": "This Confirmation evidences a complete and binding agreement between you and us as to the terms of the Transaction. Until we execute an ISDA Master Agreement, this Confirmation shall supplement, form a part of, and be subject to an agreement in the form of the ISDA 2002 Master Agreement as if we had executed an agreement in such form (but without any Schedule except for the election of English law as the governing law and USD as the Termination Currency) on the Trade Date of the first Transaction between us.",
-      "productInsert": "[INSERT Exhibit II-B Confirmation of a Deliverable FX Option Transaction]",
+      "productInsert": {
+        "exhibitId": "II-B",
+        "title": "Confirmation of a Deliverable FX Option Transaction",
+        "additionalProvisionExhibitIds": []
+      },
       "elections": {
         "partyALei": "5493001KJTIIGC8Y1R12",
         "partyBLei": "549300TRANSFeree0001",

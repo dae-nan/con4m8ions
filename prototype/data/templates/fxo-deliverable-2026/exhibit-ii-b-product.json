@@ -22,15 +22,15 @@
     },
     {
       "attribute": "Buyer",
-      "tpsJsonPath": "trade.parties.buyer",
+      "tpsJsonPath": "trade.product.buyerPartyReference.href",
       "required": true,
-      "example": "Party A"
+      "example": "partyA"
     },
     {
       "attribute": "Seller",
-      "tpsJsonPath": "trade.parties.seller",
+      "tpsJsonPath": "trade.product.sellerPartyReference.href",
       "required": true,
-      "example": "Party B"
+      "example": "partyB"
     },
     {
       "attribute": "Option Style",

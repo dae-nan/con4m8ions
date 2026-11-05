@@ -1,15 +1,17 @@
-# CDU-PS API Contract v1.5 (Phase 2 — design pack)
+# CDU-PS API Contract v1.6 (Phase 2 — design pack)
 
-No running server yet. Phase 2 prototype implements Python APIs against this contract.  
+No server. The Phase 2 prototype is a static HTML + Carbon site; an in-browser mock API answers these paths from `prototype/data/` using the route manifest `prototype/routes.json` (see [architecture](../../docs/design/architecture.md)). The later swap-in is a FastAPI replay of the same contract.  
 **Phase 3:** AI / chatbot / live MCP agents — stubs and thinking only; no implementation.
 
-Base URL (prototype): `http://localhost:8080/v1`  
-Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
+Base URL (prototype): `/v1` on the static site origin (mock API). Later FastAPI swap-in: `http://localhost:8080/v1`.  
+Auth (Phase 2): none in the static prototype; the contract keeps bearer service token and HMAC `X-CDU-Signature` on webhooks.
 
 **Naming:** **TPs** = Transaction Processing systems. **SmartDX** = external vendor for ISDA confirmation letters.  
 **DDD:** API groups map to bounded contexts in PRD §8.
 
 **v1.5 changes (Phase 2):** every endpoint used by the simulation has a labelled `Request:` / `Response NNN:` example; full examples live in [`prototype/data/`](../../prototype/data/) and are checked by `scripts/check_prototype_sync.py` (file keys must appear in the example here, two levels deep). Added read endpoints (`GET /templates`, `GET /templates/{id}`, version/layer detail, selection rules, `GET /trades`, `GET /assemblies/{id}`), the SmartDX mock adapter, and the `POST /callbacks/tps` outbound contract. Affirm examples now use `DOC-001` (the NEW_TRADE document) to match the payload-mocks workbook.
+
+**v1.6 changes:** FpML-style, product-agnostic trade model (see [modelling decisions](../../docs/design/modelling-decisions.md)): `trade.parties[]` + `trade.product` party references + `trade.economics` + `trade.documentation` (master agreement, master confirmation, contractual definitions, contractual matrix). Removed the top-level MCA flag, MCA profile id and `legal` block from `POST /events`; `mcaPath` stays as a derived read field. One product insert name: `productInsert`. Four-eyes approval before activate (`approval`, `approvalStatus`, `activationPolicy`; `POST /templates/{id}/versions/{version}/approval` planned, coming soon). `timelineAvailable` on trade rows.
 
 ---
 
@@ -22,6 +24,8 @@ Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
 | Errors | JSON problem body |
 | JSON paths | Align with Excel `Attribute_Product_Map` / LDM entities |
 | Examples | Values are illustrative; key sets are normative (sync-checked) |
+| Trade model | FpML-style: `parties[]` (`id` is the `href` target), `product.buyerPartyReference` / `sellerPartyReference`, `economics` (product terms only), `documentation` |
+| List selectors | Attribute paths address list items by key: `trade.parties[id=partyA].lei`, `trade.documentation.contractualMatrix[matrixType=SRO].version` |
 
 ### Error model
 
@@ -42,7 +46,7 @@ Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
 | --- | --- |
 | 400 | `VALIDATION_FAILED`, `BAD_ENUM` |
 | 404 | `NOT_FOUND` |
-| 409 | `CONFLICT`, `IDEMPOTENCY_REPLAY_MISMATCH` |
+| 409 | `CONFLICT`, `IDEMPOTENCY_REPLAY_MISMATCH`, `APPROVAL_REQUIRED`, `FOUR_EYES_VIOLATION` |
 | 422 | `LEGAL_ELECTION_INVALID` |
 | 500 | `INTERNAL` |
 | 502/503 | `CHANNEL_UNAVAILABLE` (SmartDX / Swoosh / Compare X) |
@@ -118,7 +122,7 @@ sequenceDiagram
   participant CB as CallbacksToTPs
   participant F as TimelineAPI
 
-  Admin->>A: POST /templates and activate
+  Admin->>A: POST /templates, approve (four-eyes), activate
   TPs->>B: POST /events NEW_TRADE
   B->>C: start AssemblyRun
   C->>SDX: send package
@@ -201,17 +205,18 @@ Response 200:
   "routingRules": {},
   "selectionRuleIds": ["PSR-FXO-DEL-2026-001"],
   "versions": [
-    {"version": "1.1.0", "status": "LIVE", "activatedAt": "2027-11-22T00:00:00Z", "retiredAt": null,
-     "masterTemplateVersionId": "TV-I-2026-1.1.0", "productTemplateVersionId": "TV-IIB-2026-1.1.0"}
+    {"version": "1.2.0", "status": "DRAFT", "approvalStatus": "APPROVED", "activatedAt": null, "retiredAt": null,
+     "masterTemplateVersionId": "TV-I-2026-1.2.0", "productTemplateVersionId": "TV-IIB-2026-1.1.0"}
   ],
-  "audit": {"lastChangedBy": "u.admin.lee", "lastChangedAt": "2027-11-28T09:10:00Z"},
+  "audit": {"lastChangedBy": "u.admin.lee", "lastChangedAt": "2027-12-01T15:30:00Z"},
+  "activationPolicy": {"fourEyes": true, "approverMustDifferFromActivator": true, "effectiveFrom": "2027-11-28T00:00:00Z", "approvalWorkflow": "COMING_SOON"},
   "notes": "…"
 }
 ```
 
 ### `GET /templates/{id}/versions/{version}`
 
-One package version with its layers, change log and validation. Full examples: `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json`.
+One package version with its layers, change log, validation and four-eyes `approval` (`null` for versions activated before `activationPolicy.effectiveFrom`). Full examples: `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json`.
 
 Response 200:
 
@@ -228,16 +233,18 @@ Response 200:
   ],
   "changeLog": "Exhibit I notices: add SmartDX Docbox as Party A notice channel",
   "changes": [
-    {"block": "elections", "attribute": "Contact details for notice Party A", "tpsJsonPath": "trade.notices.partyA", "before": "…", "after": "…"}
+    {"block": "elections", "attribute": "Contact details for notice Party A", "tpsJsonPath": "trade.parties[id=partyA].noticeContact", "before": "…", "after": "…"}
   ],
   "validation": {"status": "PASSED", "checkedAt": "2027-11-28T09:10:00Z", "checks": []},
-  "audit": {"lastChangedBy": "u.admin.lee", "lastChangedAt": "2027-11-28T09:10:00Z"}
+  "approval": {"status": "APPROVED", "requestedBy": "u.admin.lee", "requestedAt": "2027-11-28T09:15:00Z", "approvedBy": "u.ctrl.ng",
+               "approvedAt": "2027-12-01T15:30:00Z", "comment": "…", "auditId": "AUD-0007"},
+  "audit": {"lastChangedBy": "u.ctrl.ng", "lastChangedAt": "2027-12-01T15:30:00Z"}
 }
 ```
 
 ### `GET /templates/{id}/layers/{templateVersionId}`
 
-Layer body: Exhibit I blocks (MASTER) or II-B fields (PRODUCT). Every `attribute` + `tpsJsonPath` pair is an Excel `Attribute_Product_Map` row. Full examples: `prototype/data/templates/fxo-deliverable-2026/exhibit-i-master.json`, `…/exhibit-ii-b-product.json`.
+Layer body: Exhibit I blocks (MASTER) or II-B fields (PRODUCT). The Exhibit I `productInsert` block carries `productInsert: {exhibitId, title, additionalProvisionExhibitIds}` — the ISDA splice point for the Exhibit II form and Exhibit III Additional Provisions. Every `attribute` + `tpsJsonPath` pair is an Excel `Attribute_Product_Map` row. Full examples: `prototype/data/templates/fxo-deliverable-2026/exhibit-i-master.json`, `…/exhibit-ii-b-product.json`.
 
 Response 200:
 
@@ -251,7 +258,7 @@ Response 200:
   "status": "LIVE",
   "title": "Confirmation of a Deliverable FX Option Transaction",
   "exampleTradeId": "TR-FXO-001",
-  "blocks": [{"block": "heading", "fields": [], "text": "…", "variants": {}, "productExhibitId": null}],
+  "blocks": [{"block": "heading", "fields": [], "text": "…", "variants": {}, "productInsert": {"exhibitId": "II-B", "title": "…", "additionalProvisionExhibitIds": []}}],
   "fields": [{"attribute": "Strike Price", "tpsJsonPath": "trade.economics.strikePrice", "required": true, "example": "1.0850"}]
 }
 ```
@@ -288,9 +295,13 @@ Response 201:
 }
 ```
 
+### `POST /templates/{id}/versions/{version}/approval` (planned — coming soon)
+
+Four-eyes approval of a DRAFT version: `{"decision": "APPROVE" | "REJECT", "comment": "…"}` by a user other than the requester. Not simulated in Phase 2: the 1.2.0 approval (`AUD-0007`, `u.ctrl.ng`) is mocked as already given and the UI shows a "Coming soon" stub for the workflow.
+
 ### `POST /templates/{id}/activate`
 
-DRAFT → LIVE; prior LIVE → RETIRED and becomes `rollbackTargetVersion`. Same body as the payload-mocks `HOT_SWAP` `INBOUND_ADMIN` row; ideal path uses `reason: PLANNED_RELEASE`, hot-swap edge uses `WRONG_PRODUCT_BINDING_FIXED`.
+DRAFT → LIVE; prior LIVE → RETIRED and becomes `rollbackTargetVersion`. Requires `approval.status = APPROVED` (else 409 `APPROVAL_REQUIRED`) and an activating user different from `approval.approvedBy` (else 409 `FOUR_EYES_VIOLATION`). Same body as the payload-mocks `HOT_SWAP` `INBOUND_ADMIN` row; ideal path uses `reason: PLANNED_RELEASE`, hot-swap edge uses `WRONG_PRODUCT_BINDING_FIXED`.
 
 Request:
 
@@ -309,7 +320,10 @@ Response 200:
   "previousLiveVersion": "1.1.0",
   "rollbackTargetVersion": "1.1.0",
   "resendPolicy": "MANUAL",
-  "auditId": "AUD-0007",
+  "approvedBy": "u.ctrl.ng",
+  "approvedAt": "2027-12-01T15:30:00Z",
+  "approvalAuditId": "AUD-0007",
+  "auditId": "AUD-0008",
   "requestId": "req_tpl_activate_120"
 }
 ```
@@ -351,17 +365,28 @@ Request:
   "eventId": "evt_1001",
   "tradeId": "TR-FXO-001",
   "occurredAt": "2027-12-01T10:00:00Z",
-  "mcaPath": "With_MCA",
-  "mcaProfileId": "MCA-SCB-ACME-2026-001",
-  "legal": {"defsYear": "2026", "mainBookVersion": "1.0", "isdaMasterDate": "2026-01-15", "longFormFallback": false,
-            "governingLaw": null, "terminationCurrency": null, "matrixBindings": {"SRO": null}},
   "template": {"productExhibitId": "II-B", "supplementExhibitIds": [], "masterExhibitId": "I"},
-  "trade": {"product": {}, "parties": {}, "economics": {}},
+  "trade": {
+    "parties": [
+      {"id": "partyA", "partyName": "Standard Chartered Bank Sample Desk", "lei": "5493001KJTIIGC8Y1R12", "office": "Singapore", "noticeContact": "…"},
+      {"id": "partyB", "partyName": "ACME Corp Treasury", "lei": "549300ABCDEFGH123456", "address": "…", "office": "London", "noticeContact": "…"}
+    ],
+    "product": {"productType": "Deliverable_FX_Option", "transactionType": "Deliverable FX Option Transaction",
+                "buyerPartyReference": {"href": "partyA"}, "sellerPartyReference": {"href": "partyB"}},
+    "economics": {"tradeDate": "2027-12-01", "strikePrice": "1.0850"},
+    "documentation": {
+      "masterAgreement": {"masterAgreementType": "ISDA2002", "masterAgreementDate": "2026-01-15", "longFormFallback": false,
+                          "governingLaw": null, "terminationCurrency": null},
+      "masterConfirmation": {"masterConfirmationId": "MCA-SCB-ACME-2026-001", "masterConfirmationType": "…", "masterConfirmationDate": "2026-01-15"},
+      "contractualDefinitions": [{"definitions": "2026 FX Definitions", "publisher": "ISDA/EMTA", "book": "Main Book", "version": "1.0"}],
+      "contractualMatrix": []
+    }
+  },
   "assembly": {"requestedMode": "AUTOMATED", "reason": null}
 }
 ```
 
-`assembly` is optional (`requestedMode`: `AUTOMATED` | `MANUAL_DRAFTING` | `MANUAL_ENTRY`).
+`assembly` is optional (`requestedMode`: `AUTOMATED` | `MANUAL_DRAFTING` | `MANUAL_ENTRY`). Without_MCA trades send `documentation.masterConfirmation: null`, `masterAgreement.longFormFallback: true` and the long-form `governingLaw` / `terminationCurrency`; CDU-PS derives `mcaPath` from that (no separate inbound flag).
 
 Response 202:
 
@@ -380,7 +405,7 @@ Response 202:
 
 ### `GET /trades`
 
-Ops desk queue. Query: `status`, `mcaPath`, `from`, `to`, `q`. Items = Excel `Prototype_Trade_Book` rows. Full example: `prototype/data/outbound/api-responses/book/get-trades.200.json`.
+Ops desk queue. Query: `status`, `mcaPath`, `from`, `to`, `q`. Items = Excel `Prototype_Trade_Book` rows. `timelineAvailable` marks trades with a simulated `GET /trades/{id}/timeline`; the UI shows a stub for the rest. Full example: `prototype/data/outbound/api-responses/book/get-trades.200.json`.
 
 Response 200:
 
@@ -394,14 +419,14 @@ Response 200:
      "partyBLei": "549300ABCDEFGH123456", "mcaPath": "With_MCA", "optionType": "EUR Call / USD Put", "callCurrency": "EUR",
      "callCurrencyAmount": "1000000", "strikePrice": "1.0850", "expirationDate": "2027-12-31", "status": "Affirmed",
      "assemblyRunId": "AR-FXO-001-01", "assemblyMode": "AUTOMATED", "templateVersion": "1.1.0", "documentId": "DOC-001",
-     "affirmationStatus": "Affirmed", "sentAt": "2027-12-01T10:00:04Z", "affirmedAt": "2027-12-01T15:04:05Z"}
+     "affirmationStatus": "Affirmed", "sentAt": "2027-12-01T10:00:04Z", "affirmedAt": "2027-12-01T15:04:05Z", "timelineAvailable": true}
   ]
 }
 ```
 
 ### `GET /trades/{id}`
 
-Trade snapshot. Full example: `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json`.
+Trade snapshot: read-model header fields plus the inbound `parties`, `product`, `economics`, `documentation` blocks. `mcaPath` is derived (`With_MCA` when `documentation.masterConfirmation` is set). Full example: `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json`.
 
 Response 200:
 
@@ -410,8 +435,8 @@ Response 200:
   "tradeId": "TR-FXO-001",
   "productType": "Deliverable_FX_Option",
   "mcaPath": "With_MCA",
-  "mcaProfileId": "MCA-SCB-ACME-2026-001",
   "status": "Affirmed",
+  "timelineAvailable": true,
   "affirmationStatus": "Affirmed",
   "receivedAt": "2027-12-01T10:00:00Z",
   "lastEventAt": "2027-12-01T15:04:06Z",
@@ -420,8 +445,10 @@ Response 200:
   "currentDocumentId": "DOC-001",
   "smartdxDocumentId": "SDX-DOC-001",
   "template": {"templateBundleId": "TB-FXO-DEL-2026-001", "templateVersion": "1.1.0", "productExhibitId": "II-B"},
-  "parties": {},
-  "economics": {}
+  "parties": [{"id": "partyA", "partyName": "…", "lei": "…", "address": "…", "office": "…", "noticeContact": "…", "settlementAccount": "…"}],
+  "product": {"productType": "Deliverable_FX_Option", "transactionType": "…", "buyerPartyReference": {"href": "partyA"}, "sellerPartyReference": {"href": "partyB"}},
+  "economics": {},
+  "documentation": {"masterAgreement": {}, "masterConfirmation": {}, "contractualDefinitions": [], "contractualMatrix": []}
 }
 ```
 
@@ -452,7 +479,7 @@ Request:
 
 ### `GET /assemblies/{id}`
 
-AssemblyRun snapshot as it moves through DQ → legal → package → compose. `status` enum = LDM `AssemblyRun.status`. Full examples: `prototype/data/outbound/api-responses/TR-FXO-001/02-…` to `04-get-assembly.completed.200.json`.
+AssemblyRun snapshot as it moves through DQ → legal → package → compose. `status` enum = LDM `AssemblyRun.status`. `legal` is the Legal Resolver result only (framework, MCA path, master confirmation, long-form flag); the terms themselves stay in the trade's `documentation`. Full examples: `prototype/data/outbound/api-responses/TR-FXO-001/02-…` to `04-get-assembly.completed.200.json`.
 
 Response 200:
 
@@ -470,11 +497,10 @@ Response 200:
   "confirmationId": "CONF-001",
   "documentId": "DOC-001",
   "dq": {"status": "PASSED", "ruleIds": ["DQ-REQ-001"], "errors": []},
-  "legal": {"frameworkId": "LF-2026-1.0", "defsYear": "2026", "mainBookVersion": "1.0", "mcaPath": "With_MCA",
-            "mcaProfileId": "MCA-SCB-ACME-2026-001", "longFormFallback": false, "matrixBindings": {"SRO": null}},
+  "legal": {"frameworkId": "LF-2026-1.0", "mcaPath": "With_MCA", "masterConfirmationId": "MCA-SCB-ACME-2026-001", "longFormFallback": false},
   "package": {"ruleId": "PSR-FXO-DEL-2026-001", "templateBundleId": "TB-FXO-DEL-2026-001", "version": "1.1.0",
               "masterTemplateVersionId": "TV-I-2026-1.1.0", "productTemplateVersionId": "TV-IIB-2026-1.1.0", "supplementTemplateVersionId": null},
-  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "mcaProfileId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"}
+  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "masterConfirmationId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"}
 }
 ```
 
@@ -509,7 +535,7 @@ Response 200:
   "editableBlocks": ["elections"],
   "loadedBy": "u.ops.tan",
   "loadedAt": "2027-12-01T16:40:00Z",
-  "exhibitILetter": {"path": "Without_MCA", "longFormFallback": true, "mcaProfileId": null, "blocks": {}, "proseLetter": "…"},
+  "exhibitILetter": {"path": "Without_MCA", "longFormFallback": true, "masterConfirmationId": null, "blocks": {}, "proseLetter": "…"},
   "productBody": {"exhibit": "II-B", "generalTerms": {}}
 }
 ```
@@ -580,7 +606,7 @@ Request:
   "templateVersion": "1.1.0",
   "exhibits": {"master": "I", "product": "II-B", "supplements": []},
   "mcaPath": "With_MCA",
-  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "mcaProfileId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"},
+  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "masterConfirmationId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"},
   "productBody": {"exhibit": "II-B", "generalTerms": {}},
   "priorDocumentId": null,
   "manualDraftContentId": null
@@ -624,9 +650,12 @@ Response 200:
 ```json
 {
   "asOf": "2027-12-01T16:55:02Z",
-  "count": 27,
+  "count": 28,
   "items": [
-    {"auditId": "AUD-0007", "at": "2027-12-01T16:00:00Z", "actorId": "u.admin.lee", "action": "template.activated",
+    {"auditId": "AUD-0007", "at": "2027-12-01T15:30:00Z", "actorId": "u.ctrl.ng", "action": "template.approved",
+     "entityType": "TemplatePackage", "entityId": "TB-FXO-DEL-2026-001", "beforeVersion": null, "afterVersion": "1.2.0",
+     "tradeId": null, "correlationId": "req_tpl_approve_120"},
+    {"auditId": "AUD-0008", "at": "2027-12-01T16:00:00Z", "actorId": "u.admin.lee", "action": "template.activated",
      "entityType": "TemplatePackage", "entityId": "TB-FXO-DEL-2026-001", "beforeVersion": "1.1.0", "afterVersion": "1.2.0",
      "tradeId": null, "correlationId": "req_tpl_activate_120"}
   ]
@@ -667,7 +696,7 @@ Response 200:
   "priorDocumentId": null,
   "createdAt": "2027-12-01T10:00:04Z",
   "artifact": {"format": "PDF", "uri": "mock://smartdx/SDX-DOC-001.pdf", "pages": 3},
-  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "mcaProfileId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"}
+  "exhibitILetter": {"path": "With_MCA", "longFormFallback": false, "masterConfirmationId": "MCA-SCB-ACME-2026-001", "blocks": {}, "proseLetter": "…"}
 }
 ```
 

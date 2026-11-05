@@ -2,6 +2,7 @@
 """Fail on drift between Excel (canonical data), OpenAPI (canonical contract) and the Phase 2 pack.
 
 Checks
+  0. committed workbooks == a fresh scripts/build.py build (every sheet, every cell); routes.json == manifest
   1. prototype/data/*.json == Excel `Prototype_Sim` rows (after $ref resolution); no orphan files
   2. each file's keys appear in its labelled OpenAPI example (two levels deep); API paths exist
   3. field names match Excel LDM / Template_Admin_Utility / Sample_Trade_Card / Attribute_Product_Map / Rules_DQ
@@ -19,6 +20,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build  # noqa: E402
+import build_prototype_data as sim_data  # noqa: E402
+import generate_fxo_payload_mocks as mocks  # noqa: E402
 import prototype_sim as sim  # noqa: E402
 
 REPO = sim.REPO
@@ -105,11 +109,15 @@ def keys_subset(data, example, where: str, level: int = 0):
 # ---------------------------------------------------------------------------
 
 
-def jpath(doc, path: str):
-    node = doc
-    for name, idx in re.findall(r"([^.\[\]]+)|\[(\d+)\]", path):
-        node = node[int(idx)] if idx else node[name]
-    return node
+jpath = sim.jpath_get
+
+
+def cell_values(wb) -> dict[str, list[tuple]]:
+    norm = lambda v: None if v == "" else v  # noqa: E731
+    return {
+        ws.title: [tuple(norm(v) for v in row) for row in ws.iter_rows(values_only=True) if any(v not in (None, "") for v in row)]
+        for ws in wb.worksheets
+    }
 
 
 def as_text(v) -> str:
@@ -164,10 +172,22 @@ def main():
     paths, examples = parse_openapi()
     data = {}
 
+    # 0. workbooks == fresh build; route manifest
+    for name, committed, fresh in zip(("mapping", "mocks"), (mapping_wb, mocks_wb), build.build_workbooks()):
+        got, want = cell_values(committed), cell_values(fresh)
+        check(list(got) == list(want), f"{name} workbook sheets {list(got)} != fresh build {list(want)} (run scripts/build.py)")
+        for sheet in want:
+            if got.get(sheet) != want[sheet]:
+                diff = next((i for i, (a, b) in enumerate(zip(got.get(sheet, []), want[sheet])) if a != b), min(len(got.get(sheet, [])), len(want[sheet])))
+                check(False, f"{name} workbook sheet {sheet} differs from fresh build at row {diff + 1} (run scripts/build.py)")
+            else:
+                check(True, "")
+    check(sim.ROUTES_JSON.exists() and json.loads(sim.ROUTES_JSON.read_text(encoding="utf-8")) == sim_data.routes(mocks_wb), "prototype/routes.json differs from Prototype_Sim (run scripts/build.py)")
+
     # 1. export equality + orphans
     for rel in files:
         p = sim.DATA_DIR / rel
-        check(p.exists(), f"missing prototype/data/{rel} (run scripts/build_prototype_data.py)")
+        check(p.exists(), f"missing prototype/data/{rel} (run scripts/build.py)")
         if p.exists():
             data[rel] = json.loads(p.read_text(encoding="utf-8"))
             check(data[rel] == resolver.file(rel), f"prototype/data/{rel} differs from Excel Prototype_Sim row")
@@ -205,11 +225,14 @@ def main():
                 check(k in allowed, f"{rel}: '{k}' not in LDM AssemblyRun")
             check(set(d["dq"]["ruleIds"]) <= dq_ids, f"{rel}: DQ rule ids not in Rules_DQ")
         if rel.startswith("inbound/trades/"):
-            for k in d["trade"]["economics"]:
-                check(f"economics.{k}" in card_fields, f"{rel}: economics.{k} not in Sample_Trade_Card")
-            for role in ("partyA", "partyB"):
-                for k in d["trade"]["parties"][role]:
-                    check(f"parties.{role}.{k}" in card_fields, f"{rel}: parties.{role}.{k} not in Sample_Trade_Card")
+            leaves: list = []
+            mocks.flatten("", d["trade"], leaves)
+            for k, _ in leaves:
+                check(k in card_fields or any(c.startswith(k + ".") for c in card_fields), f"{rel}: trade.{k} not in Sample_Trade_Card")
+            prod = d["trade"]["product"]
+            ids = [x["id"] for x in d["trade"]["parties"]]
+            refs = [prod["buyerPartyReference"]["href"], prod["sellerPartyReference"]["href"]]
+            check(set(refs) <= set(ids) and refs[0] != refs[1], f"{rel}: buyer/seller party references must resolve to trade.parties[] and differ (DQ-REQ-003)")
     for a in data["timeline/audit-events.json"]["items"]:
         check(set(a) <= ldm_attrs(mapping_wb, "AuditEvent"), f"audit {a['auditId']}: keys not in LDM AuditEvent")
     for rule in data[f"{tpl}/selection-rules.json"]["items"]:
@@ -255,11 +278,14 @@ def main():
             b = by_trade.get(d["tradeId"])
             check(b is not None, f"{rel}: {d['tradeId']} not in Prototype_Trade_Book")
             if b:
-                eco, pb = d["trade"]["economics"], d["trade"]["parties"]["partyB"]
-                for col, val in [("eventId", d["eventId"]), ("receivedAt", d["occurredAt"]), ("mcaPath", d["mcaPath"]), ("partyBName", pb["name"]),
+                eco, pb = d["trade"]["economics"], mocks.party(d["trade"], "partyB")
+                for col, val in [("eventId", d["eventId"]), ("receivedAt", d["occurredAt"]), ("mcaPath", mocks.mca_path(d["trade"])), ("partyBName", pb["partyName"]),
                                  ("partyBLei", pb["lei"]), ("optionType", eco["optionType"]), ("callCurrency", eco["callCurrency"]),
                                  ("callCurrencyAmount", eco["callCurrencyAmount"]), ("strikePrice", eco["strikePrice"]), ("expirationDate", eco["expirationDate"])]:
                     check(b[col] == val, f"{rel}: book {col}={b[col]!r} != trade file {val!r}")
+
+    for b in book:
+        check(b["timelineAvailable"] == (f"timeline/{b['tradeId']}.json" in files), f"book {b['tradeId']}: timelineAvailable != timeline file exists")
 
     # 5. timeline <-> audit <-> book
     audits = {a["auditId"]: a for a in data["timeline/audit-events.json"]["items"]}

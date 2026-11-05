@@ -3,48 +3,41 @@
   "eventId": "evt_2005",
   "tradeId": "TR-FXO-005",
   "occurredAt": "2027-12-01T14:20:00Z",
-  "mcaPath": "Without_MCA",
-  "mcaProfileId": null,
-  "legal": {
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
-    "isdaMasterDate": null,
-    "longFormFallback": true,
-    "governingLaw": "English law",
-    "terminationCurrency": "USD",
-    "matrixBindings": {
-      "SRO": null
-    }
-  },
   "template": {
+    "masterExhibitId": "I",
     "productExhibitId": "II-B",
-    "supplementExhibitIds": [],
-    "masterExhibitId": "I"
+    "supplementExhibitIds": []
   },
   "trade": {
-    "product": {
-      "transactionType": "Deliverable FX Option Transaction"
-    },
-    "parties": {
-      "partyA": {
-        "name": "Standard Chartered Bank Sample Desk",
+    "parties": [
+      {
+        "id": "partyA",
+        "partyName": "Standard Chartered Bank Sample Desk",
         "lei": "5493001KJTIIGC8Y1R12",
-        "office": "Singapore"
+        "office": "Singapore",
+        "noticeContact": "ops-fx@scb.example"
       },
-      "partyB": {
-        "name": "Globex Holdings Ltd",
+      {
+        "id": "partyB",
+        "partyName": "Globex Holdings Ltd",
         "lei": "549300TRANSFeree0001",
         "address": "200 Novation Ave, New York NY 10005",
-        "office": "New York"
+        "office": "New York",
+        "noticeContact": "fxconfirm@globex.example"
+      }
+    ],
+    "product": {
+      "productType": "Deliverable_FX_Option",
+      "transactionType": "Deliverable FX Option Transaction",
+      "buyerPartyReference": {
+        "href": "partyA"
       },
-      "buyer": "Party A",
-      "seller": "Party B"
+      "sellerPartyReference": {
+        "href": "partyB"
+      }
     },
     "economics": {
       "tradeDate": "2027-12-01",
-      "transactionType": "Deliverable FX Option Transaction",
-      "buyer": "Party A",
-      "seller": "Party B",
       "optionStyle": "European",
       "optionType": "EUR Call / USD Put",
       "callCurrency": "EUR",
@@ -59,6 +52,25 @@
       "premiumCurrency": "USD",
       "premiumPaymentDate": "2027-12-03",
       "settlementMethod": "Deliverable"
+    },
+    "documentation": {
+      "masterAgreement": {
+        "masterAgreementType": "ISDA2002",
+        "masterAgreementDate": null,
+        "longFormFallback": true,
+        "governingLaw": "English law",
+        "terminationCurrency": "USD"
+      },
+      "masterConfirmation": null,
+      "contractualDefinitions": [
+        {
+          "definitions": "2026 FX Definitions",
+          "publisher": "ISDA/EMTA",
+          "book": "Main Book",
+          "version": "1.0"
+        }
+      ],
+      "contractualMatrix": []
     }
   },
   "assembly": {
