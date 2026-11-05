@@ -16,7 +16,7 @@ One frame that makes every job reachable in one click: the **Trades** desk (defa
 
 ## 2. Actors
 
-Ops confirm analyst (default landing: Trades) · Template admin (Templates) · MIS lead (MIS) · Ops lead (Timeline).
+Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (Templates) · Product control approver `u.ctrl.ng` (four-eyes on template versions; their approval is mocked as given, so they have no screen yet) · MIS lead (MIS) · Ops lead (Timeline). The prototype has no sign-in: `(UT)` is a fixed simulated user.
 
 ## 3. Entry / exit
 
@@ -48,7 +48,7 @@ Ops confirm analyst (default landing: Trades) · Template admin (Templates) · M
 
 - `═` marks the active nav item. Badge on **Trades** = trade count; badge on **Templates** = versions waiting in DRAFT.
 - `◐` theme toggle (light/dark, [`tokens.md`](../system/tokens.md) §7). `(UT)` user menu.
-- `SIMULATION · as of …` banner always visible while the prototype replays `prototype/data/`.
+- `SIMULATION · as of …` banner always visible. It shows the mock API sim clock ([`architecture.md`](../architecture.md) §5): reads return the recorded state at that time; activate and submit move it forward.
 
 ## 5. Layout — iPhone (`sm`, < 672px)
 
@@ -103,4 +103,5 @@ Ops confirm analyst (default landing: Trades) · Template admin (Templates) · M
 
 - Error badge on **Trades** for Rejected / ChannelError counts — STUB (E4, E8).
 - Session expiry, role-based nav hiding — STUB.
-- Phase 3 assistant entry — out of scope.
+- Phase 3 assistant entry — the user menu shows "Assistant `(◌ Coming soon)`" (components §12), disabled.
+- Sim clock picker (jump to a step) — STUB; the clock starts at the book `asOf` and only moves on activate/submit.

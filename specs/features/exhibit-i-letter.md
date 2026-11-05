@@ -10,13 +10,15 @@ Model Exhibit I as the **ISDA confirmation letter wrapper** — not a thin heade
 | --- | --- | --- |
 | Heading | Party A letterhead, Confirmation Date, Party B name & address | `confirmation.header.*` |
 | Intro | Purpose paragraph; Trade Date reference | composed text |
-| Definitions | FX Definitions version election | `trade.legal.fxDefinitionsVersion` |
-| Agreement | ISDA Master date (With_MCA) **or** long-form fallback (Without_MCA) | `trade.legal.isdaMaster.date` / `trade.legal.longFormFallback` |
-| **Insert point** | Exhibit II-* (+ III-*) body | Template Engine splice |
-| Elections | LEI A/B, Fallback Benchmark, Acks/Reps, Calculation Agent, Joint CA dispute | `trade.parties.*.lei`, `trade.legal.calculationAgent`, … |
-| Accounts | Account Party A/B | `trade.settlement.accountParty*` |
-| Offices / Broker | Offices, Broker/Arranger | `trade.parties.*.office` |
-| Law / Notices | Governing law (if no Master), notice contacts | `trade.legal.governingLawConfirm`, `trade.notices.*` |
+| Definitions | FX Definitions version election | `trade.documentation.contractualDefinitions[0].version` |
+| Agreement | ISDA Master date (With_MCA) **or** long-form fallback (Without_MCA) | `trade.documentation.masterAgreement.masterAgreementDate` / `.longFormFallback` |
+| **productInsert** | Exhibit II-* form (+ III-* Additional Provisions) | `productInsert {exhibitId, title, additionalProvisionExhibitIds}` — Template Engine splice |
+| Elections | LEI A/B, Fallback Benchmark, Acks/Reps, Calculation Agent, Joint CA dispute | `trade.parties[id=partyA].lei`, `trade.calculationAgent.calculationAgentPartyReference.href`, `trade.documentation.acknowledgmentsAndRepresentations`, … |
+| Accounts | Account Party A/B | `trade.parties[id=…].settlementAccount` |
+| Offices / Broker | Offices, Broker/Arranger | `trade.parties[id=…].office`, `trade.brokerPartyReference.href` |
+| Law / Notices | Governing law (if no Master), notice contacts | `trade.documentation.governingLaw`, `trade.parties[id=…].noticeContact` |
+
+Trade paths follow the FpML-style model in [`docs/design/modelling-decisions.md`](../../docs/design/modelling-decisions.md).
 | Closing | Supersession; please confirm… | `confirmation.closing.supersession` |
 | Signatures | Party A; Party B confirm-as-of | `confirmation.signatures.*` |
 
@@ -33,8 +35,8 @@ Exhibit I [Additional elections … Closing … Signatures]
 
 | Path | Letter behaviour |
 | --- | --- |
-| With_MCA | Short-form Master subject clause; CA/notices/SSI may default from Assumed MCA |
-| Without_MCA | Long-form binding agreement language; explicit governing law / termination currency |
+| With_MCA (`documentation.masterConfirmation` set) | Short-form Master subject clause; CA/notices/SSI may default from Assumed MCA |
+| Without_MCA (`masterConfirmation` null) | Long-form binding agreement language; explicit governing law / termination currency |
 
 ## Mocks
 

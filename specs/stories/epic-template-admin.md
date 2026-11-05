@@ -1,4 +1,4 @@
-# Epic: Template admin — view LIVE package, activate DRAFT
+# Epic: Template admin — view LIVE package, four-eyes approval, activate DRAFT
 
 | Item | Value |
 | --- | --- |
@@ -55,16 +55,42 @@ And validation status is PASSED
 | validation | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `validation.status` | `PASSED` |
 | new Exhibit I layer | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `layers[0].templateVersionId` | `TV-I-2026-1.2.0` |
 | II-B layer unchanged | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `layers[1].templateVersionId` | `TV-IIB-2026-1.1.0` |
+| change path (FpML party) | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `changes[0].tpsJsonPath` | `trade.parties[id=partyA].noticeContact` |
+
+## Story TA-2a — See the four-eyes approval before activating (F1c Audit activate)
+
+As a template admin I want to see that a second person approved DRAFT 1.2.0, so that I only activate reviewed changes and the approval is on the audit trail.
+
+```gherkin
+Given u.admin.lee requested approval of 1.2.0 on 2027-11-28 at 09:15Z
+And u.ctrl.ng approved it on 2027-12-01 at 15:30Z (audit AUD-0007)
+When the admin selects version 1.2.0
+Then the version shows approval APPROVED by u.ctrl.ng, who is not the activating admin
+And the package versions list shows 1.2.0 approvalStatus APPROVED
+And the request / approve / reject controls show "Coming soon" (POST /templates/{id}/versions/{version}/approval is planned)
+```
+
+| Then | File | Path | Value |
+| --- | --- | --- | --- |
+| approval status | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.status` | `APPROVED` |
+| requested by | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.requestedBy` | `u.admin.lee` |
+| approved by | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.approvedBy` | `u.ctrl.ng` |
+| approved at | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.approvedAt` | `2027-12-01T15:30:00Z` |
+| approval audit | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.auditId` | `AUD-0007` |
+| list approval | `prototype/data/templates/fxo-deliverable-2026/package.json` | `versions[2].approvalStatus` | `APPROVED` |
+| audit before activate | `prototype/data/templates/fxo-deliverable-2026/audit.json` | `items[6].action` | `template.approved` |
+| policy | `prototype/data/templates/fxo-deliverable-2026/package.json` | `activationPolicy.approverMustDifferFromActivator` | `true` |
+| workflow | `prototype/data/templates/fxo-deliverable-2026/package.json` | `activationPolicy.approvalWorkflow` | `COMING_SOON` |
 
 ## Story TA-3 — Activate DRAFT 1.2.0 with an audit trail (F1c Audit activate)
 
 As a template admin I want to activate 1.2.0 with a reason, so that new trades use it and the change is audited.
 
 ```gherkin
-Given package TB-FXO-DEL-2026-001 has 1.1.0 LIVE and 1.2.0 DRAFT with validation PASSED
+Given package TB-FXO-DEL-2026-001 has 1.1.0 LIVE and 1.2.0 DRAFT with validation PASSED and approval APPROVED by u.ctrl.ng
 When the admin confirms POST /templates/{id}/activate for 1.2.0 with reason PLANNED_RELEASE at 2027-12-01T16:00:00Z
 Then 1.2.0 becomes LIVE and 1.1.0 becomes RETIRED and the rollback target
-And GET /templates/{id}/audit gains AUD-0007 template.activated 1.1.0 → 1.2.0
+And GET /templates/{id}/audit gains AUD-0008 template.activated 1.1.0 → 1.2.0 after AUD-0007 template.approved
 And trades booked before 16:00Z keep version 1.1.0
 ```
 
@@ -75,13 +101,16 @@ And trades booked before 16:00Z keep version 1.1.0
 | new LIVE | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `status` | `LIVE` |
 | previous LIVE | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `previousLiveVersion` | `1.1.0` |
 | rollback target | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `rollbackTargetVersion` | `1.1.0` |
-| audit id | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `auditId` | `AUD-0007` |
+| audit id | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `auditId` | `AUD-0008` |
+| approval cited | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `approvalAuditId` | `AUD-0007` |
+| approver | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `approvedBy` | `u.ctrl.ng` |
 | after: 1.1.0 | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json` | `versions[1].status` | `RETIRED` |
 | after: 1.2.0 | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json` | `versions[2].status` | `LIVE` |
-| audit action | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json` | `items[6].action` | `template.activated` |
-| audit after version | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json` | `items[6].afterVersion` | `1.2.0` |
+| audit approval | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json` | `items[6].action` | `template.approved` |
+| audit action | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json` | `items[7].action` | `template.activated` |
+| audit after version | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json` | `items[7].afterVersion` | `1.2.0` |
 | TR-FXO-001 stays pinned | `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json` | `template.templateVersion` | `1.1.0` |
 
 ## Out of scope (EDGE / STUB)
 
-Create package, rollback (`POST /templates/{id}/rollback`), hot-swap + resend ([`specs/scenarios/hot-swap-resend.md`](../scenarios/hot-swap-resend.md)), four-eyes approval.
+Create package, rollback (`POST /templates/{id}/rollback`), hot-swap + resend ([`specs/scenarios/hot-swap-resend.md`](../scenarios/hot-swap-resend.md)), the approval workflow itself (request / approve / reject — "Coming soon"), activate rejected for a missing approval or self-approval (409).

@@ -126,7 +126,24 @@ Carbon `Modal` size `sm`. Used only for activate and submit on the ideal path.
 
 Two-column grid of §2 read-only fields; collapses to one column below `md`.
 
-## 12. Glyph legend (quick reference)
+## 12. Coming soon stub
+
+Marks a feature that is designed but not built in the prototype (approval workflow, unsimulated timelines, AI and future MIS features). It never pretends to work.
+
+```text
+ ┌ ◌ Explain this number ─────────────────────── (◌ Coming soon) ┐
+ │ An assistant will explain how this KPI is derived from the     │
+ │ trade book. Not available in this prototype.                   │
+ └────────────────────────────────────────────────────────────────┘
+ Inline form:   ‹ Request approval ›  (◌ Coming soon)
+```
+
+- The chip `(◌ Coming soon)` uses tone `neutral`, a dashed outline and no hover state.
+- Controls inside the stub are rendered `disabled` with `aria-disabled="true"`, and the chip text is in the accessible name, e.g. "Request approval, coming soon".
+- The panel form has a title, one sentence of what it will do, and no fake data.
+- Carbon: `Tag` (type `outline`) for the chip and `Tile` for the panel.
+
+## 13. Glyph legend (quick reference)
 
 | Glyph | Meaning |
 | --- | --- |
@@ -142,6 +159,8 @@ Two-column grid of §2 read-only fields; collapses to one column below `md`.
 | `⋯` | Overflow menu |
 | `→` | Navigation to another screen (target named next to it) |
 | `{…}` | Value bound from prototype data (see each screen's Data bindings table) |
+| `(◌ Coming soon)` · `┌ ◌ … ┐` | Coming soon chip / stub panel (§12) |
+| `◷` | Trade has a simulated timeline (`timelineAvailable`) |
 
 ## EDGE / STUB
 

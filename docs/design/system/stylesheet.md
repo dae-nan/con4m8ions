@@ -75,6 +75,8 @@
 .cdu-chip--pending-data-entry                                      { --tone: attention; }
 .cdu-chip--sent, .cdu-chip--affirm-pending                         { --tone: progress; }
 .cdu-chip--affirmed, .cdu-chip--completed, .cdu-chip--live         { --tone: success; }
+.cdu-chip--approved                                                { --tone: success; }
+.cdu-chip--coming-soon                                             { --tone: neutral; border-style: dashed; }
 ```
 
 Implementation note for the prototype: resolve `--tone` to the `--cdu-tone-{tone}-fg/bg` pair with one rule per tone (CSS cannot interpolate variable names).
@@ -105,6 +107,8 @@ Implementation note for the prototype: resolve `--tone` to the `--cdu-tone-{tone
 | `.cdu-kpi` | KPI tile | `Tile` | widgets W5 |
 | `.cdu-aging` | Aging bars | — (simple bars) | widgets W6 |
 | `.cdu-audit` | Audit list | `DataTable` | widgets W7 |
+| `.cdu-coming-soon` | Coming soon stub panel (dashed border, muted text, disabled controls) | `Tile` | components §12 |
+| `.cdu-chip--coming-soon` | Coming soon chip `(◌ Coming soon)` | `Tag` (outline) | components §12 |
 
 ## 4. Responsive rules
 

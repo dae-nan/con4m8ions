@@ -67,6 +67,25 @@ Then the manual draft nodes appear between package.located and document.sent
 | submitted | `prototype/data/timeline/TR-FXO-005.json` | `events[6].action` | `assembly.manual_submitted` |
 | sent | `prototype/data/timeline/TR-FXO-005.json` | `events[7].action` | `document.sent` |
 
+## Story OB-2b — Know which trades have a timeline (F5a Per-trade timeline)
+
+As an ops analyst I want to see at a glance which trades have a timeline, so that I am not sent to an empty page.
+
+```gherkin
+Given the book has 6 trades and only TR-FXO-001 and TR-FXO-005 have simulated timelines
+When the analyst views the ops desk
+Then those two rows show the timeline marker ◷
+When the analyst picks TR-FXO-006 in the timeline picker
+Then the screen shows the book times and a "Coming soon" timeline stub, and does not call GET /trades/{id}/timeline
+```
+
+| Then | File | Path | Value |
+| --- | --- | --- | --- |
+| TR-FXO-001 has timeline | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[4].timelineAvailable` | `true` |
+| TR-FXO-005 has timeline | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[2].timelineAvailable` | `true` |
+| TR-FXO-006 has none | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[5].timelineAvailable` | `false` |
+| TR-FXO-006 affirmed at (stub) | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[5].affirmedAt` | `2027-12-01T11:30:00Z` |
+
 ## Story OB-3 — Read today's FXO numbers (F5b Aging contagion errors)
 
 As an ops lead I want volumes, affirm rate, aging and counterparty concentration from the same book the desk sees, so that I can act before cut-off.
@@ -96,6 +115,16 @@ And GET /analytics/queues/errors is empty
 
 MIS numbers are derived from the book by `analytics_from_book` in `scripts/prototype_sim.py`; the sync check fails if they drift from the book.
 
+## Story OB-4 — See future MIS features as "Coming soon" (F5b)
+
+As an ops lead I want AI and future MIS features to be clearly marked "Coming soon", so that I never mistake a placeholder for a real number.
+
+```gherkin
+Given the MIS dashboard is open
+Then "Explain this number", "Anomalies & prediction" and "Alerts" show as Coming soon panels with no figures
+And Export and windows other than Today are disabled with a Coming soon chip
+```
+
 ## Out of scope (EDGE / STUB)
 
-Flagged contagion and alerts, non-empty error queues, Unmatched / Disputed aging, history windows and export, agent explanations (Phase 3).
+Flagged contagion, non-empty error queues, Unmatched / Disputed aging. Alerts, history windows, export and AI explanations are "Coming soon" stubs (AI implementation is Phase 3). Timelines for the four unsimulated book trades.

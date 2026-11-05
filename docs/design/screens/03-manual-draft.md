@@ -40,8 +40,8 @@ Ops confirm analyst `u.ops.tan`.
 │                 Globex Holdings Ltd, 200 Novation Ave, New York NY 10005      │ │ Call       EUR 2500000          │
 │ ▸ Definitions   2026 FX Definitions Main Book Version 1.0          🔒          │ │ Strike     1.0900               │
 │ ▸ Agreement     Long-form: ISDA 2002 form, English law, USD TC     🔒          │ │ Expiry     2027-12-31 10:00 NY  │
-│ ┌ Insert ─ Exhibit II-B (from trade) ─────────────────────────────── 🔒 ┐    │ │ Premium    USD 37500            │
-│ │ European · EUR Call / USD Put · EUR 2,500,000 · Strike 1.0900       │    │ │ Pay date   2027-12-03           │
+│ ┌ productInsert ─ Exhibit II-B (from trade) ──────────────────────── 🔒 ┐    │ │ Premium    USD 37500            │
+│ │ Buyer Party A · Seller Party B · European · EUR Call / USD Put      │    │ │ Pay date   2027-12-03           │
 │ └──────────────────────────────────────────────────────────────────────┘    │ │ Party B LEI 549300TRANSFeree0001│
 │ ✎ Elections     Party A LEI 5493001KJTIIGC8Y1R12 · Party B LEI 5493…0001   │ ├─ Draft ─────────────────────────┤
 │                 Calculation Agent                                            │ │ Loaded   16:40Z u.ops.tan       │
@@ -55,6 +55,7 @@ Ops confirm analyst `u.ops.tan`.
 ```
 
 - `✎` = editable block (from `editableBlocks`), `🔒` = locked block rendered from template + trade data.
+- The **productInsert** block is the Exhibit I splice point for the Exhibit II-B form ("Confirmation of a Deliverable FX Option Transaction"), plus Exhibit III Additional Provisions when elected (none here). Its body is the rendered II-B General Terms: Buyer and Seller print as "Party A" / "Party B", resolved from the trade's party references ([`modelling-decisions.md`](../modelling-decisions.md) MD-4, MD-6).
 - Edited text is highlighted (`attention` tone background) until saved.
 
 ### 4.1 Submit modal + result
@@ -106,6 +107,10 @@ Trade facts collapse into an accordion above the canvas; one block per screen he
 | Editable block | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `editableBlocks[0]` | `elections` |
 | Heading Party B | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `exhibitILetter.blocks.heading.partyBName` | `Globex Holdings Ltd` |
 | Calc Agent (before) | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `exhibitILetter.blocks.elections.calculationAgent` | `Party A` |
+| Insert exhibit | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `exhibitILetter.blocks.productInsert.exhibitId` | `II-B` |
+| Insert title | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `exhibitILetter.blocks.productInsert.title` | `Confirmation of a Deliverable FX Option Transaction` |
+| Insert Buyer | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `productBody.generalTerms.buyer` | `Party A` |
+| Letter path (derived) | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `exhibitILetter.path` | `Without_MCA` |
 | Facts Strike | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `productBody.generalTerms.strikePrice` | `1.0900` |
 | Facts Call amount | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `productBody.generalTerms.callCurrencyAmount` | `2500000` |
 | Facts Premium | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `productBody.generalTerms.premiumAmount` | `37500` |
@@ -133,3 +138,4 @@ Trade facts collapse into an accordion above the canvas; one block per screen he
 - Edits to locked blocks, unlock request to template admin — STUB.
 - Concurrent editors / draft locking — STUB.
 - SmartDX unavailable on submit (E8) — STUB.
+- Exhibit III Additional Provisions inside `productInsert` (`additionalProvisionExhibitIds`) — STUB (none elected).

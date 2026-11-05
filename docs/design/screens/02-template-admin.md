@@ -12,13 +12,13 @@
 
 ## 1. Goal
 
-The template admin sees the one LIVE **2026 FXO Deliverable (II-B)** package — what is LIVE, what is waiting in DRAFT, which fields it binds and who changed what — and activates the validated DRAFT **1.2.0** with an audit trail, trusting the cutover.
+The template admin sees the one LIVE **2026 FXO Deliverable (II-B)** package — what is LIVE, what is waiting in DRAFT, which fields it binds and who changed what — and activates the validated, **four-eyes approved** DRAFT **1.2.0** with an audit trail, trusting the cutover.
 
-**Non-goals:** authoring template text (DRAFT 1.2.0 already exists), rollback, hot-swap of a wrong template.
+**Non-goals:** authoring template text (DRAFT 1.2.0 already exists), the approval workflow itself (mocked as already approved; shown as "Coming soon"), rollback, hot-swap of a wrong template.
 
 ## 2. Actors
 
-Template admin `u.admin.lee` (primary) · Legal / product control (read).
+Template admin `u.admin.lee` (primary, requests approval and activates) · Product control approver `u.ctrl.ng` (approved 1.2.0; no screen in the prototype) · Legal (read).
 
 ## 3. Entry / exit
 
@@ -40,7 +40,7 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
 │ TB-FXO-DEL-2026-001                                      │
 │ Exhibit I EXH-I-2026-v1 + II-B · Supplements none        │
 │ Defs 2026 · MCA optional · Resend MANUAL · Hot reload on │
-│ Draft waiting: 1.2.0                          → Open     │
+│ Draft waiting: 1.2.0 · (● APPROVED)           → Open     │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -62,7 +62,7 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
 └─────────┴──────────────┴──────────────────────┴──────────────────────┴───────────────────┴──────────────────┘
 ┌─ Version 1.2.0 ─────────────────────────────────────────────────────────────────────────────────────────┐
 │ Change log   Exhibit I notices: add SmartDX Docbox as Party A notice channel                              │
-│ Change       elections · Contact details for notice Party A (trade.notices.partyA)                         │
+│ Change       elections · Contact details for notice Party A (trade.parties[id=partyA].noticeContact)       │
 │              before  ops-fx@scb.example                                                                    │
 │              after   ops-fx@scb.example; SmartDX Docbox SCB-SG                                             │
 │ Validation   (● PASSED) 2027-11-28 09:10Z                                                                  │
@@ -70,6 +70,10 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
 │              ✓ DQ rules bound for every required II-B field                                                │
 │              ✓ Sample render of TR-FXO-001 (With_MCA) and Without_MCA                                      │
 │ Drafted by   u.admin.lee · 2027-11-28 09:00Z                                                               │
+│ Approval     (● APPROVED) u.ctrl.ng · 2027-12-01 15:30Z · AUD-0007   (four-eyes: approver ≠ activator)    │
+│              requested by u.admin.lee · 2027-11-28 09:15Z                                                  │
+│              "Notice channel change reviewed against Exhibit I; no economic impact"                        │
+│              ‹ Request approval ›  ‹ Approve › ‹ Reject ›   (◌ Coming soon)                                 │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -80,7 +84,7 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
                         ════════
  Selection rule  PSR-FXO-DEL-2026-001 · Deliverable_FX_Option · NEW_TRADE · SCB-SG · SmartDX · priority 10
  Routing         Deliverable_FX_Option / NEW_TRADE → TB-FXO-DEL-2026-001
- Matrix pins     SRO: none        MCA required: no (With_MCA and Without_MCA)
+ Matrix pins     SRO: none (each matrix as at Trade Date)   MCA required: no (With_MCA and Without_MCA)
 
  II-B fields (TV-IIB-2026-1.1.0)                       example TR-FXO-001
 ┌────────────────────────┬──────────────────────────────────────┬───────────────────────────────────┐
@@ -92,7 +96,7 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
 │ Premium                │ trade.economics.premiumAmount        │ 15000                             │
 │ …18 rows               │                                      │                                   │
 └────────────────────────┴──────────────────────────────────────┴───────────────────────────────────┘
- Exhibit I blocks (TV-I-2026-1.1.0): heading · intro · definitionsVersion · agreementClause · productInsert · elections · closing · signatures
+ Exhibit I blocks (TV-I-2026-1.1.0): heading · intro · definitionsVersion · agreementClause · productInsert (→ II-B) · elections · closing · signatures
 ```
 
 ### 4.4 Audit tab (`GET /templates/{id}/audit`) — widget W7
@@ -101,6 +105,7 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
 ┌─────────────────────┬──────────────┬───────────────────────────┬─────────────┐
 │ At (UTC)            │ Actor        │ Action                    │ Version     │
 ├─────────────────────┼──────────────┼───────────────────────────┼─────────────┤
+│ 2027-12-01 15:30:00 │ u.ctrl.ng    │ template.approved         │ — → 1.2.0   │
 │ 2027-11-28 09:10:00 │ svc.cdu-ps   │ template.validated        │ — → 1.2.0   │
 │ 2027-11-28 09:00:00 │ u.admin.lee  │ template.version_added    │ — → 1.2.0   │
 │ 2027-11-22 00:00:00 │ u.admin.lee  │ template.activated        │ 1.0.0 → 1.1.0│
@@ -119,25 +124,28 @@ Template admin `u.admin.lee` (primary) · Legal / product control (read).
         ║ 1.1.0 becomes RETIRED and the rollback target.               ║
         ║ New trades use 1.2.0 from now. Running assemblies keep their ║
         ║ pinned version. Resend policy MANUAL: nothing is resent.     ║
+        ║ Approved by u.ctrl.ng · 2027-12-01 15:30Z · AUD-0007   ✓     ║
         ║ Reason      [PLANNED_RELEASE        ▾]                       ║
         ║                                   ‹ Cancel ›  [▶ Activate]   ║
         ╚══════════════════════════════════════════════════════════════╝
 
- ┃ ✓ Version 1.2.0 is LIVE. New trades use it from 2027-12-01T16:00:00Z. Audit AUD-0007.   [✕]
+ ┃ ✓ Version 1.2.0 is LIVE. New trades use it from 2027-12-01T16:00:00Z. Audit AUD-0008.   [✕]
  2026 FXO Deliverable (II-B)                                   (● LIVE 1.2.0)
 ```
 
 ## 5. Layout — iPhone (`sm`)
+
+- **[▶ Activate 1.2.0]** is enabled only when `approval.status = APPROVED` and the signed-in user is not `approval.approvedBy`; otherwise it is disabled with the reason as helper text (EDGE).
 
 Tabs become a dropdown; the versions table becomes stacked cards (version, status chip, activated); the activate button is a full-width sticky footer.
 
 ## 6. Interaction (ideal path)
 
 1. Admin opens **Templates** → one package card (LIVE 1.1.0, draft 1.2.0 waiting) → **Open**.
-2. **Versions** tab, selects 1.2.0 → sees change, validation PASSED (F1a Draft version, F1b Configure mapping).
+2. **Versions** tab, selects 1.2.0 → sees change, validation PASSED and approval APPROVED by `u.ctrl.ng` (F1a Draft version, F1b Configure mapping).
 3. Optional: **Bindings** tab to confirm the selection rule and II-B field paths; **Audit** tab for history.
 4. Clicks **[▶ Activate 1.2.0]** → modal, reason `PLANNED_RELEASE` → **Activate**.
-5. Notification shows LIVE 1.2.0 and the audit id; Versions table now shows 1.2.0 LIVE, 1.1.0 RETIRED; Audit tab gains `AUD-0007` (F1c Audit activate).
+5. Notification shows LIVE 1.2.0 and the audit id; Versions table now shows 1.2.0 LIVE, 1.1.0 RETIRED; Audit tab gains `AUD-0008` after the approval `AUD-0007` (F1c Audit activate).
 
 ## 7. Component inventory
 
@@ -151,6 +159,7 @@ Tabs become a dropdown; the versions table becomes stacked cards (version, statu
 | Audit list | W7 | `.cdu-audit` |
 | Activate modal | components §7 | `.cdu-modal` |
 | Success notice | components §8 | `.cdu-notice--success` |
+| Approval line + workflow stub | components §11, §12 | `.cdu-kv`, `.cdu-chip--approved`, `.cdu-chip--coming-soon` |
 
 ## 8. Data bindings
 
@@ -170,10 +179,17 @@ Tabs become a dropdown; the versions table becomes stacked cards (version, statu
 | Selection rule | `prototype/data/templates/fxo-deliverable-2026/selection-rules.json` | `items[0].ruleId` | `PSR-FXO-DEL-2026-001` |
 | II-B Strike path | `prototype/data/templates/fxo-deliverable-2026/exhibit-ii-b-product.json` | `fields[9].tpsJsonPath` | `trade.economics.strikePrice` |
 | II-B Strike example | `prototype/data/templates/fxo-deliverable-2026/exhibit-ii-b-product.json` | `fields[9].example` | `1.0850` |
-| Audit latest action | `prototype/data/templates/fxo-deliverable-2026/audit.json` | `items[5].action` | `template.validated` |
+| Audit latest action | `prototype/data/templates/fxo-deliverable-2026/audit.json` | `items[6].action` | `template.approved` |
+| Card / row 3 approval | `prototype/data/templates/fxo-deliverable-2026/package.json` | `versions[2].approvalStatus` | `APPROVED` |
+| 1.2.0 approved by | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.approvedBy` | `u.ctrl.ng` |
+| 1.2.0 approved at | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.approvedAt` | `2027-12-01T15:30:00Z` |
+| 1.2.0 requested by | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.requestedBy` | `u.admin.lee` |
+| 1.2.0 approval audit | `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` | `approval.auditId` | `AUD-0007` |
+| Policy four-eyes | `prototype/data/templates/fxo-deliverable-2026/package.json` | `activationPolicy.fourEyes` | `true` |
 | Activate reason | `prototype/data/inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json` | `reason` | `PLANNED_RELEASE` |
 | Result activated at | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `activatedAt` | `2027-12-01T16:00:00Z` |
-| Result audit id | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `auditId` | `AUD-0007` |
+| Result audit id | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `auditId` | `AUD-0008` |
+| Result approved by | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` | `approvedBy` | `u.ctrl.ng` |
 | After: LIVE version | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json` | `version` | `1.2.0` |
 | After: 1.1.0 status | `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json` | `versions[1].status` | `RETIRED` |
 
@@ -197,4 +213,5 @@ Audit table rows render newest first; the file is oldest first.
 - ValidationError state on a DRAFT (PRD §13.1) — STUB.
 - Rollback (`POST /templates/{id}/rollback`, E10) and hot-swap of a wrong template + resend (E1) — STUB.
 - Supplement (III-*) bindings and SRO matrix pin editing — STUB.
-- Four-eyes approval before activate — open question, not drawn.
+- Four-eyes approval workflow (request / approve / reject, `POST /templates/{id}/versions/{version}/approval`) — `(◌ Coming soon)` stub; the 1.2.0 approval is mocked as given.
+- Activate blocked (409 `APPROVAL_REQUIRED` / `FOUR_EYES_VIOLATION`) — STUB.

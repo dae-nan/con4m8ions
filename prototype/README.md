@@ -1,19 +1,33 @@
 # Prototype simulation data (Phase 2)
 
-JSON files the ops-desk prototype replays. **No app code here yet.** Architecture: [`docs/design/architecture.md`](../docs/design/architecture.md). Contract: [`specs/api/openapi.md`](../specs/api/openapi.md).
+JSON files the ops-desk prototype replays. **No app code here yet.** The prototype will be a static HTML + Carbon site in this folder. An in-browser mock API answers the OpenAPI paths from `data/` through `routes.json`, with no server; the later swap-in is a FastAPI replay of the same contract. Architecture: [`docs/design/architecture.md`](../docs/design/architecture.md) §5. Contract: [`specs/api/openapi.md`](../specs/api/openapi.md).
 
 ## 1. Rules
 
 - **Excel is canonical.** Every file under `data/` is one row of sheet `Prototype_Sim` in [`docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx`](../docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx). Rows may `$ref` the Phase 1 mock rows (`With_MCA` / `Without_MCA`), so `TR-FXO-001` payloads are the Phase 1 mocks verbatim.
-- **Do not hand-edit `data/`.** Rebuild and check:
+- **Do not hand-edit `data/`, `routes.json` or the workbooks.** There is one rebuild path. It regenerates every sheet of both workbooks from the committed ISDA text extract (`docs/reference/isda/text/`) and the tables in `scripts/`, then exports `data/` and `routes.json`. The output is byte-identical for the same inputs.
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python scripts/build_prototype_data.py   # patch Excel gaps + export data/
-.venv/bin/python scripts/check_prototype_sync.py    # must print OK
+.venv/bin/python scripts/build.py                   # workbooks + data/ + routes.json
+.venv/bin/python scripts/check_prototype_sync.py    # must print OK (includes workbooks == fresh build)
 ```
 
-- Assumed state: one LIVE package `TB-FXO-DEL-2026-001` "2026 FXO Deliverable (II-B)" v1.1.0, DRAFT v1.2.0 waiting. Trade date 2027-12-01; book snapshot `asOf` 2027-12-01T16:30:00Z.
+  Only when an ISDA PDF changes: `.venv/bin/python scripts/extract_isda_text.py` (needs poppler `pdftotext`), then rebuild.
+- **Trade shape** is FpML-style: `trade.parties[]`, `trade.product` (buyer/seller party references), `trade.economics`, `trade.documentation`. See [`docs/design/modelling-decisions.md`](../docs/design/modelling-decisions.md).
+- **Assumed state:**
+  - One LIVE package, `TB-FXO-DEL-2026-001` "2026 FXO Deliverable (II-B)" v1.1.0.
+  - DRAFT v1.2.0 already approved (four-eyes) by `u.ctrl.ng` at 15:30 (`AUD-0007`).
+  - Trade date 2027-12-01; book snapshot `asOf` 2027-12-01T16:30:00Z.
+  - Only `TR-FXO-001` and `TR-FXO-005` have timelines (`timelineAvailable`).
+
+## 1a. Mock API (`routes.json`)
+
+`routes.json` has one entry per `Prototype_Sim` row: `{step, at, method, path, url, contract, file}`.
+- The browser layer answers `method` + `url` (under `/v1`) with `data/<file>`.
+- A GET returns the latest entry at or before the sim clock.
+- A POST/PUT returns its `response-*` entry and moves the clock to that entry's `at`.
+- Unknown calls return 404 `NOT_FOUND`, and the screen shows its stub.
 
 ## 2. Folders
 
@@ -40,7 +54,7 @@ data/
 | A05 | `GET /templates/selection-rules` | `data/templates/fxo-deliverable-2026/selection-rules.json` |
 | A06 | `GET /templates/{id}/audit` | `data/templates/fxo-deliverable-2026/audit.json` |
 | A07–A08 | `PUT /templates/{id}/versions` (history, 2027-11-28) | `data/inbound/ui/TB-FXO-DEL-2026-001.put-version-1.2.0.json` → `data/outbound/api-responses/TB-FXO-DEL-2026-001/01-put-versions.201.json` |
-| A09–A10 | `POST /templates/{id}/activate` | `data/inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json` → `…/02-post-activate.200.json` |
+| A09–A10 | `POST /templates/{id}/activate` (1.2.0 already approved, `AUD-0007`; activation `AUD-0008`) | `data/inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json` → `…/02-post-activate.200.json` |
 | A11–A12 | re-read package + audit | `…/03-get-template.after-activate.200.json` · `…/04-get-template-audit.after-activate.200.json` |
 
 ## 4. Flow B — new trade `TR-FXO-001` → confirmed → affirmed → callback
@@ -72,3 +86,5 @@ Flow C (manual draft `TR-FXO-005`, steps C01–C11) and flow D (book + MIS, D01�
 | E11 | Manual draft abandoned | FAILED / SUPPRESSED |
 | — | Manual entry mode (b) `PUT /assemblies/{id}/manual-entries` | PENDING_DATA_ENTRY |
 | — | AMEND, NOVATION, EXERCISE, TERMINATE payloads (Excel only) | Amended · Novated · Exercised |
+| — | Four-eyes approval workflow `POST /templates/{id}/versions/{version}/approval` (approval mocked as given) | Coming soon |
+| — | Timelines for `TR-FXO-002`, `TR-FXO-003`, `TR-FXO-004`, `TR-FXO-006` (`timelineAvailable = false`) | Coming soon |

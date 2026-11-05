@@ -26,11 +26,11 @@ Docs + Excel mapping + payload mocks only. No running UI or API.
 - Prior v1.3: TPs/SmartDX arch, Swoosh/Compare X, TemplatePackage/AssemblyRun, DDD APIs  
 
 
-`scripts/generate_phase1_mapping.py` and `scripts/generate_fxo_payload_mocks.py` record how Phase 1 built the workbooks. Do not rerun them: they need the ISDA PDF extract and would drop sheets added afterwards. Change the workbooks through `scripts/build_prototype_data.py` (below).
+Both workbooks are generated. `scripts/build.py` rebuilds every sheet from the committed ISDA text extract (`docs/reference/isda/text/`) and the tables in `scripts/`. It is the only rebuild path, it is deterministic, and it is safe to rerun (below).
 
 ## Phase 2 — design pack
 
-ASCII wireframes, design system and simulation data for the FXO ideal path. Still no app code.
+ASCII wireframes, design system and simulation data for the FXO ideal path. Still no app code. The prototype will be static HTML + Carbon with an in-browser mock API; the later swap-in is FastAPI replay.
 
 | Artifact | Path |
 | --- | --- |
@@ -40,13 +40,15 @@ ASCII wireframes, design system and simulation data for the FXO ideal path. Stil
 | **Ideal-path flow** | [`docs/design/flows/fxo-ideal-path.md`](docs/design/flows/fxo-ideal-path.md) |
 | **Simulation data** | [`prototype/`](prototype/) |
 | **BDD stories** | [`specs/stories/`](specs/stories/) |
-| **API contract (v1.5)** | [`specs/api/openapi.md`](specs/api/openapi.md) |
+| **Modelling decisions (FpML-style)** | [`docs/design/modelling-decisions.md`](docs/design/modelling-decisions.md) |
+| **Information architecture** | [`docs/design/information-architecture.md`](docs/design/information-architecture.md) |
+| **API contract (v1.6)** | [`specs/api/openapi.md`](specs/api/openapi.md) |
 
-Excel (`docs/mappings/`) and `specs/api/openapi.md` are canonical; `prototype/data/` is generated from them.
+Excel (`docs/mappings/`) and `specs/api/openapi.md` are canonical. `prototype/data/` and `prototype/routes.json` are generated with the workbooks.
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python scripts/build_prototype_data.py   # patch workbooks, export prototype/data
+.venv/bin/python scripts/build.py                  # all workbook sheets, prototype/data, routes.json
 .venv/bin/python scripts/check_prototype_sync.py   # Excel ↔ OpenAPI ↔ data ↔ docs; must print OK
 ```
 

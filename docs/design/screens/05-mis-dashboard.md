@@ -35,7 +35,7 @@ All numbers are derived from the book (`scripts/prototype_sim.py` `analytics_fro
 ## 4. Layout — desktop
 
 ```text
- MIS · Deliverable FX Option · 2027-12-01 00:00Z → 16:30Z                 Product [FXO ▾]  Window [Today ▾]
+ MIS · Deliverable FX Option · 2027-12-01 00:00Z → 16:30Z     Product [FXO ▾]  Window [Today ▾]  ‹ Export › (◌ Coming soon)
 ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
 │ Received      │ Sent          │ Affirmed      │ Affirm rate   │ Error rate    │ Median new →  │
 │      6        │      3        │      2        │    66.7 %     │    0.0 %      │ affirmed      │
@@ -54,7 +54,16 @@ All numbers are derived from the book (`scripts/prototype_sim.py` `analytics_fro
 └─────────────────────────────────────────────────┘ │ ✓ No errors in window                                      │
                                                     └────────────────────────────────────────────────────────────┘
  As of 2027-12-01T16:30:00Z · refreshed with the book
+
+┌ ◌ Explain this number ──── (◌ Coming soon) ┐ ┌ ◌ Anomalies & prediction ─ (◌ Coming soon) ┐ ┌ ◌ Alerts ────────────── (◌ Coming soon) ┐
+│ AI assistant explains how a KPI is derived │ │ AI flags unusual aging or counterparty     │ │ Subscribe to contagion / aging          │
+│ from the trade book and links the trades.  │ │ patterns and predicts breaches.            │ │ thresholds by email or Teams.           │
+│ ‹ Explain › (disabled)                     │ │ No model in this prototype.                │ │ ‹ Subscribe › (disabled)                │
+└────────────────────────────────────────────┘ └────────────────────────────────────────────┘ └─────────────────────────────────────────┘
 ```
+
+- The three "Coming soon" panels use components §12. They show no numbers, so nothing on screen is invented. On `sm` they collapse into one "More insights `(◌ Coming soon)`" row.
+- Window options other than **Today** are listed but disabled with `(◌ Coming soon)`.
 
 ## 5. Layout — iPhone (`sm`)
 
@@ -77,6 +86,7 @@ KPI tiles become a 2-column grid (6 tiles, 3 rows); queue strip scrolls horizont
 | Aging bars | W6 | `.cdu-aging` |
 | Contagion table | components §4 (compact) | `.cdu-table--compact` |
 | Empty error queue | components §10 (empty state) | `.cdu-empty` |
+| AI / future feature stubs | components §12 | `.cdu-coming-soon`, `.cdu-chip--coming-soon` |
 
 ## 8. Data bindings
 
@@ -113,8 +123,8 @@ Affirm rate renders as a percentage with one decimal (`0.6667` → `66.7 %`).
 
 ## EDGE / STUB
 
-- Flagged contagion state (open ≥ threshold) and alerting — STUB; no counterparty reaches 3 in the sample book.
+- Flagged contagion state (open ≥ threshold) — STUB; no counterparty reaches 3 in the sample book. Alerts — `(◌ Coming soon)`.
 - Non-empty error queue (ChannelError, DQ failures) — STUB (E7, E8).
 - Unmatched / Disputed aging with real counts — STUB (E3, E4).
-- Window picker beyond Today, CSV export, multi-product — STUB.
-- Agent "explain this number" panel — Phase 3.
+- Window picker beyond Today, CSV export — `(◌ Coming soon)`; multi-product — STUB.
+- AI features (explain this number, anomaly detection, predictive aging) — `(◌ Coming soon)` panels; implementation is Phase 3.

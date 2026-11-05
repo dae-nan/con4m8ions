@@ -18,18 +18,21 @@ As TPs I want CDU-PS to accept a NEW_TRADE event and tell me where to follow it,
 Given package TB-FXO-DEL-2026-001 version 1.1.0 is LIVE
 When TPs sends POST /events with NEW_TRADE evt_1001 for TR-FXO-001 on the With_MCA path
 Then CDU-PS replies 202 ACCEPTED with trade status Received and assembly run AR-FXO-001-01
-And DQ passes and the Legal Resolver picks With_MCA profile MCA-SCB-ACME-2026-001
+And DQ passes and the Legal Resolver derives With_MCA from the trade's documentation.masterConfirmation MCA-SCB-ACME-2026-001
 ```
 
 | Then | File | Path | Value |
 | --- | --- | --- | --- |
 | event type | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `eventType` | `NEW_TRADE` |
-| MCA path in | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `mcaPath` | `With_MCA` |
+| master confirmation in | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `trade.documentation.masterConfirmation.masterConfirmationId` | `MCA-SCB-ACME-2026-001` |
+| buyer reference | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `trade.product.buyerPartyReference.href` | `partyA` |
+| definitions | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `trade.documentation.contractualDefinitions[0].version` | `1.0` |
 | 202 status | `prototype/data/outbound/api-responses/TR-FXO-001/01-post-events.202.json` | `status` | `ACCEPTED` |
 | trade status | `prototype/data/outbound/api-responses/TR-FXO-001/01-post-events.202.json` | `tradeStatus` | `Received` |
 | assembly run | `prototype/data/outbound/api-responses/TR-FXO-001/01-post-events.202.json` | `assemblyRunId` | `AR-FXO-001-01` |
 | DQ | `prototype/data/outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json` | `dq.status` | `PASSED` |
-| MCA profile | `prototype/data/outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json` | `legal.mcaProfileId` | `MCA-SCB-ACME-2026-001` |
+| derived MCA path | `prototype/data/outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json` | `legal.mcaPath` | `With_MCA` |
+| master confirmation | `prototype/data/outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json` | `legal.masterConfirmationId` | `MCA-SCB-ACME-2026-001` |
 
 ## Story FX-2 — Locate the LIVE package and assemble the letter (F2a Locate package, F2c Auto or manual draft)
 

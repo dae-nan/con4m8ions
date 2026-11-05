@@ -15,7 +15,8 @@ See Excel `Template_Admin_Utility`.
 | `productExhibitId` / `productType` | Exhibit II-* routing |
 | `supplementExhibitIds[]` | Elected III-* |
 | `matrixBindings` | Version pins JSON |
-| `mcaRequired` / `mcaProfileId` | MCA path |
+| `mcaRequired` / `masterConfirmationId` | MCA path (`false` = per-trade, from `trade.documentation.masterConfirmation`) |
+| `approval.*` / `activationPolicy` | Four-eyes: DRAFT needs APPROVED by a second user before activate (workflow coming soon; mocked as given) |
 | `version` / `status` | `DRAFT` \| `LIVE` \| `RETIRED` |
 | `hotReloadEnabled` | Allow HOT_SWAP without redeploy |
 | `rollbackTargetVersion` | Prior LIVE |

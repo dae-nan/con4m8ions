@@ -5,8 +5,8 @@
 | Status | Phase 2 wireframe — ideal path — draft for review |
 | Design system | [`components`](../system/components.md) §3, §4, §6, §9 · [`widgets`](../system/widgets.md) W3, W7 |
 | Story map (PRD §9.3) | **K5 Observe** → S5 Timeline and queues → F5a Per-trade timeline · shows markers for **K2** F2a Locate package, F2b Prepare MCA and DQ, F2c Auto or manual draft and **K3** F3a Channel send, F3b Callback TPs, F3c Affirm webhook |
-| Data | `prototype/data/timeline/TR-FXO-001.json` · `prototype/data/timeline/TR-FXO-005.json` · `prototype/data/timeline/audit-events.json` · `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json` |
-| APIs | `GET /trades/{id}/timeline` · `GET /trades/{id}` · `GET /audit` |
+| Data | `prototype/data/timeline/TR-FXO-001.json` · `prototype/data/timeline/TR-FXO-005.json` · `prototype/data/timeline/audit-events.json` · `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json` · `prototype/data/outbound/api-responses/book/get-trades.200.json` (picker, `timelineAvailable`) |
+| APIs | `GET /trades/{id}/timeline` · `GET /trades/{id}` · `GET /trades` · `GET /audit` |
 | PRD | §12.1 per-trade timeline, §7 audit |
 | Flow | [`../flows/fxo-ideal-path.md`](../flows/fxo-ideal-path.md) flow B |
 
@@ -64,6 +64,22 @@ Ops confirm analyst · Ops lead · (Phase 3: agent tool reads the same API).
 - Lanes come from `lanes[]`; nodes are placed by `at`; gaps over 1 hour collapse to `┊` with the real times shown.
 - Selecting a node or a row opens the event drawer; both stay in sync.
 - `TR-FXO-005` renders the same way with `assembly.manual_started` / `manual_saved` / `manual_submitted` nodes in the `attention` tone.
+- The header's MCA reads `documentation.masterConfirmation.masterConfirmationId` (derived path `mcaPath`).
+
+### 4.1 Trade without a simulated timeline (picker, `timelineAvailable = false`)
+
+The picker lists all six book trades and marks the two with a timeline with `◷`. Choosing any other trade shows the book row and a stub instead of lanes. No call is made to `GET /trades/{id}/timeline`, because the mock API would return 404.
+
+```text
+ Timeline / TR-FXO-006                           Trade [TR-FXO-006 ▾]                         ‹ Back to trades ›
+   ◷ TR-FXO-001 · ◷ TR-FXO-005 · TR-FXO-002 · TR-FXO-003 · TR-FXO-004 · ▌TR-FXO-006        (picker list)
+ TR-FXO-006 · Initech Treasury Ltd · USD Call / JPY Put · USD 5,000,000      (● Affirmed)
+ TB-FXO-DEL-2026-001 v1.1.0 · DOC-106 · Without_MCA · sent 09:00:04Z · affirmed 11:30:00Z
+┌ ◌ Timeline ───────────────────────────────────────────────────────────────── (◌ Coming soon) ┐
+│ This trade has no simulated timeline in the prototype. Key times above come from the trade   │
+│ book. Simulated timelines: TR-FXO-001, TR-FXO-005.            ‹ Open TR-FXO-001 timeline ›   │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ## 5. Layout — iPhone (`sm`)
 
@@ -119,6 +135,10 @@ Vertical list, newest first, lane shown as a label (widgets W3 small-screen rule
 | Last row action | `prototype/data/timeline/TR-FXO-001.json` | `events[9].action` | `callback.sent` |
 | TR-FXO-005 manual marker | `prototype/data/timeline/TR-FXO-005.json` | `events[4].action` | `assembly.manual_started` |
 | TR-FXO-005 manual saved by | `prototype/data/timeline/TR-FXO-005.json` | `events[5].actor` | `u.ops.tan` |
+| Header MCA | `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json` | `documentation.masterConfirmation.masterConfirmationId` | `MCA-SCB-ACME-2026-001` |
+| Picker TR-FXO-006 has timeline | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[5].timelineAvailable` | `false` |
+| Stub TR-FXO-006 sent at | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[5].sentAt` | `2027-12-01T09:00:04Z` |
+| Stub TR-FXO-006 affirmed at | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[5].affirmedAt` | `2027-12-01T11:30:00Z` |
 
 ## 9. API calls
 
@@ -126,6 +146,7 @@ Vertical list, newest first, lane shown as a label (widgets W3 small-screen rule
 | --- | --- | --- |
 | Open | `GET /trades/TR-FXO-001` | `prototype/data/outbound/api-responses/TR-FXO-001/06-get-trade.200.json` |
 | Open | `GET /trades/TR-FXO-001/timeline` | `prototype/data/timeline/TR-FXO-001.json` |
+| Open (picker) | `GET /trades` | `prototype/data/outbound/api-responses/book/get-trades.200.json` |
 | Switch trade | `GET /trades/TR-FXO-005/timeline` | `prototype/data/timeline/TR-FXO-005.json` |
 | Drawer "full audit" | `GET /audit?tradeId=TR-FXO-001` | `prototype/data/timeline/audit-events.json` (filter client-side in the prototype) |
 
@@ -133,5 +154,5 @@ Vertical list, newest first, lane shown as a label (widgets W3 small-screen rule
 
 - Exception markers (Unmatched, Disputed, Compare X gate, ChannelError, Rejected) and retry nodes — STUB (E3, E4, E7, E8).
 - Later lifecycle events (AMEND, NOVATION, EXERCISE) and supersession chains (`priorDocumentId`) — STUB.
-- Timelines for `TR-FXO-002`, `-003`, `-004`, `-006` — not simulated; picker shows them disabled.
+- Timelines for `TR-FXO-002`, `-003`, `-004`, `-006` — not simulated (`timelineAvailable = false`); the screen shows the §4.1 `(◌ Coming soon)` stub with book times.
 - Export timeline as PDF — STUB.

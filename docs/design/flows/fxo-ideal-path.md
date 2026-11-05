@@ -5,7 +5,7 @@
 | Status | Phase 2 — ideal path only — draft for review |
 | Story map | PRD [`§9.3`](../../prd-cdu-ps-v1.md) kite → sea → fish |
 | Simulation | Excel `docs/mappings/` sheet `Prototype_Sim` (steps A01–D06) → `prototype/data/` (see [`prototype/README.md`](../../../prototype/README.md)) |
-| Architecture | [`../architecture.md`](../architecture.md) |
+| Architecture | [`../architecture.md`](../architecture.md) · navigation: [`../information-architecture.md`](../information-architecture.md) · data model: [`../modelling-decisions.md`](../modelling-decisions.md) |
 
 ## 1. Story map → screen matrix
 
@@ -42,18 +42,18 @@ flowchart LR
   tl -->|Back to trades| desk
 ```
 
-## 3. Flow A — template admin views LIVE package and activates DRAFT 1.2.0
+## 3. Flow A — template admin views LIVE package and activates the approved DRAFT 1.2.0
 
-Actor `u.admin.lee`, simulated clock 2027-12-01 15:59Z → 16:00:01Z. Screen [`02-template-admin`](../screens/02-template-admin.md).
+Actor `u.admin.lee`, simulated clock 2027-12-01 15:59Z → 16:00:01Z. The four-eyes approval by `u.ctrl.ng` (15:30Z, `AUD-0007`) is mocked as already given; the approval workflow is "Coming soon". Screen [`02-template-admin`](../screens/02-template-admin.md).
 
 1. `GET /templates` → `prototype/data/templates/index.json` — one package `TB-FXO-DEL-2026-001`, LIVE 1.1.0.
 2. `GET /templates/{id}` → `prototype/data/templates/fxo-deliverable-2026/package.json` — versions 1.0.0 RETIRED, 1.1.0 LIVE, 1.2.0 DRAFT.
-3. `GET /templates/{id}/versions/{version}` → `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` — change on the Party A notice line, validation PASSED (`AUD-0006`).
+3. `GET /templates/{id}/versions/{version}` → `prototype/data/templates/fxo-deliverable-2026/versions/1.2.0.json` — change on the Party A notice line, validation PASSED (`AUD-0006`), approval APPROVED by `u.ctrl.ng` (`AUD-0007`).
 4. `GET /templates/selection-rules` and `GET /templates/{id}/layers/{templateVersionId}` → `prototype/data/templates/fxo-deliverable-2026/selection-rules.json`, `prototype/data/templates/fxo-deliverable-2026/exhibit-i-master.json`, `prototype/data/templates/fxo-deliverable-2026/exhibit-ii-b-product.json`.
-5. `POST /templates/{id}/activate` with `prototype/data/inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json` → `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` (`AUD-0007`).
+5. `POST /templates/{id}/activate` with `prototype/data/inbound/ui/TB-FXO-DEL-2026-001.activate-1.2.0.json` → `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/02-post-activate.200.json` (`AUD-0008`, citing approval `AUD-0007`).
 6. Refresh → `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/03-get-template.after-activate.200.json`, `prototype/data/outbound/api-responses/TB-FXO-DEL-2026-001/04-get-template-audit.after-activate.200.json`.
 
-Trades booked before 16:00Z (all six in the book) stay pinned to 1.1.0.
+Runs started before 16:00Z stay pinned to 1.1.0 (`TR-FXO-001`, `-002`, `-005`, `-006`); `TR-FXO-003` (16:25Z) composes on 1.2.0.
 
 ## 4. Flow B — new trade TR-FXO-001 → assembled → SmartDX → affirmed → TPs
 
@@ -79,6 +79,8 @@ sequenceDiagram
 | Step | Call | File | Path | Value |
 | --- | --- | --- | --- | --- |
 | B01 | `POST /events` (request) | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `eventId` | `evt_1001` |
+| B01 | `POST /events` (request) | `prototype/data/inbound/trades/TR-FXO-001.new-trade.json` | `trade.documentation.masterConfirmation.masterConfirmationId` | `MCA-SCB-ACME-2026-001` |
+| B03 | `GET /assemblies/{id}` | `prototype/data/outbound/api-responses/TR-FXO-001/02-get-assembly.legal-resolved.200.json` | `legal.mcaPath` | `With_MCA` |
 | B02 | `POST /events` (202) | `prototype/data/outbound/api-responses/TR-FXO-001/01-post-events.202.json` | `tradeStatus` | `Received` |
 | B05 | `GET /assemblies/{id}` | `prototype/data/outbound/api-responses/TR-FXO-001/04-get-assembly.completed.200.json` | `documentId` | `DOC-001` |
 | B07 | `POST /mock/smartdx/documents` | `prototype/data/outbound/smartdx/DOC-001.generated.json` | `smartdxDocumentId` | `SDX-DOC-001` |
@@ -95,6 +97,7 @@ Simulated clock 14:20:00Z → 16:55:02Z. Screen [`03-manual-draft`](../screens/0
 | Step | Call | File | Path | Value |
 | --- | --- | --- | --- | --- |
 | C01 | `POST /events` (request) | `prototype/data/inbound/trades/TR-FXO-005.new-trade.json` | `assembly.requestedMode` | `MANUAL_DRAFTING` |
+| C01 | `POST /events` (request) | `prototype/data/inbound/trades/TR-FXO-005.new-trade.json` | `trade.parties[id=partyB].partyName` | `Globex Holdings Ltd` |
 | C03 | `GET /assemblies/{id}` | `prototype/data/outbound/api-responses/TR-FXO-005/02-get-assembly.pending-manual-draft.200.json` | `status` | `PENDING_MANUAL_DRAFT` |
 | C04 | `GET /assemblies/{id}/shell` | `prototype/data/outbound/api-responses/TR-FXO-005/03-get-assembly-shell.200.json` | `editableBlocks[0]` | `elections` |
 | C06 | `PUT /assemblies/{id}/manual-draft` | `prototype/data/outbound/api-responses/TR-FXO-005/04-put-manual-draft.200.json` | `auditId` | `AUD-0506` |
@@ -116,4 +119,4 @@ Screens [`01-ops-desk`](../screens/01-ops-desk.md), [`05-mis-dashboard`](../scre
 
 ## EDGE / STUB
 
-All K4 Change and recover work (hot-swap and resend E1, rollback E10, unmatched/disputed E3/E4, Compare X gate, channel errors E7/E8, abandon E11) is out of the ideal path. Each screen lists its own EDGE / STUB items; [`../README.md`](../README.md) collects them.
+Four-eyes approval workflow and timelines for unsimulated trades are "Coming soon" stubs (see [`../architecture.md`](../architecture.md) §10). All K4 Change and recover work (hot-swap and resend E1, rollback E10, unmatched/disputed E3/E4, Compare X gate, channel errors E7/E8, abandon E11) is out of the ideal path. Each screen lists its own EDGE / STUB items; [`../README.md`](../README.md) collects them.
