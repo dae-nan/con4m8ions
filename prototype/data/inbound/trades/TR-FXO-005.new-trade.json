@@ -1,0 +1,68 @@
+{
+  "eventType": "NEW_TRADE",
+  "eventId": "evt_2005",
+  "tradeId": "TR-FXO-005",
+  "occurredAt": "2027-12-01T14:20:00Z",
+  "mcaPath": "Without_MCA",
+  "mcaProfileId": null,
+  "legal": {
+    "defsYear": "2026",
+    "mainBookVersion": "1.0",
+    "isdaMasterDate": null,
+    "longFormFallback": true,
+    "governingLaw": "English law",
+    "terminationCurrency": "USD",
+    "matrixBindings": {
+      "SRO": null
+    }
+  },
+  "template": {
+    "productExhibitId": "II-B",
+    "supplementExhibitIds": [],
+    "masterExhibitId": "I"
+  },
+  "trade": {
+    "product": {
+      "transactionType": "Deliverable FX Option Transaction"
+    },
+    "parties": {
+      "partyA": {
+        "name": "Standard Chartered Bank Sample Desk",
+        "lei": "5493001KJTIIGC8Y1R12",
+        "office": "Singapore"
+      },
+      "partyB": {
+        "name": "Globex Holdings Ltd",
+        "lei": "549300TRANSFeree0001",
+        "address": "200 Novation Ave, New York NY 10005",
+        "office": "New York"
+      },
+      "buyer": "Party A",
+      "seller": "Party B"
+    },
+    "economics": {
+      "tradeDate": "2027-12-01",
+      "transactionType": "Deliverable FX Option Transaction",
+      "buyer": "Party A",
+      "seller": "Party B",
+      "optionStyle": "European",
+      "optionType": "EUR Call / USD Put",
+      "callCurrency": "EUR",
+      "callCurrencyAmount": "2500000",
+      "putCurrency": "USD",
+      "strikePrice": "1.0900",
+      "expirationDate": "2027-12-31",
+      "expirationTime": "10:00",
+      "expirationTimeLocation": "New York",
+      "automaticExercise": "Applicable (presumed)",
+      "premiumAmount": "37500",
+      "premiumCurrency": "USD",
+      "premiumPaymentDate": "2027-12-03",
+      "settlementMethod": "Deliverable"
+    }
+  },
+  "assembly": {
+    "requestedMode": "MANUAL_DRAFTING",
+    "reason": "Counterparty requested bespoke Calculation Agent wording"
+  }
+}

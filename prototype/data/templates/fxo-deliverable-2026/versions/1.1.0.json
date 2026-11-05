@@ -1,0 +1,48 @@
+{
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "version": "1.1.0",
+  "assemblyMode": "AUTOMATED",
+  "layers": [
+    {
+      "templateVersionId": "TV-I-2026-1.1.0",
+      "templateId": "EXH-I-2026-v1",
+      "layer": "MASTER",
+      "exhibitId": "I",
+      "bodyFile": "templates/fxo-deliverable-2026/exhibit-i-master.json"
+    },
+    {
+      "templateVersionId": "TV-IIB-2026-1.1.0",
+      "templateId": "EXH-IIB-2026-v1",
+      "layer": "PRODUCT",
+      "exhibitId": "II-B",
+      "bodyFile": "templates/fxo-deliverable-2026/exhibit-ii-b-product.json"
+    }
+  ],
+  "changeLog": "Cutover to 2026 FX Definitions effective date (22 Nov 2027)",
+  "changes": [],
+  "validation": {
+    "status": "PASSED",
+    "checkedAt": "2027-11-10T09:05:00Z",
+    "checks": [
+      {
+        "check": "Every field resolves to an Attribute_Product_Map row",
+        "result": "PASSED"
+      },
+      {
+        "check": "DQ rules bound for every required II-B field",
+        "result": "PASSED"
+      },
+      {
+        "check": "Sample render of TR-FXO-001 (With_MCA) and Without_MCA",
+        "result": "PASSED"
+      }
+    ]
+  },
+  "audit": {
+    "lastChangedBy": "u.admin.lee",
+    "lastChangedAt": "2027-11-22T00:00:00Z"
+  },
+  "status": "LIVE",
+  "activatedAt": "2027-11-22T00:00:00Z",
+  "retiredAt": null
+}

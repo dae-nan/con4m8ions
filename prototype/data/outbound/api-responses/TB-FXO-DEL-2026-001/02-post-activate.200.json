@@ -1,0 +1,11 @@
+{
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "version": "1.2.0",
+  "status": "LIVE",
+  "activatedAt": "2027-12-01T16:00:00Z",
+  "previousLiveVersion": "1.1.0",
+  "rollbackTargetVersion": "1.1.0",
+  "resendPolicy": "MANUAL",
+  "auditId": "AUD-0007",
+  "requestId": "req_tpl_activate_120"
+}

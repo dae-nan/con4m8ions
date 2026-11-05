@@ -1,0 +1,144 @@
+{
+  "templateVersionId": "TV-I-2026-1.1.0",
+  "templateId": "EXH-I-2026-v1",
+  "layer": "MASTER",
+  "exhibitId": "I",
+  "version": "1.1.0",
+  "status": "LIVE",
+  "blocks": [
+    {
+      "block": "heading",
+      "fields": [
+        {
+          "attribute": "Party A Letterhead",
+          "tpsJsonPath": "confirmation.header.partyALetterhead"
+        },
+        {
+          "attribute": "Confirmation Date",
+          "tpsJsonPath": "confirmation.header.date"
+        },
+        {
+          "attribute": "Party B Name and Address",
+          "tpsJsonPath": "confirmation.header.partyB"
+        }
+      ],
+      "text": "{{confirmation.header.partyALetterhead}}\n[Letterhead]\n\nDate: {{confirmation.header.date}}\n\n{{confirmation.header.partyB}}"
+    },
+    {
+      "block": "intro",
+      "fields": [],
+      "text": "The purpose of this letter (this \"Confirmation\") is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below (the \"Transaction\")."
+    },
+    {
+      "block": "definitionsVersion",
+      "fields": [
+        {
+          "attribute": "FX Definitions Version Election",
+          "tpsJsonPath": "trade.legal.fxDefinitionsVersion"
+        }
+      ],
+      "text": "The definitions and provisions contained in Version 1.0 of the Main Book of the {{trade.legal.fxDefinitionsVersion}} (as published by ISDA and EMTA, Inc.) are incorporated into this Confirmation."
+    },
+    {
+      "block": "agreementClause",
+      "fields": [
+        {
+          "attribute": "ISDA Master Agreement Date",
+          "tpsJsonPath": "trade.legal.isdaMaster.date"
+        },
+        {
+          "attribute": "Long-form Master Agreement Fallback",
+          "tpsJsonPath": "trade.legal.longFormFallback"
+        },
+        {
+          "attribute": "Governing Law (long-form)",
+          "tpsJsonPath": "trade.legal.governingLaw"
+        },
+        {
+          "attribute": "Termination Currency (long-form)",
+          "tpsJsonPath": "trade.legal.terminationCurrency"
+        }
+      ],
+      "variants": {
+        "With_MCA": "This Confirmation constitutes a \"Confirmation\" as referred to in, and supplements, forms a part of, and is subject to, the ISDA Master Agreement dated as of {{trade.legal.isdaMaster.date}}, as amended from time to time (the \"Agreement\").",
+        "Without_MCA": "This Confirmation evidences a complete and binding agreement between you and us as to the terms of the Transaction. Until we execute an ISDA Master Agreement, this Confirmation shall be subject to an agreement in the form of the ISDA 2002 Master Agreement (election of {{trade.legal.governingLaw}} as the governing law and {{trade.legal.terminationCurrency}} as the Termination Currency)."
+      }
+    },
+    {
+      "block": "productInsert",
+      "fields": [],
+      "text": "[INSERT Exhibit II-B Confirmation of a Deliverable FX Option Transaction]",
+      "productExhibitId": "II-B"
+    },
+    {
+      "block": "elections",
+      "fields": [
+        {
+          "attribute": "Party A LEI",
+          "tpsJsonPath": "trade.parties.partyA.lei"
+        },
+        {
+          "attribute": "Party B LEI",
+          "tpsJsonPath": "trade.parties.partyB.lei"
+        },
+        {
+          "attribute": "Calculation Agent",
+          "tpsJsonPath": "trade.legal.calculationAgent"
+        },
+        {
+          "attribute": "Account for payments to Party A",
+          "tpsJsonPath": "trade.settlement.accountPartyA"
+        },
+        {
+          "attribute": "Account for payments to Party B",
+          "tpsJsonPath": "trade.settlement.accountPartyB"
+        },
+        {
+          "attribute": "Office of Party A",
+          "tpsJsonPath": "trade.parties.partyA.office"
+        },
+        {
+          "attribute": "Office of Party B",
+          "tpsJsonPath": "trade.parties.partyB.office"
+        },
+        {
+          "attribute": "Governing law",
+          "tpsJsonPath": "trade.legal.governingLawConfirm"
+        },
+        {
+          "attribute": "Contact details for notice Party A",
+          "tpsJsonPath": "trade.notices.partyA"
+        },
+        {
+          "attribute": "Contact details for notice Party B",
+          "tpsJsonPath": "trade.notices.partyB"
+        }
+      ],
+      "text": "Additional Elections, Account Details, Notices: one line per field"
+    },
+    {
+      "block": "closing",
+      "fields": [
+        {
+          "attribute": "Closing supersession clause",
+          "tpsJsonPath": "confirmation.closing.supersession"
+        }
+      ],
+      "text": "This Confirmation supersedes and replaces any other confirmation (including an electronic confirmation), if any, sent in connection with this Transaction on or prior to the date hereof. Please confirm that the foregoing correctly sets forth the terms of our agreement."
+    },
+    {
+      "block": "signatures",
+      "fields": [
+        {
+          "attribute": "Party A signature block",
+          "tpsJsonPath": "confirmation.signatures.partyA"
+        },
+        {
+          "attribute": "Party B confirmation signature block",
+          "tpsJsonPath": "confirmation.signatures.partyB"
+        }
+      ],
+      "text": "Yours faithfully, {{trade.parties.partyA.name}} By: ____ / Confirmed as of the date first above written: {{trade.parties.partyB.name}} By: ____"
+    }
+  ]
+}

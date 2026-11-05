@@ -1,0 +1,11 @@
+{
+  "templateVersionId": "TV-I-2026-1.1.0",
+  "content": {
+    "blocks": {
+      "elections": {
+        "calculationAgent": "Party A; provided that if an Event of Default has occurred with respect to Party A, Party B may appoint a leading dealer as Calculation Agent"
+      }
+    }
+  },
+  "draftedBy": "u.ops.tan"
+}

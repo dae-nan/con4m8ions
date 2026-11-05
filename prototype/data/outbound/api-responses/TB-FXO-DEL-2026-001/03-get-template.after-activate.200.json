@@ -1,0 +1,62 @@
+{
+  "packageId": "TB-FXO-DEL-2026-001",
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "packageName": "2026 FXO Deliverable (II-B)",
+  "masterTemplateId": "EXH-I-2026-v1",
+  "productExhibitId": "II-B",
+  "productType": "Deliverable_FX_Option",
+  "supplementExhibitIds": [],
+  "matrixBindings": {
+    "SRO": null
+  },
+  "mcaRequired": false,
+  "legalDefsYear": "2026",
+  "hotReloadEnabled": true,
+  "resendPolicy": "MANUAL",
+  "version": "1.2.0",
+  "status": "LIVE",
+  "activatedAt": "2027-12-01T16:00:00Z",
+  "rollbackTargetVersion": "1.1.0",
+  "masterTemplateVersionId": "TV-I-2026-1.2.0",
+  "productTemplateVersionId": "TV-IIB-2026-1.1.0",
+  "supplementTemplateVersionId": null,
+  "routingRules": {
+    "Deliverable_FX_Option": {
+      "NEW_TRADE": "TB-FXO-DEL-2026-001"
+    }
+  },
+  "selectionRuleIds": [
+    "PSR-FXO-DEL-2026-001"
+  ],
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "RETIRED",
+      "activatedAt": "2027-10-15T09:00:00Z",
+      "retiredAt": "2027-11-22T00:00:00Z",
+      "masterTemplateVersionId": "TV-I-2026-1.0.0",
+      "productTemplateVersionId": "TV-IIB-2026-1.0.0"
+    },
+    {
+      "version": "1.1.0",
+      "status": "RETIRED",
+      "activatedAt": "2027-11-22T00:00:00Z",
+      "retiredAt": "2027-12-01T16:00:00Z",
+      "masterTemplateVersionId": "TV-I-2026-1.1.0",
+      "productTemplateVersionId": "TV-IIB-2026-1.1.0"
+    },
+    {
+      "version": "1.2.0",
+      "status": "LIVE",
+      "activatedAt": "2027-12-01T16:00:00Z",
+      "retiredAt": null,
+      "masterTemplateVersionId": "TV-I-2026-1.2.0",
+      "productTemplateVersionId": "TV-IIB-2026-1.1.0"
+    }
+  ],
+  "audit": {
+    "lastChangedBy": "u.admin.lee",
+    "lastChangedAt": "2027-12-01T16:00:00Z"
+  },
+  "notes": "One LIVE package serves With_MCA and Without_MCA trades; Legal Resolver picks the agreement clause variant."
+}

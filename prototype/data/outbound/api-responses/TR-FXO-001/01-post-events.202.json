@@ -1,0 +1,14 @@
+{
+  "eventId": "evt_1001",
+  "tradeId": "TR-FXO-001",
+  "status": "ACCEPTED",
+  "tradeStatus": "Received",
+  "assemblyRunId": "AR-FXO-001-01",
+  "receivedAt": "2027-12-01T10:00:00Z",
+  "requestId": "req_evt_1001",
+  "links": {
+    "trade": "/v1/trades/TR-FXO-001",
+    "timeline": "/v1/trades/TR-FXO-001/timeline",
+    "assembly": "/v1/assemblies/AR-FXO-001-01"
+  }
+}

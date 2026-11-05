@@ -1,0 +1,17 @@
+{
+  "version": "1.2.0",
+  "masterTemplateVersionId": "TV-I-2026-1.2.0",
+  "productTemplateVersionId": "TV-IIB-2026-1.1.0",
+  "supplementTemplateVersionId": null,
+  "assemblyMode": "AUTOMATED",
+  "changeLog": "Exhibit I notices: add SmartDX Docbox as Party A notice channel",
+  "changes": [
+    {
+      "block": "elections",
+      "attribute": "Contact details for notice Party A",
+      "tpsJsonPath": "trade.notices.partyA",
+      "before": "ops-fx@scb.example",
+      "after": "ops-fx@scb.example; SmartDX Docbox SCB-SG"
+    }
+  ]
+}

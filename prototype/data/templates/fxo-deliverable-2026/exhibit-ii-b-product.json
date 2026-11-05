@@ -1,0 +1,120 @@
+{
+  "templateVersionId": "TV-IIB-2026-1.1.0",
+  "templateId": "EXH-IIB-2026-v1",
+  "layer": "PRODUCT",
+  "exhibitId": "II-B",
+  "version": "1.1.0",
+  "status": "LIVE",
+  "title": "Confirmation of a Deliverable FX Option Transaction",
+  "exampleTradeId": "TR-FXO-001",
+  "fields": [
+    {
+      "attribute": "Transaction Type",
+      "tpsJsonPath": "trade.product.transactionType",
+      "required": true,
+      "example": "Deliverable FX Option Transaction"
+    },
+    {
+      "attribute": "Trade Date",
+      "tpsJsonPath": "trade.economics.tradeDate",
+      "required": true,
+      "example": "2027-12-01"
+    },
+    {
+      "attribute": "Buyer",
+      "tpsJsonPath": "trade.parties.buyer",
+      "required": true,
+      "example": "Party A"
+    },
+    {
+      "attribute": "Seller",
+      "tpsJsonPath": "trade.parties.seller",
+      "required": true,
+      "example": "Party B"
+    },
+    {
+      "attribute": "Option Style",
+      "tpsJsonPath": "trade.economics.optionStyle",
+      "required": true,
+      "example": "European"
+    },
+    {
+      "attribute": "Option Type",
+      "tpsJsonPath": "trade.economics.optionType",
+      "required": true,
+      "example": "EUR Call / USD Put"
+    },
+    {
+      "attribute": "Call Currency",
+      "tpsJsonPath": "trade.economics.callCurrency",
+      "required": true,
+      "example": "EUR"
+    },
+    {
+      "attribute": "Call Currency Amount",
+      "tpsJsonPath": "trade.economics.callCurrencyAmount",
+      "required": true,
+      "example": "1000000"
+    },
+    {
+      "attribute": "Put Currency",
+      "tpsJsonPath": "trade.economics.putCurrency",
+      "required": true,
+      "example": "USD"
+    },
+    {
+      "attribute": "Strike Price",
+      "tpsJsonPath": "trade.economics.strikePrice",
+      "required": true,
+      "example": "1.0850"
+    },
+    {
+      "attribute": "Settlement",
+      "tpsJsonPath": "trade.economics.settlementMethod",
+      "required": true,
+      "example": "Deliverable"
+    },
+    {
+      "attribute": "Expiration Date",
+      "tpsJsonPath": "trade.economics.expirationDate",
+      "required": true,
+      "example": "2027-12-31"
+    },
+    {
+      "attribute": "Expiration Time",
+      "tpsJsonPath": "trade.economics.expirationTime",
+      "required": true,
+      "example": "10:00"
+    },
+    {
+      "attribute": "Expiration Time Location",
+      "tpsJsonPath": "trade.economics.expirationTimeLocation",
+      "required": true,
+      "example": "New York"
+    },
+    {
+      "attribute": "Automatic Exercise",
+      "tpsJsonPath": "trade.economics.automaticExercise",
+      "required": true,
+      "example": "Applicable (presumed)"
+    },
+    {
+      "attribute": "Premium",
+      "tpsJsonPath": "trade.economics.premiumAmount",
+      "required": true,
+      "example": "15000"
+    },
+    {
+      "attribute": "Premium Currency",
+      "tpsJsonPath": "trade.economics.premiumCurrency",
+      "required": true,
+      "example": "USD"
+    },
+    {
+      "attribute": "Premium Payment Date",
+      "tpsJsonPath": "trade.economics.premiumPaymentDate",
+      "required": true,
+      "example": "2027-12-03"
+    }
+  ]
+}

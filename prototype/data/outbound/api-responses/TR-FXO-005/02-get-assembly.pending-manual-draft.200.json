@@ -1,0 +1,51 @@
+{
+  "assemblyRunId": "AR-FXO-005-01",
+  "tradeId": "TR-FXO-005",
+  "tradeEventId": "evt_2005",
+  "templatePackageId": "TB-FXO-DEL-2026-001",
+  "templateVersion": "1.1.0",
+  "assemblyMode": "MANUAL_DRAFTING",
+  "status": "PENDING_MANUAL_DRAFT",
+  "createdAt": "2027-12-01T14:20:00Z",
+  "completedAt": null,
+  "confirmationId": null,
+  "documentId": null,
+  "dq": {
+    "status": "PASSED",
+    "ruleIds": [
+      "DQ-REQ-001",
+      "DQ-REQ-002",
+      "DQ-REQ-003",
+      "DQ-REQ-004",
+      "DQ-REQ-005",
+      "DQ-REQ-006",
+      "DQ-REQ-007",
+      "DQ-CROSS-001",
+      "DQ-ENUM-001",
+      "DQ-ENUM-002",
+      "DQ-ENUM-004",
+      "DQ-FORMAT-003"
+    ],
+    "errors": []
+  },
+  "legal": {
+    "frameworkId": "LF-2026-1.0",
+    "defsYear": "2026",
+    "mainBookVersion": "1.0",
+    "mcaPath": "Without_MCA",
+    "mcaProfileId": null,
+    "longFormFallback": true,
+    "matrixBindings": {
+      "SRO": null
+    }
+  },
+  "package": {
+    "ruleId": "PSR-FXO-DEL-2026-001",
+    "templateBundleId": "TB-FXO-DEL-2026-001",
+    "version": "1.1.0",
+    "masterTemplateVersionId": "TV-I-2026-1.1.0",
+    "productTemplateVersionId": "TV-IIB-2026-1.1.0",
+    "supplementTemplateVersionId": null
+  },
+  "exhibitILetter": null
+}

@@ -1,0 +1,49 @@
+{
+  "asOf": "2027-12-01T16:30:00Z",
+  "series": [
+    {
+      "status": "AffirmPending",
+      "measuredFrom": "sentAt",
+      "buckets": [
+        {
+          "label": "0-1h",
+          "count": 0
+        },
+        {
+          "label": "1-4h",
+          "count": 1
+        },
+        {
+          "label": "4-24h",
+          "count": 0
+        },
+        {
+          "label": ">24h",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "status": "Unmatched",
+      "measuredFrom": "sentAt",
+      "buckets": [
+        {
+          "label": "0-1h",
+          "count": 0
+        },
+        {
+          "label": "1-4h",
+          "count": 0
+        },
+        {
+          "label": "4-24h",
+          "count": 0
+        },
+        {
+          "label": ">24h",
+          "count": 0
+        }
+      ]
+    }
+  ]
+}

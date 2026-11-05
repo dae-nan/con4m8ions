@@ -1,0 +1,17 @@
+{
+  "id": "MDC-005-01",
+  "assemblyRunId": "AR-FXO-005-01",
+  "templateVersionId": "TV-I-2026-1.1.0",
+  "content": {
+    "blocks": {
+      "elections": {
+        "calculationAgent": "Party A; provided that if an Event of Default has occurred with respect to Party A, Party B may appoint a leading dealer as Calculation Agent"
+      }
+    }
+  },
+  "contentHash": "sha256:7702469e42019a14da58e08c2d042b111cc5a9498b071576e53801dbd5f310fa",
+  "draftedBy": "u.ops.tan",
+  "savedAt": "2027-12-01T16:52:00Z",
+  "status": "PENDING_MANUAL_DRAFT",
+  "auditId": "AUD-0506"
+}
