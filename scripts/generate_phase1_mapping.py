@@ -11,7 +11,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 STORE = Path("/cursor/stores/bc-810ee397-0d26-4b38-b43b-2e3d21ebe15f")
-REPO = Path("/agent/repos/con4m8ions")
+REPO = Path(__file__).resolve().parents[1]
 PDF_TXT = STORE / "internal/pdf-extract/templates_full.txt"
 OUT_XLSX_REPO = REPO / "docs/mappings/cdu-ps-isda-2026-mapping.xlsx"
 OUT_XLSX_STORE = STORE / "docs/mappings/cdu-ps-isda-2026-mapping.xlsx"
@@ -312,8 +312,8 @@ IIB_DEEP_FIELDS = [
     ("Settlement Date", "PRODUCT", "PRODUCT", "II-B", "—", "Override Settlement Cycle presumption", "NEW_TRADE;EXERCISE;AMEND", "Both", "", "trade.economics.settlementDate", "SmartDX:SettlementDate;SWIFT:30V", "DQ-CAL-004", "MAP-DATE-001"),
     ("Exercise Period", "PRODUCT", "PRODUCT", "II-B", "—", "American style override §6.6.3", "NEW_TRADE;EXERCISE", "Both", "", "trade.economics.exercisePeriod", "SmartDX:ExercisePeriod", "DQ-CROSS-004", "MAP-TEXT-001"),
     ("Potential Exercise Date(s)", "PRODUCT", "PRODUCT", "II-B", "—", "Bermuda style", "NEW_TRADE;EXERCISE", "Both", "", "trade.economics.potentialExerciseDates", "SmartDX:PotentialExerciseDates", "DQ-CROSS-004;DQ-CAL-005", "MAP-DATE-LIST-001"),
-    ("Premium", "PRODUCT", "PRODUCT", "II-B", "—", "Premium amount; Price-% removed as separate field (2026 tidy)", "NEW_TRADE;AFFIRM;AMEND", "Both", "", "trade.economics.premium.amount", "SmartDX:Premium;SWIFT:33B", "DQ-REQ-007", "MAP-AMT-002"),
-    ("Premium Payment Date", "PRODUCT", "PRODUCT", "II-B", "—", "Premium settlement date", "NEW_TRADE;AFFIRM", "Both", "", "trade.economics.premium.paymentDate", "SmartDX:PremiumPaymentDate", "DQ-CAL-006", "MAP-DATE-001"),
+    ("Premium", "PRODUCT", "PRODUCT", "II-B", "—", "Premium amount; Price-% removed as separate field (2026 tidy)", "NEW_TRADE;AFFIRM;AMEND", "Both", "", "trade.economics.premiumAmount", "SmartDX:Premium;SWIFT:33B", "DQ-REQ-007", "MAP-AMT-002"),
+    ("Premium Payment Date", "PRODUCT", "PRODUCT", "II-B", "—", "Premium settlement date", "NEW_TRADE;AFFIRM", "Both", "", "trade.economics.premiumPaymentDate", "SmartDX:PremiumPaymentDate", "DQ-CAL-006", "MAP-DATE-001"),
     ("Partial Exercise", "PRODUCT", "PRODUCT", "II-B", "—", "European only; new vs 1998", "NEW_TRADE;EXERCISE", "Both", "", "trade.economics.partialExercise", "SmartDX:PartialExercise", "DQ-CROSS-005", "MAP-BOOL-001"),
     ("Minimum Exercise Amount (Partial)", "PRODUCT", "PRODUCT", "II-B", "—", "§6.8.2 with Partial Exercise", "NEW_TRADE;EXERCISE", "Both", "", "trade.economics.minimumExerciseAmountPartial", "SmartDX:MinExerciseAmt", "DQ-CROSS-005", "MAP-AMT-001"),
     ("Multiple Exercise", "PRODUCT", "PRODUCT", "II-B", "—", "American/Bermuda; new vs 1998", "NEW_TRADE;EXERCISE", "Both", "", "trade.economics.multipleExercise", "SmartDX:MultipleExercise", "DQ-CROSS-005", "MAP-BOOL-001"),
@@ -1000,14 +1000,14 @@ def fxo_lifecycle_rows() -> list[list]:
         ["1", "NEW_TRADE", "TPS", "Trade Capture", "Emit new Deliverable FXO economics", "—", "Both", "IN", "Sample EUR/USD EUR Call"],
         ["2", "NEW_TRADE", "CDU-PS", "Ingest API POST /events", "Validate idempotency + DQ", "—", "Both", "IN", "Rules_DQ applied"],
         ["3", "NEW_TRADE", "CDU-PS", "Legal Resolver", "Resolve defs year, MCA path, matrix pins", "LegalFramework+McaProfile", "With_MCA / Without_MCA", "INT", "Dual path branch"],
-        ["4", "NEW_TRADE", "CDU-PS", "Template Engine", "Compose MASTER I + PRODUCT II-B + supplements", "LIVE TB-FXO-DEL-2026-001 v1.0.0", "Both", "INT", "Wrong bundle possible → step 8"],
-        ["5", "NEW_TRADE", "SmartDX", "Confirmation Gateway", "Render & send electronic confirmation", "v1.0.0", "Both", "OUT", "DocumentArtifact created"],
-        ["6", "NEW_TRADE", "SWIFT", "Messaging", "Optional MT/MX economic notify", "v1.0.0", "Both", "OUT", "Parallel channel"],
-        ["7", "NEW_TRADE", "CDU-PS", "TPS Callback POST /callbacks/tps", "Ack generation status", "v1.0.0", "Both", "OUT", ""],
-        ["8", "HOT_SWAP", "Ops Admin", "Template Admin UI/API", "Detect wrong product template; activate correct LIVE version", "v1.0.0 → v1.1.0", "Both", "INT", "Wrong→hot-swap"],
-        ["9", "RESEND", "CDU-PS", "Document Service POST /documents/{id}/resend", "Regenerate with v1.1.0; supersede prior", "v1.1.0", "Both", "OUT", "Prior Document ID linked"],
-        ["10", "RESEND", "SmartDX", "Confirmation Gateway", "Resend superseding confirmation", "v1.1.0", "Both", "OUT", ""],
-        ["11", "AFFIRM", "Counterparty / Affirm platform", "Affirm webhook POST /webhooks/affirmation", "Match/affirm callback", "v1.1.0", "Both", "IN", ""],
+        ["4", "NEW_TRADE", "CDU-PS", "Template Engine", "Compose MASTER I + PRODUCT II-B + supplements", "LIVE TB-FXO-DEL-2026-001 v1.1.0", "Both", "INT", "Wrong bundle possible → step 8"],
+        ["5", "NEW_TRADE", "SmartDX", "Confirmation Gateway", "Render & send electronic confirmation", "v1.1.0", "Both", "OUT", "DocumentArtifact created"],
+        ["6", "NEW_TRADE", "SWIFT", "Messaging", "Optional MT/MX economic notify", "v1.1.0", "Both", "OUT", "Parallel channel"],
+        ["7", "NEW_TRADE", "CDU-PS", "TPS Callback POST /callbacks/tps", "Ack generation status", "v1.1.0", "Both", "OUT", ""],
+        ["8", "HOT_SWAP", "Ops Admin", "Template Admin UI/API", "Detect wrong product template; activate correct LIVE version", "v1.1.0 → v1.2.0", "Both", "INT", "Edge E1 (wrong→hot-swap); ideal path skips steps 8–10 and 23"],
+        ["9", "RESEND", "CDU-PS", "Document Service POST /documents/{id}/resend", "Regenerate with v1.2.0; supersede prior", "v1.2.0", "Both", "OUT", "Prior Document ID linked"],
+        ["10", "RESEND", "SmartDX", "Confirmation Gateway", "Resend superseding confirmation", "v1.2.0", "Both", "OUT", ""],
+        ["11", "AFFIRM", "Counterparty / Affirm platform", "Affirm webhook POST /webhooks/affirmation", "Match/affirm callback", "v1.1.0", "Both", "IN", "Ideal path: affirms DOC-001 sent on v1.1.0"],
         ["12", "AFFIRM", "CDU-PS", "Lifecycle Store", "Persist affirmation status", "v1.1.0", "Both", "INT", ""],
         ["13", "AFFIRM", "CDU-PS", "TPS Callback", "Push affirm status to TPS", "v1.1.0", "Both", "OUT", ""],
         ["14", "AMEND", "TPS", "Trade Capture", "Economic amend (e.g. Strike)", "—", "Both", "IN", ""],
@@ -1019,7 +1019,7 @@ def fxo_lifecycle_rows() -> list[list]:
         ["20", "EXERCISE", "TPS / Exercise desk", "Exercise service", "Exercise notice / Automatic Exercise", "v1.1.0", "Both", "IN", "Edge: Full Automated Exercise"],
         ["21", "EXERCISE", "CDU-PS", "Lifecycle + Settlement prep", "Compute settlement instructions", "v1.1.0", "Both", "INT", ""],
         ["22", "TERMINATE", "TPS", "Trade Capture", "Early term if III-C/III-D elected", "v1.1.0", "Both", "IN", "Disruption edge via III-A"],
-        ["23", "ROLLBACK", "Ops Admin", "Template Admin", "Rollback LIVE to prior version", "v1.1.0 → v1.0.0", "Both", "INT", "Optional admin edge"],
+        ["23", "ROLLBACK", "Ops Admin", "Template Admin", "Rollback LIVE to prior version", "v1.2.0 → v1.1.0", "Both", "INT", "Optional admin edge"],
     ]
     return rows
 

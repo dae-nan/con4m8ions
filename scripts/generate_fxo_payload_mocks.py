@@ -9,7 +9,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill, Border, Side
 from openpyxl.utils import get_column_letter
 
-REPO = Path("/agent/repos/con4m8ions")
+REPO = Path(__file__).resolve().parents[1]
 STORE = Path("/cursor/stores/bc-810ee397-0d26-4b38-b43b-2e3d21ebe15f")
 OUT_REPO = REPO / "docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx"
 OUT_STORE = STORE / "docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx"
@@ -49,7 +49,7 @@ SAMPLE = {
         "premiumAmount": "15000",
         "premiumCurrency": "USD",
         "premiumPaymentDate": "2027-12-03",
-        "settlement": "Deliverable",
+        "settlementMethod": "Deliverable",
     },
     "parties": {
         "partyA": {

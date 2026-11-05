@@ -2,7 +2,7 @@
 
 ## Given
 
-- Confirmation `DOC-002` for trade `TR-FXO-001` sent to SmartDX  
+- Confirmation `DOC-001` for trade `TR-FXO-001` sent to SmartDX  
 - Affirmation status currently `Unmatched`  
 
 ## When
@@ -25,7 +25,7 @@
 {
   "tradeId": "TR-FXO-001",
   "eventType": "AFFIRM",
-  "documentId": "DOC-002",
+  "documentId": "DOC-001",
   "affirmationStatus": "Affirmed",
   "timestamp": "2027-12-01T15:04:05Z",
   "templateVersion": "1.1.0"
