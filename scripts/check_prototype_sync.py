@@ -335,12 +335,21 @@ def main():
             if low[:4] == ["ui label", "file", "json path", "example"] or {"file", "path", "value"} <= set(low):
                 fi, pi, vi = (1, 2, 3) if low[0] == "ui label" else (low.index("file"), low.index("path"), low.index("value"))
                 for r in trows:
-                    rel = r[fi].removeprefix("prototype/data/")
-                    if rel not in data:
-                        check(False, f"{rel_doc}: binding file {r[fi]} missing")
-                        continue
+                    raw = r[fi]
+                    if raw in ("prototype/routes.json", "routes.json") or raw.endswith("/routes.json"):
+                        doc = json.loads(sim.ROUTES_JSON.read_text(encoding="utf-8")) if sim.ROUTES_JSON.exists() else None
+                        rel = "prototype/routes.json"
+                        if doc is None:
+                            check(False, f"{rel_doc}: binding file {raw} missing")
+                            continue
+                    else:
+                        rel = raw.removeprefix("prototype/data/")
+                        if rel not in data:
+                            check(False, f"{rel_doc}: binding file {raw} missing")
+                            continue
+                        doc = data[rel]
                     try:
-                        got = as_text(jpath(data[rel], r[pi]))
+                        got = as_text(jpath(doc, r[pi]))
                     except (KeyError, IndexError, TypeError):
                         check(False, f"{rel_doc}: path {r[pi]} not in {rel}")
                         continue

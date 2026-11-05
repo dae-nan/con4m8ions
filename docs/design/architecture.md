@@ -106,13 +106,19 @@ The prototype is a static site (HTML + Carbon, plain JS), with no server-side co
    - It loads `routes.json` once. Each entry has `step`, `at`, `method`, `path` (the OpenAPI template), `url` (concrete), `contract` and `file`.
    - It resolves a call by `method` + `url` under base path `/v1`.
    - Screen URLs are client-side hash routes (`#/trades/TR-FXO-001`), so deep links work on a file server. The sitemap is in [`information-architecture.md`](information-architecture.md).
-2. **Simulated clock.** The shell holds a sim clock, which defaults to the book `asOf` 2027-12-01T16:30:00Z.
-   - **Reads (GET)** return the latest entry whose `at` is at or before the clock. For example, `GET /assemblies/AR-FXO-001-01` has three recorded states.
-   - **Writes (POST/PUT)** return the `response-*` entry for the same `method` + `url` and move the clock to its `at`. The UI then re-reads, which is how activation and manual submit show their "after" state.
-   - **Unrecorded calls** return 404 `NOT_FOUND` in the OpenAPI error shape, and the screen shows its stub.
-3. **Request files** (`contract` = `request…`) are sample bodies for the forms. The layer does not validate them.
-4. **Later swap-in.** A FastAPI app that replays the same `routes.json` on the same paths. Screens change only the base URL. No contract or data change is needed.
-5. **Never hand-edit** `prototype/data/`, `routes.json` or the workbooks. Change the generators in `scripts/`, run `scripts/build.py`, then `scripts/check_prototype_sync.py`.
+2. **Scenario picker + simulated clock.** The shell banner is `SIMULATION · [scenario ▾] · as of …`. `routes.json` carries `scenarios[]` and `defaultScenario` (`D`). Picking a scenario sets the clock to that scenario's `clock` and does not clear other scenarios' recorded steps (every step is reachable by clock alone).
+   | Id | Label | Starting clock | What demos |
+   | --- | --- | --- | --- |
+   | A | A · Template release | 15:59:00Z | View DRAFT 1.2.0 (approved), activate → LIVE 1.2.0 |
+   | B | B · TR-FXO-001 journey | 10:00:00Z | New trade → assembly → SmartDX → affirm (writes advance the clock) |
+   | C | C · Manual draft | 16:40:00Z | Load shell, save, submit `TR-FXO-005`; timeline and desk update after submit |
+   | D | D · Book & MIS | 16:30:00Z | Ops desk + MIS on the canonical book (default) |
+3. **Reads (GET).** Return the latest entry whose `at` is at or before the clock (for example `GET /assemblies/AR-FXO-001-01` has three recorded states). Then, if the entry has `listFilter` (`events` or `items`), keep only array elements whose own `at` is at or before the clock and set `count` / `asOf` to match. Timeline and audit files are recorded once with every event; the filter is what makes scenario C at 16:40Z show `TR-FXO-005` up to `assembly.manual_started` without a 404.
+4. **Writes (POST/PUT).** Return the `response-*` entry for the same `method` + `url` and move the clock to its `at`. The UI then re-reads. Activation (A10 → 16:00Z) and manual submit (C08 → 16:55Z) are how "after" states appear; after submit, `GET /trades` resolves to the D07 book snapshot where `TR-FXO-005` is AffirmPending.
+5. **Unrecorded calls** return 404 `NOT_FOUND` in the OpenAPI error shape, and the screen shows its stub.
+6. **Request files** (`contract` = `request…`) are sample bodies for the forms. The layer does not validate them.
+7. **Later swap-in.** A FastAPI app that replays the same `routes.json` on the same paths. Screens change only the base URL. No contract or data change is needed.
+8. **Never hand-edit** `prototype/data/`, `routes.json` or the workbooks. Change the generators in `scripts/`, run `scripts/build.py`, then `scripts/check_prototype_sync.py`.
 
 ### Single rebuild path
 
@@ -146,8 +152,9 @@ The approval itself (`POST /templates/{id}/versions/{version}/approval`) is plan
 | 15:59 | Admin views the LIVE package (flow A view) | 1.1.0 |
 | 16:00 | Admin activates approved 1.2.0 (flow A, `AUD-0008`); 1.1.0 → RETIRED, rollback target | **1.2.0** |
 | 16:25 / 16:29 | `TR-FXO-003` (Composing on 1.2.0), `TR-FXO-004` (Received) | 1.2.0 |
-| 16:30 | **Ops desk / MIS snapshot** (`asOf`) | 1.2.0 |
-| 16:40–16:55 | Ops loads, edits, submits `TR-FXO-005` (run pinned to 1.1.0) → `DOC-105` | 1.2.0 |
+| 16:30 | **Ops desk / MIS snapshot** (scenario D, `Prototype_Trade_Book`) | 1.2.0 |
+| 16:40–16:55 | Ops loads, edits, submits `TR-FXO-005` (scenario C; run pinned to 1.1.0) → `DOC-105` | 1.2.0 |
+| 16:55:02 | **Post-submit book snapshot** (D07): `TR-FXO-005` AffirmPending | 1.2.0 |
 
 An AssemblyRun pins the package version it started with (`AssemblyRun.templateVersion`), so `TR-FXO-005` stays on 1.1.0 after activation. `resendPolicy = MANUAL`, so activation does not resend anything.
 

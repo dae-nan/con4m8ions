@@ -29,6 +29,7 @@ SIM_SHEET = "Prototype_Sim"
 BOOK_SHEET = "Prototype_Trade_Book"
 SIM_HEADERS = [
     "Step",
+    "Scenario",
     "Flow",
     "At (UTC)",
     "Actor",
@@ -39,6 +40,21 @@ SIM_HEADERS = [
     "Description",
     "Payload JSON",
 ]
+# Scenario picker for the shell sim-clock banner (architecture §5).
+# Each scenario sets the starting clock; writes still move the clock forward.
+SCENARIOS = [
+    {"id": "A", "label": "A · Template release", "clock": "2027-12-01T15:59:00Z", "default": False},
+    {"id": "B", "label": "B · TR-FXO-001 journey", "clock": "2027-12-01T10:00:00Z", "default": False},
+    {"id": "C", "label": "C · Manual draft", "clock": "2027-12-01T16:40:00Z", "default": False},
+    {"id": "D", "label": "D · Book & MIS", "clock": "2027-12-01T16:30:00Z", "default": True},
+]
+# GET responses whose body carries a time-ordered list: the mock API keeps only
+# entries with `at` at or before the clock (architecture §5).
+LIST_FILTER_PATHS = {
+    "/trades/{id}/timeline": "events",
+    "/audit": "items",
+    "/templates/{id}/audit": "items",
+}
 BOOK_HEADERS = [
     "tradeId",
     "eventId",

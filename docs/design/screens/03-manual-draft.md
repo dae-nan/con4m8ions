@@ -24,16 +24,16 @@ Ops confirm analyst `u.ops.tan`.
 
 | From | To | Trigger |
 | --- | --- | --- |
-| Ops desk row `TR-FXO-005` (ManualDraft) → **Open draft** ([`01`](01-ops-desk.md)) | this screen | click |
-| Submit success | [`01-ops-desk.md`](01-ops-desk.md), trade now AffirmPending | auto after notice |
+| Ops desk row `TR-FXO-005` (Manual draft), scenario **C** → **Open draft** ([`01`](01-ops-desk.md)) | this screen | click |
+| Submit success | [`01-ops-desk.md`](01-ops-desk.md), trade now Affirm pending (book D07) | auto after notice |
 | **View timeline** | [`04-fxo-timeline.md`](04-fxo-timeline.md) for `TR-FXO-005` | link |
 
 ## 4. Layout — desktop
 
 ```text
  Trades / TR-FXO-005 / Manual draft
- TR-FXO-005 · Globex Holdings Ltd · Without_MCA                 (● PENDING_MANUAL_DRAFT)     ‹ View timeline ›
- AR-FXO-005-01 · MANUAL_DRAFTING · TB-FXO-DEL-2026-001 v1.1.0 (pinned)
+ TR-FXO-005 · Globex Holdings Ltd · Without MCA                (● Manual draft)     ‹ View timeline ›
+ AR-FXO-005-01 · Manual drafting · TB-FXO-DEL-2026-001 v1.1.0 (pinned)
  ┃ ℹ Reason from TPs: Counterparty requested bespoke Calculation Agent wording
 ┌─ Letter canvas ─ edit mode ─ TV-I-2026-1.1.0 ────────────────────────────────┐ ┌─ Trade facts (read-only) ───────┐
 │ ▸ Heading       Standard Chartered Bank Sample Desk · 2027-12-01  🔒          │ │ Option     EUR Call / USD Put   │
@@ -54,6 +54,7 @@ Ops confirm analyst `u.ops.tan`.
                                                                     ‹ Cancel ›   [ Save draft ]   [▶ Submit to SmartDX]
 ```
 
+- Header chip is the **trade** status ("Manual draft"), never the assembly code `PENDING_MANUAL_DRAFT` ([display-label map](../system/components.md#display-label-map-h2)). Assembly mode is secondary text ("Manual drafting").
 - `✎` = editable block (from `editableBlocks`), `🔒` = locked block rendered from template + trade data.
 - The **productInsert** block is the Exhibit I splice point for the Exhibit II-B form ("Confirmation of a Deliverable FX Option Transaction"), plus Exhibit III Additional Provisions when elected (none here). Its body is the rendered II-B General Terms: Buyer and Seller print as "Party A" / "Party B", resolved from the trade's party references ([`modelling-decisions.md`](../modelling-decisions.md) MD-4, MD-6).
 - Edited text is highlighted (`attention` tone background) until saved.
@@ -78,11 +79,11 @@ Trade facts collapse into an accordion above the canvas; one block per screen he
 
 ## 6. Interaction (ideal path)
 
-1. Opens from ops desk; screen calls `GET /assemblies/AR-FXO-005-01` (status PENDING_MANUAL_DRAFT) and `GET /assemblies/AR-FXO-005-01/shell`.
+1. Opens from ops desk under scenario **C**; screen calls `GET /assemblies/AR-FXO-005-01` and `GET /assemblies/AR-FXO-005-01/shell`. Header shows trade status **Manual draft**.
 2. Only **Elections** is editable; analyst replaces the Calculation Agent clause.
 3. **Save draft** → `PUT /assemblies/AR-FXO-005-01/manual-draft`; Draft panel shows MDC id, time, hash (audit `assembly.manual_saved`).
 4. **Submit to SmartDX** → modal → `POST /assemblies/AR-FXO-005-01/submit`; CDU-PS sends `DOC-105` (mock SmartDX) and acks TPs.
-5. Notice, then back to ops desk; `TR-FXO-005` shows AffirmPending.
+5. Notice, then back to ops desk (clock now 16:55:02Z → D07 book); `TR-FXO-005` shows Affirm pending.
 
 ## 7. Component inventory
 

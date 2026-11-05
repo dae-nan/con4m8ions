@@ -35,7 +35,7 @@ Ops confirm analyst · Ops lead · (Phase 3: agent tool reads the same API).
 ```text
  Timeline / TR-FXO-001                           Trade [TR-FXO-001 ▾]                         ‹ Back to trades ›
  TR-FXO-001 · ACME Corp Treasury · EUR Call / USD Put · EUR 1,000,000      (● Affirmed)
- TB-FXO-DEL-2026-001 v1.1.0 · DOC-001 · SDX-DOC-001 · With_MCA MCA-SCB-ACME-2026-001
+ TB-FXO-DEL-2026-001 v1.1.0 · DOC-001 · SDX-DOC-001 · With MCA · MCA-SCB-ACME-2026-001
 
 ┌─ Swimlanes ── 2027-12-01 (UTC) ───────────────────────────────────────────────────────────────────────────────┐
 │             10:00:00   :01      :02       :02       :03        :04       :04       :05     ┊  15:04:05  15:04:06 │
@@ -46,21 +46,22 @@ Ops confirm analyst · Ops lead · (Phase 3: agent tool reads the same API).
 │                                                                                 (time axis compressed at ┊)  │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ┌──────────┬──────────────────────┬──────────────┬────────────────────┬────────────────┬─────────┬─────────┬──────────┐  ║ TL-01-09                [✕] ║
-│ #        │ At (UTC)             │ Lane         │ Action             │ Status after   │ Doc     │ Version │ Audit    │  ║ affirm.affirmed             ║
+│ #        │ At (UTC)             │ Lane         │ Action             │ Status after   │ Doc     │ Version │ Audit    │  ║ Counterparty affirmed       ║
 ├──────────┼──────────────────────┼──────────────┼────────────────────┼────────────────┼─────────┼─────────┼──────────┤  ║ (● Affirmed)                ║
-│ TL-01-01 │ 2027-12-01 10:00:00  │ TPs          │ trade.received     │ (○ Received)   │ —       │ —       │ AUD-0101 │  ║ ─────────────────────────── ║
-│ TL-01-02 │ 2027-12-01 10:00:01  │ CDU-PS       │ trade.dq_passed    │ (● Composing)  │ —       │ —       │ AUD-0102 │  ║ At      2027-12-01 15:04:05 ║
-│ TL-01-03 │ 2027-12-01 10:00:02  │ CDU-PS       │ legal.resolved     │ (● Composing)  │ —       │ —       │ AUD-0103 │  ║ Actor   svc.affirm-webhook  ║
-│ TL-01-04 │ 2027-12-01 10:00:02  │ CDU-PS       │ package.located    │ (● Composing)  │ —       │ 1.1.0   │ AUD-0104 │  ║ Lane    Counterparty        ║
-│ TL-01-05 │ 2027-12-01 10:00:03  │ CDU-PS       │ assembly.completed │ (● Composing)  │ DOC-001 │ 1.1.0   │ AUD-0105 │  ║ Doc     DOC-001 →           ║
-│ TL-01-06 │ 2027-12-01 10:00:04  │ CDU-PS       │ document.sent      │ (● Sent)       │ DOC-001 │ 1.1.0   │ AUD-0106 │  ║ Event   evt_1001            ║
-│ TL-01-07 │ 2027-12-01 10:00:04  │ SmartDX      │ document.created   │ (● AffirmPend…)│ DOC-001 │ 1.1.0   │ AUD-0107 │  ║ Audit   AUD-0109            ║
-│ TL-01-08 │ 2027-12-01 10:00:05  │ TPs          │ callback.sent      │ (● AffirmPend…)│ DOC-001 │ 1.1.0   │ AUD-0108 │  ║ Detail  Affirmed, 0         ║
-│▌TL-01-09 │ 2027-12-01 15:04:05  │ Counterparty │ affirm.affirmed    │ (● Affirmed)   │ DOC-001 │ 1.1.0   │ AUD-0109 │  ║         differences         ║
-│ TL-01-10 │ 2027-12-01 15:04:06  │ TPs          │ callback.sent      │ (● Affirmed)   │ DOC-001 │ 1.1.0   │ AUD-0110 │  ║                             ║
+│ TL-01-01 │ 2027-12-01 10:00:00  │ TPs          │ Trade received     │ (○ Received)   │ —       │ —       │ AUD-0101 │  ║ ─────────────────────────── ║
+│ TL-01-02 │ 2027-12-01 10:00:01  │ CDU-PS       │ DQ passed          │ (● Composing)  │ —       │ —       │ AUD-0102 │  ║ At      2027-12-01 15:04:05 ║
+│ TL-01-03 │ 2027-12-01 10:00:02  │ CDU-PS       │ Legal resolved     │ (● Composing)  │ —       │ —       │ AUD-0103 │  ║ Actor   svc.affirm-webhook  ║
+│ TL-01-04 │ 2027-12-01 10:00:02  │ CDU-PS       │ Package located    │ (● Composing)  │ —       │ 1.1.0   │ AUD-0104 │  ║ Lane    Counterparty        ║
+│ TL-01-05 │ 2027-12-01 10:00:03  │ CDU-PS       │ Assembly completed │ (● Composing)  │ DOC-001 │ 1.1.0   │ AUD-0105 │  ║ Doc     DOC-001 →           ║
+│ TL-01-06 │ 2027-12-01 10:00:04  │ CDU-PS       │ Document sent      │ (● Sent)       │ DOC-001 │ 1.1.0   │ AUD-0106 │  ║ Event   evt_1001            ║
+│ TL-01-07 │ 2027-12-01 10:00:04  │ SmartDX      │ Document created   │ (● Affirm pending)│ DOC-001 │ 1.1.0   │ AUD-0107 │  ║ Audit   AUD-0109            ║
+│ TL-01-08 │ 2027-12-01 10:00:05  │ TPs          │ Callback sent      │ (● Affirm pending)│ DOC-001 │ 1.1.0   │ AUD-0108 │  ║ Detail  Affirmed, 0         ║
+│▌TL-01-09 │ 2027-12-01 15:04:05  │ Counterparty │ Counterparty affirmed │ (● Affirmed)   │ DOC-001 │ 1.1.0   │ AUD-0109 │  ║         differences         ║
+│ TL-01-10 │ 2027-12-01 15:04:06  │ TPs          │ Callback sent      │ (● Affirmed)   │ DOC-001 │ 1.1.0   │ AUD-0110 │  ║                             ║
 └──────────┴──────────────────────┴──────────────┴────────────────────┴────────────────┴─────────┴─────────┴──────────┘
 ```
 
+- Action column uses sentences from the [display-label map](../system/components.md#display-label-map-h2); the raw `action` code stays in the event drawer.
 - Lanes come from `lanes[]`; nodes are placed by `at`; gaps over 1 hour collapse to `┊` with the real times shown.
 - Selecting a node or a row opens the event drawer; both stay in sync.
 - `TR-FXO-005` renders the same way with `assembly.manual_started` / `manual_saved` / `manual_submitted` nodes in the `attention` tone.
@@ -74,7 +75,7 @@ The picker lists all six book trades and marks the two with a timeline with `◷
  Timeline / TR-FXO-006                           Trade [TR-FXO-006 ▾]                         ‹ Back to trades ›
    ◷ TR-FXO-001 · ◷ TR-FXO-005 · TR-FXO-002 · TR-FXO-003 · TR-FXO-004 · ▌TR-FXO-006        (picker list)
  TR-FXO-006 · Initech Treasury Ltd · USD Call / JPY Put · USD 5,000,000      (● Affirmed)
- TB-FXO-DEL-2026-001 v1.1.0 · DOC-106 · Without_MCA · sent 09:00:04Z · affirmed 11:30:00Z
+ TB-FXO-DEL-2026-001 v1.1.0 · DOC-106 · Without MCA · sent 09:00:04Z · affirmed 11:30:00Z
 ┌ ◌ Timeline ───────────────────────────────────────────────────────────────── (◌ Coming soon) ┐
 │ This trade has no simulated timeline in the prototype. Key times above come from the trade   │
 │ book. Simulated timelines: TR-FXO-001, TR-FXO-005.            ‹ Open TR-FXO-001 timeline ›   │
@@ -89,11 +90,11 @@ The picker lists all six book trades and marks the two with a timeline with `◷
 │ [TR-FXO-001 ▾]               │
 ├──────────────────────────────┤
 │ 15:04:06 TPs                 │
-│ callback.sent  (● Affirmed)  │
+│ Callback sent (● Affirmed)   │
 │ 15:04:05 Counterparty        │
-│ affirm.affirmed (● Affirmed) │
+│ Counterparty affirmed (● Affirmed)│
 │ 10:00:05 TPs                 │
-│ callback.sent (● AffirmPend…)│
+│ Callback sent (● Affirm pending)│
 │ …                            │
 └──────────────────────────────┘
 ```
@@ -103,7 +104,7 @@ Vertical list, newest first, lane shown as a label (widgets W3 small-screen rule
 ## 6. Interaction (ideal path)
 
 1. Opens with `GET /trades/TR-FXO-001` (header) and `GET /trades/TR-FXO-001/timeline` (lanes + events).
-2. Analyst scans lanes: received → DQ → legal (With_MCA) → package v1.1.0 → assembled → sent → SmartDX generated → TPs ack → affirmed → affirm ack.
+2. Analyst scans lanes: received → DQ → legal (With MCA) → package v1.1.0 → assembled → sent → SmartDX generated → TPs ack → affirmed → affirm ack.
 3. Clicks the affirm node → drawer with actor, audit id, detail.
 4. Switches trade via the picker → `TR-FXO-005` shows the manual draft markers.
 

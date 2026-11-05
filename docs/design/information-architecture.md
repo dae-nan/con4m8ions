@@ -106,11 +106,14 @@ Book (6 trades) → MIS aggregates (derived, never stored)                    ho
 
 ## 6. Labelling rules
 
+Every status, MCA path and audit action uses the shared [display-label map](system/components.md#display-label-map-h2). API / Excel keep the codes; the UI never prints a raw code.
+
 - **Party labels.** The UI shows party names. In letter text and II-B General Terms it says "Party A" / "Party B", which is how ISDA writes them. Raw ids (`partyA`) never appear.
-- **MCA.** The UI shows "With MCA · MCA-SCB-ACME-2026-001" or "Without MCA · long-form ISDA 2002". `mcaPath` is a filter value, not a field users edit.
+- **MCA.** The UI shows "With MCA · MCA-SCB-ACME-2026-001" or "Without MCA · long-form ISDA 2002". `mcaPath` is a filter value (API code), not a field users edit.
 - **Product insert.** The letter canvas labels the block "Exhibit II-B — Confirmation of a Deliverable FX Option Transaction (from trade)".
 - **Versions.** Versions are written `v1.2.0`. Layer ids (`TV-…`) are secondary text.
-- **Times.** Times are UTC with a `Z` suffix. The sim banner always shows the clock.
+- **Times.** Times are UTC with a `Z` suffix. The sim banner shows `SIMULATION · [scenario ▾] · as of …` ([`architecture.md`](architecture.md) §5).
+- **Trade vs assembly status.** Trade headers always show the trade status ("Manual draft"). Assembly status (`PENDING_MANUAL_DRAFT`) is secondary text only.
 
 ## Examples
 

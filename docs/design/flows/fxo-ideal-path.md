@@ -44,7 +44,7 @@ flowchart LR
 
 ## 3. Flow A — template admin views LIVE package and activates the approved DRAFT 1.2.0
 
-Actor `u.admin.lee`, simulated clock 2027-12-01 15:59Z → 16:00:01Z. The four-eyes approval by `u.ctrl.ng` (15:30Z, `AUD-0007`) is mocked as already given; the approval workflow is "Coming soon". Screen [`02-template-admin`](../screens/02-template-admin.md).
+Scenario **A · Template release**. Actor `u.admin.lee`, simulated clock 2027-12-01 15:59Z → 16:00:01Z. The four-eyes approval by `u.ctrl.ng` (15:30Z, `AUD-0007`) is mocked as already given; the approval workflow is "Coming soon". Screen [`02-template-admin`](../screens/02-template-admin.md).
 
 1. `GET /templates` → `prototype/data/templates/index.json` — one package `TB-FXO-DEL-2026-001`, LIVE 1.1.0.
 2. `GET /templates/{id}` → `prototype/data/templates/fxo-deliverable-2026/package.json` — versions 1.0.0 RETIRED, 1.1.0 LIVE, 1.2.0 DRAFT.
@@ -57,7 +57,7 @@ Runs started before 16:00Z stay pinned to 1.1.0 (`TR-FXO-001`, `-002`, `-005`, `
 
 ## 4. Flow B — new trade TR-FXO-001 → assembled → SmartDX → affirmed → TPs
 
-Simulated clock 10:00:00Z → 15:04:06Z. Screens [`01-ops-desk`](../screens/01-ops-desk.md), [`04-fxo-timeline`](../screens/04-fxo-timeline.md).
+Scenario **B · TR-FXO-001 journey**. Simulated clock 10:00:00Z → 15:04:06Z. Screens [`01-ops-desk`](../screens/01-ops-desk.md), [`04-fxo-timeline`](../screens/04-fxo-timeline.md). Timeline `events[]` are filtered by the clock.
 
 ```mermaid
 sequenceDiagram
@@ -92,7 +92,7 @@ sequenceDiagram
 
 ## 5. Flow C — TR-FXO-005 manual draft (mode a)
 
-Simulated clock 14:20:00Z → 16:55:02Z. Screen [`03-manual-draft`](../screens/03-manual-draft.md).
+Scenario **C · Manual draft**. Starting clock 16:40:00Z (shell load); writes advance to 16:55:02Z. Screen [`03-manual-draft`](../screens/03-manual-draft.md). After submit, `GET /trades` returns the D07 book (`TR-FXO-005` Affirm pending).
 
 | Step | Call | File | Path | Value |
 | --- | --- | --- | --- | --- |
@@ -107,7 +107,7 @@ Simulated clock 14:20:00Z → 16:55:02Z. Screen [`03-manual-draft`](../screens/0
 
 ## 6. Flow D — ops desk and MIS at 16:30Z
 
-Screens [`01-ops-desk`](../screens/01-ops-desk.md), [`05-mis-dashboard`](../screens/05-mis-dashboard.md). The book (Excel `Prototype_Trade_Book`) is the single source; every MIS number is derived from it.
+Scenario **D · Book & MIS** (default). Screens [`01-ops-desk`](../screens/01-ops-desk.md), [`05-mis-dashboard`](../screens/05-mis-dashboard.md). The book (Excel `Prototype_Trade_Book`) is the single source at 16:30Z; every MIS number is derived from it. D07–D11 are the post-submit book/analytics snapshots used after scenario C.
 
 | Step | Call | File | Path | Value |
 | --- | --- | --- | --- | --- |

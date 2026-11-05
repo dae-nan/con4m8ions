@@ -38,14 +38,59 @@ Hot reload       [x] enabled      ( ●○ ) toggle on
 - `____` = empty editable space; `▾` = dropdown; `[x]` / `[ ]` = checkbox.
 - Label column width 16 chars in ASCII ≈ 128px. Required fields mark label with `*`.
 
-## 3. Status chip
+## 3. Status chip and display-label map
 
 ```text
-(● Affirmed)   (● AffirmPending)   (● ManualDraft)   (● LIVE)   (○ DRAFT)
+(● Affirmed)   (● Affirm pending)   (● Manual draft)   (● LIVE)   (○ DRAFT)
 ```
 
 - `●` filled = current/terminal state; `○` hollow = not yet active (DRAFT, RETIRED).
-- Tone comes from [`tokens.md`](tokens.md) §1.3. Carbon `Tag` size `sm`. Class `.cdu-chip--{status}` (lower-kebab of enum).
+- Tone comes from [`tokens.md`](tokens.md) §1.3. Carbon `Tag` size `sm`. Class `.cdu-chip--{kebab}` from the map below (never from a raw enum string).
+
+### Display-label map (H2)
+
+One shared map. **API / Excel keep the codes; the UI never prints a raw code.** Import as `labels.js` in the prototype. Trade-level headers always use the trade-status row; assembly status is secondary text only. Timeline table rows use the sentence; the code stays in the event drawer.
+
+| Kind | Code (API) | Label | Tone | Chip class | Sentence (timeline / audit) |
+| --- | --- | --- | --- | --- | --- |
+| Trade status | `Received` | Received | neutral | `.cdu-chip--received` | Trade received |
+| Trade status | `Validating` | Validating | info | `.cdu-chip--validating` | Validating |
+| Trade status | `Composing` | Composing | info | `.cdu-chip--composing` | Composing |
+| Trade status | `ManualDraft` | Manual draft | attention | `.cdu-chip--manual-draft` | Waiting for manual draft |
+| Trade status | `Sent` | Sent | progress | `.cdu-chip--sent` | Sent |
+| Trade status | `AffirmPending` | Affirm pending | progress | `.cdu-chip--affirm-pending` | Affirm pending |
+| Trade status | `Affirmed` | Affirmed | success | `.cdu-chip--affirmed` | Affirmed |
+| Assembly | `ASSEMBLING` | Assembling | info | `.cdu-chip--assembling` | Assembly in progress |
+| Assembly | `PENDING_MANUAL_DRAFT` | Pending manual draft | attention | `.cdu-chip--pending-manual-draft` | Pending manual draft |
+| Assembly | `COMPLETED` | Completed | success | `.cdu-chip--completed` | Assembly completed |
+| Assembly mode | `AUTOMATED` | Automated | — | — | Automated |
+| Assembly mode | `MANUAL_DRAFTING` | Manual drafting | — | — | Manual drafting |
+| Template | `DRAFT` | DRAFT | neutral | `.cdu-chip--draft` | — |
+| Template | `LIVE` | LIVE | success | `.cdu-chip--live` | — |
+| Template | `RETIRED` | RETIRED | neutral | `.cdu-chip--retired` | — |
+| Approval | `APPROVED` | APPROVED | success | `.cdu-chip--approved` | Template approved |
+| Approval | `PENDING` | Pending approval | attention | `.cdu-chip--pending-approval` | Approval requested |
+| MCA path | `With_MCA` | With MCA | — | — | — |
+| MCA path | `Without_MCA` | Without MCA | — | — | — |
+| Audit / timeline action | `trade.received` | — | — | — | Trade received |
+| Audit / timeline action | `trade.dq_passed` | — | — | — | DQ passed |
+| Audit / timeline action | `legal.resolved` | — | — | — | Legal resolved |
+| Audit / timeline action | `package.located` | — | — | — | Package located |
+| Audit / timeline action | `assembly.completed` | — | — | — | Assembly completed |
+| Audit / timeline action | `assembly.manual_started` | — | — | — | Manual draft started |
+| Audit / timeline action | `assembly.manual_saved` | — | — | — | Manual draft saved |
+| Audit / timeline action | `assembly.manual_submitted` | — | — | — | Manual draft submitted |
+| Audit / timeline action | `document.sent` | — | — | — | Document sent |
+| Audit / timeline action | `document.created` | — | — | — | Document created in SmartDX |
+| Audit / timeline action | `callback.sent` | — | — | — | Callback sent to TPs |
+| Audit / timeline action | `affirm.affirmed` | — | — | — | Counterparty affirmed |
+| Audit / timeline action | `template.approved` | — | — | — | Template approved |
+| Audit / timeline action | `template.activated` | — | — | — | Template activated |
+| Audit / timeline action | `template.validated` | — | — | — | Template validated |
+| Audit / timeline action | `template.version_added` | — | — | — | Template version added |
+| Audit / timeline action | `template.created` | — | — | — | Template created |
+
+Rules: never show `partyA` / `partyB` ids (use party names, or "Party A" / "Party B" in letter text). Never show `PENDING_MANUAL_DRAFT` on a trade header — show **Manual draft**. Truncation is forbidden for Affirm pending and Manual draft; widen the column instead.
 
 ## 4. Data table
 

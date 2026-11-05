@@ -72,7 +72,7 @@
 .cdu-chip--received, .cdu-chip--draft, .cdu-chip--retired          { --tone: neutral; }
 .cdu-chip--validating, .cdu-chip--composing, .cdu-chip--assembling { --tone: info; }
 .cdu-chip--manual-draft, .cdu-chip--pending-manual-draft,
-.cdu-chip--pending-data-entry                                      { --tone: attention; }
+.cdu-chip--pending-approval, .cdu-chip--pending-data-entry         { --tone: attention; }
 .cdu-chip--sent, .cdu-chip--affirm-pending                         { --tone: progress; }
 .cdu-chip--affirmed, .cdu-chip--completed, .cdu-chip--live         { --tone: success; }
 .cdu-chip--approved                                                { --tone: success; }

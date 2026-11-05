@@ -1,0 +1,28 @@
+{
+  "asOf": "2027-12-01T16:00:01Z",
+  "count": 1,
+  "items": [
+    {
+      "templateBundleId": "TB-FXO-DEL-2026-001",
+      "packageName": "2026 FXO Deliverable (II-B)",
+      "productType": "Deliverable_FX_Option",
+      "productExhibitId": "II-B",
+      "version": "1.2.0",
+      "status": "LIVE",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "status": "RETIRED"
+        },
+        {
+          "version": "1.1.0",
+          "status": "RETIRED"
+        },
+        {
+          "version": "1.2.0",
+          "status": "LIVE"
+        }
+      ]
+    }
+  ]
+}

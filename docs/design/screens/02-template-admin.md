@@ -18,7 +18,7 @@ The template admin sees the one LIVE **2026 FXO Deliverable (II-B)** package —
 
 ## 2. Actors
 
-Template admin `u.admin.lee` (primary, requests approval and activates) · Product control approver `u.ctrl.ng` (approved 1.2.0; no screen in the prototype) · Legal (read).
+Template admin `u.admin.lee` (primary; open under scenario **A**) · Product control approver `u.ctrl.ng` (approved 1.2.0; no screen in the prototype) · Legal (read).
 
 ## 3. Entry / exit
 
@@ -68,7 +68,7 @@ Template admin `u.admin.lee` (primary, requests approval and activates) · Produ
 │ Validation   (● PASSED) 2027-11-28 09:10Z                                                                  │
 │              ✓ Every field resolves to an Attribute_Product_Map row                                        │
 │              ✓ DQ rules bound for every required II-B field                                                │
-│              ✓ Sample render of TR-FXO-001 (With_MCA) and Without_MCA                                      │
+│              ✓ Sample render of TR-FXO-001 (With MCA) and Without MCA                                     │
 │ Drafted by   u.admin.lee · 2027-11-28 09:00Z                                                               │
 │ Approval     (● APPROVED) u.ctrl.ng · 2027-12-01 15:30Z · AUD-0007   (four-eyes: approver ≠ activator)    │
 │              requested by u.admin.lee · 2027-11-28 09:15Z                                                  │
@@ -84,7 +84,7 @@ Template admin `u.admin.lee` (primary, requests approval and activates) · Produ
                         ════════
  Selection rule  PSR-FXO-DEL-2026-001 · Deliverable_FX_Option · NEW_TRADE · SCB-SG · SmartDX · priority 10
  Routing         Deliverable_FX_Option / NEW_TRADE → TB-FXO-DEL-2026-001
- Matrix pins     SRO: none (each matrix as at Trade Date)   MCA required: no (With_MCA and Without_MCA)
+ Matrix pins     SRO: none (each matrix as at Trade Date)   MCA required: no (With MCA and Without MCA)
 
  II-B fields (TV-IIB-2026-1.1.0)                       example TR-FXO-001
 ┌────────────────────────┬──────────────────────────────────────┬───────────────────────────────────┐
@@ -105,13 +105,13 @@ Template admin `u.admin.lee` (primary, requests approval and activates) · Produ
 ┌─────────────────────┬──────────────┬───────────────────────────┬─────────────┐
 │ At (UTC)            │ Actor        │ Action                    │ Version     │
 ├─────────────────────┼──────────────┼───────────────────────────┼─────────────┤
-│ 2027-12-01 15:30:00 │ u.ctrl.ng    │ template.approved         │ — → 1.2.0   │
-│ 2027-11-28 09:10:00 │ svc.cdu-ps   │ template.validated        │ — → 1.2.0   │
-│ 2027-11-28 09:00:00 │ u.admin.lee  │ template.version_added    │ — → 1.2.0   │
-│ 2027-11-22 00:00:00 │ u.admin.lee  │ template.activated        │ 1.0.0 → 1.1.0│
-│ 2027-11-10 09:00:00 │ u.admin.lee  │ template.version_added    │ — → 1.1.0   │
-│ 2027-10-15 09:00:00 │ u.admin.lee  │ template.activated        │ — → 1.0.0   │
-│ 2027-10-01 09:00:00 │ u.admin.lee  │ template.created          │ — → 1.0.0   │
+│ 2027-12-01 15:30:00 │ u.ctrl.ng    │ Template approved         │ — → 1.2.0   │
+│ 2027-11-28 09:10:00 │ svc.cdu-ps   │ Template validated        │ — → 1.2.0   │
+│ 2027-11-28 09:00:00 │ u.admin.lee  │ Template version added    │ — → 1.2.0   │
+│ 2027-11-22 00:00:00 │ u.admin.lee  │ Template activated        │ 1.0.0 → 1.1.0│
+│ 2027-11-10 09:00:00 │ u.admin.lee  │ Template version added    │ — → 1.1.0   │
+│ 2027-10-15 09:00:00 │ u.admin.lee  │ Template activated        │ — → 1.0.0   │
+│ 2027-10-01 09:00:00 │ u.admin.lee  │ Template created          │ — → 1.0.0   │
 └─────────────────────┴──────────────┴───────────────────────────┴─────────────┘
 ```
 
@@ -132,6 +132,8 @@ Template admin `u.admin.lee` (primary, requests approval and activates) · Produ
  ┃ ✓ Version 1.2.0 is LIVE. New trades use it from 2027-12-01T16:00:00Z. Audit AUD-0008.   [✕]
  2026 FXO Deliverable (II-B)                                   (● LIVE 1.2.0)
 ```
+
+Status chips and approval use the [display-label map](../system/components.md#display-label-map-h2).
 
 ## 5. Layout — iPhone (`sm`)
 

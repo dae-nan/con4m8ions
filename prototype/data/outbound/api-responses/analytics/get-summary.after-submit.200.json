@@ -1,0 +1,17 @@
+{
+  "asOf": "2027-12-01T16:55:02Z",
+  "window": {
+    "from": "2027-12-01T00:00:00Z",
+    "to": "2027-12-01T16:55:02Z"
+  },
+  "productType": "Deliverable_FX_Option",
+  "volumes": {
+    "received": 6,
+    "sent": 4,
+    "affirmed": 2,
+    "manualDraft": 0
+  },
+  "affirmRate": 0.5,
+  "errorRate": 0.0,
+  "medianNewToAffirmedMinutes": 227.0
+}

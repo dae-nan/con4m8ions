@@ -25,7 +25,7 @@ Ops confirm analyst (primary) · Ops lead (read).
 | --- | --- | --- |
 | Shell **Trades** / app load ([`00`](00-shell-nav.md)) | this screen | — |
 | MIS tile or bar ([`05`](05-mis-dashboard.md)) | this screen, filtered | click |
-| Row `TR-FXO-005` (ManualDraft) | [`03-manual-draft.md`](03-manual-draft.md) | drawer **Open draft** |
+| Row `TR-FXO-005` (Manual draft) | [`03-manual-draft.md`](03-manual-draft.md) | drawer **Open draft** |
 | Drawer **Open timeline** | [`04-fxo-timeline.md`](04-fxo-timeline.md) | click |
 | Drawer **Package** link | [`02-template-admin.md`](02-template-admin.md) | click |
 
@@ -34,20 +34,20 @@ Ops confirm analyst (primary) · Ops lead (read).
 ```text
  Trades · Deliverable FX Options                                             as of 2027-12-01 16:30Z
 ┌──────────┬───────────┬────────────┬──────────┬───────────────┬──────────┐
-│ Received │ Composing │ ManualDraft│ Sent     │ AffirmPending │ Affirmed │      View MIS →
+│ Received │ Composing │ Manual draft│ Sent    │ Affirm pending│ Affirmed │      View MIS →
 │    1     │     1     │     1      │    0     │       1       │    2     │
 └──────────┴───────────┴────────────┴──────────┴───────────────┴──────────┘
  [⌕ Search trade, doc, counterparty___]  Status [All ▾]  MCA [All ▾]  Date [2027-12-01 ▾]
 
 ┌────────────┬──────────────────────┬─────────────┬────────────────────┬────────────┬────────────────┬─────────┬────┐  ║ TR-FXO-001                            [✕] ║
-│ Trade ID   │ Counterparty         │ MCA         │ Option             │ Notional   │ Status         │ Doc     │ TL │  ║ ACME Corp Treasury · With_MCA             ║
+│ Trade ID   │ Counterparty         │ MCA         │ Option             │ Notional   │ Status         │ Doc     │ TL │  ║ ACME Corp Treasury · With MCA             ║
 ├────────────┼──────────────────────┼─────────────┼────────────────────┼────────────┼────────────────┼─────────┼────┤  ║ (● Affirmed)        affirmed 15:04:05Z    ║
-│ TR-FXO-004 │ Initech Treasury Ltd │ Without_MCA │ AUD Call / USD Put │ AUD 4.0m   │ (○ Received)   │ —       │    │  ║ ───────────────────────────────────────── ║
-│ TR-FXO-003 │ ACME Corp Treasury   │ With_MCA    │ EUR Put / USD Call │ EUR 3.0m   │ (● Composing)  │ —       │    │  ║ Package    TB-FXO-DEL-2026-001 v1.1.0 →   ║
-│ TR-FXO-005 │ Globex Holdings Ltd  │ Without_MCA │ EUR Call / USD Put │ EUR 2.5m   │ (● ManualDraft)│ —       │ ◷  │  ║ Assembly   AR-FXO-001-01 · AUTOMATED      ║
-│ TR-FXO-002 │ Globex Holdings Ltd  │ Without_MCA │ GBP Call / USD Put │ GBP 2.0m   │ (● AffirmPend…)│ DOC-102 │    │  ║ Document   DOC-001 · SmartDX SDX-DOC-001  ║
-│▌TR-FXO-001 │ ACME Corp Treasury   │ With_MCA    │ EUR Call / USD Put │ EUR 1.0m   │ (● Affirmed)   │ DOC-001 │ ◷  │  ║ MCA        MCA-SCB-ACME-2026-001          ║
-│ TR-FXO-006 │ Initech Treasury Ltd │ Without_MCA │ USD Call / JPY Put │ USD 5.0m   │ (● Affirmed)   │ DOC-106 │    │  ║ ───────────────────────────────────────── ║
+│ TR-FXO-004 │ Initech Treasury Ltd │ Without MCA │ AUD Call / USD Put │ AUD 4.0m   │ (○ Received)   │ —       │    │  ║ ───────────────────────────────────────── ║
+│ TR-FXO-003 │ ACME Corp Treasury   │ With MCA    │ EUR Put / USD Call │ EUR 3.0m   │ (● Composing)  │ —       │    │  ║ Package    TB-FXO-DEL-2026-001 v1.1.0 →   ║
+│ TR-FXO-005 │ Globex Holdings Ltd  │ Without MCA │ EUR Call / USD Put │ EUR 2.5m   │ (● Manual draft)│ —       │ ◷  │  ║ Assembly   AR-FXO-001-01 · AUTOMATED      ║
+│ TR-FXO-002 │ Globex Holdings Ltd  │ Without MCA │ GBP Call / USD Put │ GBP 2.0m   │ (● Affirm pending)│ DOC-102 │    │  ║ Document   DOC-001 · SmartDX SDX-DOC-001  ║
+│▌TR-FXO-001 │ ACME Corp Treasury   │ With MCA    │ EUR Call / USD Put │ EUR 1.0m   │ (● Affirmed)      │ DOC-001 │ ◷  │  ║ MCA        MCA-SCB-ACME-2026-001          ║
+│ TR-FXO-006 │ Initech Treasury Ltd │ Without MCA │ USD Call / JPY Put │ USD 5.0m   │ (● Affirmed)   │ DOC-106 │    │  ║ ───────────────────────────────────────── ║
 └────────────┴──────────────────────┴─────────────┴────────────────────┴────────────┴────────────────┴─────────┴────┘  ║ Economics (II-B)                          ║
   1–6 of 6                                                                                      ‹ Prev  Next ›        ║ Strike 1.0850 · Expiry 2027-12-31 10:00 NY║
                                                                                                                         ║ Premium USD 15000 pay 2027-12-03          ║
@@ -62,14 +62,15 @@ Ops confirm analyst (primary) · Ops lead (read).
 - Below `xlg` the drawer overlays the table; below `md` it is a full-screen sheet with a back arrow.
 - Default sort: `receivedAt` descending. Notional = `callCurrency` + `callCurrencyAmount` formatted (`1000000` → `1.0m`).
 - **View letter** opens the letter canvas (widgets W4, read mode) in a modal from `GET /documents/{id}`.
-- For a ManualDraft row the drawer primary button reads **[▶ Open draft]** instead of Open timeline.
+- For a Manual draft row the drawer primary button reads **[▶ Open draft]** instead of Open timeline.
+- Status and MCA chips use the [display-label map](../system/components.md#display-label-map-h2) (`ManualDraft` → "Manual draft", `With_MCA` → "With MCA"). Filter dropdown values stay as API codes.
 - **TL** column: `◷` = the trade has a simulated timeline (`timelineAvailable = true`: `TR-FXO-001`, `TR-FXO-005`). Filter "Has timeline" sits in the filter bar overflow `⋯`.
 - Drawer **MCA** shows `documentation.masterConfirmation.masterConfirmationId`, or "None (long-form ISDA 2002)" when it is `null`. Party B and Buyer/Seller come from `parties[]` + `product` party references ([`modelling-decisions.md`](../modelling-decisions.md)).
 - Drawer for a trade without a timeline (`TR-FXO-006` shown): the journey rail is replaced by a stub (components §12).
 
 ```text
- ║ TR-FXO-006 · Initech Treasury Ltd · Without_MCA ║
- ║ (● Affirmed)          affirmed 11:30:00Z        ║
+ ║ TR-FXO-006 · Initech Treasury Ltd · Without MCA ║
+ ║ (● Affirmed)           affirmed 11:30:00Z        ║
  ║ ─────────────────────────────────────────────── ║
  ║ ┌ ◌ Timeline ───────────── (◌ Coming soon) ┐    ║
  ║ │ No simulated timeline for this trade.    │    ║
@@ -90,7 +91,7 @@ Ops confirm analyst (primary) · Ops lead (read).
 │ ACME Corp Treasury · EUR 1.0m│
 │ DOC-001 · 15:04Z             │
 ├──────────────────────────────┤
-│ TR-FXO-005   (● ManualDraft) │
+│ TR-FXO-005   (● Manual draft) │
 │ Globex Holdings Ltd · EUR 2.5m│
 └──────────────────────────────┘
 ```

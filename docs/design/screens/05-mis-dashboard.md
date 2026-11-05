@@ -26,7 +26,7 @@ Ops lead / MIS `u.mis.lead` · Ops confirm analyst (read).
 | --- | --- | --- |
 | Shell **MIS** ([`00`](00-shell-nav.md)) | this screen | nav |
 | Queue strip / KPI click | [`01-ops-desk.md`](01-ops-desk.md) filtered by status | click |
-| Aging bar click | [`01-ops-desk.md`](01-ops-desk.md) filtered AffirmPending | click |
+| Aging bar click | [`01-ops-desk.md`](01-ops-desk.md) filtered Affirm pending | click |
 | Contagion row click | [`01-ops-desk.md`](01-ops-desk.md) filtered by Party B | click |
 | Median KPI ⓘ | [`04-fxo-timeline.md`](04-fxo-timeline.md) for `TR-FXO-001` (sample) | link |
 
@@ -41,10 +41,10 @@ All numbers are derived from the book (`scripts/prototype_sim.py` `analytics_fro
 │      6        │      3        │      2        │    66.7 %     │    0.0 %      │ affirmed      │
 │               │               │               │ of sent       │               │  227 min  ⓘ   │
 └───────────────┴───────────────┴───────────────┴───────────────┴───────────────┴───────────────┘
- Queue  Received 1 · Validating 0 · Composing 1 · ManualDraft 1 · Sent 0 · AffirmPending 1 · Affirmed 2
+ Now in status  Received 1 · Validating 0 · Composing 1 · Manual draft 1 · Sent 0 · Affirm pending 1 · Affirmed 2
 
 ┌─ Aging (from sent) ─────────────────────────────┐ ┌─ Counterparty contagion · threshold 3 open ────────────────┐
-│ AffirmPending                                   │ │ Party B               │ Trades │ Open │ Unm. │ Err │ Flag │
+│ Affirm pending                                  │ │ Party B               │ Trades │ Open │ Unm. │ Err │ Flag │
 │   0-1h   ·                              0       │ ├───────────────────────┼────────┼──────┼──────┼─────┼──────┤
 │   1-4h   ████████████████████           1       │ │ ACME Corp Treasury    │   2    │  1   │  0   │  0  │  —   │
 │   4-24h  ·                              0       │ │ Globex Holdings Ltd   │   2    │  2   │  0   │  0  │  —   │
@@ -62,6 +62,7 @@ All numbers are derived from the book (`scripts/prototype_sim.py` `analytics_fro
 └────────────────────────────────────────────┘ └────────────────────────────────────────────┘ └─────────────────────────────────────────┘
 ```
 
+- Status labels use the [display-label map](../system/components.md#display-label-map-h2).
 - The three "Coming soon" panels use components §12. They show no numbers, so nothing on screen is invented. On `sm` they collapse into one "More insights `(◌ Coming soon)`" row.
 - Window options other than **Today** are listed but disabled with `(◌ Coming soon)`.
 
@@ -73,7 +74,7 @@ KPI tiles become a 2-column grid (6 tiles, 3 rows); queue strip scrolls horizont
 
 1. Ops lead opens **MIS** from the shell; five calls load in parallel (`GET /analytics/summary`, `/aging`, `/contagion`, `/queues/errors`, `GET /trades` for counts).
 2. Reads: 6 received, 3 sent, 2 affirmed (66.7 % of sent), 1 manual draft in progress, no errors.
-3. Clicks the **1-4h** AffirmPending bar → ops desk filtered to `TR-FXO-002`.
+3. Clicks the **1-4h** Affirm pending bar → ops desk filtered to `TR-FXO-002`.
 4. Back to MIS, clicks **Globex Holdings Ltd** (2 open, below threshold 3) → ops desk filtered to `TR-FXO-005`, `TR-FXO-002`.
 
 ## 7. Component inventory

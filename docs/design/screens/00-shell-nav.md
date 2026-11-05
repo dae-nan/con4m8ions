@@ -32,7 +32,7 @@ Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (T
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ ▣ CDU-PS  Confirmations      [⌕ Search trade, doc, counterparty_______]   SIMULATION · as of 16:30Z  ◐  (UT) │  header (brand-navy)
+│ ▣ CDU-PS  Confirmations      [⌕ Search trade, doc, counterparty_______]   SIMULATION · [D · Book & MIS ▾] · as of 16:30Z  ◐  (UT) │
 ├────────────────┬─────────────────────────────────────────────────────────────────────────────────────┤
 │ ═ Trades     6 │                                                                                     │
 │   Timeline     │                                                                                     │
@@ -48,14 +48,14 @@ Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (T
 
 - `═` marks the active nav item. Badge on **Trades** = trade count; badge on **Templates** = versions waiting in DRAFT.
 - `◐` theme toggle (light/dark, [`tokens.md`](../system/tokens.md) §7). `(UT)` user menu.
-- `SIMULATION · as of …` banner always visible. It shows the mock API sim clock ([`architecture.md`](../architecture.md) §5): reads return the recorded state at that time; activate and submit move it forward.
+- `SIMULATION · [scenario ▾] · as of …` banner always visible ([`architecture.md`](../architecture.md) §5). Default scenario **D · Book & MIS** (16:30Z). The picker sets the starting clock from `prototype/routes.json` `scenarios[]`. Reads return the recorded state at or before the clock (list fields filter by `at`); activate and submit move the clock forward.
 
 ## 5. Layout — iPhone (`sm`, < 672px)
 
 ```text
 ┌──────────────────────────────┐
 │ ▣ CDU-PS          ⌕   ◐  (UT)│
-│ SIMULATION · as of 16:30Z    │
+│ SIMULATION · [D ▾] · 16:30Z  │
 ├──────────────────────────────┤
 │                              │
 │      page content            │
@@ -69,10 +69,11 @@ Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (T
 
 ## 6. Interaction (ideal path)
 
-1. Analyst lands on **Trades** (01) with queue strip and table.
+1. Analyst lands on **Trades** (01) under scenario **D** (16:30Z) with queue strip and table.
 2. Clicks **Timeline** → 04 opens `TR-FXO-001`; the page-header trade picker switches trade.
 3. Clicks **MIS** → 05; any tile or bar links back to 01 with that filter applied.
-4. Admin clicks **Templates** → 02 package list.
+4. Admin picks scenario **A · Template release** (15:59Z) → **Templates** → 02 package list (DRAFT 1.2.0 waiting).
+5. Analyst picks scenario **C · Manual draft** (16:40Z) → opens `TR-FXO-005` → **Open draft**.
 
 ## 7. Component inventory
 
@@ -83,13 +84,17 @@ Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (T
 | Side nav | Carbon `SideNav` rail | `.cdu-shell__nav` |
 | Bottom tab bar | custom | `.cdu-shell__tabbar` |
 | Badges | Carbon `Tag` size `sm`, tone `neutral` | `.cdu-chip--received` (neutral) |
+| Scenario picker | Carbon `Dropdown` size `sm` in sim banner | `.cdu-shell__scenario` |
 
 ## 8. Data bindings
 
 | UI label | File | JSON path | Example |
 | --- | --- | --- | --- |
 | Trades badge | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `count` | `6` |
-| Simulation as-of | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `asOf` | `2027-12-01T16:30:00Z` |
+| Simulation as-of (scenario D) | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `asOf` | `2027-12-01T16:30:00Z` |
+| Default scenario | `prototype/routes.json` | `defaultScenario` | `D` |
+| Scenario C clock | `prototype/routes.json` | `scenarios[2].clock` | `2027-12-01T16:40:00Z` |
+| Scenario A clock | `prototype/routes.json` | `scenarios[0].clock` | `2027-12-01T15:59:00Z` |
 | Templates badge (DRAFT versions) | `prototype/data/templates/index.json` | `items[0].versions[2].status` | `DRAFT` |
 | Timeline default trade | `prototype/data/outbound/api-responses/book/get-trades.200.json` | `items[4].tradeId` | `TR-FXO-001` |
 
@@ -104,4 +109,4 @@ Ops confirm analyst (default landing: Trades) · Template admin `u.admin.lee` (T
 - Error badge on **Trades** for Rejected / ChannelError counts — STUB (E4, E8).
 - Session expiry, role-based nav hiding — STUB.
 - Phase 3 assistant entry — the user menu shows "Assistant `(◌ Coming soon)`" (components §12), disabled.
-- Sim clock picker (jump to a step) — STUB; the clock starts at the book `asOf` and only moves on activate/submit.
+- Free-form sim-clock scrubber (jump to any second) — STUB; the scenario picker covers the four demos, and activate/submit still move the clock.

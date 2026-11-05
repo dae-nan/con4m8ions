@@ -23,11 +23,13 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## 1a. Mock API (`routes.json`)
 
-`routes.json` has one entry per `Prototype_Sim` row: `{step, at, method, path, url, contract, file}`.
+`routes.json` has `scenarios[]` (A–D), `defaultScenario` (`D`), and one entry per `Prototype_Sim` row: `{step, scenario, at, method, path, url, contract, file, listFilter}`.
+- The shell scenario picker sets the starting clock from `scenarios[].clock` (see [`docs/design/architecture.md`](../docs/design/architecture.md) §5).
 - The browser layer answers `method` + `url` (under `/v1`) with `data/<file>`.
-- A GET returns the latest entry at or before the sim clock.
-- A POST/PUT returns its `response-*` entry and moves the clock to that entry's `at`.
+- A GET returns the latest entry at or before the sim clock. If `listFilter` is set (`events` or `items`), keep only array elements with `at` ≤ clock and adjust `count` / `asOf`.
+- A POST/PUT returns its `response-*` entry and moves the clock to that entry's `at`. After manual submit (16:55:02Z), `GET /trades` resolves to `book/get-trades.after-submit.200.json`.
 - Unknown calls return 404 `NOT_FOUND`, and the screen shows its stub.
+- UI labels come from the [display-label map](../docs/design/system/components.md#display-label-map-h2); API payloads keep the codes.
 
 ## 2. Folders
 
