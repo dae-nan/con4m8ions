@@ -94,9 +94,9 @@ Exhibit I letter (“tops and tails”) with the II-B insert, block by block (PR
 ## W6. Aging bars
 
 ```text
-AffirmPending age   0–1h  ██████████ 1
-                    1–4h            0
-                    4–24h           0
+AffirmPending age   0-1h            0
+                    1-4h  ██████████ 1
+                    4-24h           0
                     >24h            0
 ```
 
