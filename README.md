@@ -2,6 +2,8 @@
 
 Confirmation Document Utility — Product Spec for ISDA/EMTA **2026 FX Definitions** confirmation templates.
 
+**New machine / workspace:** start with [`docs/handover.md`](docs/handover.md).
+
 ## Phase 1 (current)
 
 Docs + Excel mapping + payload mocks only. No running UI or API.  
