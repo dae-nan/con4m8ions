@@ -2,7 +2,9 @@
 
 ## Intent
 
-Deep-dive lifecycle for **Deliverable FX Option Transaction** across NEW → (wrong template) HOT_SWAP/RESEND → AFFIRM → AMEND → NOVATION → EXERCISE / SETTLEMENT, with disruption / early-termination edges via Exhibit III.
+Deep-dive lifecycle for **Deliverable FX Option Transaction**. Canonical narrative is **Use Case 2.0** in PRD §8 (happy path) with **Template Admin** as a separate prerequisite (§9) and recovery edges (§8.6 / §10.1). Trade happy path drafts the **Exhibit I letter** then splices II-B (+ III).
+
+Journey order: template setup → NEW → generate letter → SmartDX/SWIFT → AFFIRM → AMEND → NOVATION → EXERCISE/SETTLE. Wrong-template HOT_SWAP/RESEND is an **edge**, not mashed into the happy-path sequence blob.
 
 ## Product binding
 
