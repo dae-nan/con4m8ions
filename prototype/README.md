@@ -1,6 +1,25 @@
 # Prototype simulation data (Phase 2)
 
-JSON files the ops-desk prototype replays. **No app code here yet.** The prototype will be a static HTML + Carbon site in this folder. An in-browser mock API answers the OpenAPI paths from `data/` through `routes.json`, with no server; the later swap-in is a FastAPI replay of the same contract. Architecture: [`docs/design/architecture.md`](../docs/design/architecture.md) §5. Contract: [`specs/api/openapi.md`](../specs/api/openapi.md).
+## Running the prototype locally
+
+From this directory (`prototype/`), start a static file server (required so `fetch()` can load `routes.json` and `data/`):
+
+```bash
+cd prototype
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/) in a browser. Default hash route is `#/trades` (scenario **D · Book & MIS**).
+
+| Scenario | Use for |
+| --- | --- |
+| A | Template admin — activate DRAFT 1.2.0 |
+| B | TR-FXO-001 journey — **Run journey** on Timeline |
+| C | Manual draft TR-FXO-005 — Save / Submit |
+| D | Ops desk + MIS (default) |
+
+App code lives under `web/` (`api.js` mock layer, `labels.js` display map, screen modules, Carbon-inspired `.cdu-*` CSS).
+
 
 ## 1. Rules
 
