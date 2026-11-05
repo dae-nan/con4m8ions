@@ -1,0 +1,67 @@
+:root,
+[data-theme="light"] {
+  --cdu-brand-primary: #0473ea;
+  --cdu-brand-secondary: #38d200;
+  --cdu-brand-navy: #0f1f3d;
+  --cdu-background: #f4f4f4;
+  --cdu-layer-01: #ffffff;
+  --cdu-layer-02: #f4f4f4;
+  --cdu-border-subtle: #e0e0e0;
+  --cdu-text-primary: #161616;
+  --cdu-text-secondary: #525252;
+  --cdu-text-on-color: #ffffff;
+  --cdu-focus: #0473ea;
+
+  --cdu-tone-neutral-fg: #525252;
+  --cdu-tone-neutral-bg: #e0e0e0;
+  --cdu-tone-info-fg: #0043ce;
+  --cdu-tone-info-bg: #d0e2ff;
+  --cdu-tone-attention-fg: #8a3ffc;
+  --cdu-tone-attention-bg: #e8daff;
+  --cdu-tone-progress-fg: #005d5d;
+  --cdu-tone-progress-bg: #9ef0f0;
+  --cdu-tone-success-fg: #0e6027;
+  --cdu-tone-success-bg: #a7f0ba;
+  --cdu-tone-danger-fg: #a2191f;
+  --cdu-tone-danger-bg: #ffd7d9;
+  --cdu-tone-warning-fg: #8e6a00;
+  --cdu-tone-warning-bg: #fcf4d6;
+
+  --cdu-font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --cdu-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --cdu-space-03: 8px;
+  --cdu-space-04: 12px;
+  --cdu-space-05: 16px;
+  --cdu-space-06: 24px;
+  --cdu-row-compact: 32px;
+  --cdu-row-default: 48px;
+}
+
+[data-theme="dark"] {
+  --cdu-brand-primary: #4c9bff;
+  --cdu-brand-secondary: #5fe033;
+  --cdu-background: #161616;
+  --cdu-layer-01: #262626;
+  --cdu-layer-02: #393939;
+  --cdu-border-subtle: #393939;
+  --cdu-text-primary: #f4f4f4;
+  --cdu-text-secondary: #c6c6c6;
+  --cdu-text-on-color: #ffffff;
+  --cdu-focus: #ffffff;
+  --cdu-brand-navy: #0f1f3d;
+
+  --cdu-tone-neutral-fg: #c6c6c6;
+  --cdu-tone-neutral-bg: #393939;
+  --cdu-tone-info-fg: #78a9ff;
+  --cdu-tone-info-bg: #002d9c;
+  --cdu-tone-attention-fg: #be95ff;
+  --cdu-tone-attention-bg: #491d8b;
+  --cdu-tone-progress-fg: #3ddbd9;
+  --cdu-tone-progress-bg: #004144;
+  --cdu-tone-success-fg: #42be65;
+  --cdu-tone-success-bg: #044317;
+  --cdu-tone-danger-fg: #ff8389;
+  --cdu-tone-danger-bg: #750e13;
+  --cdu-tone-warning-fg: #f1c21b;
+  --cdu-tone-warning-bg: #3d3100;
+}
