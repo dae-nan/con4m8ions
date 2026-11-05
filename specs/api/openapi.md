@@ -1,10 +1,13 @@
-# CDU-PS API Contract (Phase 1 — spec only) v1.1
+# CDU-PS API Contract (Phase 1 — spec only) v1.3
 
 No running server in Phase 1. Phase 2 implements FastAPI against this contract.  
-**Phase 3:** AI / chatbot / live MCP agents — **stubs and thinking only** below; no implementation.
+**Phase 3:** AI / chatbot / live MCP agents — stubs and thinking only; no implementation.
 
 Base URL (prototype): `http://localhost:8080/v1`  
 Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
+
+**Naming:** **TPs** = Transaction Processing systems. **SmartDX** = external vendor for ISDA confirmation letters.  
+**DDD:** API groups map to bounded contexts in PRD §7.
 
 ---
 
@@ -15,7 +18,7 @@ Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
 | Idempotency | Header `Idempotency-Key` on mutating POSTs/PUTs |
 | Timestamps | ISO-8601 UTC |
 | Errors | JSON problem body |
-| TPS paths | Align with Excel `Attribute_Product_Map` |
+| JSON paths | Align with Excel `Attribute_Product_Map` / LDM entities |
 
 ### Error model
 
@@ -39,113 +42,97 @@ Auth (Phase 2): bearer service token; webhooks use HMAC `X-CDU-Signature`.
 | 409 | `CONFLICT`, `IDEMPOTENCY_REPLAY_MISMATCH` |
 | 422 | `LEGAL_ELECTION_INVALID` |
 | 500 | `INTERNAL` |
-| 502/503 | `CHANNEL_UNAVAILABLE` (SmartDX/SWIFT) |
+| 502/503 | `CHANNEL_UNAVAILABLE` (SmartDX / Swoosh / Compare X) |
 
 ---
 
-## Product-oriented API groups
+## DDD-aligned API groups
 
-| Group | Responsibility | Primary actors |
-| --- | --- | --- |
-| **A. Templates & lifecycle** | Create/version/activate/rollback MASTER·PRODUCT·SUPPLEMENT bundles | Template Admin |
-| **B. Trades / Events** | Ingest lifecycle events; read trade + timeline | TPS, Ops |
-| **C. Documents / Generation** | Compose Exhibit I letter + body; resend; fetch artifact | Engine, Ops |
-| **D. Affirmation / Callbacks** | Inbound affirm webhook; outbound TPS callbacks | Affirm platform, TPS |
-| **E. Analytics / MIS** | Volumes, affirm rates, error rates, template usage | MIS / Ops Lead |
-| **F. Agent-readiness stubs** | Tool-shaped read APIs / skill manifests for future agents | Phase 3 agents |
+| Group | Bounded context | Responsibility | Actors |
+| --- | --- | --- | --- |
+| **A. Templates & packages** | Template Admin | TemplatePackage, versions, selection rules, activate/rollback | Template Admin |
+| **B. Trades / Events** | Trade Lifecycle | Ingest TPs events; trade read | TPs, Ops |
+| **C. Assembly / Documents** | Confirmation Assembly | AssemblyRun, Exhibit I compose, SmartDX handoff, resend | Engine, Ops |
+| **D. Affirmation / Matching** | Affirmation / Matching | Affirm webhook; Compare X gate; callbacks to TPs | Affirm channel, TPs |
+| **E. Inbound capture** | Inbound Capture | Swoosh classify/OCR stubs (exception) | Ops, Swoosh |
+| **F. Analytics / Timeline** | Analytics / Timeline | Per-trade timeline; aging; contagion; error queue | MIS, Ops lead |
+| **G. Agent stubs** | (Phase 3) | Tool descriptors / skills | Future agents |
 
 ---
 
-## Use-case style diagram — APIs vs actors/systems
+## APIs vs actors / systems
 
 ```mermaid
 flowchart TB
   subgraph Actors
     TA[Template Admin]
-    TPS[TPS / Desk]
-    AFF[Affirm Platform]
+    TPs[TPs / Desk]
+    AFF[Affirm channel]
     MIS[MIS Lead]
     AG[Future Agent Phase3]
   end
-
-  subgraph CDU["CDU-PS API groups"]
+  subgraph CDU[CDU-PS contexts]
     A[A Templates]
-    B[B Trades/Events]
-    C[C Documents]
-    D[D Affirm/Callbacks]
-    E[E Analytics/MIS]
-    F[F Agent stubs]
+    B[B Trades]
+    C[C Assembly]
+    D[D Affirm]
+    E[E Inbound]
+    F[F Timeline]
+    G[G Agent stubs]
   end
-
-  subgraph Ext["External systems"]
+  subgraph Ext[External]
     SDX[SmartDX]
-    SWIFT[SWIFT]
+    SW[Swoosh]
+    CX[CompareX]
   end
-
   TA --> A
-  TPS --> B
-  TPS --> D
+  TPs --> B
+  TPs --> D
   AFF --> D
-  MIS --> E
-  AG -.->|Phase 3| F
+  MIS --> F
+  AG -.-> G
   C --> SDX
-  C --> SWIFT
+  E --> SW
+  D --> CX
   B --> C
   A --> C
-  D --> B
-  E --> B
-  F -.-> B
-  F -.-> C
 ```
 
 ---
 
-## Sequence — API usage across the system
-
-Template setup APIs first; then trade APIs; affirm/callback; MIS reads. Matches PRD split journeys.
+## Sequence — API usage (happy path)
 
 ```mermaid
 sequenceDiagram
   autonumber
-  actor Admin as Template Admin
-  actor TPS
-  participant T as A Templates API
-  participant E as B Events API
-  participant D as C Documents API
-  participant W as D Webhooks
-  participant CB as D Callbacks→TPS
-  participant M as E Analytics API
+  actor Admin as TemplateAdmin
+  actor TPs
+  participant A as TemplatesAPI
+  participant B as EventsAPI
+  participant C as AssemblyAPI
   participant SDX as SmartDX
+  participant D as AffirmAPI
+  participant CB as CallbacksToTPs
+  participant F as TimelineAPI
 
-  Admin->>T: POST /templates
-  Admin->>T: PUT /templates/{id}/versions
-  Admin->>T: POST /templates/{id}/activate
-
-  TPS->>E: POST /events NEW_TRADE
-  E->>D: compose Exhibit I + II-B
-  D->>SDX: send package
-  D->>CB: generation ack
-  TPS->>E: GET /trades/{id}/timeline
-
-  W->>E: POST /webhooks/affirmation
-  E->>CB: affirm callback
-
-  Note over Admin,D: Edge recovery
-  Admin->>T: POST /templates/{id}/activate HOT_SWAP
-  Admin->>D: POST /documents/{id}/resend
-  D->>SDX: supersede
-  D->>CB: resend ack
-
-  MIS->>M: GET /analytics/summary
+  Admin->>A: POST /templates and activate
+  TPs->>B: POST /events NEW_TRADE
+  B->>C: start AssemblyRun
+  C->>SDX: send package
+  SDX-->>C: letter artifact
+  C->>CB: generation ack
+  D->>B: POST /webhooks/affirmation
+  B->>CB: affirm callback
+  TPs->>F: GET /trades/id/timeline
 ```
 
 ---
 
-## A. Templates & lifecycle
+## A. Templates & packages (Template Admin)
 
 ### `POST /templates`
 
-Create MASTER+PRODUCT(+SUPPLEMENT) bundle shell.
+Create TemplatePackage shell (MASTER tops-and-tails + PRODUCT + optional SUPPLEMENT).
 
 ```json
 {
@@ -162,38 +149,21 @@ Create MASTER+PRODUCT(+SUPPLEMENT) bundle shell.
 }
 ```
 
-### `PUT /templates/{id}/versions`
+### `PUT /templates/{id}/versions` · `POST /templates/{id}/activate` · `POST /templates/{id}/rollback`
 
-```json
-{
-  "version": "1.1.0",
-  "status": "DRAFT",
-  "notes": "Fix II-B product binding",
-  "exhibitILetterTemplateRef": "letter-exh-i-2026-v1.1.0"
-}
-```
+Same semantics as v1.1 (DRAFT → LIVE; hot-swap; rollback).
 
-### `POST /templates/{id}/activate`
+### `POST /templates/selection-rules`
 
-Body: `{ "version": "1.1.0" }` → LIVE; may emit logical `HOT_SWAP`.
-
-### `POST /templates/{id}/rollback`
-
-Body: `{ "targetVersion": "1.0.0" }`
-
-### `GET /templates/{id}` / `GET /templates/{id}/versions`
-
-Read bundle + version history (audit fields included).
+Upsert PackageSelectionRule rows (product, businessEvent, entity, priority).
 
 ---
 
-## B. Trades / Events
+## B. Trades / Events (Trade Lifecycle)
 
 ### `POST /events`
 
-Ingest lifecycle event. Header: `Idempotency-Key`.
-
-**NEW_TRADE example:** see payload mocks Excel / abbreviated:
+Ingest from **TPs**. Header: `Idempotency-Key`.
 
 ```json
 {
@@ -203,80 +173,41 @@ Ingest lifecycle event. Header: `Idempotency-Key`.
   "occurredAt": "2027-12-01T10:00:00Z",
   "mcaPath": "With_MCA",
   "mcaProfileId": "MCA-SCB-ACME-2026-001",
-  "legal": {
-    "defsYear": "2026",
-    "mainBookVersion": "1.0",
-    "matrixBindings": {"SRO": null}
-  },
-  "template": {
-    "productExhibitId": "II-B",
-    "supplementExhibitIds": []
-  },
-  "trade": { "product": {}, "parties": {}, "economics": {} }
+  "legal": {"defsYear": "2026", "mainBookVersion": "1.0", "matrixBindings": {"SRO": null}},
+  "template": {"productExhibitId": "II-B", "supplementExhibitIds": []},
+  "trade": {"product": {}, "parties": {}, "economics": {}}
 }
 ```
 
-**NOVATION fragment:**
+### `GET /trades/{id}` · `GET /trades/{id}/timeline`
 
-```json
-{
-  "eventType": "NOVATION",
-  "tradeId": "TR-FXO-001",
-  "novation": {
-    "transferor": "Party B",
-    "transferee": "Party C",
-    "remainingParty": "Party A",
-    "effectiveDate": "2028-01-15"
-  }
-}
-```
-
-**Responses:** `202` `{ "tradeId", "eventId", "confirmationId?", "documentId?", "status" }`
-
-### `GET /trades/{id}`
-
-Trade snapshot + latest document + affirmation status.
-
-### `GET /trades/{id}/timeline`
-
-Ordered lifecycle events.
+Trade snapshot; ordered TimelineEvent list (FXO seed).
 
 ---
 
-## C. Documents / Generation
+## C. Assembly / Documents (Confirmation Assembly)
 
-### `POST /documents/compose` (internal/engine; exposed for ops/debug)
+### `POST /assemblies`
 
-Trigger compose of Exhibit I letter + product body for a trade/event (normally implied by `POST /events`).
+Start AssemblyRun for trade/event (normally implied by `POST /events`).
 
 ```json
 {
   "tradeId": "TR-FXO-001",
   "eventId": "evt_1001",
-  "channels": ["SmartDX", "SWIFT"]
+  "channels": ["SmartDX"]
 }
 ```
 
-**Response includes** structured `exhibitILetter` blocks + `productBodyRef` + channel ids.
+Response includes `assemblyRunId`, `exhibitILetter` blocks, `documentId`.
 
-### `GET /documents/{id}`
+### `GET /documents/{id}` · `POST /documents/{id}/resend`
 
-Fetch DocumentArtifact metadata + letter snapshot.
-
-### `POST /documents/{id}/resend`
-
-```json
-{
-  "reason": "WRONG_TEMPLATE_CORRECTED",
-  "templateVersion": "1.1.0"
-}
-```
-
-Response: `{ "priorDocumentId", "documentId", "channels": ["SmartDX"] }`
+Fetch artifact; superseding resend after hot-swap.
 
 ---
 
-## D. Affirmation / Callbacks
+## D. Affirmation / Matching
 
 ### `POST /webhooks/affirmation`
 
@@ -290,9 +221,20 @@ Response: `{ "priorDocumentId", "documentId", "channels": ["SmartDX"] }`
 }
 ```
 
-Statuses: `Matched` | `Unmatched` | `Affirmed` | `Disputed`
+### `POST /matching/compare-x` (stub — exception gate)
 
-### Outbound `POST /callbacks/tps` (shape)
+Open or continue a Compare X reconciliation case.
+
+```json
+{
+  "tradeId": "TR-FXO-001",
+  "outboundDocumentId": "DOC-002",
+  "inboundDocumentId": "INB-001",
+  "reason": "AFFIRM_DISPUTED"
+}
+```
+
+### Outbound callback to TPs
 
 ```json
 {
@@ -302,88 +244,63 @@ Statuses: `Matched` | `Unmatched` | `Affirmed` | `Disputed`
   "affirmationStatus": "Affirmed",
   "timestamp": "2027-12-01T15:04:05Z",
   "templateVersion": "1.1.0",
-  "smartdxDocumentId": "SDX-…",
-  "swiftMsgRef": null
+  "smartdxDocumentId": "SDX-…"
 }
 ```
 
 ---
 
-## E. Analytics / MIS (high-level)
+## E. Inbound capture (Swoosh stubs)
 
-Read models for ops reporting. Phase 2 may back with SQL/warehouse; Phase 1 = contract only.
+### `POST /inbound/swoosh/jobs` (stub)
 
-### `GET /analytics/summary`
-
-Query: `from`, `to`, `productType?`
+Submit inbound PDF/reference for classify + OCR.
 
 ```json
 {
-  "window": {"from": "2027-12-01", "to": "2027-12-31"},
-  "tradesBooked": 120,
-  "confirmationsSent": 118,
-  "affirmRate": 0.92,
-  "errorRate": 0.05,
-  "p95ComposeMs": 1800,
-  "byProduct": [
-    {"productType": "Deliverable_FX_Option", "sent": 40, "affirmed": 37, "errors": 2}
-  ]
+  "source": "EMAIL",
+  "tradeIdHint": "TR-FXO-001",
+  "fileRef": "s3://…/inbound.pdf"
 }
 ```
 
-### `GET /analytics/templates/usage`
+### `GET /inbound/swoosh/jobs/{id}`
 
-LIVE/RETIRED version counts; hot-swap/resend counts.
-
-### `GET /analytics/errors`
-
-Top DQ rule ids / channel failures.
-
-### Analytics **events** (emit for MIS bus — Phase 2)
-
-| Event name | When |
-| --- | --- |
-| `analytics.confirmation.sent` | After SmartDX/SWIFT accept |
-| `analytics.confirmation.affirmed` | Affirm webhook Affirmed |
-| `analytics.confirmation.failed` | DQ or channel failure |
-| `analytics.template.activated` | Activate / rollback |
-| `analytics.lifecycle.novation` | Novation composed |
+Status + `extractedJson` + `ocrConfidence`. Low confidence → manual / Compare X gate.
 
 ---
 
-## F. Agent-readiness stubs (Phase 3 — thinking only)
+## F. Analytics / Timeline
 
-> **Any AI / chatbot / autonomous agent UX is Phase 3.** Phase 1 documents shapes so services can later expose MCP tools / skills without redesigning core APIs.
+### `GET /trades/{id}/timeline`
 
-### Thinking
+Per-trade SmartDX-inspired timeline (FXO seed examples in PRD).
 
-- Prefer **read-only tools** first: `get_trade`, `get_timeline`, `get_document`, `get_template`, `search_dq_failures`
-- Mutations (`resend`, `activate`) require human confirmation / break-glass roles
-- Skills wrap Use Case 2.0 journeys (“investigate unmatched affirm”, “explain Exhibit I elections”)
-- Emit structured lineage (exhibit, Assumed flags) so agents cite correctly
-- Never train on licensed ISDA PDF text outside license; agents should reference internal Attribute map ids
+### `GET /analytics/summary`
 
-### Conceptual diagram
+Volumes, affirm rate, error rate by product (window query).
 
-```mermaid
-flowchart LR
-  User[Ops user] --> Chat[Chat / Agent UX<br/>Phase 3]
-  Chat --> MCP[MCP tool host]
-  MCP --> RO[Read stubs<br/>trades/docs/templates/analytics]
-  MCP -.->|confirm| MUT[Mutating APIs<br/>resend/activate]
-  RO --> API[CDU-PS /v1]
-  MUT --> API
-```
+### `GET /analytics/queues/errors`
 
-### Stub endpoints (non-normative placeholders)
+Failed / error queue (DQ, channel, OCR, Compare X).
 
-| Stub | Purpose |
-| --- | --- |
-| `GET /agent/tools` | List tool descriptors (JSON Schema) |
-| `GET /agent/skills` | List skill manifests referencing UC steps |
-| `POST /agent/retrieve` | RAG-ish retrieve over **internal** Attribute/PRD ids (not raw ISDA PDF dump) |
+### `GET /analytics/aging`
 
-Phase 2 may implement empty 501 stubs; Phase 3 fills behaviour.
+Buckets for AffirmPending / Unmatched age.
+
+### `GET /analytics/contagion`
+
+Counterparties with elevated unmatched/error counts (simple list).
+
+### Analytics events (emit bus — Phase 2)
+
+`analytics.confirmation.sent` · `analytics.confirmation.affirmed` · `analytics.confirmation.failed` · `analytics.template.activated` · `analytics.inbound.ocr_completed` · `analytics.matching.compare_opened`
+
+---
+
+## G. Agent-readiness stubs (Phase 3)
+
+Any AI / chatbot UX is **Phase 3**. Stubs: `GET /agent/tools`, `GET /agent/skills`, `POST /agent/retrieve` over internal Attribute/PRD ids (not raw ISDA PDF dump).
 
 ---
 
@@ -391,10 +308,8 @@ Phase 2 may implement empty 501 stubs; Phase 3 fills behaviour.
 
 `NEW_TRADE` | `AMEND` | `TERMINATE` | `EXERCISE` | `NOVATION` | `AFFIRM` | `HOT_SWAP` | `ROLLBACK` | `RESEND`
 
----
-
 ## Phase 1 non-goals
 
-- No OpenAPI YAML binary; markdown contract only  
-- No running server, auth, live SmartDX/SWIFT  
-- No AI chatbot implementation (Phase 3)
+- No OpenAPI YAML binary; markdown only  
+- No running server; no live SmartDX / Swoosh / Compare X adapters  
+- No AI chatbot implementation

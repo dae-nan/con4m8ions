@@ -4,39 +4,40 @@ Confirmation Document Utility — Product Spec for ISDA/EMTA **2026 FX Definitio
 
 ## Phase 1 (current)
 
-Docs + Excel mapping + payload mocks only. No running UI or API. **Phase 3 AI/chatbot is thinking-only** in the API/PRD stubs.
+Docs + Excel mapping + payload mocks only. No running UI or API.  
+**TPs** = Transaction Processing systems. **SmartDX** = external vendor for ISDA confirmation letters.
 
 | Artifact | Path |
 | --- | --- |
-| **PRD** | [`docs/prd-cdu-ps-v1.md`](docs/prd-cdu-ps-v1.md) |
+| **PRD (v1.3)** | [`docs/prd-cdu-ps-v1.md`](docs/prd-cdu-ps-v1.md) |
+| **Phase split explainer** | [`docs/explainer-phase-split.md`](docs/explainer-phase-split.md) |
+| **Party A/B one-pager** | [`docs/party-ab-fxo-one-pager.md`](docs/party-ab-fxo-one-pager.md) |
 | **Attribute Excel** | [`docs/mappings/cdu-ps-isda-2026-mapping.xlsx`](docs/mappings/cdu-ps-isda-2026-mapping.xlsx) |
 | **FXO payload mocks** | [`docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx`](docs/mappings/cdu-ps-fxo-deliverable-payload-mocks.xlsx) |
-| **Phase 1 plan** | [`docs/phase-1-plan.md`](docs/phase-1-plan.md) |
-| **Feature specs** | [`specs/features/`](specs/features/) (incl. Exhibit I letter) |
-| **Scenarios** | [`specs/scenarios/`](specs/scenarios/) |
-| **API contract** | [`specs/api/openapi.md`](specs/api/openapi.md) — grouped Templates / Trades / Documents / Affirm / MIS / Agent stubs |
-| **Reference PDFs** | [`docs/reference/isda/`](docs/reference/isda/) |
+| **Feature / scenario / API specs** | [`specs/`](specs/) |
+| **ISDA PDFs** | [`docs/reference/isda/`](docs/reference/isda/) |
+| **SmartDX reference images** | [`docs/reference/smartdx/`](docs/reference/smartdx/) |
 
-### PRD highlights (v1.2)
+### PRD v1.3 highlights
 
-- Ops/intern plain language + explainers (affirm vs confirm, MCA, matrices vs III, why FX often has no CSA)
-- Ontology + composition visuals; Use Case 2.0 + edge cases
-- Sequences **split** (Template Admin vs Trade); **state diagrams** for trade / FXO / template versioning
-- Exhibit I letter modeled + mocked; LDM aligned to Excel (`Attribute type`, `Domain`, `LDM entity`)
-- Archetypes / JTBD / Impact Map / User Story Map
+- Plain-words story + MCA utility; phase split moved to explainer  
+- Ontology with dotted optional lines; TemplatePackage / AssemblyRun borrowed into LDM  
+- Target architecture: TPs → CDU-PS → SmartDX → CDU-PS → TPs; Swoosh + Compare X exception gates  
+- Story map with triggers, altitudes, metrics, emotional JTBD; UC diagram + numbered edges  
+- Timeline (per-trade + simple aggregates, FXO seed); Party A/B one-pager; ER + class LDM  
+- DDD bounded contexts aligned to API groups  
 
-### Regenerate
+### Regenerate (optional)
 
 ```bash
-python3 scripts/generate_phase1_mapping.py      # attribute workbook (needs store PDF extract)
-python3 scripts/generate_fxo_payload_mocks.py   # FXO payload mocks
+python3 scripts/generate_phase1_mapping.py
+python3 scripts/generate_fxo_payload_mocks.py
 ```
 
-## Phase 2 / 3 (deferred)
+## Phase 2 / 3
 
-- **Phase 2:** HTML5 ops desk + Python FastAPI — Mac-first  
-- **Phase 3:** AI / chatbot / MCP agents — not started
+See [`docs/explainer-phase-split.md`](docs/explainer-phase-split.md).
 
-## ISDA / EMTA license
+## License
 
-PDF materials under `docs/reference/isda/` are under license from ISDA and EMTA. **Internal use only.** See `LICENSE-NOTICE.md` and PDF title pages.
+ISDA/EMTA PDFs: internal use per license. SmartDX screenshots: internal reference only.

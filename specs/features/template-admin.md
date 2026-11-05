@@ -2,7 +2,7 @@
 
 ## Intent
 
-Version and bind Master / Product / Supplement templates; activate LIVE versions; hot-swap and rollback; trigger resend of affected documents.
+Version and bind **TemplatePackage** (MASTER tops-and-tails / Exhibit I + PRODUCT / Exhibit II-* + optional SUPPLEMENT); activate LIVE versions; hot-swap and rollback; trigger resend. Letter generation on the trade path is **AssemblyRun → SmartDX** (TPs → CDU-PS → SmartDX → CDU-PS → TPs).
 
 ## Core fields
 
