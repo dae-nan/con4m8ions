@@ -1,0 +1,3200 @@
+===== PAGE 1 =====
+1998 FX and
+Currency
+Option Definitions
+ISDA
+
+®
+
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+
+EMTA
+
+®
+
+EMERGING MARKETS TRADERS ASSOCIATION
+
+THE FOREIGN EXCHANGE
+COMMITTEE
+===== PAGE 2 =====
+Copyright ©1998 by
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+EMERGING MARKETS TRADERS ASSOCIATION
+THE FOREIGN EXCHANGE COMMITTEE
+ISDA, EMTA and The Foreign Exchange Committee consent to the use and
+photocopying of this documentation for the preparation of agreements with respect
+to derivative transactions. ISDA, EMTA and The Foreign Exchange Committee do
+not, however, consent to the reproduction of this document for purposes of public
+distribution or sale.
+To obtain written permission for any use of this document (other than for the preparation
+of agreements with respect to derivative transactions), please contact:
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+600 Fifth Avenue, 27th Floor
+Rockefeller Center
+New York, N.Y. 10020-2302
+===== PAGE 3 =====
+TABLE OF CONTENTS
+Page
+INTRODUCTION TO THE 1998 FX AND CURRENCY
+OPTION DEFINITIONS ..............................................................................
+
+iv
+
+ARTICLE 1
+CERTAIN GENERAL DEFINITIONS
+SECTION 1.1.
+SECTION 1.2.
+SECTION 1.3.
+SECTION 1.4.
+SECTION 1.5.
+SECTION 1.6.
+SECTION 1.7.
+SECTION 1.8.
+SECTION 1.9.
+SECTION 1.10.
+SECTION 1.11.
+SECTION 1.12.
+SECTION 1.13.
+SECTION 1.14.
+SECTION 1.15.
+SECTION 1.16.
+SECTION 1.17.
+SECTION 1.18.
+SECTION 1.19.
+SECTION 1.20.
+SECTION 1.21.
+SECTION 1.22.
+SECTION 1.23.
+SECTION 1.24.
+SECTION 1.25.
+SECTION 1.26.
+
+Business Day ....................................................................
+Business Day Convention ................................................
+Calculation Agent ............................................................
+Confirmation ....................................................................
+Currency Option Transaction ...........................................
+Currency Pair ...................................................................
+Deliverable .......................................................................
+Deliverable Currency Option Transaction .......................
+Deliverable FX Transaction .............................................
+ECU Settlement Day ........................................................
+Euro Settlement Date .......................................................
+FX Transaction .................................................................
+Non-Deliverable ...............................................................
+Non-Deliverable Currency Option Transaction ...............
+Non-Deliverable FX Transaction .....................................
+Certain Definitions Relating to Non-Deliverable
+FX Transactions and Non-Deliverable
+Currency Option Transactions................................
+Notional Amount ..............................................................
+Principal Financial Center ................................................
+Reference Currency ..........................................................
+Reference Currency Buyer ...............................................
+Reference Currency Notional Amount .............................
+Reference Currency Seller ...............................................
+Rounding ..........................................................................
+Settlement Date ................................................................
+Trade Date ........................................................................
+Transaction .......................................................................
+
+-i-
+
+1
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+===== PAGE 4 =====
+ARTICLE 2
+GENERAL TERMS RELATING TO FX TRANSACTIONS
+SECTION 2.1.
+SECTION 2.2.
+
+Certain Definitions and Provisions Relating to FX
+Transactions .................................................................
+Terms Relating to Settlement ...................................................
+
+8
+9
+
+ARTICLE 3
+GENERAL TERMS RELATING TO CURRENCY OPTION TRANSACTIONS
+SECTION 3.1.
+SECTION 3.2.
+SECTION 3.3.
+SECTION 3.4.
+SECTION 3.5.
+SECTION 3.6.
+SECTION 3.7.
+SECTION 3.8.
+
+Certain Definitions and Provisions Relating to Currency
+Option Transactions .....................................................
+Option Style .............................................................................
+Option Type .............................................................................
+Terms Relating to Premium .....................................................
+General Terms Relating to Exercise ........................................
+Additional Terms Relating to Exercise ....................................
+Terms Relating to Settlement ...................................................
+Averaging .................................................................................
+
+9
+10
+10
+11
+11
+12
+13
+14
+
+ARTICLE 4
+CALCULATION OF RATES FOR CERTAIN SETTLEMENT RATE OPTIONS
+SECTION 4.1.
+SECTION 4.2.
+SECTION 4.3.
+SECTION 4.4.
+SECTION 4.5.
+SECTION 4.6.
+SECTION 4.7.
+
+Certain Published and Displayed Sources................................
+15
+Annex A ...................................................................................
+16
+Currencies ................................................................................ Annex A
+Principal Financial Center ....................................................... Annex A
+Settlement Rate Options .......................................................... Annex A
+Certain Definitions Relating to Settlement Rate Options ........ Annex A
+Corrections to Published and Displayed Rates ........................ Annex A
+ARTICLE 5
+DISRUPTION EVENTS
+
+SECTION 5.1.
+SECTION 5.2.
+SECTION 5.3.
+SECTION 5.4.
+
+Disruption Events.....................................................................
+Disruption Fallbacks ................................................................
+Additional Terms Relating to the Delivery of Benchmark
+Obligations ....................................................................
+Certain Definitions Relating to Disruption Events and
+Disruption Fallbacks .....................................................
+
+-ii-
+
+16
+20
+27
+29
+===== PAGE 5 =====
+EXHIBIT I
+Sample Form for a Letter Agreement ...................................................................
+
+33
+
+EXHIBIT II
+Sample Forms of Specific Provisions for Different Types of Transactions:
+A.
+B.
+C.
+D.
+E.
+
+Deliverable FX Transaction ..........................................................
+Non-Deliverable FX Transaction. ................................................
+Deliverable Currency Option Transaction ....................................
+Non-Deliverable Currency Option Transaction ............................
+Disruption Events and Disruption Fallbacks for an FX or
+Currency Option Transaction ..........................................
+
+36
+37
+38
+40
+
+INDEX OF TERMS ..............................................................................................
+
+47
+
+-iii-
+
+43
+===== PAGE 6 =====
+
+===== PAGE 7 =====
+INTRODUCTION TO THE 1998 FX AND
+CURRENCY OPTION DEFINITIONS
+The 1998 FX and Currency Option Definitions (the "Definitions") are
+intended for use in confirmations of individual transactions ("Confirmations")
+governed by (i) the 1992 ISDA Master Agreements (the "ISDA Master
+Agreements") published by the International Swaps and Derivatives Association,
+Inc. ("ISDA"), (ii) the International Foreign Exchange and Options Master
+Agreement ("FEOMA"), the International Foreign Exchange Master Agreement
+("IFEMA") and the International Currency Options Market Master Agreement
+("ICOM"), each published by The Foreign Exchange Committee (the "FX
+Committee") in association with the British Bankers' Association, the Canadian
+Foreign Exchange Committee and the Tokyo Foreign Exchange Market Practices
+Committee and (iii) other similar agreements. Copies of the ISDA Master
+Agreements are available from the executive offices of ISDA. Copies of the
+FEOMA, IFEMA and ICOM are available from the FX Committee at the Federal
+Reserve Bank of New York. A sample form of letter agreement constituting a
+Confirmation is attached as Exhibit I to these Definitions. Exhibits II-A and II-B
+set out specific provisions to document privately negotiated FX transactions,
+Exhibits II-C and II-D set out specific provisions to document privately negotiated
+currency option transactions and Exhibit II-E sets out specific provisions to
+document certain event risks that may be associated with privately negotiated FX
+and currency option transactions.
+The purpose of these Definitions is to provide the basic framework for the
+documentation of privately negotiated FX and currency option transactions,
+including those transactions previously documented under the 1992 ISDA FX and
+Currency Option Definitions (the "1992 Definitions"). The Definitions are
+primarily an expansion of the 1992 Definitions and cover a wider range of
+currencies and transactions. The most significant new concepts in the Definitions
+are the inclusion of certain Disruption Events and Disruption Fallbacks, which will
+enable parties to a transaction to allocate certain event risks by providing an agreed
+upon method for settling a transaction upon the occurrence of those events. These
+concepts may be applicable to certain FX and currency option transactions, such as
+those involving emerging market currencies. A second principal change is the
+inclusion of currency spot rate definitions that can be utilized for non-deliverable
+or cash-settled transactions.
+The 1991 ISDA Definitions (the "1991 Definitions"), the 1992 Definitions,
+the 1993 ISDA Commodity Derivatives Definitions, the 1996 ISDA Equity
+Derivatives Definitions, the 1997 ISDA Government Bond Option Definitions and
+the ISDA Confirmation of OTC Credit Swap Transaction served, in part, as the
+basis for certain of the definitions and provisions contained in these Definitions
+(modified, in some cases, as a result of input from participants in a working group
+comprised of representatives from the member institutions of ISDA, the Emerging
+Markets Traders Association ("EMTA") and the FX Committee (collectively, the
+"Sponsoring Organizations")). The definitions and provisions in these Definitions
+were developed by the working group based, in large part, on market practice.
+Inevitably, in certain areas market practice has not been uniform or has otherwise
+not provided definitive guidance. The working group has given studied
+consideration to these issues in formulating the provisions set out in these
+
+-iv-
+===== PAGE 8 =====
+Definitions. Each member of the working group has, where appropriate, sought the
+views of its own trading, operational, legal, compliance and other relevant
+personnel. None of this, however, obviates the need for each user of these
+Definitions to review the provisions of these Definitions carefully and to form its
+own independent judgment on the appropriateness of these Definitions for use by
+the institution in documenting privately negotiated FX and currency option
+transactions.
+As in the case of other product-specific definitions published by ISDA,
+parties using these Definitions to document a privately negotiated FX or currency
+option transaction may adapt or supplement the standard provisions set out in these
+Definitions in accordance with the specific economic terms agreed between the
+parties to the relevant transaction. For the sake of relative simplicity and ease of
+use, the Sponsoring Organizations have not attempted to cover every type of FX or
+currency option transaction which has been or may be done in privately negotiated
+currency transactions. Parties may, however, find these Definitions a useful starting
+point when drafting a Confirmation for a product type not directly covered by these
+Definitions including, for example, a swap or other derivative transaction involving
+emerging market currencies. Parties also may want to incorporate into a
+Confirmation both the Definitions and the 1991 Definitions in order to document
+a swap transaction involving currencies. However, in doing so, parties should be
+aware that certain provisions in the Definitions may be inconsistent with provisions
+in the 1991 Definitions (or any other definitions booklet published by ISDA that the
+parties may incorporate into a Confirmation). Parties should specify which
+definitions booklet prevails in the event of such an inconsistency for the purpose of
+the relevant transaction.
+The Definitions may be updated periodically to include additional definitions
+and provisions, although it is not anticipated that they will be changed substantively
+unless then prevailing market practice supports such a change. However, it is
+anticipated that currency and currency spot rate definitions will be added or changed
+from time to time as transactions involving rates and currencies not included in the
+Definitions become more prevalent and to reflect market practice. Accordingly,
+these sections of the Definitions are set forth in Annex A and are being released in
+a loose-leaf format so as to accommodate such additions and changes. At any time
+a copy of the then current version of these Definitions and Annex A may be
+obtained by contacting any of the Sponsoring Organizations. The Sponsoring
+Organizations also intend to make the latest version of Annex A available on the
+Internet. To avoid potential confusion, parties to a transaction may want to specify
+the version of Annex A that is being incorporated by reference to a date (e.g.,
+"March 1998 version") or an "as amended through" date (e.g., "March 1998 version
+as amended through December 10, 1998"). Unless otherwise agreed, parties will be
+deemed to have incorporated Annex A as amended through the date on which the
+parties enter into an FX or currency option transaction.
+The Sponsoring Organizations have provided these Definitions to assist the
+smooth and efficient functioning of privately negotiated FX and currency option
+transactions by providing a common set of terms for parties to use in preparing
+Confirmations of privately negotiated FX and currency option transactions. The
+precise documentation of each individual transaction remains, however, the
+responsibility of the parties concerned. None of the Sponsoring Organizations
+
+-v-
+===== PAGE 9 =====
+assumes responsibility for any use to which these Definitions may be put, including,
+without limitation, any use of these Definitions in connection with any privately
+negotiated FX or currency option transaction. Each party to a transaction
+evidenced by a Confirmation referring to or incorporating these Definitions must
+satisfy itself that the Definitions are appropriate for the transaction, have been
+properly used and/or adapted in the Confirmation for the transaction and that the
+Confirmation has generally been properly drafted, in each case, to reflect the
+commercial intentions of the parties.
+None of the Sponsoring Organizations has undertaken to review all
+applicable laws and regulations of any jurisdiction in which these Definitions
+may be used or any jurisdiction whose currency may be the subject of a
+privately negotiated FX or currency option transaction, and therefore parties
+are advised to consider the application of any relevant jurisdiction's regulatory,
+tax, accounting, exchange or other requirements that may exist in connection
+with entering into and documenting such a transaction.
+
+-vi-
+===== PAGE 10 =====
+
+===== PAGE 11 =====
+1998 FX AND CURRENCY
+OPTION DEFINITIONS
+Any or all of the following definitions and provisions may be incorporated
+into a document by wording in the document indicating that, or the extent to which,
+the document is subject to the 1998 FX and Currency Option Definitions (as
+published by the International Swaps and Derivatives Association, Inc., the
+Emerging Markets Traders Association and The Foreign Exchange Committee).
+Given the anticipated changes in Annex A of the Definitions, which contains the
+currency and currency spot rate definitions, parties to a transaction may want to
+specify the version of Annex A that is being incorporated by reference to a date or
+an "as amended through" date. Unless otherwise agreed, parties will be deemed to
+have incorporated Annex A as amended through the date on which the parties enter
+into the relevant FX or currency option transaction. All definitions and provisions
+so incorporated in a document will be applicable to that document unless otherwise
+provided in that document, and all terms defined in these Definitions and used in
+any definition or provision that is incorporated by reference in a document will have
+the respective meanings set forth in these Definitions unless otherwise provided in
+that document. Any term used in a document will, when combined with the name
+of a party, have meaning in respect of the named party only.
+ARTICLE 1
+CERTAIN GENERAL DEFINITIONS
+Section 1.1.
+(a)
+
+Business Day. "Business Day" means for purposes of:
+
+the definition of Settlement Date and Premium Payment Date,
+
+(i)
+a day on which commercial banks effect (or, but for the
+occurrence of any Disruption Event applicable to a Transaction, would have
+effected) delivery of the currency to be delivered on such Settlement Date
+or Premium Payment Date, respectively, in accordance with the market
+practice of the foreign exchange market in the place(s) specified for that
+purpose in a Confirmation generally or specifically for purposes of either
+the Settlement Date or Premium Payment Date, respectively, or
+(ii)
+
+if a place is not so specified,
+
+(A)
+a day on which commercial banks effect (or, but for
+the occurrence of any Disruption Event applicable to a Transaction,
+would have effected) delivery of the currency to be delivered on
+such Settlement Date or Premium Payment Date, respectively, in
+accordance with the market practice of the foreign exchange market
+in the Principal Financial Center of such currency;
+(B)
+a day that is an ECU Settlement Day, where the
+currency to be delivered on such Settlement Date or Premium
+Payment Date, respectively, is the European Currency Unit;
+===== PAGE 12 =====
+§1.1(a)(ii)(C)
+
+(C)
+a day that is a Euro Settlement Date, where the
+currency to be delivered on such Settlement Date or Premium
+Payment Date, respectively, is euro; or
+(D)
+a day that is a Business Day, an ECU Settlement Day
+or a Euro Settlement Date, as the case may be, in respect of each
+relevant currency where the currencies to be delivered on such
+Settlement Date or Premium Payment Date, respectively, are
+different currencies (unless market practice in the relevant foreign
+exchange markets otherwise provides);
+(b)
+
+the definition of Valuation Date or Averaging Date,
+
+(i)
+a day on which commercial banks are open (or, but for the
+occurrence of any Disruption Event applicable to a Transaction, would have
+been open) for business (including dealings in foreign exchange in
+accordance with the market practice of the foreign exchange market) in the
+place(s) specified for that purpose in a Confirmation generally or
+specifically for purposes of the Valuation Date or Averaging Date,
+respectively, or
+(ii)
+
+if a place is not so specified,
+
+(A)
+a day on which commercial banks are open (or, but
+for the occurrence of any Disruption Event applicable to a
+Transaction, would have been open) for business (including dealings
+in foreign exchange in accordance with the market practice of the
+foreign exchange market) in the Principal Financial Center of the
+Reference Currency or, in the case of a Currency Option Transaction
+where such a currency is not specified, the Call Currency and the Put
+Currency, and the places where the offices through which each party
+is transacting are located, as specified in a Confirmation;
+(B)
+a day that is an ECU Settlement Day and a Business
+Day in the places where the offices through which each party is
+transacting are located, where the payment obligation in respect of
+the Valuation Date or Averaging Date, respectively, is to be made in,
+or calculated by reference to, the European Currency Unit; or
+(C)
+a day that is a Euro Settlement Date and a Business
+Day in the places where the offices through which each party is
+transacting are located, where the payment obligation in respect of
+the Valuation Date or Averaging Date, respectively, is to be made in,
+or calculated by reference to, euro;
+(c)
+the definition of Exercise Date, Specified Exercise Date, Exercise
+Period and Expiration Date, in the case of a Currency Option Transaction,
+(i)
+a day on which commercial banks are open for business
+(including dealings in foreign exchange in accordance with the market
+
+-2-
+===== PAGE 13 =====
+§ 1.1(e)(ii)
+
+practice of the foreign exchange market) in the place(s) specified for that
+purpose in a Confirmation generally or specifically for purposes of the
+Exercise Date, Specified Exercise Date, Exercise Period or Expiration Date,
+respectively, or
+(ii)
+if a place is not so specified, a day on which commercial
+banks are open for business (including dealings in foreign exchange in
+accordance with the market practice of the foreign exchange market) in the
+place where the office through which Seller is transacting is located, as
+specified in a Confirmation;
+(d)
+the provisions of each Settlement Rate Option defined in these
+Definitions or in a Confirmation (subject to Section 1.1(b)),
+(i)
+a day on which commercial banks are open (or, but for the
+occurrence of any Disruption Event applicable to a Transaction, would have
+been open) for business (including dealings in foreign exchange in
+accordance with the market practice of the foreign exchange market) in the
+place(s) specified for that purpose in a Confirmation generally or
+specifically for purposes of that Settlement Rate Option, or
+(ii)
+if a place is not so specified (unless otherwise provided in
+these Definitions),
+(A)
+a day on which commercial banks are open (or, but
+for the occurrence of any Disruption Event applicable to a
+Transaction, would have been open) for business (including dealings
+in foreign exchange in accordance with the market practice of the
+foreign exchange market) in the Principal Financial Center of the
+Reference Currency;
+(B) a day that is an ECU Settlement Day where the
+Reference Currency is the European Currency Unit; or
+(C) a day that is a Euro Settlement Date where the
+Reference Currency is euro; and
+(e)
+
+any other provision of these Definitions or a Confirmation,
+
+(i)
+a day on which commercial banks are open for business
+(including dealings in foreign exchange in accordance with the market
+practice of the foreign exchange market) in the place(s) specified for that
+purpose in a Confirmation as Business Day(s) generally or specifically for
+the relevant purpose, or
+(ii)
+if a place is not so specified, a day on which commercial
+banks are open for business (including dealings in foreign exchange in
+accordance with the market practice of the foreign exchange market) in the
+places where the offices through which each party is transacting are located,
+as specified in a Confirmation.
+
+-3-
+===== PAGE 14 =====
+§ 1.2
+
+Section 1.2.
+Business Day Convention. (a) "Business Day
+Convention" means the convention for adjusting any relevant date if it would
+otherwise fall on a day that is not a Business Day. The following terms, when used
+in conjunction with the term "Business Day Convention" and a date, will mean that
+an adjustment will be made if that date would otherwise fall on a day that is not a
+Business Day, so that:
+(i)
+if "Following" is specified, that date will be the first
+following day that is a Business Day;
+(ii)
+if "Modified Following" or "Modified" is specified, that date
+will be the first following day that is a Business Day unless that day falls in
+the next calendar month, in which case that date will be the first preceding
+day that is a Business Day;
+(iii)
+if "Nearest" is specified, that date will be the first preceding
+day that is a Business Day, if the relevant date otherwise falls on a day other
+than a Sunday or a Monday, and will be the first following day that is a
+Business Day, if the relevant date otherwise falls on a Sunday or a Monday;
+and
+(iv)
+if "Preceding" is specified, that date will be the first
+preceding day that is a Business Day.
+(b)
+The Business Day Convention applicable to a date that is specified
+in these Definitions or in a Confirmation to be subject to adjustment in accordance
+with an applicable Business Day Convention will be (i) the Business Day
+Convention specified for that date in these Definitions or in that Confirmation or,
+(ii) if such a convention is not so specified for that date but is specified for a
+Transaction, the Business Day Convention specified in the Confirmation for that
+Transaction.
+Section 1.3.
+Calculation Agent. "Calculation Agent" means the party
+to the Transaction (or a third party) designated as such for the Transaction.
+Whenever a Calculation Agent is required to act, it will do so in good faith and in
+a commercially reasonable manner, and its determinations and calculations will be
+binding in the absence of manifest error.
+Section 1.4.
+Confirmation. "Confirmation" means one or more
+documents or other confirming evidence exchanged between the parties, which,
+taken together, are effective to confirm all the terms of a Transaction.
+Section 1.5.
+Currency Option Transaction. "Currency Option
+Transaction" means a transaction entitling Buyer, upon exercise, to purchase from
+Seller at the Strike Price a specified quantity of Call Currency and to sell to Seller
+at the Strike Price a specified quantity of Put Currency.
+Section 1.6.
+Currency Pair. "Currency Pair" means, (a) in respect of
+a Deliverable FX Transaction, the currencies specified as being deliverable for a
+Transaction in the related Confirmation, (b) in respect of a Non-Deliverable FX
+
+-4-
+===== PAGE 15 =====
+§1.13(a)
+
+Transaction, the Reference Currency and the Settlement Currency and (c) in respect
+of a Currency Option Transaction, the Call Currency and the Put Currency.
+Section 1.7.
+Deliverable.
+If "Deliverable" is specified in a
+Confirmation or is deemed specified, it means that "Deliverable" is applicable to the
+Transaction and that such Transaction will settle in accordance with the provisions
+of,
+(a)
+
+in the case of an FX Transaction, Section 2.2(a); and
+
+(b)
+
+in the case of a Currency Option Transaction, Section 3.7(a),
+
+except as otherwise provided in Section 3.6(c) and Article 5. Unless the parties
+otherwise specify, Deliverable will be deemed to apply to a Transaction.
+Section 1.8.
+Deliverable
+Currency
+Option
+Transaction.
+"Deliverable Currency Option Transaction" means a Currency Option Transaction
+to which Deliverable applies.
+Section 1.9.
+Deliverable FX Transaction. "Deliverable
+Transaction" means an FX Transaction to which Deliverable applies.
+
+FX
+
+Section 1.10.
+ECU Settlement Day. "ECU Settlement Day" means any
+day that (a) is not either (i) a Saturday or a Sunday or (ii) a day which appears as an
+ECU Non-Settlement Day on the display designated as page "ISDE" on the Reuter
+Monitor Money Rates Service (or a day so designated by the Euro Banking
+Association, if ECU Non-Settlement Days do not appear on that page) and, if ECU
+Non-Settlement Days do not appear on that page (and are not so designated), a day
+on which payments in the European Currency Unit cannot be settled in the
+international interbank market and (b) is a day on which payments in the European
+Currency Unit can be settled by commercial banks and in foreign exchange markets
+in the place in which the relevant account for payment is located.
+Section 1.11.
+Euro Settlement Date. "Euro Settlement Date" means
+any day on which the Trans-European Automated Real-Time Gross Settlement
+Express Transfer (TARGET) System is open.
+Section 1.12.
+FX Transaction. "FX Transaction" means a transaction
+providing for the purchase of an agreed amount in one currency by one party to such
+transaction in exchange for the sale by it of an agreed amount in another currency
+to the other party to such transaction.
+Section 1.13.
+Non-Deliverable. If "Non-Deliverable", "Cash
+Settlement" or "In-the-Money Settlement" is specified in a Confirmation, it means
+that "Non-Deliverable" is applicable to the Transaction and that such Transaction
+will settle in accordance with the provisions of,
+(a)
+
+in the case of an FX Transaction, Section 2.2(b); and
+
+-5-
+===== PAGE 16 =====
+§ 1.13(b)
+
+(b)
+
+in the case of a Currency Option Transaction, Section 3.7(b),
+
+except as otherwise provided in Article 5.
+Section 1.14.
+Non-Deliverable Currency Option Transaction. "NonDeliverable Currency Option Transaction" means a Currency Option Transaction
+to which Non-Deliverable applies.
+Section 1.15.
+Non-Deliverable FX Transaction. "Non-Deliverable
+FX Transaction" means an FX Transaction to which Non-Deliverable applies.
+Section 1.16.
+Certain Definitions Relating to Non-Deliverable FX
+Transactions and Non-Deliverable Currency Option Transactions. When used
+in relation to a Non-Deliverable FX Transaction or a Non-Deliverable Currency
+Option Transaction, the following terms have the indicated meanings:
+(a)
+"Rate Calculation Date" means the Valuation Date or Averaging
+Date, as appropriate.
+(b)
+"Settlement Currency" means the currency specified as such in the
+related Confirmation or determined in accordance with Section 5.2(c)(x)(A).
+(c)
+"Settlement Rate" means, for any Valuation Date in respect of a
+Settlement Date, the currency exchange rate equal to (i) the Settlement Rate
+specified or otherwise determined as provided in the related Confirmation or, (ii) if
+a Settlement Rate or a means of determining a Settlement Rate is not so specified,
+the Spot Rate for that Valuation Date.
+(d)
+"Settlement Rate Option" means, in respect of the calculation of a
+Settlement Currency Amount or an In-the-Money Amount, the Settlement Rate
+Option specified as such in the related Confirmation (or deemed specified pursuant
+to Section 4.1 or Article 5) which may be specified by reference to any of the terms
+defined in these Definitions or defining the Settlement Rate Option in the related
+Confirmation.
+(e)
+"Spot Rate" means, for any Rate Calculation Date, the currency
+exchange rate determined in accordance with the specified (or deemed specified)
+Settlement Rate Option, or if a Settlement Rate Option is not specified (or deemed
+specified), the currency exchange rate at the time at which such rate is to be
+determined for foreign exchange transactions in the relevant Currency Pair for value
+on the Settlement Date, as determined in good faith and in a commercially
+reasonable manner by the Calculation Agent.
+(f)
+"Valuation Date" means each date (i) specified as the Valuation Date
+or otherwise determined as provided in the related Confirmation, or (ii) determined
+in accordance with Section 5.1(d)(vi) or Section 5.2(c)(x)(A), which is a day in
+respect of which a Spot Rate is to be determined for purposes of determining the
+Settlement Rate, subject to adjustment in accordance with the Preceding Business
+Day Convention unless another Business Day Convention is specified to be
+applicable to that Valuation Date. Unless otherwise specified in the related
+
+-6-
+===== PAGE 17 =====
+§ 1.21(b)
+
+Confirmation, the Valuation Date will be, (i) in respect of an FX Transaction, two
+Business Days prior to the Settlement Date and (ii) in respect of a Currency Option
+Transaction, the Exercise Date.
+Section 1.17.
+
+Notional Amount. "Notional Amount" means,
+
+(a)
+in respect of a Deliverable FX Transaction or a Deliverable Currency
+Option Transaction, the quantity of currency specified as such in the related
+Confirmation or determined in accordance with Section 5.2(c)(x)(A); and
+(b)
+in respect of a Non-Deliverable FX Transaction or a NonDeliverable Currency Option Transaction, the quantity of Settlement Currency
+specified as such in the related Confirmation or, if such an amount is not specified,
+(i) in the case of a Non-Deliverable FX Transaction, the quantity of the Settlement
+Currency equal to the Reference Currency Notional Amount divided by the
+Forward Rate or, (ii) in the case of a Non-Deliverable Currency Option Transaction,
+whichever of the Call Currency Amount or the Put Currency Amount that is
+denominated in the Settlement Currency.
+Section 1.18.
+Principal Financial Center. "Principal Financial
+Center" means, in respect of a Transaction and a currency, the financial center or
+centers specified as such in the related Confirmation or, if none is specified, the
+financial center or centers indicated for such currency in Annex A of these
+Definitions.
+Section 1.19.
+Reference Currency. "Reference Currency" means, in
+respect of a Transaction, the currency specified as the Reference Currency or the
+local currency, as the case may be, in the related Confirmation.
+Section 1.20.
+Reference Currency Buyer. "Reference Currency
+Buyer" means, in respect of a Transaction, the party specified as such in the related
+Confirmation or, if such a party is not specified, the party to which the Reference
+Currency is owed (or would have been owed if the Transaction were a Deliverable
+Transaction) on the Settlement Date.
+Section 1.21.
+Reference Currency Notional Amount. "Reference
+Currency Notional Amount" means,
+(a)
+in respect of a Deliverable FX Transaction or a Deliverable Currency
+Option Transaction, the quantity of Reference Currency specified as such in the
+related Confirmation; and
+(b)
+in respect of a Non-Deliverable FX Transaction or a NonDeliverable Currency Option Transaction, the quantity of Reference Currency
+specified as such in the related Confirmation or, if such an amount is not specified,
+(i) in the case of a Non-Deliverable FX Transaction, the quantity of Reference
+Currency equal to the Notional Amount multiplied by the Forward Rate or, (ii) in
+the case of a Non-Deliverable Currency Option Transaction, whichever of the Call
+Currency Amount or the Put Currency Amount that is denominated in the Reference
+Currency.
+
+-7-
+===== PAGE 18 =====
+§ 1.22
+
+Section 1.22.
+Reference Currency Seller. "Reference Currency
+Seller" means, in respect of a Transaction, the party specified as such in the related
+Confirmation or, if such a party is not specified, the party which owes (or would
+have owed if the Transaction were a Deliverable Transaction) the Reference
+Currency on the Settlement Date.
+Section 1.23.
+Rounding. For purposes of any calculations referred to
+in these Definitions (unless otherwise specified in a Confirmation), (a) all
+percentages resulting from such calculations will be rounded, if necessary, to the
+nearest one hundred-thousandth of a percentage point (e.g., 9.876541% (or
+.09876541) being rounded down to 9.87654% (or .0987654) and 9.876545% (or
+.09876545) being rounded up to 9.87655% (or .0987655)) and (b) any currency
+amounts used in or resulting from such calculations will be rounded in accordance
+with the relevant market practice.
+Section 1.24.
+Settlement Date. "Settlement Date" means, in respect
+of a Transaction, the date (a) specified as the Settlement Date or the Payment Date,
+as the case may be, or otherwise determined as provided in the related Confirmation,
+or (b) determined in accordance with Section 5.2(c)(x)(A) or Section 5.2(c)(xi),
+subject to adjustment in accordance with the Following Business Day Convention
+unless another Business Day Convention is specified to be applicable to that
+Settlement Date.
+Section 1.25.
+Trade Date. "Trade Date" means, in respect of a
+Transaction, the date specified as the Trade Date, Contract Date, Create Date or
+Deal Date, as the case may be, in the related Confirmation, which date is the day on
+which the parties enter into the Transaction.
+Section 1.26.
+Transaction. "Transaction" means an FX Transaction,
+a Currency Option Transaction or any other transaction with respect to which the
+parties indicate these Definitions apply in the related Confirmation.
+ARTICLE 2
+GENERAL TERMS RELATING TO FX TRANSACTIONS
+Section 2.1.
+Certain Definitions and Provisions Relating to FX
+Transactions. When used in relation to an FX Transaction, the following terms
+have the indicated meanings:
+(a)
+Forward Rate. "Forward Rate" means the currency exchange rate,
+expressed as the amount of Reference Currency per one unit of Settlement Currency,
+specified as such in the related Confirmation or, if such a rate is not specified, the
+currency exchange rate (i) obtained by dividing the Reference Currency Notional
+Amount by the Notional Amount or (ii) determined in accordance with
+Section 5.2(c)(x)(A).
+
+-8-
+===== PAGE 19 =====
+§ 3.1(c)
+
+Section 2.2.
+
+Terms Relating to Settlement.
+
+(a)
+Deliverable FX Transaction. On the Settlement Date in respect of
+a Deliverable FX Transaction, each party will pay the amount specified as payable
+by it in the related Confirmation, subject to any applicable condition precedent and
+any applicable provisions of Article 5.
+(b)
+
+Non-Deliverable FX Transaction.
+
+(i)
+On the Settlement Date in respect of a Non-Deliverable FX
+Transaction, (A) if the Settlement Currency Amount is a positive number,
+the Reference Currency Buyer will pay that amount in the Settlement
+Currency to the Reference Currency Seller or, (B) if the Settlement
+Currency Amount is a negative number, the Reference Currency Seller will
+pay the absolute value of that amount in the Settlement Currency to the
+Reference Currency Buyer, in each case subject to any applicable condition
+precedent and any applicable provisions of Article 5.
+(ii)
+Settlement Currency Amount. "Settlement Currency
+Amount" means an amount expressed in the Settlement Currency calculated
+on a formula basis as follows:
+
+where both the Forward Rate and the Settlement Rate are quoted in terms
+of the amount of Reference Currency per one unit of Settlement Currency.
+ARTICLE 3
+GENERAL TERMS RELATING TO CURRENCY OPTION TRANSACTIONS
+Section 3.1.
+Certain Definitions and Provisions Relating to
+Currency Option Transactions. When used in relation to a Currency Option
+Transaction, the following terms have the indicated meanings:
+(a)
+Buyer. "Buyer" means the party specified as such in the related
+Confirmation, which party will, on the Premium Payment Date, pay to Seller the
+Premium.
+(b)
+Call Currency. "Call Currency" means the currency specified as
+such in the related Confirmation or, if such a currency is not specified, the currency
+that is to be purchased by Buyer.
+(c)
+Call Currency Amount. "Call Currency Amount" means the
+aggregate amount of Call Currency to be purchased upon the exercise (or deemed
+exercise) of the Currency Option Transaction as specified in the related
+Confirmation or, if such an amount is not specified, the Put Currency Amount
+
+-9-
+===== PAGE 20 =====
+§ 3.1(c)
+
+multiplied by the Strike Price (where the Strike Price is expressed as the amount of
+Call Currency to be paid per one unit of Put Currency).
+(d)
+Put Currency. "Put Currency" means the currency specified as such
+in the related Confirmation or, if such a currency is not specified, the currency that
+is to be sold by Buyer.
+(e)
+Put Currency Amount. "Put Currency Amount" means the
+aggregate amount of Put Currency to be sold upon the exercise (or deemed exercise)
+of the Currency Option Transaction as specified in the related Confirmation or, if
+such an amount is not specified, the Call Currency Amount divided by the Strike
+Price (where the Strike Price is expressed as the amount of Call Currency to be paid
+per one unit of Put Currency).
+(f)
+Seller. "Seller" means the party specified as such in the related
+Confirmation, which party grants to Buyer, upon the exercise (or deemed exercise)
+of a Currency Option Transaction, (i) if Deliverable is applicable, the right, but not
+the obligation, to cause Seller to pay to Buyer the Call Currency Amount on the
+Settlement Date and (ii) if Non-Deliverable is applicable, the right, but not the
+obligation, to cause Seller to pay to Buyer the In-the-Money Amount, if any, on the
+Settlement Date.
+(g)
+Strike Price. "Strike Price" means the currency exchange rate
+specified as such in the related Confirmation, which is the currency exchange rate
+at which the Currency Pair will be exchanged upon the exercise (or deemed
+exercise) of the right or rights granted pursuant to a Currency Option Transaction.
+Section 3.2.
+
+Option Style.
+
+(a)
+American. "American" means a style of Currency Option
+Transaction pursuant to which the right or rights granted are exercisable during an
+Exercise Period that consists of more than one day.
+(b)
+Bermuda. "Bermuda" or "Mid-Atlantic" means a style of Currency
+Option Transaction pursuant to which the right or rights granted are exercisable only
+on the Specified Exercise Date or Specified Exercise Dates, as the case may be.
+(c)
+European. "European" means a style of Currency Option
+Transaction pursuant to which the right or rights granted are exercisable only on the
+Expiration Date.
+Section 3.3.
+
+Option Type.
+
+(a)
+Call. "Call" means a type of Currency Option Transaction entitling,
+subject to any applicable condition precedent and any applicable provisions of
+Article 5, Buyer upon exercise:
+(i)
+in the case of a Deliverable Currency Option Transaction, to
+purchase from Seller the Call Currency Amount at the Strike Price; and
+
+-10-
+===== PAGE 21 =====
+§ 3.5(b)
+
+(ii)
+in the case of a Non-Deliverable Currency Option
+Transaction, to receive from Seller the In-the-Money Amount, if positive,
+calculated in accordance with Section 3.7(c),
+in each case, as more particularly provided in or pursuant to the related
+Confirmation.
+(b)
+Put. "Put" means a type of Currency Option Transaction entitling,
+subject to any applicable condition precedent and any applicable provisions of
+Article 5, Buyer upon exercise:
+(i)
+in the case of a Deliverable Currency Option Transaction, to
+sell to Seller the Put Currency Amount at the Strike Price; and
+(ii)
+in the case of a Non-Deliverable Currency Option
+Transaction, to receive from Seller the In-the-Money Amount, if positive,
+calculated in accordance with Section 3.7(c),
+in each case, as more particularly provided in or pursuant to the related
+Confirmation.
+Section 3.4.
+
+Terms Relating to Premium.
+
+(a)
+Premium; Price. "Premium" means, in respect of a Currency
+Option Transaction and a Premium Payment Date, the amount, if any, that is
+specified or otherwise determined as provided in the related Confirmation and,
+subject to any applicable condition precedent, is payable by Buyer to Seller on the
+Premium Payment Date or on each Premium Payment Date if more than one is
+specified, for value on such date. Instead of specifying the Premium as an amount,
+the Premium may be specified by the parties as a "Price", which will be stated as
+a percentage of the Call Currency Amount or the Put Currency Amount, as
+appropriate.
+(b)
+Premium Payment Date. "Premium Payment Date" means, in
+respect of a Currency Option Transaction, one or more dates specified as such or
+otherwise determined as provided in the related Confirmation, subject to adjustment
+in accordance with the Following Business Day Convention unless another Business
+Day Convention is specified to be applicable to that Premium Payment Date.
+Section 3.5.
+
+General Terms Relating to Exercise.
+
+(a)
+Commencement Date. "Commencement Date" means, in respect
+of a Currency Option Transaction, the date specified as such in the related
+Confirmation or, if such a date is not specified, the Trade Date.
+(b)
+Exercise Date. "Exercise Date" means, in respect of a Currency
+Option Transaction, the day during the Exercise Period on which the rights granted
+pursuant to that Currency Option Transaction are exercised or deemed to be
+exercised.
+
+-11-
+===== PAGE 22 =====
+§ 3.5(c)
+
+(c)
+Exercise Period. "Exercise Period" means, (i) in respect of an
+American style Currency Option Transaction, all Business Days in the period from,
+and including, the Commencement Date to, and including, the Expiration Date
+between 9:00 a.m. (local time in the place where the office through which Seller is
+transacting is located, as specified in the related Confirmation) and the Latest
+Exercise Time, (ii) in respect of a European style Currency Option Transaction, the
+Expiration Date between 9:00 a.m. (local time in the place where the office through
+which Seller is transacting is located, as specified in the related Confirmation) and
+the Expiration Time and (iii) in respect of a Bermuda style Currency Option
+Transaction, each Specified Exercise Date in the period from, and including, the
+Commencement Date to, and including, the Expiration Date between 9:00 a.m.
+(local time in the place where the office through which Seller is transacting is
+located, a specified in the related Confirmation) and the Latest Exercise Time.
+(d)
+Expiration Date. "Expiration Date" means, in respect of a Currency
+Option Transaction, the date specified as such in the related Confirmation, subject
+to adjustment in accordance with the Following Business Day Convention unless
+another Business Day Convention is specified to be applicable to that Expiration
+Date.
+(e)
+Expiration Time. "Expiration Time" means, in respect of a
+Currency Option Transaction, the time specified as such in the related Confirmation.
+(f)
+Latest Exercise Time. "Latest Exercise Time" means, in respect of
+a Currency Option Transaction, (i) on any day other than the Expiration Date, the
+time specified as such in the related Confirmation or, if such a time is not specified,
+the Expiration Time and (ii) on the Expiration Date, the Expiration Time.
+(g)
+Notice of Exercise. "Notice of Exercise" means, in respect of a
+Currency Option Transaction, irrevocable notice delivered by Buyer to Seller prior
+to or at the Expiration Time on the Expiration Date (which may be delivered by
+facsimile, electronic messaging system or orally, including by telephone, unless the
+parties otherwise agree with respect to a Currency Option Transaction) of Buyer's
+exercise of the right or rights granted pursuant to a Currency Option Transaction.
+(h)
+Specified Exercise Date. "Specified Exercise Date" means, in
+respect of a Bermuda style Currency Option Transaction, each date specified as such
+or otherwise determined as provided in the related Confirmation, subject to
+adjustment in accordance with the Following Business Day Convention unless
+another Business Day Convention is specified to be applicable to that Specified
+Exercise Date.
+Section 3.6.
+
+Additional Terms Relating to Exercise.
+
+(a)
+Exercise. Buyer may exercise the right or rights granted pursuant
+to a Currency Option Transaction only by giving a Notice of Exercise during the
+Exercise Period, unless Automatic Exercise applies and the Currency Option
+Transaction is deemed exercised. If a Notice of Exercise has not been received by
+
+-12-
+===== PAGE 23 =====
+§ 3.7(b)
+
+Seller prior to or at the Expiration Time on the Expiration Date (and Automatic
+Exercise is specified as not applicable in the related Confirmation), the right or
+rights granted pursuant to the Currency Option Transaction will expire and become
+void and of no effect. Unless otherwise specified in a Confirmation, a Currency
+Option Transaction may be exercised only in whole.
+(b)
+Effectiveness of Notice of Exercise. A Notice of Exercise is
+effective, (i) in the case of an American style Currency Option Transaction, (A) if
+received at or prior to the Latest Exercise Time, upon receipt thereof by Seller or
+(B) if received after the Latest Exercise Time, as of 9:00 a.m. (local time in the
+place where the office through which Seller is transacting is located, as specified in
+the related Confirmation) on the next following Business Day, if any, in the
+Exercise Period, (ii) in the case of a Bermuda style Currency Option Transaction,
+if received at or prior to the Latest Exercise Time on a Specified Exercise Date,
+upon receipt thereof by Seller and (iii) in the case of a European style Currency
+Option Transaction, if received at or prior to the Expiration Time on the Expiration
+Date, upon receipt thereof by Seller.
+(c)
+Automatic Exercise. If "Automatic Exercise" is specified (or
+deemed specified) to be applicable to a Currency Option Transaction and at the
+Expiration Time on the Expiration Date the Currency Option Transaction has not
+been exercised, then it will be deemed exercised as of that time if the In-the-Money
+Amount of the Currency Option Transaction at such Expiration Time equals or
+exceeds the product of (i) one percent of the Strike Price multiplied by (ii) the Call
+Currency Amount or the Put Currency Amount, as appropriate, unless Buyer
+notifies Seller (by telephone or in writing) prior to the Expiration Time that it does
+not wish Automatic Exercise to occur. In the case of a Deliverable Currency
+Option Transaction, if Automatic Exercise occurs, Seller may elect to settle such
+Currency Option Transaction in accordance with either Section 3.7(a) or
+Section 3.7(b). In either case, Seller will notify Buyer of its election of the method
+of settlement as soon as reasonably practicable after the Expiration Time. Unless
+the parties otherwise specify, Automatic Exercise will be deemed to apply to a
+Currency Option Transaction.
+Section 3.7.
+
+Terms Relating to Settlement.
+
+(a)
+Deliverable Currency Option Transaction. In respect of an
+Exercise Date under a Deliverable Currency Option Transaction, on the Settlement
+Date Buyer will pay to Seller the Put Currency Amount and Seller will pay to Buyer
+the Call Currency Amount, subject to the provisions of Section 3.6(c), any other
+applicable condition precedent and any applicable provisions of Article 5.
+(b)
+Non-Deliverable Currency Option Transaction. In respect of an
+Exercise Date under a Non-Deliverable Currency Option Transaction, Seller will
+pay to Buyer the In-the-Money Amount, if positive, on the Settlement Date, subject
+to any applicable condition precedent and any applicable provisions of Article 5.
+
+-13-
+===== PAGE 24 =====
+§ 3.7(c)
+
+(c)
+In-the-Money Amount. "In-the-Money Amount" means, in respect
+of a Valuation Date:
+(i)
+if the parties have specified a Settlement Currency in a
+Confirmation (or if a Settlement Currency is deemed specified pursuant to
+Section 5.2(c)(x)(A)), the amount, if positive, expressed in the Settlement
+Currency calculated on a formula basis as follows:
+(A)
+in the case of a Currency Option Transaction where
+the Reference Currency is the Put Currency and the Settlement
+Currency is the Call Currency:
+
+where both the Strike Price and the Settlement Rate are quoted in
+terms of the amount of Reference Currency per one unit of
+Settlement Currency; and
+(B)
+in the case of a Currency Option Transaction where
+the Reference Currency is the Call Currency and the Settlement
+Currency is the Put Currency:
+
+where both the Strike Price and the Settlement Rate are quoted in
+terms of the amount of Reference Currency per one unit of
+Settlement Currency; or
+(ii)
+if a Settlement Currency is not specified (or deemed
+specified), the amount, if positive, calculated on a formula basis as follows:
+(A)
+in the case of a Call, the excess of the Settlement Rate
+over the Strike Price, multiplied by the Call Currency Amount,
+where both the Strike Price and the Settlement Rate are quoted in
+terms of the amount of Put Currency to be paid per one unit of Call
+Currency; and
+(B)
+in the case of a Put, the excess of the Strike Price over
+the Settlement Rate, multiplied by the Put Currency Amount, where
+both the Strike Price and the Settlement Rate are quoted in terms of
+the amount of Call Currency to be paid per one unit of Put Currency.
+Section 3.8.
+Averaging. If Averaging Dates are specified in a
+Confirmation, then notwithstanding any other provisions of these Definitions, the
+
+-14-
+===== PAGE 25 =====
+§ 4.1(b)
+
+following provisions will apply to the determination of the Settlement Rate in
+relation to a Valuation Date:
+(a)
+Averaging Date. "Averaging Date" means, in respect of a Valuation
+Date, each date specified as such or otherwise determined as provided in a
+Confirmation, subject to adjustment in accordance with the Preceding Business
+Day Convention unless another Business Day Convention is specified to be
+applicable to that Averaging Date.
+(b)
+Settlement Rate. For purposes of determining the Settlement Rate
+in relation to a Valuation Date, the Settlement Rate will be the arithmetic mean of
+the Spot Rates on each Averaging Date (or, if different, the day on which rates for
+each Averaging Date would, in the ordinary course, be published or announced by
+the relevant price source).
+(c)
+Market Disruption. Unless the parties otherwise specify, in the
+case where it becomes impossible to obtain the Spot Rate on an Averaging Date
+(or, if different, the day on which rates for that Averaging Date would, in the
+ordinary course, be published or announced by the relevant price source), such
+Averaging Date will be deemed not to be a relevant Averaging Date for purposes
+of determining the relevant Settlement Rate. If, through operation of this provision
+there would not be an Averaging Date with respect to the relevant Valuation Date,
+the provisions of Article 5 will apply for purposes of determining the relevant Spot
+Rate on the final Averaging Date with respect to that Valuation Date as if such
+Averaging Date were a Valuation Date on which a Price Source Disruption had
+occurred.
+ARTICLE 4
+CALCULATION OF RATES FOR CERTAIN SETTLEMENT RATE OPTIONS
+Section 4.1.
+
+Certain Published and Displayed Sources.
+
+(a)
+Multiple Price Sources. If the currency exchange rate specified in
+the applicable Settlement Rate Option is published or announced by more than one
+price source and the price source referred to in such Settlement Rate Option fails
+to publish or announce that currency exchange rate on the Rate Calculation Date
+(or, if different, the day on which rates for that date would, in the ordinary course,
+be published or announced by such price source), then the Spot Rate for that Rate
+Calculation Date will be determined as if the parties had specified any other
+available price source which actually publishes or announces such currency
+exchange rate on such Rate Calculation Date (or, if different, the day on which
+rates for that date would, in the ordinary course, be published or announced by the
+relevant price source) as the applicable Settlement Rate Option.
+(b)
+Official Successor Rate. If the currency exchange rate specified in
+the applicable Settlement Rate Option is reported, sanctioned, recognized,
+published, announced or adopted (or other similar action) by the relevant
+Governmental Authority, and such currency exchange rate ceases to exist and is
+
+-15-
+===== PAGE 26 =====
+§ 4.1(b)
+
+replaced by a successor currency exchange rate that is reported, sanctioned,
+recognized, published, announced or adopted (or other similar action) by such
+Governmental Authority (the "Official Successor Rate"), then the Spot Rate for the
+relevant Rate Calculation Date will be determined as if the parties had specified
+any available price source which publishes or announces the Official Successor
+Rate (including, but not limited to, an official publication of that Governmental
+Authority) on such Rate Calculation Date (or, if different, the day on which rates
+for that date would, in the ordinary course, be published or announced by the
+relevant price source) as the applicable Settlement Rate Option.
+Section 4.2.
+Annex A. The remaining provisions of this Article are
+published in Annex A, which may be amended from time to time. Unless
+otherwise specified in a Confirmation, parties will be deemed to have incorporated
+Annex A as amended through the Trade Date of a Transaction.
+ARTICLE 5
+DISRUPTION EVENTS
+Section 5.1.
+
+Disruption Events.
+
+(a)
+"Disruption Event" means an event that, if applicable to a
+Transaction, would give rise in accordance with an applicable Disruption Fallback
+to either an alternative basis for determining the Settlement Rate or an alternative
+basis for settling the Transaction (which may include "No-Fault Termination" of
+that Transaction).
+(b)
+A Disruption Event is applicable to a Transaction if it is specified in
+the related Confirmation or if, pursuant to Section 5.1(e), it is deemed to have been
+specified for that Transaction.
+(c)
+
+If the parties have executed:
+
+(i)
+an ISDA Master Agreement or a 1987 Interest Rate and
+Currency Exchange Agreement, as amended and supplemented, (each a
+"Master Agreement") which governs a Transaction and if an event or
+circumstance that would otherwise constitute or give rise to an Illegality (as
+such term is defined in the Master Agreement) or, if applicable, an
+Impossibility (as such term is defined in the Schedule to the Master
+Agreement) also constitutes a Disruption Event that is applicable to that
+Transaction, then such event or circumstance will be treated as a Disruption
+Event and will be deemed not to constitute an Illegality or Impossibility, as
+the case may be, for purposes of these Definitions and that Master
+Agreement; or
+(ii)
+a FEOMA, IFEMA or ICOM (as amended and
+supplemented) which governs a Transaction, and if an event or circumstance
+that would otherwise constitute or give rise to a force majeure, act of state,
+illegality or impossibility for purposes of Section 9 of such FEOMA,
+
+-16-
+===== PAGE 27 =====
+§ 5.1(d)(v)
+
+Section 6 of such IFEMA or Section 9 of such ICOM also constitutes a
+Disruption Event that is applicable to that Transaction, then such event or
+circumstance will be treated as a Disruption Event and will be deemed not
+to constitute a force majeure, act of state, illegality or impossibility, as the
+case may be, for purposes of these Definitions and that FEOMA, IFEMA
+or ICOM, as appropriate.
+(d)
+When used in relation to a Transaction in conjunction with the term
+"Disruption Event" and for purposes of Section 5.1(e), the following terms have
+the indicated meanings:
+(i)
+"Benchmark Obligation Default" means, with respect to any
+Benchmark Obligation, the occurrence of a default, event of default or other
+similar condition or event (however described) including, but not limited to,
+(A) the failure of timely payment in full of any principal, interest or other
+amounts due (without giving effect to any applicable grace periods) in
+respect of such Benchmark Obligation, (B) a declared moratorium,
+standstill, waiver, deferral, Repudiation or rescheduling of any principal,
+interest or other amounts due in respect of such Benchmark Obligation or
+(C) the amendment or modification of the terms and conditions of payment
+of any principal, interest or other amounts due in respect of such Benchmark
+Obligation without the consent of all holders of such Benchmark Obligation.
+The determination of the existence or occurrence of any default, event of
+default or other similar condition or event shall be made without regard to
+any lack or alleged lack of authority or capacity of the relevant entity to
+issue or enter into such Benchmark Obligation.
+(ii)
+"Dual Exchange Rate" means, with respect to the Settlement
+Rate Option applicable to a Transaction, that the currency exchange rate
+specified in such Settlement Rate Option splits into dual or multiple
+currency exchange rates.
+(iii)
+"General Inconvertibility" means the occurrence of any event
+that generally makes it impossible to convert the Event Currency into the
+Non-Event Currency in the Event Currency Jurisdiction through customary
+legal channels.
+(iv)
+"General Non-Transferability" means the occurrence of any
+event that generally makes it impossible to deliver (A) the Non-Event
+Currency from accounts inside the Event Currency Jurisdiction to accounts
+outside the Event Currency Jurisdiction or (B) the Event Currency between
+accounts inside the Event Currency Jurisdiction or to a party that is a nonresident of the Event Currency Jurisdiction.
+(v)
+"Governmental Authority Default" means, with respect to
+any security or indebtedness for borrowed money of, or guaranteed by, any
+Governmental Authority, the occurrence of a default, event of default or
+other similar condition or event (however described) including, but not
+limited to, (A) the failure of timely payment in full of any principal, interest
+or other amounts due (without giving effect to any applicable grace periods)
+
+-17-
+===== PAGE 28 =====
+§ 5.1(d)(v)
+
+in respect of any such security, indebtedness for borrowed money or
+guarantee, (B) a declared moratorium, standstill, waiver, deferral,
+Repudiation or rescheduling of any principal, interest or other amounts due
+in respect of any such security, indebtedness for borrowed money or
+guarantee or (C) the amendment or modification of the terms and conditions
+of payment of any principal, interest or other amounts due in respect of any
+such security, indebtedness for borrowed money or guarantee without the
+consent of all holders of such obligation. The determination of the existence
+or occurrence of any default, event of default or other similar condition or
+event shall be made without regard to any lack or alleged lack of authority
+or capacity of such Governmental Authority to issue or enter into such
+security, indebtedness for borrowed money or guarantee.
+(vi)
+"Illiquidity" means it becomes impossible to obtain a firm
+quote of the Settlement Rate for the Minimum Amount (either in one
+transaction or a commercially reasonable number of transactions that, when
+taken together, total the Minimum Amount) on the Valuation Date (or, if
+different, the day on which rates for that Valuation Date would, in the
+ordinary course, be published or announced by the relevant price source) or
+by such other date (the "Illiquidity Valuation Date") as is specified for such
+purpose in the related Confirmation. If an Illiquidity Valuation Date is
+specified for a Transaction and an Illiquidity Disruption Event occurs on
+such date, then for purposes of any relevant Disruption Fallbacks in Section
+5.2, the Illiquidity Valuation Date will be deemed to be the Valuation Date
+for that Transaction.
+(vii)
+"Inconvertibility/Non-Transferability" means the occurrence
+of any event which constitutes a General Inconvertibility Disruption Event,
+a General Non-Transferability Disruption Event, a Specific Inconvertibility
+Disruption Event and a Specific Non-Transferability Disruption Event.
+(viii) "Material Change in Circumstance" means the occurrence of
+any event (other than those events specified as Disruption Events in this
+Section 5.1(d)) in the Event Currency Jurisdiction beyond the control of the
+parties to a Transaction which makes it impossible (A) for a party to fulfill
+its obligations under that Transaction and (B) generally to fulfill obligations
+similar to such party's obligations under that Transaction.
+(ix)
+"Nationalization" means any expropriation, confiscation,
+requisition, nationalization or other action by any Governmental Authority
+which deprives a party to the Transaction (or any of its Relevant Affiliates),
+of all or substantially all of its assets in the Event Currency Jurisdiction.
+(x)
+"Price Materiality" means the Primary Rate differs from the
+Secondary Rate by at least the Price Materiality Percentage.
+(xi)
+"Price Source Disruption" means it becomes impossible to
+obtain the Settlement Rate on the Valuation Date (or, if different, the day on
+which rates for that Valuation Date would, in the ordinary course, be
+published or announced by the relevant price source).
+
+-18-
+===== PAGE 29 =====
+§ 5.1(e)(iv)
+
+(xii)
+"Specific Inconvertibility" means the occurrence of any event
+that makes it impossible for a party to the Transaction (or the Relevant
+Class, if any) to convert the Minimum Amount of the Event Currency into
+the Non-Event Currency in the Event Currency Jurisdiction, other than
+where such impossibility is due solely to the failure by that party (or
+Relevant Class, as the case may be) to comply with any law, rule or
+regulation enacted by any Governmental Authority (unless such law, rule
+or regulation is enacted after the Trade Date of the Transaction and it is
+impossible for such party (or Relevant Class, as the case may be), due to an
+event beyond the control of that party (or Relevant Class), to comply with
+such law, rule or regulation).
+(xiii) "Specific Non-Transferability" means the occurrence of any
+event that makes it impossible for a party to the Transaction (or the
+Relevant Class, if any) to deliver (A) the Non-Event Currency from
+accounts inside the Event Currency Jurisdiction to accounts outside the
+Event Currency Jurisdiction or (B) the Event Currency between accounts
+inside the Event Currency Jurisdiction or to a party that is a nonresident of
+the Event Currency Jurisdiction, other than where such impossibility is due
+solely to the failure by that party (or Relevant Class, as the case may be) to
+comply with any law, rule or regulation enacted by any Governmental
+Authority (unless such law, rule or regulation is enacted after the Trade
+Date of the Transaction and it is impossible for such party (or Relevant
+Class, as the case may be), due to an event beyond the control of that party
+(or Relevant Class), to comply with such law, rule or regulation).
+(e)
+
+Unless the parties otherwise provide in a Confirmation:
+
+(i)
+if the parties do not specify any Disruption Event in a
+Confirmation, then (A) in respect of a Deliverable Transaction, no
+Disruption Events will be deemed to have been specified and (B) in respect
+of a Non-Deliverable Transaction, Price Source Disruption will be deemed
+to have been specified;
+(ii)
+if "General Inconvertibility/Non-Transferability" is specified
+in a Confirmation as a Disruption Event, then the General Inconvertibility
+and General Non-Transferability Disruption Events will apply to the
+Transaction;
+(iii)
+if "Party Specific Events" is specified in a Confirmation as
+a Disruption Event, then the Specific Inconvertibility and Specific NonTransferability Disruption Events will apply to the Transaction; and
+(iv)
+notwithstanding clauses (i)-(iii) above, if one or more
+Disruption Events are specified in a Confirmation, then (A) in respect of a
+Deliverable Transaction, only the Disruption Events specified will apply to
+the Transaction and (B) in respect of a Non-Deliverable Transaction, Price
+Source Disruption and the Disruption Events specified will apply to the
+Transaction.
+
+-19-
+===== PAGE 30 =====
+§ 5.1(f)
+
+(f)
+If, after the Trade Date of a Transaction, a Disruption Event
+applicable to that Transaction has occurred and is continuing in respect of that
+Transaction,
+(i)
+in the case of any Disruption Event other than Dual Exchange
+Rate, Illiquidity, Material Change in Circumstance, Price Materiality and
+Price Source Disruption, on the day that is the Settlement Date for that
+Transaction;
+(ii)
+in the case of Dual Exchange Rate, Price Materiality or Price
+Source Disruption, on the day that is the Valuation Date for that Transaction
+(or, if different, the day on which rates for that Valuation Date would, in the
+ordinary course, be published or announced by the relevant price source);
+(iii)
+in the case of Illiquidity, (A) if an Illiquidity Valuation Date
+is specified, on the day that is the Illiquidity Valuation Date for that
+Transaction or, (B) if such a date is not specified, on the day that is the
+Valuation Date for that Transaction (or, if different, the day on which rates
+for that Valuation Date would, in the ordinary course, be published or
+announced by the relevant price source); and
+(iv)
+in the case of Material Change in Circumstance, on the day
+that is the Valuation Date (or, if different, the day on which rates for that
+Valuation Date would, in the ordinary course, be published or announced by
+the relevant price source) or the Settlement Date for that Transaction,
+then the Settlement Rate for that Transaction will be determined or the Transaction
+will be settled, as the case may be, in accordance with the terms of the first
+applicable Disruption Fallback pursuant to Section 5.2. For purposes of this
+subsection (f) only, the definition of Business Day in Section 1.1 as applied to the
+definition of Valuation Date and Settlement Date will include any day on which,
+in the case of a Valuation Date, commercial banks would have been open or, in the
+case of a Settlement Date, commercial banks would have effected delivery of the
+currency to be delivered, but for the occurrence in the Event Currency Jurisdiction
+of a banking moratorium or other similar event related to any Disruption Event
+applicable to a Transaction.
+(g)
+If "Calculation Agent Determination of Disruption Event" is
+specified as applicable in a Confirmation, the Calculation Agent, after consultation
+with the parties or the other party, will determine in good faith whether a
+Disruption Event applicable to a Transaction has occurred.
+Section 5.2.
+
+Disruption Fallbacks.
+
+(a)
+"Disruption Fallback" means a source or method that, if applicable
+to a Transaction, gives rise to either an alternative basis for determining the
+Settlement Rate or an alternative basis for settling a Transaction (which may
+include "No Fault Termination" of that Transaction), as the case may be, when a
+Disruption Event has occurred and is continuing on the relevant date set forth in
+Section 5.1(f).
+
+-20-
+===== PAGE 31 =====
+§ 5.2(c)(iv)
+
+(b)
+A Disruption Fallback is applicable to a Transaction if it is specified
+in the related Confirmation or if, pursuant to Section 5.2(e), it is deemed to have
+been specified for that Transaction.
+(c)
+When used in relation to a Transaction in conjunction with the term
+"Disruption Fallback" and for purposes of Section 5.2(e), the following terms have
+the indicated meanings:
+(i)
+"Assignment of Claim" means that, in respect of a
+Nationalization Disruption Event, the party or, if applicable, its Relevant
+Affiliate (the "Nationalized Party") whose assets are subject to such an event
+(the "Nationalized Assets") will assign its official claim against any
+Governmental Authority with respect to the occurrence of such
+Nationalization Disruption Event (the "Claim") in an amount as determined
+below for recovery of the Nationalized Assets to the other party to the
+Transaction ("X") if such assignment is permitted under applicable law. If
+such assignment is not permitted under applicable law (and unless otherwise
+specified in a Confirmation), the Nationalized Party will transfer a
+beneficial interest in the Claim to X. The amount of the Claim to be
+assigned or the beneficial interest in the Claim to be transferred pursuant to
+the foregoing provisions will be an amount equal to the Event Currency
+Amount.
+(ii)
+"Calculation Agent Determination of Settlement Rate" means
+that the Calculation Agent will determine the Settlement Rate (or a method
+for determining the Settlement Rate), taking into consideration all available
+information that in good faith it deems relevant.
+(iii)
+"Deliverable Substitute" means that on the Settlement Date,
+in respect of a Non-Deliverable FX Transaction or a Non-Deliverable
+Currency Option Transaction, the Reference Currency Buyer will pay an
+amount equal to the Notional Amount to an account designated by the
+Reference Currency Seller and the Reference Currency Seller will pay an
+amount equal to the Reference Currency Notional Amount to an account
+designated by the Reference Currency Buyer.
+(iv)
+"Escrow Arrangement" means that each party will, if it is
+legally able, pay any amount payable by it on the Settlement Date pursuant
+to a Transaction into escrow (the "Escrow Amount"). Each party will use
+reasonable efforts to deposit (or cause its escrow agent to deposit) the
+Escrow Amount in a segregated interest bearing account or otherwise invest
+the Escrow Amount in a mutually agreeable investment, in each case as
+more particularly provided in the related Confirmation. The Escrow
+Amount plus the interest, if any, earned on the Escrow Amount will be
+delivered to the other party when the applicable Disruption Event ceases to
+exist, unless that Disruption Event continues to exist (measured from, and
+including, the Settlement Date) for consecutive Business Days equal to the
+Maximum Days of Disruption. In that case, the party obligated to pay the
+Non-Event Currency will deliver (or cause its escrow agent to deliver) the
+Escrow Amount plus the interest, if any, earned on the Escrow Amount, to
+
+-21-
+===== PAGE 32 =====
+§ 5.2(c)(iv)
+
+the other party on that last consecutive Business Day and the party obligated
+to pay the Event Currency will deliver the Escrow Amount plus the interest,
+if any, earned on the Escrow Amount, when the applicable Disruption Event
+has ceased to exist.
+(v)
+"Fallback Reference Price" means, in respect of a Dual
+Exchange Rate Disruption Event, an Illiquidity Disruption Event, a Price
+Source Disruption Event or a Price Materiality Disruption Event, that the
+Calculation Agent will determine the Settlement Rate for a Transaction on
+the relevant Valuation Date (or, if different, the day on which rates for that
+Valuation Date would, in the ordinary course, be published or announced)
+pursuant to the first of the alternate Settlement Rate Options, if any,
+specified as a Fallback Reference Price for such purpose in these Definitions
+or the related Confirmation that is not subject to a Disruption Event.
+(vi)
+
+"Local Asset Substitute-Gross" means that,
+
+(A)
+in respect of a Deliverable Transaction, the Event
+Currency Seller will Deliver Benchmark Obligations with a
+Specified Value equal to the Event Currency Amount to an account
+designated by the Event Currency Buyer and the Event Currency
+Buyer will pay an amount in the Non-Event Currency equal to the
+Non-Event Currency Amount to an account designated by the Event
+Currency Seller;
+(B)
+in respect of a Non-Deliverable Transaction where the
+Event Currency is the Reference Currency, the Reference Currency
+Seller will Deliver Benchmark Obligations with a Specified Value
+equal to the Reference Currency Notional Amount to an account
+designated by the Reference Currency Buyer and the Reference
+Currency Buyer will pay an amount in the Settlement Currency
+equal to the Notional Amount to an account designated by the
+Reference Currency Seller; and
+(C)
+in respect of a Non-Deliverable Transaction where the
+Event Currency is the Settlement Currency, the Reference Currency
+Buyer will Deliver Benchmark Obligations with a Specified Value
+equal to the Notional Amount to an account designated by the
+Reference Currency Seller and the Reference Currency Seller will
+pay an amount in the Reference Currency equal to the Reference
+Currency Notional Amount to an account designated by the
+Reference Currency Buyer,
+in each case, as more particularly provided in Section 5.3 and the related
+Confirmation.
+(vii)
+"Local Asset Substitute-Net" means that the party obligated
+to pay the Settlement Currency Amount or the In-the-Money Amount, as the
+case may be, instead will Deliver to an account designated by the other
+party Benchmark Obligations with a Specified Value equal to the Event
+
+-22-
+===== PAGE 33 =====
+§ 5.2(c)(x)
+
+Currency Amount, as more particularly provided in Section 5.3 and the
+related Confirmation.
+(viii)
+
+"Local Currency Substitute" means that,
+
+(A) in respect of a Deliverable Transaction, such Transaction
+will be converted into a Non-Deliverable Transaction in accordance
+with the provisions of the Non-Deliverable Substitute Disruption
+Fallback and the party obligated to pay (after giving effect to such
+conversion) the Settlement Currency Amount or the In-the-Money
+Amount, as the case may be, will instead deliver on the Settlement
+Date to an account designated by the other party in the Event
+Currency Jurisdiction, an amount of Event Currency equal to the
+Event Currency Amount; and
+(B) in respect of a Non-Deliverable Transaction, the party
+obligated to pay the Settlement Currency Amount or the In-theMoney Amount, as the case may be, will instead deliver on the
+Settlement Date to an account designated by the other party in the
+Event Currency Jurisdiction an amount of Event Currency equal to
+the Event Currency Amount.
+(ix)
+"No Fault Termination" means that the Transaction will
+terminate in accordance with the applicable provisions set forth in Section
+6 of the ISDA Master Agreement (which provisions, excluding Section
+6(b)(iii), are hereby incorporated by reference into these Definitions), as if:
+(A) an "Additional Termination Event" had been specified and had
+occurred, (B) any applicable grace periods had lapsed, (C) any notice was
+effective on the date No Fault Termination became the applicable
+Disruption Fallback, (D) there were two "Affected Parties" and (E) the
+Transaction was the only "Affected Transaction". On the date No Fault
+Termination becomes the applicable Disruption Fallback, either Affected
+Party may, by notice to the other party, designate such date as an "Early
+Termination Date" and (unless otherwise specified in the related
+Confirmation) it will be deemed that "Loss" applies (irrespective of the
+payment measure, if any, elected by the parties under the Master
+Agreement, if any, governing the Transaction) and the Termination
+Currency is the Non-Event Currency. The terms "Additional Termination
+Event", "Affected Parties", "Affected Transaction", "Early Termination
+Date", "Loss" and "Termination Currency Equivalent" have the meanings
+provided for in the ISDA Master Agreement.
+(x)
+"Non-Deliverable Substitute" means that, in respect of a
+Deliverable FX Transaction or a Deliverable Currency Option Transaction,
+the payment obligations will be replaced by an obligation to pay an amount
+that would be due pursuant to these Definitions as if such Transaction were
+a Non-Deliverable FX Transaction or a Non-Deliverable Currency Option
+Transaction, as the case may be, together with interest on such amount at a
+rate per annum equal to the cost (without proof or evidence of such cost) to
+the relevant party (certified by it) of funding that amount, as appropriate, for
+
+-23-
+===== PAGE 34 =====
+§ 5.2(c)(x)
+
+the period from, and including, the original date that, but for the occurrence
+of a Disruption Event, would have been the Settlement Date to, but
+excluding, the actual date of payment of that amount. For purposes of this
+clause, unless otherwise specified in a Confirmation:
+(A)
+the Valuation Date will be the original date that, but
+for the occurrence of a Disruption Event, would have been the
+Settlement Date, the Settlement Rate will be determined as if the
+Settlement Rate Option were Currency-Reference Dealers, the
+Settlement Date will be the date determined in accordance with the
+relevant market practice with respect to such a Non-Deliverable
+Transaction, the Reference Currency will be the Event Currency, the
+Settlement Currency will be the Non-Event Currency, the Reference
+Currency Notional Amount will equal the Event Currency Amount,
+and the Notional Amount will equal the Non-Event Currency
+Amount; and
+(B)
+in the case of an FX Transaction, the Forward Rate
+will be the currency exchange rate, expressed as an amount of Event
+Currency per one unit of Non-Event Currency, obtained by dividing
+the Event Currency Amount by the Non-Event Currency Amount.
+(xi)
+"Settlement Postponement" means that the Settlement Date
+for the Transaction will be deemed to be the first succeeding Business Day
+on which the applicable Disruption Event ceases to exist, unless that
+Disruption Event continues to exist (measured from the original date that,
+but for the occurrence of a Disruption Event, would have been the
+Settlement Date) for consecutive Business Days equal in number to the
+Maximum Days of Disruption. In that case, the last such consecutive
+Business Day will be the Settlement Date and (A) if, in conjunction with
+Settlement Postponement, Escrow Arrangement is specified as applicable
+to the Transaction, the provisions of the Escrow Arrangement Disruption
+Fallback will be applicable to that Transaction or, (B) if Escrow
+Arrangement is not specified as applicable to the Transaction, the next
+Disruption Fallback specified in the related Confirmation will apply to that
+Transaction. On the original date that, but for the occurrence of a Disruption
+Event, would have been the Settlement Date, each party required to deliver
+a payment under a Transaction that is postponed pursuant to the foregoing
+provisions will use reasonable efforts to deposit such amount in a segregated
+interest bearing account or otherwise invest that amount in a mutually
+agreeable investment.
+(d)
+The parties may specify in a Confirmation other Disruption Fallbacks
+that will apply to a Transaction.
+
+-24-
+===== PAGE 35 =====
+§ 5.2(e)(i)(E)(2)
+
+(e)
+Unless the parties otherwise provide in a Confirmation and subject
+to Section 5.2(g),
+(i)
+if the parties do not specify any Disruption Fallbacks in a
+Confirmation with respect to an applicable Disruption Event, the following
+Disruption Fallbacks will be deemed to have been specified (in the
+following order) for the Transaction with respect to the Disruption Event
+indicated:
+(A)
+in respect of General Inconvertibility, General NonTransferability, Inconvertibility/Non-Transferability, Specific
+Inconvertibility and Specific Non-Transferability,
+(1)
+in the case of a Deliverable Transaction, NonDeliverable Substitute or, in the case of a NonDeliverable Transaction, Local Currency Substitute; and
+(2)
+
+Settlement Postponement;
+
+(B)
+in respect of Benchmark Obligation Default and
+Governmental Authority Default,
+(1)
+Local Asset Substitute-Gross, where the
+Benchmark Obligation so Delivered must be, in the case of
+Benchmark Obligation Default, the Benchmark Obligation
+subject to that default or, in the case of Governmental
+Authority Default, an obligation subject to that default; and
+(2)
+(C)
+
+Settlement Postponement;
+
+in respect of Nationalization,
+(1)
+
+Settlement Postponement; and
+
+(2)
+
+Assignment of Claim;
+
+(D)
+in respect of Price Materiality, the Fallback
+Reference Price specified for such purpose or, if none is specified,
+the Fallback Reference Price as if Currency-Reference Dealers were
+the alternate Settlement Rate Option;
+(E)
+
+in respect of Illiquidity and Price Source Disruption,
+
+(1)
+the Fallback Reference Price specified for
+such purpose or, if none is specified, the Fallback Reference
+Price as if Currency-Reference Dealers were the alternate
+Settlement Rate Option; and
+(2)
+Calculation
+Settlement Rate;
+
+-25-
+
+Agent
+
+Determination
+
+of
+===== PAGE 36 =====
+§ 5.2(e)(i)(F)
+
+(F)
+in respect of Dual Exchange Rate, the Fallback
+Reference Price specified for such purpose or, if none is specified,
+Calculation Agent Determination of Settlement Rate; and
+(G)
+in respect of Material Change in Circumstance, each
+party will, promptly upon becoming aware of the Material Change
+in Circumstance Disruption Event, negotiate in good faith and in a
+commercially reasonable manner to agree with the other party on an
+alternative basis for determining the Settlement Rate or an
+alternative basis for settling the Transaction in accordance with then
+prevailing market practice and if the parties have not so agreed on or
+before the Maximum Days of Disruption, the Transaction will
+terminate in accordance with the provisions of "No Fault
+Termination".
+(ii)
+in each of clauses (A) through (G), if "Conversion" is
+specified in a Confirmation, it means that the first Disruption Fallback will
+be, (A) in the case of a Deliverable Transaction, Non-Deliverable Substitute
+and (B) in the case of a Non-Deliverable Transaction, Deliverable Substitute
+and in each case, the subsequent Disruption Fallbacks will be applied after
+giving effect to such conversion into a Deliverable Transaction or a NonDeliverable Transaction, as the case may be; and
+(iii)
+other than as provided in subsection (f) below, if one or more
+Disruption Fallbacks are specified in a Confirmation, then only the
+Disruption Fallbacks specified will apply to the Transaction (in the order so
+specified).
+(f)
+Unless otherwise specified in a Confirmation, if none of the
+applicable Disruption Fallbacks provides the parties with a means of determining
+the Settlement Rate or settling the Transaction, as the case may be, the Transaction
+will terminate in accordance with the provisions of "No Fault Termination".
+(g)
+Unless otherwise specified in a Confirmation, if more than one
+Disruption Event applicable to a Transaction has occurred and is continuing on the
+Settlement Date, then all such Disruption Events must be remedied in respect of
+such Transaction in accordance with the terms of the applicable Disruption
+Fallbacks in the following order:
+(i)
+if Dual Exchange Rate, Illiquidity, Price Materiality or Price
+Source Disruption is applicable to the Transaction and is not remedied
+before the Settlement Date, then the Disruption Fallbacks specified or
+deemed specified with respect to Dual Exchange Rate, Illiquidity, Price
+Materiality or Price Source Disruption, respectively, must be applied to that
+Transaction (in the specified order) until the Dual Exchange Rate Disruption
+Event, Illiquidity Disruption Event, Price Materiality Disruption Event or
+Price Source Disruption Event is remedied and a Settlement Rate is
+determined;
+
+-26-
+===== PAGE 37 =====
+§ 5.3(a)
+
+(ii)
+if Nationalization is applicable to the Transaction, then the
+Disruption Fallbacks specified or deemed specified with respect to
+Nationalization must be applied to that Transaction (in the specified order)
+until such Nationalization Disruption Event is remedied. If the Transaction
+settles in accordance with the provisions of the Assignment of Claim
+Disruption Fallback set forth in Section 5.2(c)(i), then the Disruption
+Events listed in clauses (iii)-(v) below will be deemed remedied in respect
+of such Transaction;
+(iii)
+if Benchmark Obligation Default or Governmental Authority
+Default is applicable to the Transaction, then the Disruption Fallbacks
+specified or deemed specified with respect to Benchmark Obligation Default
+or Governmental Authority Default, as the case may be, must be applied to
+that Transaction (in the specified order) until such Benchmark Obligation
+Default Disruption Event or Governmental Authority Default Disruption
+Event is remedied. If the Transaction settles in accordance with the
+provisions of the Local Asset Substitute-Gross Disruption Fallback set forth
+in Section 5.2(c)(vi), then the Disruption Events listed in clauses (iv) and
+(v) below will be deemed remedied in respect of such Transaction;
+(iv)
+if General Inconvertibility, General Non-Transferability,
+Inconvertibility/Non-Transferability, Specific Inconvertibility or Specific
+Non-Transferability is applicable to the Transaction, then the Disruption
+Fallbacks specified or deemed specified with respect to General
+Inconvertibility, General Non-Transferability, Inconvertibility/NonTransferability, Specific Inconvertibility or Specific Non-Transferability,
+respectively, must be applied to that Transaction (in the specified order)
+until such General Inconvertibility Disruption Event, General NonTransferability Disruption Event, Inconvertibility/Non-Transferability
+Disruption Event, Specific Inconvertibility Disruption Event or Specific
+Non-Transferability Disruption Event is remedied; and
+(v)
+if Material Change in Circumstance is applicable to the
+Transaction, then the Disruption Fallbacks specified or deemed specified
+with respect to Material Change in Circumstance must be applied to that
+Transaction (in the specified order) until such Material Change in
+Circumstance Disruption Event is remedied.
+Section 5.3.
+Additional Terms Relating to the Delivery of
+Benchmark Obligations.
+(a)
+Delivery of Benchmark Obligations. On the Settlement Date, the
+party obligated to Deliver the Benchmark Obligations will initiate Delivery of such
+Benchmark Obligations (through the relevant clearance system, if any) and such
+Delivery will be made for good value on the first day on which settlement of a
+novation, transfer, assignment or sale, as appropriate, of such Benchmark
+Obligations executed on the Settlement Date would customarily take place (the
+"Physical Settlement Date"). The other party to the Transaction will pay the
+amount payable by it, if any, on the Physical Settlement Date together with interest
+on such amount at a rate per annum equal to the cost (without proof or evidence
+
+-27-
+===== PAGE 38 =====
+§ 5.3(a)
+
+of such cost) to the party obligated to Deliver the Benchmark Obligations
+(certified by it) of funding that amount, as appropriate, for the period from, and
+including, the original date that, but for the occurrence of a Disruption Event,
+would have been the Settlement Date to, but excluding, the actual date of payment
+of that amount. Unless otherwise specified in a Confirmation, such Delivery and
+such payment will be made on a delivery versus payment basis.
+(b)
+Failure to Deliver Benchmark Obligations Due to an Event
+Beyond the Control of the Parties. If, due to an event beyond the control of the
+parties, it is impossible or illegal for the relevant party to Deliver the Benchmark
+Obligations on the Physical Settlement Date (including without limitation, as a
+result of failure of the relevant clearance system or due to any law, regulation or
+court order, but not including as a result of market conditions), then the Benchmark
+Obligations will be Delivered on the first succeeding day on which Delivery of
+such Benchmark Obligations can take place unless such an event prevents Delivery
+for five Business Days. In that case, or if due to an event beyond the control of the
+party taking Delivery of such Benchmark Obligations, it is impossible or illegal for
+that party to take such Delivery on the Physical Settlement Date, the Transaction
+will settle in accordance with the next applicable Disruption Fallback.
+(c)
+Performance by a Designee. Either party (the "designator") may
+designate any of its affiliates (the "designee") to Deliver or take Delivery of, as the
+case may be, the Benchmark Obligations and otherwise to perform such party's
+obligations to Deliver or take Delivery, as the case may be, in respect of a
+Transaction and the designee may assume such obligations. Such designation shall
+not relieve the designator of any of its obligations under a Transaction. If the
+designee actually performs the obligations of the designator under a Transaction,
+then the designator will be discharged of its obligations to the other party to the
+extent of such performance. If, as a result of such designation, (1) it would be
+illegal due to any applicable law or regulation affecting the transfer of Benchmark
+Obligations for the designee to so Deliver or take Delivery of such Benchmark
+Obligations, (2) such Delivery would give rise to any Tax (as such term is defined
+in the ISDA Master Agreement) or (3) such Delivery would give rise to any loss
+or cost to the non-designating party, then such designation may not be made.
+(d)
+Stamp Tax. Notwithstanding any other provision of these
+Definitions or the Confirmation, if any stamp, registration, documentation or
+similar tax is payable in connection with the Delivery of the Benchmark
+Obligations, payment of such tax shall be made by the party that would in the
+ordinary course bear such cost under a contract for purchase of the Benchmark
+Obligations.
+(e)
+Representation and Agreement. The party obligated to Deliver the
+Benchmark Obligations represents on the Physical Settlement Date and on any
+subsequent date that physical settlement is effected (which representation shall
+survive the Physical Settlement Date and any such subsequent date) that it has
+conveyed to the other party (or, if applicable, its designee) all right, title and
+interest in the Benchmark Obligations, free and clear of all claims, charges, liens
+and encumbrances. The party which receives the Benchmark Obligations agrees
+
+-28-
+===== PAGE 39 =====
+§ 5.4(f)
+
+(which agreement shall survive the Physical Settlement Date) to execute, deliver,
+file and record any specific assignment or other document and take any other
+action that may be necessary or desirable and reasonably requested by the other
+party in connection with such party's Delivery of the Benchmark Obligations.
+Section 5.4.
+Certain Definitions Relating to Disruption Events
+and Disruption Fallbacks.
+(a)
+Benchmark Obligation. "Benchmark Obligation" means, in respect
+of a Transaction, each obligation specified as such in the related Confirmation.
+(b)
+Deliver. "Deliver" means to deliver, novate, transfer, assign or sell,
+as appropriate, in the manner customary for the settlement of the relevant
+Benchmark Obligation (which shall include executing all necessary documentation
+and taking any other necessary actions), in order to convey all right, title and
+interest in the Benchmark Obligation, free and clear of all claims, charges, liens
+and encumbrances. "Delivery" and "Delivered" will be construed accordingly.
+(c)
+Event Currency. "Event Currency" means, (i) in respect of a
+Deliverable Transaction, the currency specified as such in the related Confirmation
+and (ii) in respect of a Non-Deliverable Transaction, the currency specified as
+such in the related Confirmation or, if such a currency is not specified, the
+Reference Currency.
+(d)
+Event Currency Amount. "Event Currency Amount" means, (i) in
+respect of a Deliverable Transaction, the quantity of Event Currency specified as
+such in the related Confirmation or, if such an amount is not specified, the quantity
+of Event Currency that is owed by the Event Currency Seller on the Settlement
+Date, (ii) in respect of a Non-Deliverable Transaction where the Event Currency
+is the Reference Currency, (A) in the case of a Non-Deliverable FX Transaction,
+the Settlement Currency Amount multiplied by the Settlement Rate or (B) in the
+case of a Non-Deliverable Currency Option Transaction, the In-the-Money
+Amount multiplied by the Settlement Rate, and (iii) in respect of a NonDeliverable Transaction where the Event Currency is the Settlement Currency, (A)
+in the case of a Non-Deliverable FX Transaction, the Settlement Currency Amount
+or (B) in the case of a Non-Deliverable Currency Option Transaction, the In-theMoney Amount.
+(e)
+Event Currency Buyer. "Event Currency Buyer" means, (i) in
+respect of a Deliverable Transaction, the party specified as such in the related
+Confirmation or, if such a party is not specified, the party to which the Event
+Currency is owed on the Settlement Date, (ii) in respect of a Non-Deliverable
+Transaction where the Event Currency is the Reference Currency, the Reference
+Currency Buyer and (iii) in respect of a Non-Deliverable Transaction where the
+Event Currency is the Settlement Currency, the Reference Currency Seller.
+(f)
+Event Currency Jurisdiction. "Event Currency Jurisdiction"
+means, in respect of a Transaction, the country for which the Event Currency is the
+lawful currency.
+
+-29-
+===== PAGE 40 =====
+§ 5.4(g)
+
+(g)
+Event Currency Seller. "Event Currency Seller" means, (i) in
+respect of a Deliverable Transaction, the party specified as such in the related
+Confirmation or, if such a party is not specified, the party which owes the Event
+Currency on the Settlement Date, (ii) in respect of a Non-Deliverable Transaction
+where the Event Currency is the Reference Currency, the Reference Currency
+Seller and (iii) in respect of a Non-Deliverable Transaction where the Event
+Currency is the Settlement Currency, the Reference Currency Buyer.
+(h)
+FEOMA. "FEOMA" means the standard form 1997 International
+Foreign Exchange and Options Master Agreement (FEOMA) published by The
+Foreign Exchange Committee in association with the British Bankers' Association,
+the Canadian Foreign Exchange Committee and the Tokyo Foreign Exchange
+Market Practices Committee.
+(i)
+Governmental Authority. "Governmental Authority" means any
+de facto or de jure government (or any agency or instrumentality thereof), court,
+tribunal, administrative or other governmental authority or any other entity (private
+or public) charged with the regulation of the financial markets (including the
+central bank) of the Event Currency Jurisdiction.
+(j)
+ICOM. "ICOM" means the standard form 1997 International
+Currency Options Market Master Agreement (ICOM) published by The Foreign
+Exchange Committee in association with the British Bankers' Association, the
+Canadian Foreign Exchange Committee and the Tokyo Foreign Exchange Market
+Practices Committee. Such term shall also include each of the 1992 versions of
+ICOM published by The Foreign Exchange Committee and the British Bankers'
+Association (and any other similar version adopted by industry groups for
+jurisdictions other than the U.S. and the U.K.) and, notwithstanding any changes
+in section numbers, headings, definitions and the like, any reference herein to a
+provision in the 1997 ICOM shall be deemed a reference to the equivalent
+provision in such earlier versions.
+(k)
+IFEMA. "IFEMA" means the standard form 1997 International
+Foreign Exchange Master Agreement (IFEMA) published by The Foreign
+Exchange Committee in association with the British Bankers' Association, the
+Canadian Foreign Exchange Committee and the Tokyo Foreign Exchange Market
+Practices Committee. Such term shall also include each of the 1993 versions of
+IFEMA published by The Foreign Exchange Committee and the British Bankers'
+Association (and any similar version adopted by industry groups for jurisdictions
+other than the U.S. and the U.K.) and, notwithstanding any changes in section
+numbers, headings, definitions and the like, any references herein to a provision in
+the 1997 IFEMA shall be deemed a reference to the equivalent provision in such
+earlier versions.
+(1)
+ISDA Master Agreement. "ISDA Master Agreement" means the
+standard form 1992 ISDA Master Agreement (Multicurrency-Cross Border)
+published by the International Swaps and Derivatives Association, Inc.
+(m)
+Maximum Days of Disruption. "Maximum Days of Disruption"
+means, in respect of a Transaction and for purposes of (i) the definition of Escrow
+
+-30-
+===== PAGE 41 =====
+§ 5.4(v)
+
+Arrangement and Settlement Postponement and (ii) the provisions relating to
+Material Change in Circumstance in Section 5.2(e)(i)(G), the number of Business
+Days specified as such in the related Confirmation.
+(n)
+Minimum Amount. "Minimum Amount" means, in respect of a
+Transaction, the amount specified as such in the related Confirmation or, if such
+an amount is not specified, (i) for purposes of the definition of Illiquidity, the
+Reference Currency Notional Amount and (ii) for purposes of the definition of
+Specific Inconvertibility, the Event Currency equivalent of US $1.
+(o)
+Non-Event Currency. "Non-Event Currency" means, in respect of
+a Transaction, the currency of the Currency Pair that is not the Event Currency.
+(p)
+Non-Event Currency Amount. "Non-Event Currency Amount"
+means, in respect of a Transaction, the quantity of Non-Event Currency specified
+as payable by the Event Currency Buyer in the related Confirmation.
+(q)
+Price Materiality Percentage. "Price Materiality Percentage"
+means, in respect of a Transaction and for purposes of the definition of Price
+Materiality, the percentage specified as such in the related Confirmation.
+(r)
+Primary Rate. "Primary Rate" means, in respect of a Transaction
+and for purposes of the definition of Price Materiality, the rate determined using
+the Settlement Rate Option specified for such purpose in the related Confirmation.
+(s)
+Relevant Affiliate. "Relevant Affiliate" means, in respect of a
+Transaction and any party thereto, the entities specified as such in the related
+Confirmation or, if such entities are not specified, in relation to any party, any
+entity controlled, directly or indirectly, by such party, any entity that controls,
+directly or indirectly, such party or any entity directly or indirectly under common
+control with such party. For this purpose, "control" of any entity or party means
+ownership of a majority of the voting power of the entity or party.
+(t)
+Relevant Class. "Relevant Class" means, in respect of a Transaction
+and for purposes of the definition of Specific Inconvertibility and Specific NonTransferability, any group or class specified as such in the related Confirmation.
+(u)
+Repudiation. "Repudiation" means that, in respect of a Transaction,
+(i) for purposes of the definition of Benchmark Obligation Default, the issuer of
+or any party to, as the case may be, the relevant Benchmark Obligation disaffirms,
+disclaims, repudiates or rejects, in whole or in part, or challenges the validity of
+the Benchmark Obligation in any material respect and (ii) for purposes of the
+definition of Governmental Authority Default, the relevant Governmental
+Authority disaffirms, disclaims, repudiates or rejects, in whole or in part, or
+challenges the validity of any security, indebtedness for borrowed money or
+guarantee of such Governmental Authority in any material respect.
+(v)
+Secondary Rate. "Secondary Rate" means, in respect of a
+Transaction and for purposes of the definition of Price Materiality, the rate
+-31-
+===== PAGE 42 =====
+§ 5.4(w)
+
+determined using the Settlement Rate Option specified for such purpose in the
+related Confirmation.
+(w)
+Specified Value. "Specified Value" means, in respect of a
+Transaction and a Benchmark Obligation, any of the following values, as specified
+in the related Confirmation: (i) the outstanding principal balance (as valued on the
+Settlement Date), (ii) the stated principal balance, (iii) the face value or (iv) the
+market value (as valued on the Settlement Date).
+
+-32-
+===== PAGE 43 =====
+EXHIBIT I
+to 1998 FX and Currency Option Definitions
+
+Introduction, Standard Paragraphs and Closing for a
+Letter Agreement Confirming a Transaction
+
+Heading for Letter
+[Letterhead of Party A]
+[Date]
+Transaction
+[Name and Address of Party B]
+
+Dear [
+
+]:
+
+The purpose of this letter agreement (this "Confirmation") is to confirm the terms and conditions
+of the Transaction entered into between us on the Trade Date specified below (the "Transaction"). [This
+Confirmation constitutes a "Confirmation" as referred to in the Agreement specified below.] 1
+The definitions and provisions contained in the 1998 FX and Currency Option Definitions (as
+published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders
+Association and The Foreign Exchange Committee) are incorporated into this Confirmation. In the event
+of any inconsistency between those definitions and provisions and this Confirmation, this Confirmation
+will govern.2
+1. This Confirmation supplements, forms a part of, and is subject to, [describe master agreement]
+dated as of [date], as amended and supplemented from time to time (the "Agreement"), between [Name of
+Party A] ("Party A") and [Name of Party B] ("Party B"). All provisions contained in the Agreement govern
+
+1
+
+Include if applicable.
+
+2 If, for an FX Transaction or Currency Option Transaction, the parties also wish to incorporate the 1991
+ISDA Definitions, this paragraph should be replaced by the following: "The definitions and provisions
+contained in the 1991 ISDA Definitions (as amended by the 1997 Supplement) as published by the
+International Swaps and Derivatives Association, Inc. (the "Swap Definitions") and in the 1998 FX and
+Currency Option Definitions, as published by the International Swaps and Derivatives Association, Inc.,
+the Emerging Markets Traders Association and The Foreign Exchange Committee (the "1998 Definitions",
+and together with the Swap Definitions, the "Definitions"), are incorporated into this Confirmation. In the
+event of any inconsistency between the Swap Definitions and the 1998 Definitions, the 1998 Definitions
+will govern. In the event of any inconsistency between either set of Definitions and this Confirmation, this
+Confirmation will govern."
+
+-33-
+===== PAGE 44 =====
+EXHIBIT I
+to 1998 FX and Currency Option Definitions
+
+this Confirmation except as expressly modified below.3 The terms of the Transaction to which this
+Confirmation relates are as follows:
+[INSERT RELEVANT ADDITIONAL PROVISIONS FROM
+EXHIBIT II-A, II-B, II-C or II-D AND, IF APPLICABLE, EXHIBIT II-E]
+[3][5].
+
+Calculation Agent:
+
+[4][6].
+
+Account Details:
+Account for payments to Party A:
+Account for payments to Party B:
+
+[5][7].
+
+Offices:
+(a) The Office[s] of Party A for the Transaction is [are]
+
+; and
+
+(b) The Office[s] of Party B for the Transaction is [are]
+[[6][8].
+
+Broker/Arranger:]
+
+[[7][9].
+Governing Law: [English law] [the laws of the State of New York (without reference
+to choice of law doctrine)]4
+[[8] [10].
+
+[Business Day:]
+
+[[9][11].
+
+[Business Day Convention:]
+
+3
+
+If the parties have not yet executed, but intend to execute, an Agreement include, instead of this
+paragraph, the following: "This Confirmation evidences a complete and binding agreement between you and
+us as to the terms of the Transaction to which this Confirmation relates. In addition, you and we agree to use
+all reasonable efforts promptly to negotiate, execute and deliver an agreement in the form of [specify master
+agreement] (the "Master Form"), with such modifications as you and we will in good faith agree. Upon the
+execution by you and us of such an agreement, this Confirmation will supplement, form part of, and be
+subject to that agreement. All provisions contained in or incorporated by reference in that agreement upon
+its execution will govern this Confirmation except as expressly modified below. Until we execute and
+deliver that agreement, this Confirmation, together with all other documents referring to the Master Form
+(each a "Confirmation") confirming transactions (each a "Transaction") entered into between us
+(notwithstanding anything to the contrary in a Confirmation), shall supplement, form a part of, and be
+subject to an agreement in the form of the Master Form as if we had executed an agreement in such form
+[(but without any Schedule except for the election of [English Law] [the laws of the State of New York] as
+the governing law and [specify currency] as the Termination Currency)] on the Trade Date of the first such
+Transaction between us. In the event of any inconsistency between the provisions of that agreement and this
+Confirmation, this Confirmation will prevail for the purpose of this Transaction."
+4
+
+Delete if this Confirmation is part of a master agreement.
+
+-34-
+===== PAGE 45 =====
+EXHIBIT I
+to 1998 FX and Currency Option Definitions
+
+This Confirmation supersedes and replaces any other confirmation (including a SWIFT MT300 or
+phone confirmation), if any, sent in connection with this Transaction on or prior to the date hereof.
+Please confirm that the foregoing correctly sets forth the terms of our agreement by executing the
+copy of this Confirmation enclosed for that purpose and returning it to us or by sending to us a letter
+substantially similar to this letter, which letter sets forth the material terms of the Transaction to which this
+Confirmation relates and indicates your agreement to those terms.
+Yours sincerely,
+[PARTY A]
+By:
+Name:
+Title:
+Confirmed as of the date
+first above written:
+[PARTY B]
+By:
+Name:
+Title:
+
+-35-
+===== PAGE 46 =====
+EXHIBIT II-A
+to 1998 FX and Currency Option Definitions
+
+Additional Provisions for a
+Confirmation of a Deliverable FX Transaction5
+[See Exhibit I for the introduction, standard paragraphs and closing for the letter agreement and Exhibit II-E
+for terms relating to Article 5.]
+2. The terms of the particular Transaction to which this Confirmation relates are as follows:
+(a) General Terms:
+Trade Date:
+[Amount and currency payable by Party A:]6
+[Amount and currency payable by Party B:]6
+Settlement Date:
+[(b) Other terms and conditions:]
+
+5 Many market participants may choose, instead of using this form, to confirm Deliverable FX
+Transactions (to which Article 5 does not apply) automatically upon entry of the trade details, including a
+Confirmation sent by SWIFT message or otherwise issued automatically and mailed on a pre-printed form.
+6 For Deliverable FX Transactions, parties will need to include in their Confirmation sufficient information
+to allow a determination of the respective amounts of currency to be exchanged by the parties to the relevant
+FX Transaction.
+
+-36-
+===== PAGE 47 =====
+EXHIBIT II-B
+to 1998 FX and Currency Option Definitions
+
+Additional Provisions for a Confirmation of
+a Non-Deliverable FX Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the letter agreement and Exhibit II-E
+for terms relating to Article 5.]
+2. The terms of the particular Transaction to which this Confirmation relates are as follows:
+(a) General Terms:
+Trade Date:
+[Date of Annex A:]7
+Reference Currency:
+[Reference Currency Notional Amount:]8
+[Notional Amount:]8
+[Forward Rate:]8
+Reference Currency Buyer:
+Reference Currency Seller:
+Settlement Currency:
+Settlement Date:
+Non-Deliverable9
+
+Settlement:
+[Settlement Rate:][Settlement Rate Option:10]
+Valuation Date:11
+[(b) Other terms and conditions:]
+
+7 Parties should include this date for Non-Deliverable FX Transactions if they wish to modify the
+presumption set forth in Section 4.2 that Annex A is incorporated as amended through the Trade Date of the
+relevant FX Transaction.
+8 For Non-Deliverable Transactions, parties will need to specify either (a) a Reference Currency Notional
+Amount and a Notional Amount or (b) a Forward Rate and either a Reference Currency Notional Amount or a
+Notional Amount.
+9 Deliverable is presumed to apply to a Transaction therefore parties must specify that the relevant FX
+Transaction is Non-Deliverable.
+10 Parties should specify this information if they wish to modify the presumption in Section 1.16(e) that the
+Calculation Agent will determine the Spot Rate for the relevant Valuation Date. If parties choose "CurrencyReference Dealers" as the Settlement Rate Option and if they wish to modify the presumptions set forth in
+Article 4, they should specify the: (i) Reference Dealers (the presumption is four leading dealers in the relevant
+market selected by the Calculation Agent), (ii) Specified Office (the presumption in most cases will be the onshore office in the Principal Financial Center of Reference Currency), (iii) Specified Rate (the presumption is
+the average of the Reference Currency bid and offer rate), (iv) Specified Amount (the presumption is an
+amount equal to the Reference Currency Notional Amount) and (v) Specified Time.
+11 Parties should include this date if they wish to modify the presumption set forth in Section 1.16(f) that the
+Valuation Date will be two days prior to the Settlement Date.
+
+-37-
+===== PAGE 48 =====
+EXHIBIT II-C
+to 1998 FX and Currency Option Definitions
+
+Additional Provisions for a Confirmation of
+a Deliverable Currency Option Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the letter agreement and Exhibit II-E
+for terms relating to Article 5.]
+2. The terms of the particular Transaction to which this Confirmation relates are as follows:
+(a) General Terms:
+Trade Date:
+[Commencement Date:]12
+Buyer:
+
+[Party A] [Party B]
+
+Seller:
+
+[Party A] [Party B]
+
+Currency Option Style:
+
+[American/Bermuda/European]
+
+Currency Option Type:13
+
+[[
+
+]14 Put/[
+
+]15Call]
+
+Call Currency [and Call Currency Amount]:16
+Put Currency [and Put Currency Amount]:16
+[Strike Price:]16
+Expiration Date:
+Expiration Time:
+
+[ ] [a.m./p.m.] (local time in [
+
+])
+
+[Latest Exercise Time:17
+
+[ ] [a.m./p.m.] (local time in [
+
+])]
+
+[Automatic Exercise:
+
+Inapplicable]18
+
+12
+
+Parties should include this date if they wish to modify the presumption set forth in Section 3.5(a) that the
+Commencement Date will be the Trade Date.
+13
+Parties should classify their transaction as a Put and/or a Call, with respect to the corresponding
+currency.
+14
+
+Parties should insert the appropriate currency, which will be the same currency as the Put Currency.
+
+15
+
+Parties should insert the appropriate currency, which will be the same currency as the Call Currency.
+
+16
+
+For Deliverable Currency Option Transactions, parties will need to specify either (a) a Call Currency
+Amount and a Put Currency Amount or (b) a Strike Price and either a Call Currency Amount or a Put
+Currency Amount.
+17
+
+Parties should include this time if they wish to modify the presumption set forth in Section 3.5(f) that the
+Latest Exercise Time will be the Expiration Time.
+18
+Parties should include this information if they wish to modify the presumption set forth in Section 3.6(c)
+that Automatic Exercise applies to a Currency Option Transaction.
+
+-38-
+===== PAGE 49 =====
+EXHIBIT II-C
+to 1998 FX and Currency Option Definitions
+
+Settlement Date:19
+
+[The [ ] Business Day following the
+Exercise Date.] [specify date]
+
+[Exercise Period:]20
+[Specified Exercise Date(s):]21
+[Premium:]22
+[Price:]22
+Premium Payment Date:
+[(b) Other terms and conditions:]23
+
+19
+
+Parties may wish to specify the Settlement Date in respect of the Expiration Date.
+
+20
+Parties may wish to modify the Exercise Period presumed for an American style Currency Option
+Transaction. For example, additional references are necessary if there are multiple Exercise Periods.
+21
+
+Parties should include this information for a Bermuda style Currency Option Transaction.
+
+22
+
+Parties may specify a Premium, or a Price expressed as a percentage of the Call Currency Amount or the
+Put Currency Amount, as appropriate.
+23
+For example, these other terms and conditions might include, among other things, whether the option
+may be exercised in part.
+
+-39-
+===== PAGE 50 =====
+EXHIBIT II-D
+to 1998 FX and Currency Option Definitions
+
+Additional Provisions for a Confirmation of
+a Non-Deliverable Currency Option Transaction
+[See Exhibit I for the introduction, standard paragraphs and closing for the letter agreement and Exhibit II-E
+for terms relating to Article 5.]
+2. The terms of the particular Transaction to which this Confirmation relates are as follows:
+(a) General Terms:
+Trade Date:
+[Date of Annex A:]24
+[Commencement Date:]25
+Buyer:
+
+[Party A][Party B]
+
+Seller:
+
+[Party A][Party B]
+
+Currency Option Style:
+
+[American/Bermuda/European]
+
+Currency Option Type:26
+
+[[
+
+]27Put/[
+
+]28Call]
+
+Call Currency [and Call Currency Amount]:29
+Put Currency [and Put Currency Amount]:29
+Strike Price:
+[Reference Currency:]30
+[Settlement Currency:]30
+
+24
+
+Parties should include this date for Non-Deliverable Currency Option Transactions if they wish to modify
+the presumption set forth in Section 4.2 that Annex A is incorporated as amended through the Trade Date of
+the relevant Currency Option Transaction.
+25
+
+Parties should include this date if they wish to modify the presumption set forth in Section 3.5(a) that the
+Commencement Date is the Trade Date.
+26
+
+Parties should classify their transaction as a Put and/or a Call, with respect to the corresponding currency.
+
+27
+
+Parties should insert the appropriate currency, which will be the same currency as the Put Currency.
+
+28
+
+Parties should insert the appropriate currency, which will be the same currency as the Call Currency.
+
+29
+For a Non-Deliverable Currency Option Transaction, parties will need to specify either a Call Currency
+Amount or a Put Currency Amount and a Strike Price.
+30
+
+Parties must include this information if they wish the In-the-Money Amount to be calculated in accordance
+with the provisions of Section 3.7(c)(i) and if they wish the provisions of Article 5 to be applicable to the
+relevant Non-Deliverable Currency Option Transaction.
+
+-40-
+===== PAGE 51 =====
+EXHIBIT II-D
+to 1998 FX and Currency Option Definitions
+
+[Settlement Rate:][Settlement Rate Option:31]
+Expiration Date:
+Expiration Time:
+
+[ ] [a.m./p.m.] (local time in
+[
+])
+
+[Latest Exercise Time:32
+
+[ ] [a.m./p.m.] (local time in
+[
+])]
+
+[Automatic Exercise:
+
+Inapplicable]33
+
+Settlement:
+
+Non-Deliverable34
+
+Settlement Date:35
+
+[The [ ] Business Day following the
+Exercise Date.] [specify date]
+
+[Valuation Date:]36
+[Averaging Date(s):]
+[Exercise Period:]37
+[Specified Exercise Date(s):]38
+[Premium:]39
+
+31
+Parties should specify this information if they wish to modify the presumption in Section 1.16(e) that
+the Calculation Agent will determine the Spot Rate for the relevant Valuation Date or Averaging Date, as
+the case may be. If parties choose "Currency-Reference Dealers" as the Settlement Rate Option and if they
+wish to modify the presumptions set forth in Article 4, they should specify the: (i) Reference Dealers (the
+presumption is four leading dealers in the relevant market selected by the Calculation Agent), (ii) Specified
+Office (the presumption in most cases will be the on-shore office in the Principal Financial Center of the
+Reference Currency), (iii) Specified Rate (the presumption is the average of the Reference Currency bid
+and offer rate), (iv) Specified Amount (the presumption is an amount equal to the Reference Currency
+Notional Amount) and (v) Specified Time.
+32
+Parties should include this time if they wish to modify the presumption set forth in Section 3.5(f) that
+the Latest Exercise Time will be the Expiration Time.
+33
+
+Parties should include this information if they wish to modify the presumption set forth in Section
+3.6(c) that Automatic Exercise applies to a Currency Option Transaction.
+34
+Deliverable is presumed to apply to a Transaction, therefore parties must specify that the relevant
+Currency Option Transaction is Non-Deliverable.
+35
+
+Parties may wish to specify the Settlement Date in respect of the Expiration Date.
+
+36
+
+Parties should include this date if they wish to modify the presumption set forth in Section 1.16(f) that
+the Valuation Date will be the Exercise Date.
+37
+Parties may wish to modify the Exercise Period presumed for an American style Currency Option
+Transaction. For example, additional references are necessary if there are multiple Exercise Periods.
+38
+
+Parties should include this information for a Bermuda style Currency Option Transaction.
+
+39
+
+Parties may specify a Premium, or a Price expressed as a percentage of the Call Currency Amount or
+the Put Currency Amount, as appropriate.
+
+-41-
+===== PAGE 52 =====
+EXHIBIT II-D
+to 1998 FX and Currency Option Definitions
+
+[Price:]39
+Premium Payment Date:
+[(b) Other terms and conditions:]40
+
+40
+For example, these other terms and conditions might include, among other things, whether the option
+may be exercised in part.
+
+-42-
+===== PAGE 53 =====
+EXHIBIT II-E
+to 1998 FX and Currency Option Definitions
+
+Additional Provisions for a Confirmation of
+an FX or Currency Option Transaction
+[See Exhibits I and II-A, II-B, II-C or II-D for the introduction, standard paragraphs, general terms and closing
+for the letter agreement.]
+3. Additional terms of the particular Transaction to which this Confirmation relates are as follows:
+(a) General Terms:
+Event Currency: 41
+[Event Currency Amount:]
+[Event Currency Buyer:]
+[Event Currency Seller:]
+4. The Disruption Events and Fallbacks applicable to the particular Transaction to which this
+Confirmation relates are as follows:42
+[(a) Price Source Disruption
+Fallback Reference Price:
+
+[Settlement Rate:][Settlement Rate
+Option:]]43
+
+[[(a)] [(b)] Disruption Event(s):]44
+[Benchmark Obligation Default:
+Benchmark Obligation:
+Specified Value: 45 ]
+
+Applicable
+
+[Dual Exchange Rate:
+Fallback Reference Price:
+
+Applicable
+[Settlement Rate:][Settlement Rate Option:]]
+
+[General Inconvertibility:
+
+Applicable
+
+41
+For Deliverable Transactions, the Event Currency must be specified for the provisions of Article 5 to be
+operable. For Non-Deliverable Transactions, parties should specify an Event Currency if they wish to modify
+the presumption set forth in Section 5.4(c) that the Event Currency is the Reference Currency.
+42
+
+Parties should specify (a) Disruption Events if they wish to modify the presumptions set forth in
+Section 5.1(e)(i) and (b) Disruption Fallbacks if they wish to modify the presumptions set forth in Section
+5.2(e). Any Disruption Fallbacks specified should be in reference to the applicable Disruption Event.
+43
+
+This Disruption Event is presumed to apply to all Non-Deliverable Transactions. The presumed
+Disruption Fallback for this Disruption Event is Fallback Reference Price and, unless otherwise specified, the
+Fallback Reference Price will be based on the Settlement Rate Option, "Currency-Reference Dealers". If
+parties do not alter this fallback and wish to modify the presumptions set forth in Article 4 for such Settlement
+Rate Option, they should specify the following information: (i) Reference Dealers (the presumption is four
+leading dealers in the relevant market selected by the Calculation Agent), (ii) Specified Office (the presumption
+in most cases will be the on-shore office in the Principal Financial Center of the Reference Currency), (iii)
+Specified Rate (the presumption is the average of the Reference Currency bid and offer rate), (iv) Specified
+Amount (the presumption is an amount equal to the Reference Currency Notional Amount) and (v) Specified
+Time.
+44
+
+The parties should specify Disruption Events if they wish to modify the presumptions set forth in
+Section 5.1(e)(i).
+45
+
+The presumed Disruption Fallback for this Disruption Event is Local Asset Substitute-Gross. Therefore,
+parties should specify the Specified Value of the Benchmark Obligation.
+
+-43-
+===== PAGE 54 =====
+EXHIBIT II-E
+to 1998 FX and Currency Option Definitions
+
+Maximum Days of Disruption:]46
+[General Non-Transferability:
+Maximum Days of Disruption:]46
+
+Applicable
+
+[Governmental Authority Default:
+Specified Value:47
+Maximum Days of Disruption:]46
+
+Applicable
+
+[Illiquidity:
+Minimum Amount:
+Fallback Reference Price:
+Illiquidity Valuation Date:]
+
+Applicable
+[Settlement Rate:][Settlement Rate Option:48]
+
+[Inconvertibility/Non-Transferability:
+Minimum Amount:]
+[Relevant Class:]
+Maximum Days of Disruption:]46
+
+Applicable
+
+[Material Change in Circumstance:
+Maximum Days of Disruption:49]
+
+Applicable
+
+[Nationalization:
+[Relevant Affiliates:]
+Maximum Days of Disruption:]50
+
+Applicable
+
+46
+One presumed Disruption Fallback for this Disruption Event is Settlement Postponement. Therefore,
+parties should specify the Maximum Days of Disruption. In the case of a Deliverable Transaction, another
+presumed Disruption Fallback is Non-Deliverable Substitute; parties should consider whether they wish to
+modify the presumptions set forth in Section 5.2(c)(x) of the Definitions for such Disruption Fallback.
+47
+
+A presumed Disruption Fallback for this Disruption Event is Local Asset Substitute-Gross. Therefore,
+parties should specify the Specified Value of the Benchmark Obligation.
+48
+The presumed Disruption Fallback for this Disruption Event is Fallback Reference Price and, unless
+otherwise specified, the Fallback Reference Price will be based on the Settlement Rate Option, "CurrencyReference Dealers". If parties do not alter this fallback and wish to modify the presumptions set forth in Article
+4 for such Settlement Rate Option, they should specify the following information: (i) Reference Dealers (the
+presumption is four leading dealers in the relevant market selected by the Calculation Agent), (ii) Specified
+Office (the presumption in most cases will be the on-shore office in the Principal Financial Center of the
+Reference Currency), (iii) Specified Rate (the presumption is the average of the Reference Currency bid and
+offer rate), (iv) Specified Amount (the presumption is an amount equal to the Reference Currency Notional
+Amount) and (v) Specified Time.
+49
+
+Parties should specify this information for purposes of Section 5.2(e)(i)(G) of the Definitions.
+
+50
+A presumed Disruption Fallback for this Disruption Event is Settlement Postponement. Therefore, parties
+should specify the Maximum Days of Disruption.
+
+-44-
+===== PAGE 55 =====
+EXHIBIT II-E
+to 1998 FX and Currency Option Definitions
+
+[Price Materiality:
+Primary Rate:
+Secondary Rate:
+Price Materiality Percentage:
+Fallback Reference Price:
+
+Applicable
+
+[Specific Inconvertibility:
+[Minimum Amount:]
+[Relevant Class:]
+Maximum Days of Disruption:]46
+
+Applicable
+
+[Specific Non-Transferability:
+[Relevant Class:]
+Maximum Days of Disruption:]46
+
+Applicable
+
+[Settlement Rate:][Settlement Rate
+Option:50]]
+
+[General Inconvertibility/
+Non-Transferability:
+
+Applicable]
+
+[Party Specific Events:
+
+Applicable]
+
+[Calculation Agent Determination
+of Disruption Event:
+
+Applicable]
+
+[[(b)][(c)] Disruption Fallbacks:]51
+[Assignment of Claim:]52
+[Calculation Agent Determination
+of Settlement Rate:]
+[Deliverable Substitute:]
+[Escrow Arrangement:
+Maximum Days of Disruption:]53
+
+50
+
+The presumed Disruption Fallback for this Disruption Event is Fallback Reference Price and, unless
+otherwise specified, the Fallback Reference Price will be based on the Settlement Rate Option, "CurrencyReference Dealers". If parties do not alter these fallbacks and wish to modify the presumptions set forth in
+Article 4 for such Settlement Rate Option, they should specify the following information: (i) Reference
+Dealers (the presumption is four leading dealers in the relevant market selected by the Calculation Agent),
+(ii) Specified Office (the presumption in most cases will be the on-shore office in the Principal Financial
+Center of the Reference Currency), (iii) Specified Rate (the presumption is the average of the Reference
+Currency bid and offer rate), (iv) Specified Amount (the presumption is an amount equal to the Reference
+Currency Notional Amount) and (v) Specified Time.
+51
+
+All Disruption Fallbacks specified should reference the applicable Disruption Event.
+
+52
+
+Unless otherwise specified, either the Claim or a beneficial interest in the Claim can be assigned or
+transferred, as the case may be, pursuant to this Disruption Fallback.
+53
+
+Insert additional details regarding the escrow arrangement.
+
+-45-
+===== PAGE 56 =====
+EXHIBIT II-E
+to 1998 FX and Currency Option Definitions
+
+[Fallback Reference Price:55
+Dual Exchange Rate:
+
+[Settlement Rate:] [Settlement Rate Option:]
+
+llliquidity:
+
+[Settlement Rate:] [Settlement Rate Option:]
+
+Price Source Disruption:
+
+[Settlement Rate:] [Settlement Rate Option:]
+
+Price Materiality:
+
+[Settlement Rate:] [Settlement Rate Option:]]
+
+[Local Asset Substitute-Gross:
+Benchmark Obligations:
+Specified Value:]
+[Local Asset-Substitute-Net:
+Benchmark Obligations:
+Specified Value:]
+[Local Currency Substitute:]
+[No Fault Termination:56
+
+Inapplicable]
+
+[Non-Deliverable Substitute:57
+[Valuation Date:]
+[Settlement Date:]
+[Settlement Currency:]
+[Settlement Rate:][Settlement Rate Option:]
+[Settlement Postponement:
+Maximum Days of Disruption:]58
+[Conversion:
+
+Applicable]
+
+55
+If parties choose "Currency-Reference Dealers" as the Settlement Rate Option and wish to modify the
+presumptions set forth in Article 4 for such Settlement Rate Option, they should specify the: (i) Reference
+Dealers (the presumption is four leading dealers in the relevant market selected by the Calculation Agent), (ii)
+Specified Office (the presumption in most cases will be the on-shore office in the Principal Financial Center of
+the Reference Currency), (iii) Specified Rate (the presumption is the average of the Reference Currency bid
+and offer rate), (iv) Specified Amount (the presumption is an amount equal to the Reference Currency Notional
+Amount) and (v) Specified Time.
+56
+This Disruption Fallback will apply if none of the applicable Disruption Fallbacks provides the parties
+with a means of settling the Transaction.
+57
+
+Parties should include this information for Deliverable Transactions where General Inconvertibility,
+General Non-Transferability, Inconvertibility/Non-Transferability, Specific Inconvertibility and Specific NonTransferability apply if they wish to modify the presumptions set forth in Section 5.2(c)(x) of the Definitions.
+58
+
+Parties should include this information if any of the following applies to a Transaction: General
+Inconvertibility, General Non-Transferability, Inconvertibility/Non-Transferability, Nationalization, Specific
+Inconvertibility, Specific Non-Transferability, General Inconvertibility/Non-Transferability or Party Specific
+Events.
+
+-46-
+===== PAGE 57 =====
+INDEX OF TERMS
+
+Term
+
+Page
+
+Affected Parties.................................................................................. 23
+Affected Transaction .......................................................................... 23
+American ........................................................................................... 10
+Assignment of Claim ......................................................................... 21
+Automatic Exercise ............................................................................ 13
+Averaging Date .................................................................................. 15
+Benchmark Obligation ....................................................................... 29
+Benchmark Obligation Default .......................................................... 17
+Bermuda ............................................................................................. 10
+Business Day ..................................................................................... 1
+Business Day Convention .................................................................. 4
+Buyer.................................................................................................. 9
+Calculation Agent .............................................................................. 4
+Calculation Agent Determination of Disruption Event ..................... 20
+Calculation Agent Determination of Settlement Rate ....................... 21
+Call .................................................................................................... 10
+Call Currency ..................................................................................... 9
+Call Currency Amount ....................................................................... 9
+Cash Settlement ................................................................................. 5
+Claim ................................................................................................. 21
+Commencement Date ........................................................................ 11
+Confirmation ...................................................................................... 4
+Contract Date ..................................................................................... 8
+Conversion ......................................................................................... 26
+Create Date ........................................................................................ 8
+Currency Option Transaction ............................................................. 4
+Currency Pair ..................................................................................... 4
+Currency-Reference Dealers .............................................................. Annex A
+Deal Date ........................................................................................... 8
+Deliver ............................................................................................... 29
+Deliverable ......................................................................................... 5
+Deliverable Currency Option Transaction ......................................... 5
+Deliverable FX Transaction ............................................................... 5
+Deliverable Substitute ........................................................................ 21
+designator ........................................................................................... 28
+designee ............................................................................................. 28
+Disruption Event ................................................................................ 16
+Disruption Fallback ........................................................................... 20
+Dual Exchange Rate .......................................................................... 17
+Early Termination Date ...................................................................... 23
+ECU Settlement Day .......................................................................... 5
+Escrow Amount ................................................................................. 21
+Escrow Arrangement ......................................................................... 21
+Euro Settlement Date ......................................................................... 5
+-47-
+
+Section
+5.2(c)(ix)
+5.2(c)(ix)
+3.2(a)
+5.2(c)(i)
+3.6(c)
+3.8(a)
+5.4(a)
+5.1(d)(i)
+3.2(b)
+1.1
+1.2
+3.1(a)
+1.3
+5.1(g)
+5.2(c)(ii)
+3.3(a)
+3.1(b)
+3.1(c)
+1.13
+5.2(c)(i)
+3.5(a)
+1.4
+1.25
+5.2(e)(ii)
+1.25
+1.5
+1.6
+4.5(e)(iv)
+1.25
+5.4(b)
+1.7
+1.8
+1.9
+5.2(c)(iii)
+5.3(c)
+5.3(c)
+5.1(a)
+5.2(a)
+5.1(d)(ii)
+5.2(c)(ix)
+1.10
+5.2(c)(iv)
+5.2(c)(iv)
+1.11
+===== PAGE 58 =====
+Term
+
+Page
+
+European ............................................................................................ 10
+Event Currency .................................................................................. 29
+Event Currency Amount .................................................................... 29
+Event Currency Buyer........................................................................ 29
+Event Currency Jurisdiction ............................................................... 29
+Event Currency Seller ........................................................................ 30
+Exercise Date ..................................................................................... 11
+Exercise Period .................................................................................. 12
+Expiration Date .................................................................................. 12
+Expiration Time ................................................................................. 12
+Fallback Reference Price ................................................................... 22
+FEOMA ............................................................................................. 30
+Following ........................................................................................... 4
+Forward Rate ..................................................................................... 8
+FX Transaction .................................................................................. 5
+General Inconvertibility ..................................................................... 17
+General Non-Transferability .............................................................. 17
+General Inconvertibility/Non-Transferability .................................... 19
+Governmental Authority .................................................................... 30
+Governmental Authority Default ....................................................... 17
+ICOM ................................................................................................. 30
+IFEMA ............................................................................................... 30
+Illegality ............................................................................................. 16
+Illiquidity ........................................................................................... 18
+llliquidity Valuation Date ................................................................... 18
+In-the-Money Amount ....................................................................... 14
+In-the-Money Settlement ................................................................... 5
+Inconvertibility/Non-Transferability .................................................. 18
+ISDA Master Agreement ................................................................... 30
+Latest Exercise Time ......................................................................... 12
+Local Asset Substitute—Gross .......................................................... 22
+Local Asset Substitute—Net .............................................................. 22
+Local Currency Substitute ................................................................. 23
+Loss .................................................................................................... 23
+Master Agreement ............................................................................. 16
+Material Change in Circumstance ..................................................... 18
+Maximum Days of Disruption ........................................................... 30
+Mid-Atlantic ...................................................................................... 10
+Minimum Amount ............................................................................. 31
+Modified ............................................................................................ 4
+Modified Following ........................................................................... 4
+Nationalization ................................................................................... 18
+Nationalized Assets ........................................................................... 21
+Nationalized Party ............................................................................. 21
+Nearest ............................................................................................... 4
+No Fault Termination ......................................................................... 23
+Non-Deliverable ................................................................................ 5
+Non-Deliverable Currency Option Transaction ................................. 6
+Non-Deliverable FX Transaction ....................................................... 6
+-48-
+
+Section
+3.2(c)
+5.4(c)
+5.4(d)
+5.4(e)
+5.4(f)
+5.4(g)
+3.5(b)
+3.5(c)
+3.5(d)
+3.5(e)
+5.2(c)(v)
+5.4(h)
+1.2(a)(i)
+2.1(a)
+1.12
+5.1(d)(iii)
+5.1(d)(iv)
+5.1(e)(ii)
+5.4(i)
+5.1(d)(v)
+5.4(j)
+5.4(k)
+5.1(c)(i)
+5.1(d)(vi)
+5.1(d)(vi)
+3.7(c)
+1.13
+5.1(d)(vii)
+5.4(l)
+3.5(f)
+5.2(c)(vi)
+5.2(c)(vii)
+5.2(c)(viii)
+5.2(c)(ix)
+5.1(c)(i)
+5.1(d)(viii)
+5.4(m)
+3.2(b)
+5.4(n)
+1.2(a)(ii)
+1.2(a)(ii)
+5.1(d)(ix)
+5.2(c)(i)
+5.2(c)(i)
+1.2(a)(iii)
+5.2(c)(ix)
+1.13
+1.14
+1.15
+===== PAGE 59 =====
+Term
+
+Page
+
+Section
+
+Non-Deliverable Substitute ...............................................................
+Non-Event Currency ..........................................................................
+Non-Event Currency Amount ............................................................
+Notice of Exercise..............................................................................
+Notional Amount ...............................................................................
+Official Successor Rate ......................................................................
+Party Specific Events .........................................................................
+Payment Date .....................................................................................
+Physical Settlement Date ...................................................................
+Preceding ...........................................................................................
+Premium .............................................................................................
+Premium Payment Date .....................................................................
+Price ...................................................................................................
+Price Materiality ................................................................................
+Price Materiality Percentage ..............................................................
+Price Source Disruption .....................................................................
+Principal Financial Center .................................................................
+Primary Rate ......................................................................................
+Put ......................................................................................................
+Put Currency ......................................................................................
+Put Currency Amount ........................................................................
+Reference Currency ...........................................................................
+Reference Currency Buyer .................................................................
+Reference Currency Notional Amount ..............................................
+Reference Currency Seller .................................................................
+Relevant Affiliate ...............................................................................
+Relevant Class ...................................................................................
+Repudiation ........................................................................................
+Secondary Rate ..................................................................................
+Seller ..................................................................................................
+Settlement Currency ..........................................................................
+Settlement Currency Amount ............................................................
+Settlement Date..................................................................................
+Settlement Postponement...................................................................
+Settlement Rate ..................................................................................
+Settlement Rate Option ......................................................................
+Specific Inconvertibility ....................................................................
+Specific Non-Transferability..............................................................
+Specified Exercise Date .....................................................................
+Specified Value ..................................................................................
+Spot Rate ............................................................................................
+Strike Price ........................................................................................
+Tax .....................................................................................................
+Termination Currency Equivalent ......................................................
+Trade Date .........................................................................................
+Transaction ........................................................................................
+Valuation Date ...................................................................................
+
+23
+31
+31
+12
+7
+16
+19
+8
+27
+4
+11
+11
+11
+18
+31
+18
+7
+31
+11
+10
+10
+7
+7
+7
+8
+31
+31
+31
+31
+10
+6
+9
+8
+24
+6
+6
+19
+19
+12
+32
+6
+10
+28
+23
+8
+8
+6
+
+5.2(c)(x)
+5.4(o)
+5.4(p)
+3.5(g)
+1.17
+4.1(b)
+5.1(e)(iii)
+1.24
+5.3(a)
+1.2(a)(iv)
+3.4(a)
+3.4(b)
+3.4(a)
+5.1(d)(x)
+5.4(q)
+5.1(d)(xi)
+1.18
+5.4(r)
+3.3(b)
+3.1(d)
+3.1(e)
+1.19
+1.20
+1.21
+1.22
+5.4(s)
+5.4(t)
+5.4(u)
+5.4(v)
+3.1(f)
+1.16(b)
+2.2(b)(ii)
+1.24
+5.2(c)(xi)
+1.16(c)
+1.16(d)
+5.1(d)(xii)
+5.1(d)(xiii)
+3.5(h)
+5.4(w)
+1.16(e)
+3.1(g)
+5.3(c)
+5.2(c)(ix)
+1.25
+1.26
+1.16(f)
+
+-49-

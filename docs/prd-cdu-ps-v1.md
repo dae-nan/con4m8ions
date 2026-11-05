@@ -41,7 +41,7 @@ Caption: *Solid lines = happy path. Dotted lines = optional (MCA, supplements, e
 flowchart TB
   subgraph legalBox [Legal]
     LF[LegalFramework]
-    MCA[McaProfile]
+    MCA[MasterConfirmation]
     MB[MatrixBinding]
   end
   subgraph productBox [Product]
@@ -112,7 +112,7 @@ flowchart TB
 | Trade | One deal |
 | FinancialProduct | Product type (Deliverable FX Option → II-B) |
 | LegalFramework | 1998 or 2026 defs + version |
-| McaProfile | Optional MCA defaults (Assumed) |
+| MasterConfirmation | Optional MCA defaults (Assumed) |
 | TemplatePackage | Bundle: tops-and-tails + product (+ optional supplement) |
 | TemplateVersion | DRAFT / LIVE / RETIRED fragment |
 | PackageSelectionRule | How we pick a package |
@@ -751,7 +751,7 @@ Party A/B one-pager: [`docs/party-ab-fxo-one-pager.md`](party-ab-fxo-one-pager.m
 | manual draft / entry | ManualDraftContent / ManualEntryValue |
 | audit / timeline | AuditEvent / TimelineEvent |
 | selection | PackageSelectionRule |
-| mca / matrix | McaProfile / MatrixBinding |
+| mca / matrix | MasterConfirmation / MatrixBinding |
 | novation | NovationTransfer |
 
 ### 16.2 ER diagram (PK/FK)

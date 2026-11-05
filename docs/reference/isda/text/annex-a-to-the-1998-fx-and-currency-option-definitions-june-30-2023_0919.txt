@@ -1,0 +1,1601 @@
+===== PAGE 1 =====
+ANNEX A
+to the
+1998 FX and
+Currency Option Definitions
+_________________________
+Amended and Restated November 19, 2017
+Amended June 30, 2023
+
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+
+EMTA, Inc.
+
+TRADE ASSOCIATION FOR THE EMERGING MARKETS
+===== PAGE 2 =====
+Copyright © 2000-2023 by
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+EMTA, Inc.
+ISDA and EMTA consent to the use and photocopying of this document for the preparation of
+agreements with respect to derivative transactions and for research and educational purposes. ISDA
+and EMTA do not, however, consent to the reproduction of this document for purposes of sale.
+For any inquiries with regard to this document, please contact:
+INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION, INC.
+10 East 53rd Street
+New York, NY 10022
+www.isda.org
+EMTA, Inc.
+405 Lexington Avenue, Suite 5304
+New York, N.Y. 10174
+www.emta.org
+===== PAGE 3 =====
+TABLE OF CONTENTS
+
+Page
+INTRODUCTION TO ANNEX A TO THE 1998 FX AND CURRENCY OPTION
+DEFINITIONS AMENDED AND RESTATED AS OF NOVEMBER 19, 2017
+
+i
+
+ANNEX A
+CALCULATION OF RATES FOR CERTAIN
+SETTLEMENT RATE OPTIONS
+SECTION 4.3. Currencies
+SECTION 4.4. Principal Financial Centers
+SECTION 4.5. Settlement Rate Options
+A. Emerging Currency Pair Single Rate Source Definitions
+B. Non-Emerging Currency Pair Rate Source Definitions
+C. General
+SECTION 4.6. Certain Definitions Relating to Settlement Rate Options
+SECTION 4.7. Corrections to Published and Displayed Rates
+
+1
+6
+10
+10
+23
+24
+25
+26
+===== PAGE 4 =====
+INTRODUCTION TO
+ANNEX A TO THE
+1998 FX AND CURRENCY OPTION DEFINITIONS
+AMENDED AND RESTATED AS OF NOVEMBER 19, 2017
+Annex A to the 1998 FX and Currency Option Definitions ("Annex A"), originally published in
+1998, restated in 2000 and amended and restated as of the date hereof, is intended for use in conjunction
+with the 1998 FX and Currency Option Definitions, as amended and updated from time to time (the "FX
+Definitions") in confirmations of individual transactions governed by (i) the 1992 ISDA Master Agreement
+and the 2002 ISDA Master Agreement published by the International Swaps and Derivatives Association,
+Inc. ("ISDA"), (ii) the International Foreign Exchange and Options Master Agreement (FEOMA), the
+International Foreign Exchange Master Agreement (IFEMA), the International Currency Options Market
+Master Agreement (ICOM) and the International Foreign Exchange and Currency Option Master
+Agreement (IFXCO), each as published by The Foreign Exchange Committee (the "FX Committee") in
+association with U.K. Finance, the Canadian Foreign Exchange Committee and the Tokyo Foreign
+Exchange Market Practices Committee (except, in the case of IFXCO, then the Japanese Bankers
+Association) and (iii) other similar agreements.
+Annex A, which supplements and forms a part of, and is intended to be used in conjunction with,
+the FX Definitions, contains currency and currency spot rate definitions and certain other related definitions
+and provisions intended for use in connection with FX and currency option derivatives transactions and is
+published on the websites of ISDA (www.isda.org) and EMTA (www.emta.org) (collectively, the
+"Sponsoring Organizations"). Currency and currency spot rate definitions and other related terms may be
+added or changed from time to time to reflect evolving market practice. These additions and changes will
+be set forth in updates made from time to time to Annex A, which additions and changes will be effective
+when notified to the market and published on the websites of the Sponsoring Organizations. Annex A may
+be amended and restated in the future at the discretion of the Sponsoring Organizations. One or more of
+the Sponsoring Organizations will also maintain on their website the previous versions of Annex A.
+A User’s Guide to the FX Definitions was published in 1999, is available from the Sponsoring
+Organizations, and may be updated from time to time at the discretion of the Sponsoring Organizations
+Parties to a transaction that incorporates the provisions of Annex A may want to specify the version
+of Annex A that is being incorporated by reference to a date (e.g., "_______ 2017 version") or an "as
+amended through" date (e.g., "_______, 2017 version as amended through _______, 2017"). Unless
+otherwise agreed, parties will be deemed to have incorporated Annex A as amended through the date on
+which the parties enter into a transaction that incorporates the provisions of Annex A.
+The restated and amended rate source definitions contained in Section 4.5A (“Emerging Currency
+Pair Single Rate Source Definitions”) are largely, but not strictly, definitions for emerging market
+currencies. These definitions have been modified from their previous format to provide, where possible,
+primary reference to the quoting entity or source of the rate (instead of the publication site). This is intended
+to remove as much vendor screen risk as possible from the definitional structure of Annex A. For the
+convenience of the market only, various known vendor screen references and alternative publication site
+references are now contained in the Practitioner’s Notes to the relevant rate source definition, but are not
+intended to be exclusive or definitional in nature, and may change, be updated or deleted from time to time
+(see below). In certain cases, a website reference for the quoting entity is included as its digital address but
+this may or may not serve as a publication site for the relevant rate source.
+i
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 5 =====
+Rate source definitions contained in Section 4.5B (“Non-Emerging Currency Pair Rate Source
+Definitions”) herein (previously located in former Section 4.8, which was added to Annex A by amendment
+dated May 31, 2011, to support the documentation for cross currency FX transactions) are largely, but not
+strictly, references to G-10 and other deliverable currencies. These definitions have been modified
+substantially from their previous format to facilitate reference to and use of multiple currency pair pages of
+commercial rate providers. This approach reduces the need to include a separate definition for each currency
+pair with a goal of increasing the numbers of rate source definitions that are available in Annex A and, thus,
+expanding the utility of Annex A to the market. Furthermore, all of these definitions have been assigned
+new alphanumeric codes as part of this substantial update.
+The currency quotation convention in Section 4.5A has historically, and continues to refer to a
+number of Reference Currency versus the U.S. Dollar. For purposes of Section 4.5B, generally, market
+practice in the foreign exchange markets has been to observe a “European” rate quotation convention with
+the U.S. Dollar as the base currency, except, notably, for Sterling, the Australian Dollar, the New Zealand
+Dollar and the Euro, which historically have each been expressed as the base currency against the U.S.
+Dollar. Market practice for a few Currency Pairs is idiosyncratic and may be reflected in the inverse.
+However, for consistency and clarity, references to specific Currency Pairs in this Annex A follow the
+general market practice conventions of the foreign exchange markets.
+Practitioner’s Notes are included from time to time in conjunction with a particular rate source
+definition to provide additional information regarding the rate source definition (or the amendment of such
+rate source definition) to aid a practitioner in its understanding. The Practitioner’s Notes are not intended
+to be, and should not be construed as, a substantive part of, or in any manner incorporated into, the rate
+source definition and shall not affect the meaning or construction of any such rate source definition and are
+not deemed to have any legal effect.
+The Sponsoring Organizations assume no responsibility for the non-availability or miscalculation
+of, or any error or omission in, any of the currency and currency spot rate definitions referred to in Annex
+A. The precise documentation of each transaction remains solely the responsibility of the parties
+concerned. The Sponsoring Organizations assume no responsibility for any use to which any currency or
+currency spot rate, or other related definitions or provisions, referred to herein may be put, or for the use of
+any currency spot rate definition in connection with an FX or currency option or any other transaction that
+references any such currency spot rate (or related provision), including without limitation, the use of any
+definition contained in Annex A in connection with a privately negotiated transaction. Each party to a
+transaction evidenced by a confirmation referring to or incorporating this Annex A must satisfy itself that
+the definitions and provisions of this Annex A are appropriate for the transaction, have been properly used
+and/or adapted in the confirmation for the transaction and that the confirmation has generally been properly
+drafted, in each case, to reflect the commercial intentions of the parties. Furthermore, the inclusion in this
+Annex A of a rate source definition for any currency spot rate should not be construed as an endorsement
+by the Sponsoring Organizations of any rate as described by any rate source definition in this Annex A or
+any implications that any currency spot rate referred to herein qualifies or otherwise meets the legal or
+regulatory requirements of any particular jurisdiction.
+Neither of the Sponsoring Organizations has undertaken to review the applicable laws and
+regulations of any jurisdiction whose currency may be the subject of a privately negotiated FX or currency
+option or other transaction and therefor parties are advised to consider the application of any relevant
+jurisdiction’s regulatory, tax, accounting exchange or other requirements that may exist in connection with
+entering into and documenting such a transaction.
+ii
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 6 =====
+ANNEX A TO THE
+1998 FX AND CURRENCY OPTION DEFINITIONS
+AMENDED AND RESTATED AS OF NOVEMBER 19, 2017
+The following amended and restated definitions and provisions supplement and form a part of the 1998 FX
+and Currency Option Definitions (the “FX Definitions”) as may be amended or supplemented from time to
+time (as published by the International Swaps and Derivatives Association, Inc. and EMTA, Inc.). These
+definitions and provisions may be incorporated into a document (or be deemed to have been incorporated
+into a document) by wording indicating that, or the extent to which, such document incorporates the FX
+Definitions. Unless otherwise agreed, parties who so incorporate the FX Definitions into a document will
+be deemed to have incorporated Annex A, as amended and supplemented through the date on which the
+parties enter into the relevant FX or currency option transaction or any such other transaction.
+ARTICLE 4
+CALCULATION OF RATES FOR CERTAIN SETTLEMENT RATE OPTIONS
+Section 4.3. Currencies.
+Algerian Dinar. “Algerian Dinar” and “DZD” each means the lawful currency of the People’s Democratic
+Republic of Algeria.
+Angolan Kwanza. “Angolan Kwanza”, “Kwanza” and “AOA” each means the lawful currency of the Republic of Angola.
+Argentine Peso. “Argentine Peso” and “ARS” each means the lawful currency of the Argentine Republic.
+Australian Dollar. “Australian Dollar”, “A$” and “AUD” each means the lawful currency of the Commonwealth of Australia.
+Azerbaijani New Manat. “Azerbaijani New Manat”, “Azerbaijani Manat”, “Manat” and “AZN” each
+means the lawful currency of the Republic of Azerbaijan.
+Bahraini Dinar. “Bahraini Dinar” and “BHD” each means the lawful currency of the Kingdom of Bahrain.
+Bangladeshi Taka. “Bangladeshi Taka” and “BDT” each means the lawful currency of the People’s Republic of Bangladesh.
+Botswana Pula. “Botswana Pula”, “Pula” and “BWP” each means the lawful currency of the Republic of
+Botswana.
+Brazilian Real. “Brazilian Real” and “BRL” each means the lawful currency of the Federative Republic
+of Brazil.
+Bulgarian Lev. “Bulgarian Lev” and “BGL” each means the lawful currency of the Republic of Bulgaria.
+Cambodian Riel. “Cambodian Riel” and “KHR” each means the lawful currency of the Kingdom of Cambodia.
+Canadian Dollar. “Canadian Dollar”, “C$”, and “CAD” each means the lawful currency of Canada.
+Central African CFA Franc. “Central African CFA Franc”, “CFA Franc BEAC”, and “XAF” each means
+1
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 7 =====
+the lawful currency of six independent states in Central Africa, which include the Republic of Cameroon,
+the Central African Republic, the Republic of Chad, the Republic of the Congo, the Republic of Equatorial
+Guinea and the Gabonese Republic.
+Chilean Peso. “Chilean Peso” and “CLP” each means the lawful currency of the Republic of Chile.
+Chinese Renminbi. “Chinese Renminbi”, “Chinese Yuan”, “CNY” and “RMB” each means the lawful
+currency of the People's Republic of China.
+Colombian Peso. “Colombian Peso” and “COP” each means the lawful currency of the Republic of Colombia.
+Costa Rican Colón. “Costa Rican Colón” and “CRC” each means the lawful currency of the Republic of
+Costa Rica.
+Czech Koruna. “Czech Koruna” and “CZK” each means the lawful currency of the Czech Republic.
+Danish Krone. “Danish Krone”, “Dkr” and “DKK” each means the lawful currency of the Kingdom of
+Denmark.
+Dominican Peso. “Dominican Peso”, “RD$” and “DOP” each means the lawful currency of the Dominican
+Republic.
+Egyptian Pound. “Egyptian Pound” and “EGP” each means the lawful currency of the Arab Republic of
+Egypt.
+Euro. “Euro”, “euro”, “€” and “EUR” each means the lawful currency of the member states of the European
+Union that adopt the single currency in accordance with the Treaty establishing the European Community
+(signed in Rome on March 25, 1957), as amended by the Treaty on European Union (signed in Maastricht
+on February 7, 1992), the Treaty of Amsterdam (signed in Amsterdam on October 2, 1997) and the Treaty
+of Nice (signed in Nice on February 26, 2001) (“EC Treaty”).
+Gambian Dalasi. “Gambian Dalasi” and “GMD” each means the lawful currency of The Republic of the
+Gambia.
+Ghanaian Cedi. “Ghanaian Cedi”, “Cedi” and “GHS” each means the lawful currency of the Republic of
+Ghana.
+Guatemalan Quetzal. “Guatemalan Quetzal” and “GTQ” each means the lawful currency of the Republic
+of Guatemala.
+Guinean Franc. “Guinean Franc” and “GNF” each means the lawful currency of the Republic of Guinea.
+Hong Kong Dollar. “Hong Kong Dollar”, “HK$” and “HKD” each means the lawful currency of the Hong
+Kong Special Administrative Region of the People’s Republic of China.
+Hungarian Forint. “Hungarian Forint”, “Forint” and “HUF” each means the lawful currency of the Republic of Hungary.
+Icelandic Króna. “Icelandic Króna” and “ISK” each means the lawful currency of the Republic of Iceland.
+Indian Rupee. “Indian Rupee” and “INR” each means the lawful currency of the Republic of India.
+2
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 8 =====
+Indonesian Rupiah. “Indonesian Rupiah” and “IDR” each means the lawful currency of the Republic of
+Indonesia.
+Iranian Rial. “Iranian Rial” and “IRR” each means the lawful currency of the Islamic Republic of Iran.
+Iraqi Dinar. “Iraqi Dinar” and “IQD” each means the lawful currency of the Republic of Iraq.
+Israeli Shekel. “Israeli Shekel”, “Israeli New Shekel” and “ILS” each means the lawful currency of the
+State of Israel.
+Jamaican Dollar. “Jamaican Dollar” and “JMD” each means the lawful currency of Jamaica.
+Jordanian Dinar. “Jordanian Dinar” and “JOD” each means the lawful currency of the Hashemite Kingdom of Jordan.
+Kazakhstani Tenge. “Kazakhstani Tenge”, “₸”, “Tenge” and “KZT” each means the lawful currency of
+the Republic of Kazakhstan.
+Kenyan Shilling. “Kenyan Shilling” and “KES” each means the lawful currency of the Republic of Kenya.
+Korean Won. “Korean Won”, “South Korean Won”, “₩”, and “KRW” each means the lawful currency of
+the Republic of Korea.
+Kuwaiti Dinar. “Kuwaiti Dinar” and “KWD” each means the lawful currency of the State of Kuwait.
+Lao Kip. “Lao Kip” and “LAK” each means the lawful currency of the Lao People's Democratic Republic.
+Lebanese Pound. “Lebanese Pound” and “LBP” each means the lawful currency of the Republic of Lebanon.
+Malaysian Ringgit. “Malaysian Ringgit” and “MYR” each means the lawful currency of the Federation of
+Malaysia.
+Mauritius Rupee. “Mauritius Rupee” and “MUR” each means the lawful currency of the Republic of
+Mauritius.
+Mexican Peso. “Mexican Peso” and “MXN” each means the lawful currency of the United Mexican States.
+Mongolian Tugrik. “Mongolian Tugrik”, “Tögrög”, “₮”, and “MNT” each means the lawful currency of
+Mongolia.
+Moroccan Dirham. “Moroccan Dirham” and “MAD” each means the lawful currency of the Kingdom of
+Morocco.
+Mozambican Metical. “Mozambican Metical” and “MZN” each means the lawful currency of the Republic
+of Mozambique.
+Nepalese Rupee. “Nepalese Rupee” and “NPR” each means the lawful currency of the Federal Democratic
+Republic of Nepal.
+New Zealand Dollar. “New Zealand Dollar”, “NZ$” and “NZD” each means the lawful currency of New
+3
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 9 =====
+Zealand.
+Nigerian Naira. “Nigerian Naira” and “NGN” each means the lawful currency of the Republic of Nigeria.
+Norwegian Krone. “Norwegian Krone”, “Nkr” and “NOK” each means the lawful currency of the Kingdom of Norway.
+Omani Rial. “Omani Rial”, “Rial Omani” and “OMR” each means the lawful currency of the Sultanate of
+Oman.
+Pakistani Rupee. “Pakistani Rupee” and “PKR” each means the lawful currency of the Islamic Republic
+of Pakistan.
+Peruvian Sol. “Peruvian Sol”, “Peruvian Nuevo Sol”, “Nuevo Sol” and “PEN” each means the lawful
+currency of the Republic of Peru.
+Philippine Peso. “Philippine Peso” and “PHP” each means the lawful currency of the Republic of the
+Philippines.
+Polish Zloty. “Polish Zloty” and “PLN” each means the lawful currency of the Republic of Poland.
+Qatari Rial. “Qatari Rial”, “Qatari Riyal” and “QAR” each means the lawful currency of the State of Qatar.
+Romanian Leu. “Romanian Leu”, “New Romanian Leu” and “RON” each means the lawful currency of
+Romania.
+Russian Ruble. “Russian Ruble”, “Russian Rouble” and “RUB” each means the lawful currency of the
+Russian Federation.
+Saudi Arabian Riyal. “Saudi Arabian Riyal”, “Saudi Arabian Rial”, “Saudi Riyal”, and “SAR” each means
+the lawful currency of the Kingdom of Saudi Arabia.
+Serbian Dinar. “Serbian Dinar” and “RSD” each means the lawful currency of the Republic of Serbia.
+Sierra Leonean Leone. “Sierra Leonean Leone”, “SLL” and “SLE” each means the lawful currency of the
+Republic of Sierra Leone.
+Singapore Dollar. “Singapore Dollar”, “S$” and “SGD” each means the lawful currency of the Republic
+of Singapore.
+South African Rand. “South African Rand”, “Rand”, “R” and “ZAR” each means the lawful currency of
+the Republic of South Africa.
+Sri Lankan Rupee. “Sri Lankan Rupee” and “LKR” each means the lawful currency of the Democratic
+Socialist Republic of Sri Lanka.
+Sterling. “Sterling”, “Pound Sterling”, “£”, “GBP” and “STG” each means the lawful currency of the
+United Kingdom.
+Swedish Krona. “Swedish Krona”, “Skr” and “SEK” each means the lawful currency of the Kingdom of
+Sweden.
+4
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 10 =====
+Swiss Franc. “Swiss Franc”, “Sfr” and “CHF” each means the lawful currency of Switzerland.
+Taiwanese Dollar. “Taiwanese Dollar”, “New Taiwan(ese) Dollar”, “NT$” and “TWD” each means the
+lawful currency of the Republic of China.
+Tanzanian Shilling. “Tanzanian Shilling” and “TZS” each means the lawful currency of the United Republic of Tanzania.
+Thai Baht. “Thai Baht” and “THB” each means the lawful currency of the Kingdom of Thailand.
+Tunisian Dinar. “Tunisian Dinar” and “TND” each means the lawful currency of the Republic of Tunisia.
+Turkish Lira. “Turkish Lira” and “TRY” each means the lawful currency of the Republic of Türkiye.
+Ugandan Shilling. “Ugandan Shilling” and “UGX” each means the lawful currency of the Republic of
+Uganda.
+Ukrainian Hryvnia. “Ukrainian Hryvnia”, “Hryvnia” and “UAH” each means the lawful currency of the
+Republic of Ukraine.
+United Arab Emirates Dirham. “United Arab Emirates Dirham”, “Emirati Dirham” and “AED” each
+means the lawful currency of the United Arab Emirates.
+Uruguayan Peso. “Uruguayan Peso” and “UYU” each means the lawful currency of the Oriental Republic
+of Uruguay.
+U.S. Dollar. “U.S. Dollar”, “Dollar”, “U.S.$”, “$” and “USD” each means the lawful currency of the United
+States of America.
+Uzbekistani Soum. “Uzbekistani Soum”, “Soum”, “Som” and “UZS” each means the lawful currency of
+the Republic of Uzbekistan.
+Venezuelan Bolivar. “Venezuelan Bolivar”, “Venezuelan Bolivar Soberano”, “Bolivar Soberano” and
+“VES” each means the lawful currency of the Bolivarian Republic of Venezuela.
+Vietnamese Dong. “Vietnamese Dong” and “VND” each means the lawful currency of the Socialist Republic of Vietnam.
+West African CFA Franc. “West African CFA Franc”, CFA Franc BCEAO” and “XOF” each means the
+lawful currency of eight independent states in West Africa, which include the Republic of Benin, Burkina
+Faso, the Republic of Guinea-Bissau, the Republic of the Côte d’Ivoire, the Republic of Mali, the Republic
+of Niger, the Republic of Senegal and the Togolese Republic.
+Yen. “Yen”, “Japanese Yen”, “¥” and “JPY” each means the lawful currency of Japan.
+Zambian Kwacha. “Zambian Kwacha”, “New Zambian Kwacha” and “ZMW” each means the lawful
+currency of the Republic of Zambia.
+Unless otherwise agreed by the parties to a Transaction, each currency with respect to a particular country
+defined in this Annex will be deemed to include any lawful successor currency (the “Successor Currency”)
+of that country. If, after the Trade Date and on or before the Settlement Date of a Transaction, a country
+has lawfully eliminated, converted, redenominated or exchanged its currency in effect on such Trade Date
+5
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 11 =====
+(the “Original Currency”), for a Successor Currency, then for purposes of calculating any amounts of such
+currency pursuant to a Transaction, and for purposes of effecting settlement thereof, any Original Currency
+amounts will be converted to the Successor Currency by multiplying the amount of Original Currency by a
+ratio of Successor Currency to Original Currency, which ratio will be calculated on the basis of the exchange
+rate set forth by such country for converting the Original Currency into the Successor Currency on the date
+on which the elimination, conversion, redenomination or exchange took place. If there is more than one
+such date, the date closest to the Settlement Date will be selected.
+Notwithstanding the foregoing provisions, and subject to anything agreed by the parties to a Transaction,
+with respect to any currency that is substituted or replaced by the Euro, the consequences of such substitution or replacement will be determined in accordance with applicable law.
+Section 4.4. Principal Financial Centers. Unless otherwise specified in a Confirmation, the Principal Financial Center with respect to each currency defined in this Annex A is the financial center or centers
+indicated with respect to such currency.
+
+6
+
+Currency
+
+Financial Center(s)
+
+Algerian Dinar
+
+Algiers
+
+Angolan Kwanza
+
+Luanda
+
+Argentine Peso
+
+Buenos Aires
+
+Australian Dollar
+
+Sydney and Melbourne
+
+Azerbaijani New Manat
+
+Baku
+
+Bahraini Dinar
+
+Manama
+
+Bangladeshi Taka
+
+Dhaka
+
+Botswana Pula
+
+Gaborone
+
+Brazilian Real
+
+Brasilia, Rio de Janeiro and São Paulo
+
+Bulgarian Lev
+
+Sofia
+
+Cambodian Riel
+
+Phnom Penh
+
+Canadian Dollar
+
+Toronto
+
+Central African CFA Franc
+
+Yaoundé
+
+Chilean Peso
+
+Santiago
+
+Chinese Renminbi
+
+Beijing
+
+Colombian Peso
+
+Bogota
+
+Costa Rican Colón
+
+San Jose
+
+Czech Koruna
+
+Prague
+
+Danish Krone
+
+Copenhagen
+
+Dominican Peso
+
+Santo Domingo
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 12 =====
+7
+
+Egyptian Pound
+
+Cairo
+
+Euro
+
+Euro Settlement Date or TARGET Settlement Day
+
+Gambian Dalasi
+
+Banjul
+
+Ghanaian Cedi
+
+Accra
+
+Guatemalan Quetzal
+
+Guatemala City
+
+Guinean Franc
+
+Conakry
+
+Hong Kong Dollar
+
+Hong Kong
+
+Hungarian Forint
+
+Budapest
+
+Icelandic Króna
+
+Reykjavik
+
+Indian Rupee
+
+Mumbai
+
+Indonesian Rupiah
+
+Jakarta
+
+Iranian Rial
+
+Teheran
+
+Iraqi Dinar
+
+Baghdad
+
+Israeli Shekel
+
+Tel Aviv
+
+Jamaican Dollar
+
+Kingston
+
+Jordanian Dinar
+
+Amman
+
+Kazakhstani Tenge
+
+Almaty
+
+Kenyan Shilling
+
+Nairobi
+
+Korean Won
+
+Seoul
+
+Kuwaiti Dinar
+
+Kuwait City
+
+Lao Kip
+
+Vientiane
+
+Lebanese Pound
+
+Beirut
+
+Malaysian Ringgit
+
+Kuala Lumpur
+
+Mauritius Rupee
+
+Port Louis
+
+Mexican Peso
+
+Mexico City
+
+Mongolian Tugrik
+
+Ulan Bator
+
+Moroccan Dirham
+
+Rabat
+
+Mozambican Metical
+
+Maputo
+
+Nepalese Rupee
+
+Kathmandu
+
+New Zealand Dollar
+
+Wellington and Auckland
+
+Nigerian Naira
+
+Lagos
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 13 =====
+8
+
+Norwegian Krone
+
+Oslo
+
+Omani Rial
+
+Muscat
+
+Pakistani Rupee
+
+Karachi
+
+Peruvian Sol
+
+Lima
+
+Philippine Peso
+
+Manila
+
+Polish Zloty
+
+Warsaw
+
+Qatari Rial
+
+Doha
+
+Romanian Leu
+
+Bucharest
+
+Russian Ruble
+
+Moscow
+
+Saudi Arabian Riyal
+
+Riyadh
+
+Serbian Dinar
+
+Belgrade
+
+Sierra Leonean Leone
+
+Freetown
+
+Singapore Dollar
+
+Singapore
+
+South African Rand
+
+Johannesburg
+
+Sri Lankan Rupee
+
+Colombo
+
+Sterling
+
+London
+
+Swedish Krona
+
+Stockholm
+
+Swiss Franc
+
+Zurich
+
+Taiwanese Dollar
+
+Taipei
+
+Tanzanian Shilling
+
+Dar es Salaam
+
+Thai Baht
+
+Bangkok
+
+Tunisian Dinar
+
+Tunis
+
+Turkish Lira
+
+Ankara
+
+Ugandan Shilling
+
+Kampala
+
+Ukrainian Hryvnia
+
+Kiev
+
+United Arab Emirates Dirham
+
+Abu Dhabi
+
+Uruguayan Peso
+
+Montevideo
+
+U.S. Dollar
+
+New York
+
+Uzbekistani Soum
+
+Tashkent
+
+Venezuelan Bolivar
+
+Caracas
+
+Vietnamese Dong
+
+Hanoi
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 14 =====
+9
+
+West African CFA Franc
+
+Dakar
+
+Yen
+
+Tokyo
+
+Zambian Kwacha
+
+Lusaka
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 15 =====
+Section 4.5. Settlement Rate Options.
+Subject to Article 5, for purposes of determining a Spot Rate:
+A.
+
+EMERGING CURRENCY PAIR SINGLE RATE SOURCE DEFINITIONS
+
+Angolan Kwanza.
+“AOA OFFICIAL” or “AOA1” means that the Spot Rate for a Rate Calculation Date will be the
+Angolan Kwanza /U.S. Dollar currency exchange rate, expressed as the amount of Angolan Kwanza per
+one U.S. Dollar, for settlement in two Business Days, reported by the Banco Nacional de Angola (National
+Bank of Angola) (www.bna.ao) as its selling (“Venda”) rate by approximately 5:00 p.m., Luanda time, on
+that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+AOA OFFICIAL is currently published on Refinitiv Screen AOAFIX= on the relevant Rate Calculation Date.
+
+Argentine Peso.
+“ARS MAE” or “ARS05” each means that the Spot Rate for a Rate Calculation Date will be the
+volume weighted average Argentine Peso/U.S. Dollar rate of all trades executed in the electronic market
+for a Rate Calculation Date, expressed as the amount of Argentine Pesos per one U.S. Dollar, for settlement
+on that same day, reported by the Mercado Abierto Electrónico (the “MAE”) at approximately 3:00 p.m.,
+Buenos Aires time, and published on the FOREX-MAE as the “PPN” rate (“Promedio Ponderado Noticiado”) on www.mae.com.ar on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+ARS MAE is currently published on Refinitiv Screen ARSPPN=ME and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Brazilian Real.
+“BRL OFFICIAL” or “BRL02” each means the Spot Rate for a Rate Calculation Date will be the
+Brazilian Real/U.S. Dollar official rate, expressed as the amount of Brazilian Real per one U.S. Dollar, for
+settlement in two Business Days, reported by the Banco Central do Brasil (Central Bank of Brazil)
+(www.bcb.gov.br) in the “Diário Oficial da União” on the first Business Day following that Rate Calculation Date.
+“BRL PTAX” or “BRL09” each means that the Spot Rate for a Rate Calculation Date will be the
+closing Brazilian Real/U.S. Dollar offered rate for U.S. Dollars, expressed as the amount of Brazilian Real
+per one U.S. Dollar, for settlement in two Business Days, reported by the Banco Central do Brasil (Central
+Bank of Brazil) (www.bcb.gov.br; see “Cotações e boletins”) by approximately 1:15 p.m., São Paulo time,
+on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+10
+
+BRL PTAX is currently published on Refinitiv Screen BRBZ and on Bloomberg Screen FIXI appearing under the
+heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 16 =====
+Chilean Peso.
+“CLP DÓLAR OBS” or “CLP10” each means that the Spot Rate for a Rate Calculation Date will
+be the Chilean Peso/U.S. Dollar “observado” exchange rate, expressed as the amount of Chilean Peso per
+one U.S. Dollar, for settlement in one Business Day, reported by the Banco Central de Chile (Central Bank
+of Chile) (www.bcentral.cl) as the “Dólar Observado” rate by not later than 10:30 a.m., Santiago time, on
+the first Business Day following that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+CLP DÓLAR OBS is currently published on Refinitiv Screen CLPOB= below the caption “Value” and on Bloomberg
+Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Chinese Renminbi.
+“CNY CNHHK” or “CNY03” each means that the Spot Rate for a Rate Calculation Date will be
+the Chinese Renminbi/U.S. Dollar official fixing rate, expressed as the amount of Chinese Renminbi per
+one U.S. Dollar, for settlement in two Business Days, reported by the Treasury Markets Association, Hong
+Kong (www.tma.org.hk) as its USD/CNY (HK) Spot Rate at approximately 11:30 a.m., Hong Kong time,
+on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+CNY CNHHK is currently published on Refinitiv Screen CNHFIX= and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“CNY SAEC” or “CNY01” each means that the Spot Rate for a Rate Calculation Date will be the
+Chinese Renminbi/U.S. Dollar official fixing rate, expressed as the amount of Chinese Renminbi per one
+U.S. Dollar, for settlement in two Business Days, authorized by the People’s Bank of China of the People’s
+Republic of China for reporting by the China Foreign Exchange Trade System (CFETS) (www.chinamoney.com.cn) at approximately 9:15 a.m., Beijing time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+CNY SAEC is currently published on Refinitiv Screen CNY= SAEC opposite the symbol “USDCNY=” and on
+Bloomberg Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation
+Date.
+
+“SFEMC CNY INDICATIVE SURVEY RATE” or “CNY02” each means that the Spot Rate for a
+Rate Calculation Date will be the Chinese Renminbi/U.S. Dollar Specified Rate for U.S. Dollars, expressed
+as the amount of Chinese Renminbi per one U.S. Dollar, for settlement in two Business Days, calculated
+by the Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC CNY Indicative Survey Rate Methodology (which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 12:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+11
+
+The SFEMC CNY Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg
+Screen to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 17 =====
+Colombian Peso.
+“COP TRM” or “COP02” each means that the Spot Rate for a Rate Calculation Date will be the
+Colombian Peso/U.S. Dollar representative exchange rate, expressed as the amount of Colombian Peso per
+one U.S. Dollar, for settlement on that same day, reported by the Superintendencia Financiera de Colombia
+(Financial Superintendency of Colombia) (www.superfinanciera.gov.co) as the “Tasa Representativa del
+Mercado (TRM)” at approximately 5:00 p.m. Bogotá time, but not later than 10:30 a.m., Bogotá time, on
+the first Business Day following that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+COP TRM is currently published on Refinitiv Screen CO/COLO3 and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Egyptian Pound.
+“EGP FEMF” or “EGP01” each means that the Spot Rate for a Rate Calculation Date will be the
+Egyptian Pound/U.S. Dollar weighted average spot rate, expressed as the amount of Egyptian Pound per
+one U.S. Dollar, for settlement in two Business Days, reported by the Central Chamber for Foreign Exchange Statistics of the Central Bank of Egypt (“Central Chamber”) (www.cbe.org.eg) at 12:00 noon, Cairo
+time, or if no rate appears at 12:00 noon, Cairo time, on that Rate Calculation Date, then the rate that is or
+has been reported next closest in time to 12:00 noon, Cairo time, by the Central Chamber (whether earlier
+or later than 12:00 noon, Cairo time), on the Rate Calculation Date, and if a rate shall be reported before
+12:00 noon, Cairo time, and a rate shall be reported after 12:00 noon, Cairo time, that are equally close in
+time to 12:00 noon, Cairo time, on any Rate Calculation Date, then of such two rates, the rate that is reported
+after 12:00 noon, Cairo time, by the Central Chamber shall be the Spot Rate for that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+EGP FEMF is currently published on Refinitiv Screen FEMF1 underneath the caption “Val Spot” and on Bloomberg
+Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Ghanaian Cedi.
+“GHS WMR” or “GHS04” each means that the Spot Rate for a Rate Calculation Date will be the
+Ghanaian Cedi/U.S. Dollar spot rate, expressed as the amount of Ghanaian Cedi per one U.S. Dollar, for
+settlement in two Business Days, reported by Refinitiv Benchmark Services (UK) Ltd and published on
+Refinitiv Screen USDGHS12FIX=WM by approximately 12:00 noon, Accra time, on that Rate Calculation
+Date.
+Hungarian Forint.
+“HUF EUR OFFICIAL” or “HUF02” each means that the Spot Rate for a Rate Calculation Date
+will be the Hungarian Forint/euro official rate, expressed as the amount of Hungarian Forint per one euro,
+for settlement in two Business Days, reported by the Magyar Nemzeti Bank (Central Bank of Hungary)
+(www.mnb.hu) at approximately 11:00 a.m., Budapest time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+HUF EUR OFFICIAL is currently published on Refinitiv Screen HUFE and on Bloomberg Screen FIXI appearing
+under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“HUF USD OFFICIAL” or “HUF01” each means that the Spot Rate for a Rate Calculation Date
+will be the Hungarian Forint/U.S. Dollar official daily exchange rate, expressed as the amount of Hungarian
+12
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 18 =====
+Forint per one U.S. Dollar, for settlement in two Business Days, reported by the Magyar Nemzeti Bank
+(Central Bank of Hungary) (www.mnb.hu) at approximately 11:00 a.m., Budapest time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+HUF USD OFFICIAL is currently published on Refinitiv Screen HUFE and on Bloomberg Screen FIXI appearing
+under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Indian Rupee.
+
+“INR FBIL” or “INR01” each means that the Spot Rate for a Rate Calculation Date will be
+the Indian Rupee/U.S. Dollar reference rate, expressed as the amount of Indian Rupee per one U.S.
+Dollar, for settlement in two Business Days, reported by Financial Benchmarks India Pvt. Ltd.
+(www.fbil.org.in) at approximately 1:30 p.m., Mumbai time, or as soon thereafter as practicable,
+on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+INR FBIL is currently published on Refinitiv Screen INRREF=FBIL and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“SFEMC INR INDICATIVE SURVEY RATE” or “INR02” each means that the Spot Rate for a
+Rate Calculation Date will be the Indian Rupee/U.S. Dollar Specified Rate for U.S. Dollars, expressed as
+the amount of Indian Rupee per one U.S. Dollar, for settlement in two Business Days, calculated by the
+Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC INR Indicative Survey Rate Methodology
+(which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 5:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC INR Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg Screen
+to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Indonesia Rupiah.
+“IDR JISDOR” or “IDR04” each means that the Spot Rate for a Rate Calculation Date will be the
+Indonesian Rupiah/U.S. Dollar weighted average spot rate in the interbank market based on traded
+IDR/USD spot foreign exchange transactions during a specified time period, which are captured on a real
+time basis, expressed as the amount of Indonesian Rupiah per one U.S. Dollar, for settlement in two Business Days, published by the Bank Sentral Republik Indonesia (Bank Indonesia) at approximately 4:15 p.m.,
+Jakarta time, on that Rate Calculation Date as the Jakarta Interbank Spot Dollar Rate USD – IDR on Bank
+Indonesia’s website (www.bi.go.id) or otherwise made available by Bank Indonesia (or its successor as
+administrator).
+Practitioner’s Note(s):
+•
+
+IDR JISDOR is currently published on Refinitiv Screen JISDOR and on Bloomberg Screen FIXI appearing under the
+heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“SFEMC IDR INDICATIVE SURVEY RATE” or “IDR02” each means that the Spot Rate for a
+Rate Calculation Date will be the Indonesia Rupiah/U.S. Dollar Specified Rate for U.S. Dollars, expressed
+13
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 19 =====
+as the amount of Indonesian Rupiah per one U.S. Dollar, for settlement in two Business Days, calculated
+by the Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC IDR Indicative Survey Rate Methodology
+(which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 5:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC IDR Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg Screen
+to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Israeli Shekel.
+“ILS OFFICIAL” or “ILS02” each means that the Spot Rate for a Rate Calculation Date will be
+the Israeli Shekel/U.S. Dollar Specified Rate, expressed as the amount of Israeli Shekel per one U.S. Dollar,
+for settlement in two Business Days, reported by the Bank of Israel (www.boi.org.il) at the Specified Time
+on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+ILS OFFICIAL is currently published on Refinitiv Screen FXIL and on Bloomberg Screen FIXI appearing under the
+heading “Emerging Markets Fixings” on the Relevant Rate Calculation Date.
+
+Kazakhstani Tenge.
+“KZT KASE” or “KZT01” each means that the Spot Rate for a Rate Calculation Date will be the
+Kazakhstani Tenge/U.S. Dollar weighted average rate, expressed as the amount of Kazakhstani Tenge per
+one U.S. Dollar, for settlement in one Business Day, reported by the Kazakhstan Stock Exchange
+(www.kase.kz) at approximately 5:00 p.m., Almaty time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+On July 1, 2019, the Kazakhstan Stock Exchange unified its morning and afternoon trading sessions and commenced
+to publish its weighted average KZT/USD (T+1) exchange rate daily at each of 11:00 a.m., 3:30 p.m. and 5:00 p.m.,
+Almaty time.
+
+•
+
+KZT KASE is currently published on Refinitiv Screen USDKZTTOMWA=KZ and on Bloomberg Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+•
+
+On August 20, 2018, the Kazakhstan Stock Exchange authorized a TOM KZT/USD rate quotation, effective September 10, 2018, in addition to its TOD KZT/USD rate quotation and the above definition was updated to reflect the
+TOM rate.
+
+Kenyan Shilling.
+“KES OFFICIAL” or “KES02” each means that the Spot Rate for a Rate Calculation Date will be
+the Kenyan Shilling/U.S. Dollar reference rate, expressed as the amount of Kenyan Shilling per one U.S.
+Dollar, for settlement in two Business Days, reported by the Central Bank of Kenya (www.centralbank.go.ke) after 12:00 noon, Nairobi time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+14
+
+KES OFFICIAL is currently published on Refinitiv Screen TR=CBK01 on the relevant Rate Calculation Date.
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 20 =====
+“KES WMR” or “KES03” each means that the Spot Rate for a Rate Calculation Date will be the
+Kenyan Shilling/U.S. Dollar spot rate, expressed as the amount of Kenyan Shilling per one U.S. Dollar, for
+settlement in two Business Days, reported by Refinitiv Benchmark Services (UK) Ltd and published on
+Refinitiv Screen USDKES08FIX=WM by approximately 11:00 a.m., Nairobi time, on that Rate Calculation
+Date.
+Korean Won.
+“KRW KFTC18” or “KRW02” each means that the Spot Rate for a Rate Calculation Date will be
+the Korean Won/U.S. Dollar market average rate, expressed as the amount of Korean Won per one U.S.
+Dollar, for settlement in two Business Days, reported by Seoul Money Brokerage Services, Ltd.
+(www.smbs.biz) that is available by approximately 4:00 p.m., Seoul time, for that Rate Calculation Date,
+or as soon thereafter as practicable.
+Practitioner’s Note(s):
+•
+
+KRW KFTC18 is currently published on Refinitiv Screen KFTC18 to the right of the caption “USD Today” and on
+Bloomberg Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation
+Date.
+
+“KRW KFTC30” or “KRW05” each means that the Spot Rate for a Rate Calculation Date will be
+the Korean Won/U.S. Dollar Specified Rate, expressed as the amount of Korean Won per one U.S. Dollar,
+for settlement in two Business Days, reported by Seoul Money Brokerage Services, Ltd. (www.smbs.biz)
+for the Specified Time on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+KRW KFTC30 is currently published on Refinitiv Screen KFTC30 at the Specified Time opposite the "Time Zone”
+row on the relevant Rate Calculation Date.
+
+“SFEMC KRW INDICATIVE SURVEY RATE” or “KRW04” each means that the Spot Rate for a
+Rate Calculation Date will be the Korean Won/U.S. Dollar Specified Rate for U.S. Dollars, expressed as
+the amount of Korean Won per one U.S. Dollar, for settlement in two Business Days, calculated by the
+Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC KRW Indicative Survey Rate Methodology (which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 5:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC KRW Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg
+Screen to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Lebanese Pound.
+“LBP BDLX” or “LBP01” each means that the Spot Rate for a Rate Calculation Date will be the
+Lebanese Pound/U.S. Dollar Specified Rate, expressed as the amount of Lebanese Pound per one U.S.
+Dollar, for settlement in two Business Days, reported by the Banque du Liban (Central Bank of Lebanon)
+which appears on Refinitiv Screen LBP=BDLX at approximately 12:00 noon, Beirut time, on that Rate
+Calculation Date.
+
+15
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 21 =====
+Malaysian Ringgit.
+“MYR KL REF” or “MYR04” each means that the Spot Rate for a Rate Calculation Date will be
+the Malaysian Ringgit/U.S. Dollar reference rate, expressed as the amount of Malaysian Ringgit per one
+U.S. Dollar, for settlement in two Business Days, calculated and reported by the Bank Negara Malaysia
+(Central Bank of Malaysia) (www.bnm.gov.my) as its Kuala Lumpur USD/MYR Reference Rate at approximately 3:30 p.m., Kuala Lumpur time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+In June 2016, the Bank Negara Malaysia determined to revise the methodology for the publication for its USD/MYR
+rate (which rate was identified in the 1998 FX and Currency Options Definitions as MYR PPKM (MYR03)) and to
+replace such rate with a new rate, the MYR KL REF (MYR04) rate, that is based upon a volume-weighted average
+methodology and published at 3:30 p.m., Kuala Lumpur time. On any Rate Calculation Date, in the event of an
+insufficient Qualifying Sample of transactions during the 8:00 a.m. to 3:00 p.m. window, Kuala Lumpur time, or as
+otherwise determined by the Bank Negara Malaysia, the Bank Negara Malaysia may determine to publish its 12:00
+noon, Kuala Lumpur time, reference rate at 3:30 p.m. as the MYR KL REF rate for such Rate Calculation Date. The
+publication of the 12:00 noon rate as the MYR KL REF rate for such Rate Calculation Date is a calculation methodology fallback procedure to address circumstances such as an insufficient Qualifying Sample or technical error or
+system issue and is not intended to trigger a Price Source Disruption as a rate will be published at the designated time.
+
+•
+
+MYR KL REF is currently published on Refinitiv Screen MYRFIX2 and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“SFEMC MYR INDICATIVE SURVEY RATE” or “MYR02” each means that the Spot Rate for a
+Rate Calculation Date will be the Malaysian Ringgit/U.S. Dollar Specified Rate for U.S. Dollars, expressed
+as the amount of Malaysian Ringgit per one U.S. Dollar, for settlement in two Business Days, calculated
+by the Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC MYR Indicative Survey Rate Methodology (which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 5:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC MYR Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg
+Screen to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Mexican Peso.
+“MXN FIXING RATE” or “MXN02” each means that the Spot Rate for a Rate Calculation Date
+will be the Mexican Peso/U.S. Dollar fixing rate, expressed as the amount of Mexican Peso per one U.S.
+Dollar, for settlement in two Business Days, which is published by the Banco de Mexico (Bank of Mexico)
+(www.banxico.org.mx) in the Official Gazette of the Federation pursuant to the “Disposiciones aplicables
+a la determinacion del Tipo de Câmbio para solventar obligaciones denominadas en moneda extranjera
+pagaderas en la Republica Mexicana” (Rules applicable to determine the exchange rate to pay obligations
+denominated in foreign currency payable in Mexico) on the first Business Day following that Rate Calculation Date.
+“MXN MEX01” or “MXN03” each means that the Spot Rate for a Rate Calculation Date will be
+the Mexican Peso/U.S. Dollar fixing rate, expressed as the amount of Mexican Peso per one U.S. Dollar,
+for settlement in two Business Days, reported by the Banco de Mexico (Bank of Mexico)
+(www.banxico.org.mx) at approximately 12:00 noon, Mexico City time, on that Rate Calculation Date.
+
+16
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 22 =====
+Practitioner’s Note(s):
+•
+
+MXN MEX01 is currently published on Refinitiv Screen MEX01 and on Bloomberg Screen FIXI appearing under
+the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“MXN PUBLISHED” or “MXN04” each means the Spot Rate for a Rate Calculation Date will be
+the Mexican Peso/U.S. Dollar fixing rate, expressed as the amount of Mexican Peso per one U.S. Dollar,
+for settlement in two Business Days, reported by Valuacion Operativa y Referencias de Mercado, S.A. de
+C.V. (Valmer) at the Specified Time, Mexico City time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+MXN PUBLISHED is currently published on Refinitiv Screen USDMXNFIX=VALR on the relevant Rate Calculation Date.
+
+Moroccan Dirham.
+“MAD OFFICIAL” or “MAD01” each means that the Spot Rate for a Rate Calculation Date will
+be the Moroccan Dirham/U.S. Dollar market average rate, expressed as the amount of Moroccan Dirham
+per one U.S. Dollar, for settlement in two Business Days, reported by the Bank Al-Maghrib (Central Bank
+of Morocco) (www.bkam.ma) by approximately 10:00 a.m., Rabat time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+MAD OFFICIAL is currently published on Refinitiv Screen BAM/FX02 and on Bloomberg Screen FIXI appearing
+under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Nigerian Naira.
+“NGN NAFEX” or “NGN03” each means that the Spot Rate for a Rate Calculation Date will be
+the Nigerian Naira/U.S. Dollar arithmetical average rate expressed as the amount of Nigerian Naira per one
+U.S. Dollar for settlement in two Business Days reported by the FMDQ OTC Securities Exchange as its
+Nigerian Autonomous Foreign Exchange (NAFEX) Rate by approximately 12:00 noon, Lagos time, on and
+for that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+NGN NAFEX is currently published live at www.emarkets.fmdqotc.com on the relevant Rate Calculation Date and,
+on the next Business Day following the relevant Rate Calculation Date, at www.fmdq.com under the caption
+”NAFEX” to the right of the tab “Fixings”.
+
+•
+
+NGN NAFEX is currently published at Refinitiv Screen USDNGNFIX=FMDQ and on Bloomberg Screen FIXI under
+“Emerging Markets Fixings”.
+
+Pakistani Rupee.
+“PKR SBPK” or “PKR01” or each means that the Spot Rate for a Rate Calculation Date will be the
+Pakistani Rupee/U.S. Dollar reference rate, expressed as the amount of Pakistani Rupee per one U.S. Dollar,
+for settlement in two Business Days, reported by the State Bank of Pakistan (www.sbp.org.pk) at approximately 2:30 p.m., Karachi time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+17
+
+PKR SBPK is currently published on Refinitiv Screen USDPKRFIX=SBPK and on Bloomberg Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 23 =====
+Peruvian Sol.
+“PEN INTERBANK AVE” or “PEN05” each means that the Spot Rate for a Rate Calculation Date
+will be the Peruvian Sol/U.S. Dollar average exchange rate in the interbank market, expressed as the amount
+of Peruvian Sol per one U.S. Dollar, for settlement on that same day, reported by the Banco Central de
+Reserva del Peru (Central Reserve Bank of Peru) (www.bcrp.gob.pe) as the “Tipo de Cambio Interbancario
+Promedio” by approximately 2:00 p.m., Lima time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+PEN INTERBANK AVE describes the average rate of the interbank market published by the Banco Central de
+Reserva del Peru, rounded to the fourth decimal point (e.g. 1.0000).
+
+•
+
+PEN INTERBANK AVE is currently published on Refinitiv Screen PEN=BCRP and on Bloomberg Screen FIXI
+appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+“PEN WT AVE” or “PEN03” each means that the Spot Rate for a Rate Calculation Date will be
+the midpoint of the Peruvian Sol/U.S. Dollar closing weighted average bid and offer (“compra y venta”)
+exchange rates, expressed as the amount of Peruvian Sol per one U.S. Dollar, for settlement on the same
+day, reported by the Superintendencia de Banca, Seguros y Administradores de Fondos de Pensiones) of
+the Republic of Peru (Superintendency of Banks, Insurance and Pension Fund Administrators
+(www.sbs.gob.pe) by approximately 5:00 p.m., Lima time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+PEN WT AVE describes a midpoint rate, to be calculated by market participants based upon the “compra y venta"
+(bid and offer) rates published by the Superintendencia de Banca, Seguros y AFP, rounded to the fourth decimal point
+(e.g., 1.0000).
+
+•
+
+PEN WT AVE is currently published on Refinitiv Screen PENS= on the relevant Rate Calculation Date.
+
+Philippine Peso.
+“PHP BAPPESO or “PHP06” each means that the Spot Rate for a Rate Calculation Date will be
+the Philippine Peso/U.S. Dollar morning weighted average rate for that Rate Calculation Date, expressed
+as the amount of Philippine Peso per one U.S. Dollar, for settlement in one Business Day, sponsored by
+Bankers Association of the Philippines (www.bap.org.ph) as its “BAP AM Weighted Average Rate” at
+approximately 11:30 a.m., Manila time, or as soon thereafter as practicable, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+In April 2018, Bankers Association of the Philippines, as administrator and sponsor, changed the trading
+platform and calculation agent and updated the publication sites and nomenclature for the PHP PDSPESO
+rate. No change to methodology or publication time was made. Accordingly, while the rate now appears
+as the “PHP BAPPESO” (PHP06) rate source in Annex A, it is intended to be understood to be the same
+rate for commercial purposes.
+
+•
+
+PHP BAPPESO PHP06 is currently published on Bloomberg Screen FIXI appearing under the heading
+“Emerging Markets Fixings” and on Bloomberg Screen OTC PH on the relevant Rate Calculation Date.
+
+“SFEMC PHP INDICATIVE SURVEY RATE” or “PHP05” each means that the Spot Rate for a
+Rate Calculation Date will be the Philippine Peso/U.S. Dollar Specified Rate for U.S. Dollars, expressed
+as the amount of Philippine Peso per one U.S. Dollar, for settlement in one Business Day, calculated by the
+Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+18
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 24 =====
+SFEMC may select in its sole discretion) pursuant to the SFEMC PHP Indicative Survey Rate Methodology
+(which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 12:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC PHP Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg Screen
+to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+Polish Zloty.
+“PLN OFFICIAL” or “PLN03” each means that the Spot Rate for a Rate Calculation Date will be
+the Polish Zloty/U.S. Dollar exchange rate, expressed as the amount of Polish Zloty per one U.S. Dollar,
+for settlement in two Business Days, reported by the Narodowy Bank Polski (National Bank of Poland)
+(www.nbp.pl) at approximately 11:00 a.m., Warsaw time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+PLN OFFICIAL is currently published on Refinitiv Screen NBPFIXA and on Bloomberg Screen FIXI
+appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Russian Ruble.
+“RUB MOEX” or “RUB05” each means that the Spot Rate for a Rate Calculation Date will be the
+Russian Ruble/U.S. Dollar spot rate, expressed as the amount of Russian Ruble per one U.S. Dollar, for
+settlement in one Business Day, reported by the Moscow Exchange (MOEX) (www.moex.com/en/fixing/)
+as the MOEX USD/RUB FX Fixing at 12:35 p.m., Moscow time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+RUB MOEX is currently published on Refinitiv Screen USDFIXME=RTS and on Bloomberg Screen
+FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Taiwanese Dollar.
+“SFEMC TWD INDICATIVE SURVEY RATE” or “TWD04” each means that the Spot Rate for a
+Rate Calculation Date will be the Taiwanese Dollar/U.S. Dollar Specified Rate for U.S. Dollars, expressed
+as the amount of Taiwanese Dollars per one U.S. Dollar, for settlement in two Business Days, calculated
+by the Singapore Foreign Exchange Market Committee (SFEMC) (www.sfemc.org) (or a service provider
+SFEMC may select in its sole discretion) pursuant to the SFEMC TWD Indicative Survey Rate Methodology (which means a methodology published by SFEMC, as amended from time to time) and reported by
+SFEMC at approximately 12:30 p.m., Singapore time, on that Rate Calculation Date, or as soon thereafter
+as practicable.
+Practitioner’s Note(s):
+•
+
+The SFEMC TWD Indicative Survey Rate is intended to be published on a Refinitiv Screen and/or a Bloomberg
+Screen to be designated, and as soon thereafter as practicable, also on the SFEMC website.
+
+“TWD TAIFX1” or “TWD03” each means that the Spot Rate for a Rate Calculation Date will be
+the Taiwanese Dollar/U.S. Dollar spot rate, expressed as the amount of Taiwanese Dollar per one U.S.
+Dollar, for settlement in two Business Days, reported by the Taipei Forex Inc. as of 11:00 a.m., Taipei time,
+on that Rate Calculation Date, or if no rate is available as of 11:00 a.m., Taipei time, the rate that first
+19
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 25 =====
+becomes available in any of the next succeeding 15 minute intervals after such time, up to and including
+12:00 noon, Taipei time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+“TWD TAIFX1” reflects the limited delay in reporting the Spot Rate of the first trade that takes place through the
+Taipei Forex Inc. The first trade usually takes place at 11:00 a.m., Taipei Time, and its Spot Rate is posted in the
+first 15-minute segment. However, the first trade could take place and its Spot Rate could be posted at a later 15minute interval. The rate source definitions incorporate the possibility of the first appearance of the Spot Rate in any
+succeeding 15-minute interval from 11:00 a.m. up to and including 12:00 noon, Taipei Time. 12:00 noon, Taipei
+Time, was deemed to be an appropriate cut-off point, because failure of a trade to take place through Taipei Forex
+Inc. by this time would indicate a disruption in the local market. If a Spot Rate is not posted by 12:00 noon, Taipei
+Time, on a Rate Calculation Date, a Price Source Disruption would be triggered as provided in the FX Definitions
+and the relevant Confirmation.
+
+•
+
+“TWD TAIFX1” is currently published on Refinitiv Screen TAIFX1 under the heading “Spot” and on Bloomberg
+Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Thai Baht.
+“THB VWAP” or “THB01” each means that the Spot Rate for a Rate Calculation Date will be the
+Thai Baht/U.S. Dollar spot rate, expressed as the amount of Thai Baht per one U.S. Dollar, for settlement
+in two Business Days, reported by ABS Benchmarks Administration Co Pte. Ltd. (or its successor as administrator or sponsor of the rate) (www.abs.org.sg), at approximately 11:30 a.m., Singapore time, on that
+Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+“THB VWAP” refers to a rate reported by ABS Benchmarks Administration Co Pte. Ltd. (“Administrator”), which
+is a spot rate based on the volume weighted average price of traded interbank THB/USD spot foreign exchange
+transactions, which are electronically captured by the Administrator (itself or through a service provider) during a
+qualifying window from 10:30 a.m. to 11:00 a.m., Singapore time, on that Rate Calculation Date in accordance with
+the calculation methodology of the Administrator. If there are insufficient qualifying transactions during the qualifying window (“Fallback Trigger”), the rate for the preceding Business Day will be published, provided that if the
+Fallback Trigger continues to occur for two consecutive Business Days, then no rate shall be published on the third
+and each following Business Day that the Fallback Trigger continues to occur. The publication of the rate for the
+preceding Business Day is a calculation methodology fallback procedure to address periods where transactional data
+may not be available and is not intended to trigger a Price Source Disruption as the rate will still be published.
+
+•
+
+“THB VWAP” is also currently published on Refinitiv Screen ABSFIX01 as the “THB Spot Fix” and on Bloomberg
+Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Ugandan Shilling.
+“UGX MID” or “UGX01” means that the Spot Rate for a Rate Calculation Date will be the arithmetic average of the Ugandan Shilling/U.S. Dollar “Mid” buying and selling exchange rates, expressed as
+the amount of Ugandan Shilling per one U.S. Dollar, for settlement in two Business Days, reported by the
+Bank of Uganda (www.bou.or.ug) by approximately 12:00 noon, Kampala time, on that Rate Calculation
+Date.
+Practitioner’s Note(s):
+•
+
+20
+
+UGX MID is currently published on Bloomberg Screen FIXI appearing under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 26 =====
+Ukrainian Hryvnia.
+“UAH NBU” or “UAH04” each means that the Spot Rate for a Rate Calculation Date will be the
+Ukrainian Hryvnia/U.S Dollar official exchange rate, expressed as the amount of Ukrainian Hryvnia per
+one U.S. Dollar, for settlement on that same day, as published by the National Bank of Ukraine
+(www.bank.gov.ua) on its website as its “Official hryvnia exchange rate for UAH 1” against foreign currencies at approximately 3:30 p.m., Kiev time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+UAH NBU is currently published on Refinitiv Screen USDUAHFIX= and on Bloomberg Screen FIXI appearing
+under the heading “Emerging Markets Fixings” on the relevant Rate Calculation Date.
+
+Uruguayan Peso.
+“UYU OFFICIAL” or “UYU01” means that the Spot Rate for a Rate Calculation Date will be the
+Uruguayan Peso/U.S. Dollar exchange (“fondo”) rate, expressed as the amount of Uruguayan Peso per
+one U.S. Dollar, for settlement in two Business Days, reported by the Banco Central Del Uruguay (Central Bank of Uruguay) (www.bcu.gub.uy) as its “U$S Prom. Fdo.” rate at approximately 4:15 p.m., Montevideo time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+UYU OFFICIAL is the weighted average price of all spot transactions reported in the electronic exchange, BEVSA,
+in Montevideo.
+
+•
+
+UYU OFFICIAL is currently published on Bloomberg Screen FIXI appearing under the heading “Emerging Markets
+Fixings” on the relevant Rate Calculation Date.
+
+Uzbekistani Soum.
+“UZS OFFICIAL” or “UZS01” each means that the Spot Rate for a Rate Calculation Date will be
+the Uzbekistani Soum/U.S. Dollar official closing exchange rate, expressed as the amount of Uzbekistani
+Soum per one U.S. Dollar, for settlement in one Business Day, calculated and reported by O’zbekiston
+Republikasi Markaziy banki (the Central Bank of the Republic of Uzbekistan) (www.cbu.uz) at approximately 4:00 p.m., Tashkent time, on that Rate Calculation Date.
+Practitioner’s Note(s):
+•
+
+For the avoidance of doubt, the Rate Calculation Date for a UZS/USD transaction is the date on which the rate is
+calculated and published by Central Bank of the Republic of Uzbekistan, notwithstanding that the Central Bank of
+the Republic of Uzbekistan may report the rate with effectiveness for the next Business Day in Tashkent.
+
+Vietnamese Dong.
+“VND FX” or “VND02” each means that the Spot Rate for a Rate Calculation Date will be the
+Vietnamese Dong/U.S. Dollar spot rate, expressed as the amount of Vietnamese Dong per one U.S. Dollar,
+for settlement in two Business Days, reported by Refinitiv Ltd. which appears on Refinitiv Screen
+VNDFX01 at approximately 11:00 a.m., Hanoi time, on that Rate Calculation Date.
+Zambian Kwacha.
+“ZMW WMR” or “ZMW02” each means that the Spot Rate for a Rate Calculation Date will be the
+Zambian Kwacha/U.S. Dollar spot rate, expressed as the amount of Zambian Kwacha per one U.S. Dollar,
+21
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 27 =====
+for settlement in two Business Days, reported by Refinitiv Benchmark Services (UK) Ltd and published on
+Refinitiv Screen USDZMW09FIX=WM by approximately 11:00 a.m., Lusaka time, on that Rate Calculation Date.
+
+22
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 28 =====
+B.
+
+NON-EMERGING CURRENCY PAIR RATE SOURCE DEFINITIONS.
+
+Subject to Article 5, for purposes of determining a Spot Rate (it being understood that, if any Spot
+Rate referenced in this Section 4.5B is not published on a Rate Calculation Date as described
+below, then, unless otherwise provided in a Confirmation related to a Transaction, such Spot Rate
+shall be determined by the Calculation Agent in good faith and in a commercially reasonable manner as at a time reasonably proximate to the Specified Time identified in such Confirmation for
+the Settlement Rate Option specified for the relevant Currency Pair):
+“ABSFIX” or “ABS01” each means that the Spot Rate for a Rate Calculation Date will be the spot
+rate (or derived spot rate, as the case may be) for the Currency Pair identified in the related Confirmation,
+reported by ABS Benchmarks Administration Co Pte. Ltd. (or its successor as administrator or sponsor of
+the rate), which appears on Refinitiv Screen ABSFIX01 at or under the relevant Currency Pair at the Specified Time on that Rate Calculation Date.
+“ABSBB” or “ABS02” each means that the Spot Rate for a Rate Calculation Date will be the spot
+rate (or derived spot rate, as the case may be) for the Currency Pair identified in the related Confirmation,
+reported by ABS Benchmarks Administration Co Pte. Ltd. (or its successor as administrator or sponsor of
+the rate) which appears on Bloomberg Screen ABSI at or under the relevant Currency Pair at the Specified
+Time on that Rate Calculation Date.
+“ASFI MID” or “ASF01” each means that the Spot Rate for a Rate Calculation Date will be the
+arithmetic average of the bid and offer rates for the Currency Pair identified in the related Confirmation
+reported by Refinitiv Ltd. which appear on Refinitiv Screen ASFI under the caption for such Currency Pair
+at the Specified Time on that Rate Calculation Date.
+“AUDFIX" or "AUD01” each means that the Spot Rate for a Rate Calculation Date will be the spot
+rate for the Currency Pair identified in the related Confirmation reported by Refinitiv Ltd. which appears
+on Refinitiv Screen AUDFIX at or under the caption for such Currency Pair at the Specified Time on the
+Rate Calculation Date.
+“Bloomberg BID” or “BFX01” each means that the Spot Rate for a Rate Calculation Date will be
+the spot rate (or derived spot rate, as the case may be) for the Currency Pair identified in the related Confirmation reported by Bloomberg Index Services Limited (BISL) which appears on Bloomberg Screen
+BFIX under the caption “BID” at the Specified Time on that Rate Calculation Date.
+“Bloomberg ASK” or “BFX02” each means that the Spot Rate for a Rate Calculation Date will be
+the spot rate (or derived spot rate, as the case may be) for the Currency Pair identified in the related Confirmation reported by Bloomberg Index Services Limited (BISL) which appears on Bloomberg Screen
+BFIX under the caption “ASK” at the Specified Time on that Rate Calculation Date
+“Bloomberg MID” or “BFX03” each means that the Spot Rate for a Rate Calculation Date will be
+the spot rate (or derived spot rate, as the case may be) for the Currency Pair identified in the related Confirmation reported by Bloomberg Index Services Limited (BISL) which appears on Bloomberg Screen
+BFIX under the caption “MID” at the Specified Time on that Rate Calculation Date.
+“BOJ FIX” or “BOJ01” each means that the Spot Rate for a Rate Calculation Date will be the
+central spot rate for the Currency Pair identified in the related Confirmation reported by the Bank of Japan
+which appears on Bloomberg Screen FIXI under the caption “Japan” at the Specified Time on that Rate
+Calculation Date.
+23
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 29 =====
+“HKDFIX” or “HKD01” each means that the Spot Rate for a Rate Calculation Date will be the
+exchange rate for the Currency Pair identified in the related Confirmation reported by the Treasury Markets
+Association which appears on Refinitiv Screen HKDFIX under the caption for such Currency Pair at the
+Specified Time on the Rate Calculation Date.
+“HKDBB” or “HKD02” each means that the Spot Rate for a Rate Calculation Date will be the spot
+exchange rate for the Currency Pair identified in the related Confirmation reported by the Treasury Markets
+Association, Hong Kong which appears on Bloomberg Screen TMA under the caption “FX and Money
+Market” at the Specified Time on the Rate Calculation Date.
+“NZDFIX SPOT" or "NZD01” each means that the Spot Rate for a Rate Calculation Date will be
+the spot rate for the Currency Pair identified in the related Confirmation reported by Refinitiv Ltd. which
+appears on Refinitiv Screen NZDFIX in the column for NZD/USD at the Specified Time on the Rate Calculation Date.
+“WM/Refinitiv BID” or “WMR01” each means that the Spot Rate for a Rate Calculation Date will
+be the spot rate, or closing spot rate, as the case may be, for the Currency Pair identified in the related
+Confirmation reported by Refinitiv Benchmark Services (UK) Ltd. which appears on the Refinitiv Screen
+WMRPSPOT (or, Refinitiv Screen WMRSPOT, in the case of the closing rate) for such Currency Pair
+under the caption “BID” at the Specified Time on that Rate Calculation Date.
+“WM/Refinitiv ASK” or “WMR02” each means that the Spot Rate for a Rate Calculation Date will
+be the spot rate, or closing spot rate, as the case may be, for the Currency Pair identified in the related
+Confirmation reported by Refinitiv Benchmark Services(UK) Ltd. which appears on the Refinitiv Screen
+WMRPSPOT (or Refinitiv Screen WMRSPOT, in the case of the closing rate) for such Currency Pair under
+the caption “ASK” at the Specified Time on that Rate Calculation Date.
+“WM/Refinitiv MID” or “WMR03” each means that the Spot Rate for a Rate Calculation Date will
+be the spot rate, or closing spot rate, as the case may be, for the Currency Pair identified in the related
+Confirmation reported by Refinitiv Benchmark Services (UK) Ltd. which appears on the Refinitiv Screen
+WMRPSPOT (or Refinitiv Screen WMRSPOT, in the case of the closing rate) for such Currency Pair under
+the caption “MID” at the Specified Time on that Rate Calculation Date.
+C.
+
+GENERAL
+
+(i)
+“CURRENCY-MUTUAL AGREEMENT” or “CUR01” each means that the Spot Rate for
+a Rate Calculation Date will be the Reference Currency/Settlement Currency Specified Rate, expressed as
+a fraction in terms of the amount of nominator currency that can be exchanged for one unit of denominator
+currency for settlement on the Settlement Date agreed upon by the parties on or prior to that Rate Calculation Date (or, if different, the day on which rates for that date would, in the ordinary course, be published
+or announced).
+(ii)
+“CURRENCY-REFERENCE DEALERS” or “CUR02” each means that the Spot Rate for
+a Rate Calculation Date will be determined on the basis of quotations provided by Reference Dealers of the
+Specified Rate for such Rate Calculation Date, expressed as a fraction in terms of the amount of nominator
+currency that can be exchanged for one unit of denominator currency for settlement on the Settlement Date,
+as follows:
+
+24
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 30 =====
+(A)
+if CURRENCY-REFERENCE DEALERS is the primary Settlement Rate Option,
+the Calculation Agent will request the Specified Office of each of the Reference Dealers to provide
+a firm quotation of the Specified Rate for a transaction where the amount of Reference Currency
+equals the Specified Amount. The quotations used to determine the Spot Rate for a Rate Calculation
+Date will be determined in each case at the Specified Time on that Rate Calculation Date or, if no
+such time is specified, the time chosen by the Calculation Agent.
+(B)
+if CURRENCY-REFERENCE DEALERS is a Fallback Reference Price Settlement Rate Option, the Calculation Agent will request the Specified Office of each of the Reference
+Dealers to provide a quotation of what the Specified Rate would have been had it been published,
+reported or available for the Rate Calculation Date, based upon each Reference Dealer’s experience
+in the foreign exchange market for the Reference Currency and general activity in such market on
+the Rate Calculation Date. The quotations used to determine the Spot Rate for a Rate Calculation
+Date will be determined in each case for such Rate Calculation Date, and will be requested at the
+Currency Reference Dealer Specified Time, if any, or as soon as practicable after it is determined
+that the Specified Rate was not available.
+In the case of either (A) or (B), if four quotations are provided, the rate for a Rate Calculation Date
+will be the arithmetic mean of the Specified Rates, without regard to the Specified Rates having the highest
+and lowest value. For this purpose, if more than one quotation has the same highest value or lowest value,
+then the Specified Rate of only one of such quotations shall be disregarded. If two or three quotations are
+provided, the rate for a Rate Calculation Date will be the arithmetic mean of the Specified Rates provided.
+If fewer than two quotations are provided, it will be deemed that the Spot Rate for that Rate Calculation
+Date cannot be determined pursuant to this Settlement Rate Option.
+(iii)
+Successors. In the event that any sponsor or administrator of a currency exchange rate
+referred to herein officially designates or appoints a successor sponsor or administrator entity for that currency exchange rate, then such lawfully designated or appointed successor entity shall be deemed, for purposes of this Annex A and any Transaction referencing such currency exchange rate, to be the lawful sponsor or administrator entity of that currency exchange rate for all purposes without further change to the rate
+source definition for such currency exchange rate.
+Section 4.6. Certain Definitions Relating to Settlement Rate Options.
+(a)
+“Bloomberg Screen” means, when used in connection with any Settlement Rate Option, the display,
+screen, page or monitor so designated on the Bloomberg Terminal (or any successor service thereof), or
+such other display, screen, page or monitor as may replace it on that service for the purpose of displaying
+a currency exchange rate comparable to the currency exchange rate specified in that Settlement Rate Option.
+(b)
+“Currency Reference Dealer Specified Time” means, with respect to a Transaction for which the
+relevant Settlement Rate Option is “CURRENCY-REFERENCE DEALERS”, the time specified as such
+in the related Confirmation.
+(c)
+
+“EMTA” means EMTA, Inc., the trade association for the Emerging Markets.
+
+(d)
+
+“ISDA” means the International Swaps and Derivatives Association, Inc.
+
+(e)
+“Reference Dealers” means, with respect to a Transaction for which the relevant Settlement Rate
+Option is “CURRENCY-REFERENCE DEALERS”, the four dealers specified in the related Confirmation
+or, if dealers are not so specified, four leading dealers in the relevant market selected by the Calculation
+Agent.
+25
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 31 =====
+(f)
+“Specified Amount” means, with respect to a Transaction and a Settlement Rate Option, the amount
+of Reference Currency specified as such in the related Confirmation or, if such an amount is not specified,
+an amount equal to a “standard size” transaction for such Reference Currency (the amount which is generally accepted by foreign exchange dealers as the standard size transaction in the market for such currency
+as of the Valuation Date).
+(g)
+“Specified Office” means, with respect to a Transaction for which the relevant Settlement Rate
+Option is “CURRENCY-REFERENCE DEALERS”, the office or branch of the Reference Dealer located
+in the city specified for such purpose in the related Confirmation. If a city is not so specified, the Specified
+Office will be deemed to be an office or branch of the Reference Dealer located in the Principal Financial
+Center of the Reference Currency unless (i) no quotations are available from the relevant office or branch
+of each of the Reference Dealers due to the occurrence of a Disruption Event applicable to the Transaction
+or (ii) “CURRENCY REFERENCE DEALERS” is specified (or deemed specified) as the Fallback Reference Price for a Settlement Rate Option where the currency exchange rate specified in such Settlement Rate
+Option is an off-shore currency exchange rate. In each such case, the Specified Office will be the office or
+branch of the Reference Dealer located in any major market for the purchase and sale of the currencies
+which comprise the relevant Currency Pair outside the country where the Reference Currency is the lawful
+currency, as selected by the Calculation Agent.
+(h)
+“Specified Rate” means, with respect to a Transaction and the determination of the Spot Rate pursuant to a Settlement Rate Option, any of the following rates, as specified in the related Confirmation: (i)
+the Reference Currency bid exchange rate, (ii) the Reference Currency offer exchange rate, (iii) the average
+of the Reference Currency bid and offer exchange rates, (iv) the Settlement Currency bid exchange rate, (v)
+the Settlement Currency offer exchange rate, (vi) the average of the Settlement Currency bid and offer
+exchange rates, (vii) the official fixing rate or (viii) any other exchange rate specified in the related Confirmation. If no such rate is specified, the Specified Rate will be deemed to be the average of the bid and offer
+rates of the relevant Currency Pair.
+(i)
+“Specified Time” means, with respect to a Transaction and the determination of the Spot Rate
+pursuant to the related Settlement Rate Option, the time specified as such in the related Confirmation.
+(j)
+
+“SFEMC” means the Singapore Foreign Exchange Market Committee.
+
+(k)
+“TARGET Settlement Day” means any day on which T2 (or any successor transfer system) is open
+for the settlement of payments in Euro, where “T2” means the real time gross settlement system operated
+by the Eurosystem (or any successor provider of that system). References in the Confirmation to “TARGET” in respect of any day shall be construed as references to a TARGET Settlement Day.
+(l)
+“Refinitiv Screen” means, when used in connection with any Settlement Rate Option, the display,
+screen, page or monitor so designated on the Refinitiv Services (or any successor service thereof), or such
+other display, screen, page or monitor as may replace it on that service for the purpose of displaying a
+currency exchange rate comparable to the currency exchange rate specified in that Settlement Rate Option.
+Section 4.7. Corrections to Published and Displayed Rates. For purposes of determining the Spot Rate
+for any Rate Calculation Date:
+(a)
+In any case where the Spot Rate for a Rate Calculation Date is based on information obtained from
+a commercial vendor or professional rates administrator in the business of reporting, producing or distributing commercial currency exchange rates, the Spot Rate will be subject to the corrections, if any, to that
+information subsequently displayed by that source within one hour of the time when such rate is first displayed by such source.
+26
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023
+===== PAGE 32 =====
+(b)
+Notwithstanding subsection (a) above, in any case where the Spot Rate for a Rate Calculation Date
+is based on information published or announced by any Governmental Authority in the relevant country,
+the Spot Rate will be subject to the corrections, if any, to that information subsequently published or announced by that source within 2 days of the Rate Calculation Date.
+(c)
+In the event that a party to a Transaction notifies the other party to the Transaction of any correction
+referred to in subsections (a) or (b) above no later than 2 days after the expiration of the period referred to
+in such subsection, an appropriate amount will be payable as a result of such correction (whether such
+correction is made or such notice is given before or after the Settlement Date of the Transaction), together
+with interest on that amount at a rate per annum equal to the cost (without proof or evidence of such cost)
+to the relevant party (certified by it) of funding that amount for the period from, and including, the day on
+which, based on such correction, a payment in the incorrect amount was first made to, but excluding, the
+day of payment of the refund or payment resulting from such correction.
+
+27
+
+Annex A Amended and Restated as of November 19, 2017
+Amended as of June 30, 2023

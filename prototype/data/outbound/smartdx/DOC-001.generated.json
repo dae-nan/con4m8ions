@@ -1,0 +1,12 @@
+{
+  "smartdxDocumentId": "SDX-DOC-001",
+  "documentId": "DOC-001",
+  "tradeId": "TR-FXO-001",
+  "status": "GENERATED",
+  "generatedAt": "2027-12-01T10:00:04Z",
+  "artifact": {
+    "format": "PDF",
+    "uri": "mock://smartdx/SDX-DOC-001.pdf",
+    "pages": 3
+  }
+}

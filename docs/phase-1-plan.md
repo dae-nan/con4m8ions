@@ -29,7 +29,7 @@ Yes — the 2026 annotated confirmation set is already a **master + product + su
 | **Product confirmation** | **Exhibit II-A … II-K** | Product-specific economic terms (e.g. II-B Deliverable FX Option) | `TemplateLayer = PRODUCT` · one `ProductType` per exhibit · attribute group `PRODUCT` |
 | **Product supplements / add-ons** | **Exhibit III-A …** | Optional overlays: disruption, early termination, averaging, barrier, etc. | `TemplateLayer = SUPPLEMENT` · attached via `supplementRefs[]` · attribute group `SUPPLEMENT` |
 | **Matrix overlays** | SRO Matrix / EM Currency Matrix version pins on applicable II exhibits | Versioned reference data, not a separate confirmation body | `MatrixBinding` entity · attribute group `MATRIX` |
-| **MCA overlay (optional)** | Bilateral Master Confirmation (sample Assumed) | Elects defs year, product elections, notice/CA defaults — increasingly absorbed into 2026 main book for EM | `McaProfile` · attribute group `MCA` · path `With_MCA` / `Without_MCA` |
+| **MCA overlay (optional)** | Bilateral Master Confirmation (sample Assumed) | Elects defs year, product elections, notice/CA defaults — increasingly absorbed into 2026 main book for EM | `MasterConfirmation` · attribute group `MCA` · path `With_MCA` / `Without_MCA` |
 
 **Logical grouping of attributes (used in Excel + LDM):**
 

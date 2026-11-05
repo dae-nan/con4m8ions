@@ -1,0 +1,10 @@
+{
+  "tradeId": "TR-FXO-001",
+  "eventType": "NEW_TRADE",
+  "documentId": "DOC-001",
+  "timestamp": "2027-12-01T10:00:05Z",
+  "templateVersion": "1.1.0",
+  "smartdxDocumentId": "SDX-DOC-001",
+  "swiftMsgRef": null,
+  "status": "GENERATED"
+}

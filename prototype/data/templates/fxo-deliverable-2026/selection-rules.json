@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "ruleId": "PSR-FXO-DEL-2026-001",
+      "packageId": "TB-FXO-DEL-2026-001",
+      "product": "Deliverable_FX_Option",
+      "subProduct": null,
+      "businessEvent": "NEW_TRADE",
+      "entity": "SCB-SG",
+      "confirmationMethod": "SmartDX",
+      "priority": 10
+    }
+  ]
+}

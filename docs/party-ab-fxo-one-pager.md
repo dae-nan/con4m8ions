@@ -13,7 +13,7 @@ Columnar attributes from LDM `Party` (+ letter elections). Seed trade `TR-FXO-00
 | Office | Party.office | Singapore | London | Exhibit I Offices |
 | Notice contact | ExhibitILetter.elections | ops-fx@scb.example | fxconfirm@acme.example | New 2026 optional |
 | Account / SSI | SettlementInstructions | Assumed SSI A | Assumed SSI B | With_MCA defaults |
-| Calc agent election | ExhibitILetter / McaProfile | Party A (Assumed MCA default) | — | Without_MCA: explicit |
+| Calc agent election | ExhibitILetter / MasterConfirmation | Party A (Assumed MCA default) | — | Without_MCA: explicit |
 | Master agreement date | LegalFramework / MCA | 2026-01-15 (Assumed) | same bilateral | With_MCA path |
 | On novation | NovationTransfer | Remaining Party A | Transferor B → Transferee C | Regen letter parties |
 

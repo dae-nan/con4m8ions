@@ -1,0 +1,45 @@
+{
+  "documentId": "DOC-001",
+  "tradeId": "TR-FXO-001",
+  "channel": "SmartDX",
+  "status": "GENERATED",
+  "affirmationStatus": "Affirmed",
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "templateVersion": "1.1.0",
+  "smartdxDocumentId": "SDX-DOC-001",
+  "priorDocumentId": null,
+  "createdAt": "2027-12-01T10:00:04Z",
+  "artifact": {
+    "format": "PDF",
+    "uri": "mock://smartdx/SDX-DOC-001.pdf",
+    "pages": 3
+  },
+  "exhibitILetter": {
+    "path": "With_MCA",
+    "longFormFallback": false,
+    "masterConfirmationId": "MCA-SCB-ACME-2026-001",
+    "blocks": {
+      "heading": {
+        "partyALetterhead": "Standard Chartered Bank Sample Desk",
+        "confirmationDate": "2027-12-01",
+        "partyBName": "ACME Corp Treasury",
+        "partyBAddress": "1 Example Street, London EC2N 1HQ"
+      },
+      "definitionsVersion": "2026 FX Definitions Main Book Version 1.0",
+      "agreementClause": "This Confirmation constitutes a \"Confirmation\" as referred to in, and supplements, forms a part of, and is subject to, the ISDA Master Agreement dated as of 15 January 2026 (Assumed MCA profile MCA-SCB-ACME-2026-001), as amended from time to time (the \"Agreement\"), between Standard Chartered Bank Sample Desk (\"Party A\") and ACME Corp Treasury (\"Party B\").",
+      "productInsert": {
+        "exhibitId": "II-B",
+        "title": "Confirmation of a Deliverable FX Option Transaction",
+        "additionalProvisionExhibitIds": []
+      },
+      "elections": {
+        "partyALei": "5493001KJTIIGC8Y1R12",
+        "partyBLei": "549300ABCDEFGH123456",
+        "calculationAgent": "Party A (defaulted from Assumed MCA)",
+        "governingLaw": "[Omitted — Confirmation subject to executed ISDA Master Agreement]"
+      },
+      "closing": "Supersession + please confirm"
+    },
+    "proseLetter": "Standard Chartered Bank Sample Desk\n[Letterhead]\n\nDate: 2027-12-01\n\nACME Corp Treasury\n1 Example Street, London EC2N 1HQ\n\nDear Sir/Madam:\n\nThe purpose of this letter (this \"Confirmation\") is to confirm the terms and conditions of the\nTransaction entered into between us on the Trade Date specified below (the \"Transaction\").\n\nThe definitions and provisions contained in Version 1.0 of the Main Book of the 2026 FX Definitions\n(as published by ISDA and EMTA, Inc.) are incorporated into this Confirmation. In the event of any\ninconsistency between those definitions and provisions and this Confirmation, this Confirmation will govern.\n\nThis Confirmation constitutes a \"Confirmation\" as referred to in, and supplements, forms a part of, and is subject to, the ISDA Master Agreement dated as of 15 January 2026 (Assumed MCA profile MCA-SCB-ACME-2026-001), as amended from time to time (the \"Agreement\"), between Standard Chartered Bank Sample Desk (\"Party A\") and ACME Corp Treasury (\"Party B\").\nAll provisions contained in the Agreement govern this Confirmation except as expressly modified below.\nThe terms of the Transaction to which this Confirmation relates are as follows:\n\n[INSERT Exhibit II-B Confirmation of a Deliverable FX Option Transaction]\n\nAdditional Elections, Account Details, Notices:\n  Party A LEI: 5493001KJTIIGC8Y1R12\n  Party B LEI: 549300ABCDEFGH123456\n  Calculation Agent: Party A (defaulted from Assumed MCA)\n  Account for payments to Party A: [Assumed SSI / explicit SSI]\n  Account for payments to Party B: [Assumed SSI / explicit SSI]\n  Offices: Party A Singapore; Party B London\n  Governing law: [Omitted — Confirmation subject to executed ISDA Master Agreement]\n  Contact details for notice: Party A ops-fx@scb.example; Party B fxconfirm@acme.example\n\nThis Confirmation supersedes and replaces any other confirmation (including an electronic confirmation),\nif any, sent in connection with this Transaction on or prior to the date hereof.\n\n\nPlease confirm that the foregoing correctly sets forth the terms of our agreement by executing\nthe copy of this Confirmation enclosed for that purpose and returning it to us.\n\nYours faithfully,\nStandard Chartered Bank Sample Desk\nBy: ________________  Name:  Title:\n\nConfirmed as of the date first above written:\nACME Corp Treasury\nBy: ________________  Name:  Title:"
+  }
+}

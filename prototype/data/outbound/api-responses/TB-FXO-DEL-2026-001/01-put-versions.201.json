@@ -1,0 +1,11 @@
+{
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "version": "1.2.0",
+  "status": "DRAFT",
+  "createdAt": "2027-11-28T09:00:00Z",
+  "validation": {
+    "status": "PENDING"
+  },
+  "auditId": "AUD-0005",
+  "requestId": "req_tpl_put_120"
+}

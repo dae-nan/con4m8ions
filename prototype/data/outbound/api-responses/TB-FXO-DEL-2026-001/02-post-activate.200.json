@@ -1,0 +1,14 @@
+{
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "version": "1.2.0",
+  "status": "LIVE",
+  "activatedAt": "2027-12-01T16:00:00Z",
+  "previousLiveVersion": "1.1.0",
+  "rollbackTargetVersion": "1.1.0",
+  "resendPolicy": "MANUAL",
+  "approvedBy": "u.ctrl.ng",
+  "approvedAt": "2027-12-01T15:30:00Z",
+  "approvalAuditId": "AUD-0007",
+  "auditId": "AUD-0008",
+  "requestId": "req_tpl_activate_120"
+}

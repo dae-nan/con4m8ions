@@ -30,7 +30,7 @@ ConfirmationInstance = MASTER + PRODUCT + Σ SUPPLEMENT + MATRIX? + MCA? + PLATF
 
 ## MCA paths
 
-- `With_MCA` — apply Assumed `McaProfile` defaults; flag Assumed fields  
+- `With_MCA` — apply Assumed `MasterConfirmation` elections; flag Assumed fields  
 - `Without_MCA` — explicit Exhibit I long-form / election fields  
 - `Both` — attribute applies on either path  
 

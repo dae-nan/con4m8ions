@@ -1,0 +1,6 @@
+{
+  "channel": "SmartDX",
+  "action": "STATUS_UPDATE",
+  "documentId": "DOC-001",
+  "affirmationStatus": "Affirmed"
+}

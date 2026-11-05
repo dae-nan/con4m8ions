@@ -1,0 +1,33 @@
+{
+  "asOf": "2027-12-01T16:55:02Z",
+  "threshold": 3,
+  "items": [
+    {
+      "partyBName": "ACME Corp Treasury",
+      "partyBLei": "549300ABCDEFGH123456",
+      "trades": 2,
+      "open": 1,
+      "unmatched": 0,
+      "errors": 0,
+      "flagged": false
+    },
+    {
+      "partyBName": "Globex Holdings Ltd",
+      "partyBLei": "549300TRANSFeree0001",
+      "trades": 2,
+      "open": 2,
+      "unmatched": 0,
+      "errors": 0,
+      "flagged": false
+    },
+    {
+      "partyBName": "Initech Treasury Ltd",
+      "partyBLei": "549300INITECH0000042",
+      "trades": 2,
+      "open": 1,
+      "unmatched": 0,
+      "errors": 0,
+      "flagged": false
+    }
+  ]
+}

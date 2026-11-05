@@ -1,0 +1,101 @@
+{
+  "templateBundleId": "TB-FXO-DEL-2026-001",
+  "items": [
+    {
+      "auditId": "AUD-0001",
+      "at": "2027-10-01T09:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.created",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.0.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_create_100"
+    },
+    {
+      "auditId": "AUD-0002",
+      "at": "2027-10-15T09:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.activated",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.0.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_activate_100"
+    },
+    {
+      "auditId": "AUD-0003",
+      "at": "2027-11-10T09:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.version_added",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.1.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_put_110"
+    },
+    {
+      "auditId": "AUD-0004",
+      "at": "2027-11-22T00:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.activated",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": "1.0.0",
+      "afterVersion": "1.1.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_activate_110"
+    },
+    {
+      "auditId": "AUD-0005",
+      "at": "2027-11-28T09:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.version_added",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.2.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_put_120"
+    },
+    {
+      "auditId": "AUD-0006",
+      "at": "2027-11-28T09:10:00Z",
+      "actorId": "svc.cdu-ps",
+      "action": "template.validated",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.2.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_put_120"
+    },
+    {
+      "auditId": "AUD-0007",
+      "at": "2027-12-01T15:30:00Z",
+      "actorId": "u.ctrl.ng",
+      "action": "template.approved",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": null,
+      "afterVersion": "1.2.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_approve_120"
+    },
+    {
+      "auditId": "AUD-0008",
+      "at": "2027-12-01T16:00:00Z",
+      "actorId": "u.admin.lee",
+      "action": "template.activated",
+      "entityType": "TemplatePackage",
+      "entityId": "TB-FXO-DEL-2026-001",
+      "beforeVersion": "1.1.0",
+      "afterVersion": "1.2.0",
+      "tradeId": null,
+      "correlationId": "req_tpl_activate_120"
+    }
+  ]
+}

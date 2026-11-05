@@ -9,7 +9,7 @@
 
 ### When
 
-- Ingest resolves `mcaPath=With_MCA`, `mcaProfileId=MCA-SCB-ACME-2026-001` (Assumed)  
+- TPs sends `trade.documentation.masterConfirmation.masterConfirmationId = MCA-SCB-ACME-2026-001` (Assumed); Legal Resolver derives `mcaPath=With_MCA`  
 - Confirmation omits Calculation Agent and notice contacts  
 
 ### Then
@@ -23,8 +23,8 @@
 
 ### When
 
-- Ingest resolves `mcaPath=Without_MCA`  
-- No `mcaProfileId`  
+- TPs sends `trade.documentation.masterConfirmation = null` and `masterAgreement.longFormFallback = true`; Legal Resolver derives `mcaPath=Without_MCA`  
+- No master confirmation id  
 
 ### Then
 

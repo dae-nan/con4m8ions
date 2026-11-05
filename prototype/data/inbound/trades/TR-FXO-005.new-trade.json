@@ -1,0 +1,80 @@
+{
+  "eventType": "NEW_TRADE",
+  "eventId": "evt_2005",
+  "tradeId": "TR-FXO-005",
+  "occurredAt": "2027-12-01T14:20:00Z",
+  "template": {
+    "masterExhibitId": "I",
+    "productExhibitId": "II-B",
+    "supplementExhibitIds": []
+  },
+  "trade": {
+    "parties": [
+      {
+        "id": "partyA",
+        "partyName": "Standard Chartered Bank Sample Desk",
+        "lei": "5493001KJTIIGC8Y1R12",
+        "office": "Singapore",
+        "noticeContact": "ops-fx@scb.example"
+      },
+      {
+        "id": "partyB",
+        "partyName": "Globex Holdings Ltd",
+        "lei": "549300TRANSFeree0001",
+        "address": "200 Novation Ave, New York NY 10005",
+        "office": "New York",
+        "noticeContact": "fxconfirm@globex.example"
+      }
+    ],
+    "product": {
+      "productType": "Deliverable_FX_Option",
+      "transactionType": "Deliverable FX Option Transaction",
+      "buyerPartyReference": {
+        "href": "partyA"
+      },
+      "sellerPartyReference": {
+        "href": "partyB"
+      }
+    },
+    "economics": {
+      "tradeDate": "2027-12-01",
+      "optionStyle": "European",
+      "optionType": "EUR Call / USD Put",
+      "callCurrency": "EUR",
+      "callCurrencyAmount": "2500000",
+      "putCurrency": "USD",
+      "strikePrice": "1.0900",
+      "expirationDate": "2027-12-31",
+      "expirationTime": "10:00",
+      "expirationTimeLocation": "New York",
+      "automaticExercise": "Applicable (presumed)",
+      "premiumAmount": "37500",
+      "premiumCurrency": "USD",
+      "premiumPaymentDate": "2027-12-03",
+      "settlementMethod": "Deliverable"
+    },
+    "documentation": {
+      "masterAgreement": {
+        "masterAgreementType": "ISDA2002",
+        "masterAgreementDate": null,
+        "longFormFallback": true,
+        "governingLaw": "English law",
+        "terminationCurrency": "USD"
+      },
+      "masterConfirmation": null,
+      "contractualDefinitions": [
+        {
+          "definitions": "2026 FX Definitions",
+          "publisher": "ISDA/EMTA",
+          "book": "Main Book",
+          "version": "1.0"
+        }
+      ],
+      "contractualMatrix": []
+    }
+  },
+  "assembly": {
+    "requestedMode": "MANUAL_DRAFTING",
+    "reason": "Counterparty requested bespoke Calculation Agent wording"
+  }
+}

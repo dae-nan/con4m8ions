@@ -1,0 +1,10 @@
+{
+  "tradeId": "TR-FXO-001",
+  "eventType": "AFFIRM",
+  "documentId": "DOC-001",
+  "timestamp": "2027-12-01T15:04:06Z",
+  "templateVersion": "1.1.0",
+  "smartdxDocumentId": "SDX-DOC-001",
+  "swiftMsgRef": null,
+  "affirmationStatus": "Affirmed"
+}
