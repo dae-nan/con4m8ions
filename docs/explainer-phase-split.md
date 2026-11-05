@@ -1,12 +1,7 @@
-# Phase split (CDU-PS)
+# Phase split (pointer)
 
-Moved out of the early PRD story so ops readers hit the job first. This note is the appendix version.
+Phase split and plain-language basics (affirm vs confirm, MCA, CSA, matrices, Phase 2 wireframe kickoff) now live in:
 
-| Thing | Phase 1 | Phase 2 | Phase 3 |
-| --- | --- | --- | --- |
-| PRD, Excel maps, light API/feature specs, payload mocks | Yes | Tweak from build learnings | — |
-| HTML5 ops desk + Python services (Mac-first) | No | Yes | — |
-| Live SmartDX / SWIFT / Swoosh / Compare X | Spec + mocks | Mock first, then wire | — |
-| AI / chatbot / MCP agents | Thinking + stubs only | Empty stubs OK | Build |
+**→ [`docs/explainer-basics.md`](explainer-basics.md)**
 
-**Rule:** Phase 1 = what and how it should behave. Phase 2 = make it run. Phase 3 = agent helpers.
+This file remains so old links keep working.

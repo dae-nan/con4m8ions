@@ -1,4 +1,4 @@
-# CDU-PS API Contract (Phase 1 — spec only) v1.3
+# CDU-PS API Contract (Phase 1 — spec only) v1.4
 
 No running server in Phase 1. Phase 2 implements FastAPI against this contract.  
 **Phase 3:** AI / chatbot / live MCP agents — stubs and thinking only; no implementation.
@@ -195,15 +195,36 @@ Start AssemblyRun for trade/event (normally implied by `POST /events`).
 {
   "tradeId": "TR-FXO-001",
   "eventId": "evt_1001",
+  "assemblyMode": "AUTOMATED",
   "channels": ["SmartDX"]
 }
 ```
 
-Response includes `assemblyRunId`, `exhibitILetter` blocks, `documentId`.
+`assemblyMode`: `AUTOMATED` | `MANUAL_DRAFTING` | `MANUAL_ENTRY`.
+
+Response includes `assemblyRunId`, `exhibitILetter` blocks, `documentId` (when automated complete).
+
+### Manual drafting stubs (FXO)
+
+| Method | Purpose |
+| --- | --- |
+| `GET /assemblies/{id}/shell` | Load LIVE template shell for edit (mode a) |
+| `PUT /assemblies/{id}/manual-draft` | Save ManualDraftContent |
+| `PUT /assemblies/{id}/manual-entries` | Save ManualEntryValue[] (drag-drop fields) |
+| `POST /assemblies/{id}/submit` | Finish manual path → SmartDX |
+
+All writes emit AuditEvent.
+
+### Audit
+
+| Method | Purpose |
+| --- | --- |
+| `GET /audit` | Filter by `entityType`, `entityId`, `tradeId`, time window |
+| `GET /templates/{id}/audit` | Template package / version history |
 
 ### `GET /documents/{id}` · `POST /documents/{id}/resend`
 
-Fetch artifact; superseding resend after hot-swap.
+Fetch artifact; superseding resend after hot-swap (audited).
 
 ---
 
